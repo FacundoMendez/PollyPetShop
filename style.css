@@ -133,6 +133,7 @@ main{
 
     .cuenta{
         margin-top: 2rem;
+        line-height: 60px;
         border: 2px solid #b871ff;
     }
 
