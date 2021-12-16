@@ -16,6 +16,8 @@ main{
 
 .header {
     position: relative;
+    height: 11rem;
+
 }
 
 .nav{
@@ -29,21 +31,20 @@ main{
     z-index: 10000;
     width: 100%;
     top: 0;
-    height: 11rem;
 } 
 
 .nav-link {
     text-decoration: none;
-    text-decoration: none;
-    font-size: 1.9rem;
-    color: #cc99ff;
+    font-size: 1.8rem;
+    color: #ad5cff;
     font-weight: 800;
+    letter-spacing: 1px;
 } 
 
 .nav__logo{
-    margin-top: 0.5%;
-    
+    margin-top: 0.5%;   
 }
+
 
 .nav__logo img{
     width: 65%;
@@ -60,7 +61,7 @@ main{
 .nav-menu-item {
     font-size: 18px;
     margin: 0 10px;
-    line-height: 80px;
+    line-height: 5rem;
     text-transform: uppercase;
     width: max-content;
 }
@@ -72,7 +73,7 @@ main{
 
 
 .nav-menu-link_active {
-    border: 2px solid #cc99ff ;
+    color: #ad5cff;
     border-radius: 9%;
     transition: 0.5s;
 }
@@ -90,11 +91,17 @@ main{
     z-index: 4000;
 }
 
+.cuenta{
+    border: 2px solid #b871ff;
+}
+
+
   /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 1029px) {
 
     .header {
         height: 60px;
+
     }
 
     .nav-menu {
@@ -110,16 +117,27 @@ main{
         overflow-y: auto;
         left: 100%;
         transition: left 0.3s;
-        padding-top: 12rem;
+        padding-top: 20rem;
     }
     .nav-menu-item {
-        line-height: 70px;
-        font-size: 3rem;
+        line-height: 80px;    
+    }
+    .nav-menu-item a{
+        font-size: 2.1rem;
     }
 
     .nav__logo{
         z-index: 4000;
         width: 40%;
+    }
+
+    .cuenta{
+        margin-top: 2rem;
+        border: 2px solid #b871ff;
+    }
+
+    .cuenta a{
+       font-size: 2rem;
     }
 
     .nav__logo img{
@@ -144,10 +162,17 @@ main{
     .nav-toggle:focus:not(:focus-visible) {
         outline: none;
     }
+
+    .fas{
+        color: #ad5cff;
+        font-size: 3.9rem;
+        margin-top: 2rem;
+    }
+
 }
 
 .cuenta{
-    border: 2px solid #cc99ff ;
+    color: #ad5cff;
     border-radius: 15%;
     margin-left: 2rem;
 }
@@ -185,7 +210,7 @@ main{
 .nav2 a{
     text-decoration: none;
     font-size: 1.7rem;
-    color: #cc99ff;
+    color: #ad5cff;
     font-weight: 800;
     text-transform: uppercase;;
 }
@@ -202,7 +227,7 @@ main{
 
 .container p{
     font-size: 4.3rem;
-    color: #cc99ff;
+    color: #ad5cff;
     font-weight: 800;
     position: absolute;
     top: 15%;
@@ -230,11 +255,11 @@ main{
     -moz-border-radius: 20px;
     border-radius: 20px;
     border: 1px solid #ccffff;
-    color:#cc99ff;
+    color: #ad5cff;
 }
 
 .barraBusqueda::placeholder{
-    color:#cc99ff;
+    color: #cb97ff;
     font-size: 2.4rem;
 }
 
@@ -300,7 +325,7 @@ main{
 .container2{
     background-color: #ccffff ;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     position: relative;
 }
@@ -309,9 +334,21 @@ main{
     font-size: 5rem;
     width: 100%;
     text-align: center;
-    color: #cc99ff;
+    color: #ad5cff;
     font-weight: 800;
     padding-top: 20rem;
+}
+
+.container2 .text1{
+    font-size: 3rem;
+    font-weight: 700;
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    line-height: 4.1rem;
 }
 
 .container2__gato2 {
@@ -333,7 +370,7 @@ main{
 .container3{
     background-image: url("./src/img/Fondo\ Tricolor.png");
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     position: relative;
 }
@@ -342,11 +379,616 @@ main{
     font-size: 5rem;
     width: 100%;
     text-align: center;
-    color: #cc99ff;
+    color: #ad5cff;
     font-weight: 800;
-    padding-top: 20rem;
+    padding-top: 15rem;
+}
+
+.container3 .text2{
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    width: 60%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    line-height: 4.1rem;
+}
+
+@media (max-width :1500px){
+
+    
+    .nav2{
+        width: 64%;
+    }
+
+
+    .nav2 a{
+        font-size: 1.7rem;
+    }
+
 }
 
 
+@media (max-width :1400px){
 
+    .nav-link {
+        font-size: 1.5rem;
+    } 
+
+
+    .nav__logo img{
+        width: 60%;
+    }
+
+    
+
+    /*  NAV 2  */
+
+    .nav2{
+        width: 80%;
+    }
+
+
+    .nav2 a{
+        font-size: 1.5rem;
+    }
+
+
+    /* Container1 /gato grande barra de busqueda */
+
+    .container{
+        height: 70vh;
+        width: 100vw;
+        position: relative;
+    }
+
+    .container p{
+        font-size: 3.5rem;
+    }
+
+    .barraBusqueda{
+        width: 47rem;
+        font-size: 2.3rem;
+    }
+
+    .barraBusqueda::placeholder{
+        font-size: 2.2rem;
+    }
+
+    .container__gatoGrande{
+        top: 40%;
+        left: 37%;
+    }
+
+    .container__gatoGrande img{
+        width: 55%;
+    }
+
+    .container__gato1 img{
+        position: absolute;
+        bottom: -2.8%;
+        right:5%;
+        z-index: 100;
+        width: 20%;
+    }
+
+    .hueso{
+        left: 1%;
+    }
+
+    .hueso img{
+        width: 75%;
+    }
+
+
+    /*    Quienes somos /container2    */
+
+
+    .container2 p{
+        font-size: 4.5rem;
+        padding-top: 10rem;
+    }
+
+    .container2 .text1{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+
+    /* Container3 / que hacemos */
+
+    .container3{
+        background-image: url("./src/img/Fondo\ Tricolor.png");
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 p{
+        font-size: 4.5rem;
+        padding-top: 10rem;
+    }
+
+    .container3 .text2{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+}
+
+
+@media (max-width: 1082px){
+
+    /*  NAV 2  */
+
+    .nav2{
+        width: 87%;
+    }
+
+    .nav2 a{
+        font-size: 1.3rem;
+    }
+
+
+    /* Container1 /gato grande barra de busqueda */
+
+    .container{
+        height: 70vh;
+    }
+
+    .container p{
+        font-size: 3rem;
+        right: 10%;
+        top: 22%;
+    }
+
+    .barraBusqueda{
+        width: 40rem;
+        font-size: 2.3rem;
+        right: 10%;
+        top: 35%;
+    }
+
+    .barraBusqueda::placeholder{
+        font-size: 2.1rem;
+    }
+
+    .container__gatoGrande{
+        top: 40%;
+        left: 37%;
+    }
+
+    .container__gatoGrande img{
+        width: 55%;
+    }
+
+    .container__gato1 img{
+        bottom: -3.1%;
+        right:8%;
+        width: 28%;
+    }
+
+    .hueso{
+        left: 0.5%;
+    }
+
+    .hueso img{
+        width: 67%;
+    }
+
+
+    /*    Quienes somos /container2    */
+
+
+    .container2 p{
+        font-size: 4rem;
+        padding-top: 10rem;
+    }
+
+    .container2 .text1{
+        font-size: 2.3rem;
+        width: 70%;
+        line-height: 3.3rem;
+    }
+
+
+    /* Container3 / que hacemos */
+
+    .container3{
+        background-image: url("./src/img/Fondo\ Tricolor.png");
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 p{
+        font-size: 4rem;
+        padding-top: 10rem;
+    }
+
+    .container3 .text2{
+        font-size: 2.3rem;
+        width: 70%;
+        line-height: 3.3rem;
+    }
+
+    .container2__gato2{
+        margin-left: -0.3%;
+    }
+}
+
+
+@media (max-width :868px){
+
+    .nav{
+        height: 10rem;
+    }
+
+    /*  NAV 2  */
+
+
+    .nav2{
+        width: 80%;
+    }
+
+    .nav2 a{
+        font-size: 1.3rem;
+    }
+
+    .nav2 span{
+        padding: 0 0.7rem;
+    }
+
+    /* Container1 /gato grande barra de busqueda */
+
+    .container{
+        height: 70vh;
+    }
+
+    .container p{
+        font-size: 2.3rem;
+        right: 10%;
+        top: 22%;
+    }
+
+    .barraBusqueda{
+        width: 31rem;
+        font-size: 2.3rem;
+        right: 10%;
+        top: 33%;
+    }
+
+    .barraBusqueda::placeholder{
+        font-size: 1.8rem;
+    }
+
+    .container__gatoGrande{
+        top: 38%;
+        left: 33%;
+    }
+
+    .container__gatoGrande img{
+        width: 60%;
+    }
+
+    .container__gato1 img{
+        bottom: -2.3%;
+        right:8%;
+        width: 30%;
+    }
+
+    .hueso{
+        left: 0.5%;
+    }
+
+    .hueso img{
+        width: 67%;
+    }
+
+
+    /*    Quienes somos /container2    */
+
+
+    .container2 p{
+        font-size: 3.5rem;
+        padding-top: 10rem;
+    }
+
+    .container2 .text1{
+        font-size: 2.1rem;
+        width: 70%;
+        line-height: 3.3rem;
+    }
+
+
+    /* Container3 / que hacemos */
+
+    .container3{
+        background-image: url("./src/img/Fondo\ Tricolor.png");
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 p{
+        font-size: 3.5rem;
+        padding-top: 10rem;
+    }
+
+    .container3 .text2{
+        font-size: 2.1rem;
+        width: 70%;
+        line-height: 3.3rem;
+    }
+
+    .container2__gato2{
+        margin-left: -0.3%;
+    }
+    
+    .container2__gato2 img{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 634px){
+
+    .nav{
+        height: 10rem;
+    }
+    .nav__logo{
+        width: 60%;
+    }
+
+    /*  NAV 2  */
+
+
+    .nav2{
+        width: 90%;
+    }
+
+    .nav2 a{
+        font-size: 1.1rem;
+    }
+
+    .nav2 span{
+        padding: 0 0.4rem;
+    }
+
+    /* Container1 /gato grande barra de busqueda */
+
+    .container{
+        height: 50vh;
+    }
+
+    .container p{
+        font-size: 1.9rem;
+        right: 8%;
+        top: 22%;
+    }
+
+    .barraBusqueda{
+        width: 26rem;
+        height: 1.5rem;
+        font-size: 2.3rem;
+        right: 8%;
+        top: 30%;
+    }
+
+    .barraBusqueda::placeholder{
+        font-size: 2rem;
+    }
+
+    .container__gatoGrande{
+        top: 36%;
+        left: 32%;
+    }
+
+    .container__gatoGrande img{
+        width: 65%;
+    }
+
+    .container__gato1 img{
+        bottom: -4.2%;
+        right:8%;
+        width: 40%;
+    }
+
+    .hueso{
+        display: none;
+        left: 0.5%;
+    }
+
+    .hueso img{
+        width: 67%;
+    }
+
+
+    /*    Quienes somos /container2    */
+
+
+    .container2 p{
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+
+    .container2 .text1{
+        font-size: 1.9rem;
+        width: 83%;
+        line-height: 3.3rem;
+        text-align:justify;
+    }
+
+
+    /* Container3 / que hacemos */
+
+    .container3{
+        background-image: url("./src/img/Fondo\ Tricolor.png");
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 p{
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+
+    .container3 .text2{
+        font-size: 1.9rem;
+        width: 83%;
+        line-height: 3.3rem;
+        text-align:justify;
+    }
+
+    .container2__gato2{
+        margin-left: -0.7%;
+    }
+    
+    .container2__gato2 img{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 482px){
+
+    
+    .nav{
+        height: 10rem;
+    }
+
+    .nav__logo{
+        width: 70%;
+    }
+
+    /*  NAV 2  */
+
+
+    .nav2{
+        width: 95%;
+        margin-top: 12rem;
+    }
+
+    .nav2 a{
+        font-size: 1rem;
+    }
+
+    .nav2 span{
+        padding: 0 0.2rem;
+    }
+    .camas a{
+        display: none;
+    }
+
+    /* Container1 /gato grande barra de busqueda */
+
+    .container{
+        height: 40vh;
+    }
+
+    .container p{
+        position: absolute;
+        font-size: 2.2rem;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        top: 15%;
+    }
+
+    .barraBusqueda{
+        position: absolute;
+        width: 30rem;
+        font-size: 2.3rem;
+        top: 35%;
+        right: 0;
+        left: 0%;
+        margin: 0 auto;
+    }
+
+    .barraBusqueda::placeholder{
+        font-size: 1.7rem;
+    }
+
+    .container__gatoGrande{
+        top: 66%;
+        left: 32%;
+        display: none;
+    }
+
+    .container__gatoGrande img{
+        width: 65%;
+    }
+
+    .container__gato1 img{
+        bottom: -4.2%;
+        right:8%;
+        width: 50%;
+    }
+
+    .hueso{
+        display: none;
+        left: 0.5%;
+    }
+
+    .hueso img{
+        width: 67%;
+    }
+
+
+    /*    Quienes somos /container2    */
+
+
+    .container2 p{
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+
+    .container2 .text1{
+        font-size: 1.5rem;
+        width: 83%;
+        line-height: 3.1rem;
+        text-align:justify;
+        letter-spacing: 0;
+    }
+
+
+    /* Container3 / que hacemos */
+
+    .container3{
+        background-image: url("./src/img/Fondo\ Tricolor.png");
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 p{
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+
+    .container3 .text2{
+        font-size: 1.5rem;
+        width: 83%;
+        line-height: 3.1rem;
+        text-align:justify;
+        letter-spacing: 0;
+    }
+
+    .container2__gato2{
+        margin-left: -1.1%;
+    }
+    
+    .container2__gato2 img{
+        width: 50%;
+    }
+
+}
 
