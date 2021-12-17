@@ -414,6 +414,8 @@ main{
 
 @media (max-width :1400px){
 
+ 
+
     .nav-link {
         font-size: 1.5rem;
     } 
@@ -440,7 +442,7 @@ main{
     /* Container1 /gato grande barra de busqueda */
 
     .container{
-        height: 70vh;
+        height: 100vh;
         width: 100vw;
         position: relative;
     }
@@ -469,7 +471,7 @@ main{
 
     .container__gato1 img{
         position: absolute;
-        bottom: -2.8%;
+        bottom: -3.4%;
         right:5%;
         z-index: 100;
         width: 20%;
@@ -489,12 +491,13 @@ main{
 
     .container2 p{
         font-size: 4.5rem;
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
 
     .container2 .text1{
         font-size: 2.5rem;
         line-height: 3.5rem;
+        margin-top: 3rem;
     }
 
 
@@ -510,11 +513,12 @@ main{
 
     .container3 p{
         font-size: 4.5rem;
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
 
     .container3 .text2{
         font-size: 2.5rem;
+        margin-top: 3rem;
         line-height: 3.5rem;
     }
 
@@ -537,7 +541,7 @@ main{
     /* Container1 /gato grande barra de busqueda */
 
     .container{
-        height: 70vh;
+        height: 100vh;
     }
 
     .container p{
@@ -647,7 +651,7 @@ main{
     /* Container1 /gato grande barra de busqueda */
 
     .container{
-        height: 70vh;
+        height: 100vh;
     }
 
     .container p{
@@ -764,7 +768,7 @@ main{
     /* Container1 /gato grande barra de busqueda */
 
     .container{
-        height: 50vh;
+        height: 80vh;
     }
 
     .container p{
