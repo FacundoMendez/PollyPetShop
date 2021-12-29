@@ -1,0 +1,454 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.header {
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ccffff;
+    flex-direction: row;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 10.5rem;
+    top: 0;
+} 
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ad5cff;
+    font-weight: 800;
+    letter-spacing: 1px;
+} 
+
+.nav__logo{
+    margin-top: 0.5%;   
+}
+
+
+.nav__logo img{
+    width: 55%;
+    margin-left: 7rem;
+}
+
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 5rem;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+
+.nav-menu-link i{
+    font-size: 3rem;
+    position: absolute;
+    top: 3.8rem;
+}
+
+.nav-menu-link_active {
+    color: #ad5cff;
+    border-radius: 9%;
+    transition: 0.5s;
+}
+
+  /* TOGGLE */
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+    z-index: 4000;
+}
+
+
+
+.barraBusqueda{
+    background-color:#b871ff48; ;
+    width: 26rem;
+    height: 3.5rem;
+    border: none;
+    font-size: 2rem;
+    color: rgb(35, 0, 70);
+    font-weight: 700;
+    padding: 2rem;
+    margin-right: 2rem;
+    z-index: 1000;
+    border-radius: 5%;
+}
+
+.barraBusqueda[type=text]{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid #6c06d13f;
+    color: #ad5cff;
+}
+
+
+.busq i{
+    position: absolute;
+    font-size: 3rem;
+    left: 50%;
+    top: 37%;
+    opacity: 0.5;
+    color:rgb(35, 0, 70);
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.busq i:hover{
+    font-size: 2.8rem;
+    color:rgb(234, 1, 255);
+}
+
+.barraBusqueda::placeholder{
+    color:rgba(35, 0, 70, 0.24);
+    font-size: 2rem;
+}
+
+
+.cuenta{
+    border: 2px solid #b871ff;
+}
+
+
+  /* MOBILE */
+@media (max-width: 1029px) {
+
+    .header {
+        height: 60px;
+
+    }
+
+
+    .nav-menu-link i{
+        font-size: 3rem;
+        position: relative;
+        top: 3rem;
+        color: #83c5f7;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #2c3e50;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        padding: 20px 0;
+        height: 100%;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+        padding-top: 20rem;
+    }
+    .nav-menu-item {
+        line-height: 80px;    
+    }
+    .nav-menu-item a{
+        font-size: 2.1rem;
+    }
+
+    .nav__logo{
+        z-index: 4000;
+        width: 30%;
+    }
+
+    .cuenta{
+        margin-top: 2rem;
+        line-height: 60px;
+        border: 2px solid #b871ff;
+    }
+
+    .busq{
+        display: none;
+    }
+
+    .cuenta a{
+       font-size: 2rem;
+    }
+
+    .nav__logo img{
+        width: 70%;
+        margin-left: 0rem;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #83c5f7;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    .fas{
+        color: #ad5cff;
+        font-size: 3.9rem;
+        margin-top: 2rem;
+    }
+
+}
+
+
+/*  NAV 2  */
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ccffff;
+    width: 75%;
+    margin: 0rem auto;
+    box-shadow: 0.1rem 0.1rem 0.7rem #87eeee ;
+    border-radius: 4%;
+    margin-top: 12rem;
+}
+
+
+.nav2 ul{
+    list-style: none;
+}
+
+.nav2 span{
+    padding: 0 3rem;
+}
+
+.nav2 li{
+    display: inline-block;
+    padding: 1.5rem 0;
+}
+
+.nav2 a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #ad5cff;
+    font-weight: 800;
+    text-transform: uppercase;;
+}
+
+
+
+
+main{
+    top: 4rem;
+    position: relative;
+}
+
+.cuenta{
+    color: #ad5cff;
+    border-radius: 15%;
+    margin-left: 2rem;
+}
+
+.container{
+    position: relative;
+    border: 2px solid rgb(0, 0, 0);
+    width: 24rem;
+    height: 130vh;
+}
+
+
+@media (max-width :1500px){
+
+    
+    .nav2{
+        width: 64%;
+    }
+
+
+    .nav2 a{
+        font-size: 1.7rem;
+    }
+
+}
+
+
+@media (max-width :1400px){
+
+ 
+.barraBusqueda{
+    background-color:#b871ff48; ;
+    width: 26rem;
+    height: 3.5rem;
+    border: none;
+    font-size: 2rem;
+    color: rgb(35, 0, 70);
+    font-weight: 700;
+    padding: 2rem;
+    margin-right: 2rem;
+    z-index: 1000;
+    border-radius: 5%;
+}
+.busq i{
+    position: absolute;
+    font-size: 3rem;
+    left: 50%;
+    top: 37%;
+    opacity: 0.5;
+    color:rgb(35, 0, 70);
+    cursor: pointer;
+    z-index: 10000;
+}
+
+
+    /*  NAV 2  */
+
+    .nav2{
+        width: 80%;
+    }
+
+
+    .nav2 a{
+        font-size: 1.5rem;
+    }
+
+
+}
+
+
+@media (max-width: 1082px){
+
+    /*  NAV 2  */
+
+    .nav2{
+        width: 87%;
+    }
+
+    .nav2 a{
+        font-size: 1.3rem;
+    }
+
+
+}
+
+
+@media (max-width :868px){
+
+    .nav{
+        height: 10rem;
+    }
+
+    /*  NAV 2  */
+
+
+    .nav2{
+        width: 80%;
+    }
+
+    .nav2 a{
+        font-size: 1.3rem;
+    }
+
+    .nav2 span{
+        padding: 0 0.7rem;
+    }
+
+
+}
+
+
+@media (max-width: 634px){
+
+    .nav{
+        height: 10rem;
+    }
+    .nav__logo{
+        width: 45%;
+    }
+
+    /*  NAV 2  */
+
+
+    .nav2{
+        width: 90%;
+    }
+
+    .nav2 a{
+        font-size: 1.1rem;
+    }
+
+    .nav2 span{
+        padding: 0 0.4rem;
+    }
+
+}
+
+
+@media (max-width: 482px){
+
+    
+    .nav{
+        height: 10rem;
+    }
+
+    .nav__logo{
+        width: 55%;
+    }
+
+    /*  NAV 2  */
+
+
+    .nav2{
+        width: 95%;
+        margin-top: 12rem;
+    }
+
+    .nav2 a{
+        font-size: 1rem;
+    }
+
+    .nav2 span{
+        padding: 0 0.2rem;
+    }
+    
+
+  
+
+
+}
+
+
+

@@ -14,90 +14,6 @@ main{
 }
 
 
-/* configuracion preload */
-.preload{
-    width: 100vw;
-    height: 100vh;
-    background-color: #ccffff;
-    position: fixed;
-    top: 0rem;
-    left: 0px;
-    z-index: 9000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.preload img{
-    width: 18%;
-}
-
-.cerrar{
-    opacity: -0;
-    transition: all 0.5s;
-}
-
-/* Lineas de carga */
-
-.lds-ellipsis {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-}
-.lds-ellipsis div {
-    position: absolute;
-    top: 5rem;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background:violet;
-    animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
-.lds-ellipsis div:nth-child(1) {
-    left: 8px;
-    animation: lds-ellipsis1 0.6s infinite;
-}
-.lds-ellipsis div:nth-child(2) {
-    left: 8px;
-    animation: lds-ellipsis2 0.6s infinite;
-}
-.lds-ellipsis div:nth-child(3) {
-    left: 32px;
-    animation: lds-ellipsis2 0.6s infinite;
-}
-.lds-ellipsis div:nth-child(4) {
-    left: 56px;
-    animation: lds-ellipsis3 0.6s infinite;
-}
-@keyframes lds-ellipsis1 {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-        }
-}
-@keyframes lds-ellipsis3 {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
-@keyframes lds-ellipsis2 {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(24px, 0);
-    }
-}
-
-
-
 .header {
     position: relative;
     height: 11rem;
@@ -112,7 +28,7 @@ main{
     background-color: #ccffff;
     flex-direction: row;
     position: fixed;
-    z-index: 8000;
+    z-index: 10000;
     width: 100%;
     top: 0;
 } 
@@ -131,7 +47,7 @@ main{
 
 
 .nav__logo img{
-    width: 65%;
+    width: 55%;
     margin-left: 7rem;
 }
 
@@ -275,7 +191,7 @@ main{
     margin: 5rem auto;
     box-shadow: 0.1rem 0.1rem 0.7rem #87eeee ;
     border-radius: 4%;
-    margin-top: 15rem;
+    margin-top: 12rem;
 }
 
 
@@ -333,6 +249,13 @@ main{
     padding: 2rem;
     z-index: 1000;
     border-radius: 5%;
+}
+
+
+.nav-menu-link i{
+    font-size: 3rem;
+    position: absolute;
+    top: 3.8rem;
 }
 
 .barraBusqueda[type=text]{
@@ -415,30 +338,25 @@ main{
     position: relative;
 }
 
-.container2__text{
-    position: relative;
-    height: 80vh;
-}
-
-.container2__text-title{
-    position: absolute;
+.container2 p{
     font-size: 5rem;
     width: 100%;
     text-align: center;
     color: #ad5cff;
     font-weight: 800;
-    top: 15%;
-    left: 0;
+    padding-top: 20rem;
 }
 
-.container2__text-p1{
-    position: absolute;
+.container2 .text1{
     font-size: 3rem;
-    width: 70%;
-    top: 35%;
-    left: 16%;
     font-weight: 700;
-    color: #a64dff;
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    line-height: 4.1rem;
 }
 
 .container2__gato2 {
@@ -457,35 +375,34 @@ main{
 
 /* Container3 / que hacemos */
 
-
-.container3__text{
-    position: relative;
-    height: 80vh;
+.container3{
     background-image: url("./src/img/Fondo\ Tricolor.png");
     background-size: cover;
+    height: 80vh;
+    width: 100%;
+    position: relative;
 }
 
-.container3__text-title{
-    position: absolute;
+.container3 p{
     font-size: 5rem;
     width: 100%;
     text-align: center;
     color: #ad5cff;
     font-weight: 800;
-    top: 15%;
-    left: 0;
+    padding-top: 15rem;
 }
 
-.container3__text-p1{
-    position: absolute;
+.container3 .text2{
     font-size: 3rem;
-    width: 70%;
-    top: 35%;
-    left: 16%;
     font-weight: 700;
-    color: #a64dff;
+    position: absolute;
+    width: 60%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    line-height: 4.1rem;
 }
-
 
 @media (max-width :1500px){
 
@@ -497,9 +414,6 @@ main{
 
     .nav2 a{
         font-size: 1.7rem;
-    }
-    .preload img{
-        width: 18%;
     }
 
 }
@@ -578,8 +492,41 @@ main{
         width: 75%;
     }
 
-    .preload img{
-        width: 20%;
+
+    /*    Quienes somos /container2    */
+
+
+    .container2 p{
+        font-size: 4.5rem;
+        padding-top: 5rem;
+    }
+
+    .container2 .text1{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        margin-top: 3rem;
+    }
+
+
+    /* Container3 / que hacemos */
+
+    .container3{
+        background-image: url("./src/img/Fondo\ Tricolor.png");
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 p{
+        font-size: 4.5rem;
+        padding-top: 5rem;
+    }
+
+    .container3 .text2{
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        line-height: 3.5rem;
     }
 
 }
@@ -644,39 +591,46 @@ main{
         width: 67%;
     }
 
+
+    /*    Quienes somos /container2    */
+
+
+    .container2 p{
+        font-size: 4rem;
+        padding-top: 10rem;
+    }
+
+    .container2 .text1{
+        font-size: 2.3rem;
+        width: 70%;
+        line-height: 3.3rem;
+    }
+
+
+    /* Container3 / que hacemos */
+
+    .container3{
+        background-image: url("./src/img/Fondo\ Tricolor.png");
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 p{
+        font-size: 4rem;
+        padding-top: 10rem;
+    }
+
+    .container3 .text2{
+        font-size: 2.3rem;
+        width: 70%;
+        line-height: 3.3rem;
+    }
+
     .container2__gato2{
         margin-left: -0.3%;
     }
-
-    .container2__text-title{
-        font-size: 4rem;
-    }
-    
-    .container2__text-p1{
-        position: absolute;
-        font-size: 2.5rem;
-        width: 100%;
-        top: 27%;
-        left: 0;
-        padding: 0 4rem;
-    }
-
-    .container3__text-title{
-        font-size: 4rem;
-    }
-    
-    .container3__text-p1{
-        position: absolute;
-        font-size: 2.5rem;
-        width: 100%;
-        top: 27%;
-        left: 0;
-        padding: 0 4rem;
-    }
-    .preload img{
-        width: 28%;
-    }
-
 }
 
 
@@ -750,19 +704,39 @@ main{
 
     /*    Quienes somos /container2    */
 
-    .container2__text-title{
-        font-size: 4rem;
-    }
-    
-    .container2__text-p1{
-        position: absolute;
-        font-size: 2.5rem;
-        width: 100%;
-        top: 27%;
-        left: 0;
-        padding: 0 6rem;
+
+    .container2 p{
+        font-size: 3.5rem;
+        padding-top: 10rem;
     }
 
+    .container2 .text1{
+        font-size: 2.1rem;
+        width: 70%;
+        line-height: 3.3rem;
+    }
+
+
+    /* Container3 / que hacemos */
+
+    .container3{
+        background-image: url("./src/img/Fondo\ Tricolor.png");
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 p{
+        font-size: 3.5rem;
+        padding-top: 10rem;
+    }
+
+    .container3 .text2{
+        font-size: 2.1rem;
+        width: 70%;
+        line-height: 3.3rem;
+    }
 
     .container2__gato2{
         margin-left: -0.3%;
@@ -770,22 +744,6 @@ main{
     
     .container2__gato2 img{
         width: 50%;
-    }
-
-    .container3__text-title{
-        font-size: 4rem;
-    }
-    
-    .container3__text-p1{
-        position: absolute;
-        font-size: 2.5rem;
-        width: 100%;
-        top: 27%;
-        left: 0;
-        padding: 0 6rem;
-    }
-    .preload img{
-        width: 38%;
     }
 }
 
@@ -863,19 +821,43 @@ main{
     }
 
 
-    .container2__text-title{
-        font-size: 3.7rem;
-    }
-    
-    .container2__text-p1{
-        position: absolute;
-        font-size: 2.2rem;
-        width: 100%;
-        top: 25%;
-        left: 0;
-        padding: 0 4rem;
+    /*    Quienes somos /container2    */
+
+
+    .container2 p{
+        font-size: 3rem;
+        padding-top: 10rem;
     }
 
+    .container2 .text1{
+        font-size: 1.9rem;
+        width: 83%;
+        line-height: 3.3rem;
+        text-align:justify;
+    }
+
+
+    /* Container3 / que hacemos */
+
+    .container3{
+        background-image: url("./src/img/Fondo\ Tricolor.png");
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 p{
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+
+    .container3 .text2{
+        font-size: 1.9rem;
+        width: 83%;
+        line-height: 3.3rem;
+        text-align:justify;
+    }
 
     .container2__gato2{
         margin-left: -0.7%;
@@ -884,24 +866,6 @@ main{
     .container2__gato2 img{
         width: 50%;
     }
-
-    
-    .container3__text-title{
-        font-size: 3.7rem;
-    }
-    
-    .container3__text-p1{
-        position: absolute;
-        font-size: 2.2rem;
-        width: 100%;
-        top: 25%;
-        left: 0;
-        padding: 0 4rem;
-    }
-    .preload img{
-        width: 48%;
-    }
-
 }
 
 
@@ -989,24 +953,46 @@ main{
         width: 67%;
     }
 
-    .container2{
-        height: 70vh;
-    }
 
-    .container2__text-title{
+    /*    Quienes somos /container2    */
+
+
+    .container2 p{
         font-size: 3rem;
-    }
-    
-    .container2__text-p1{
-        position: absolute;
-        font-size: 1.7rem;
-        text-align: inherit;
-        width: 100%;
-        top: 25%;
-        left: 0;
-        padding: 0 2rem;
+        padding-top: 10rem;
     }
 
+    .container2 .text1{
+        font-size: 1.5rem;
+        width: 83%;
+        line-height: 3.1rem;
+        text-align:justify;
+        letter-spacing: 0;
+    }
+
+
+    /* Container3 / que hacemos */
+
+    .container3{
+        background-image: url("./src/img/Fondo\ Tricolor.png");
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .container3 p{
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+
+    .container3 .text2{
+        font-size: 1.5rem;
+        width: 83%;
+        line-height: 3.1rem;
+        text-align:justify;
+        letter-spacing: 0;
+    }
 
     .container2__gato2{
         margin-left: -1.1%;
@@ -1016,27 +1002,5 @@ main{
         width: 50%;
     }
 
-    
-    .container3{
-        height: 70vh;
-    }
-
-    .container3__text-title{
-        font-size: 3rem;
-    }
-    
-    .container3__text-p1{
-        position: absolute;
-        font-size: 1.7rem;
-        text-align: inherit;
-        width: 100%;
-        top: 25%;
-        left: 0;
-        padding: 0 2rem;
-    }
-
-    .preload img{
-        width: 68%;
-    }
 }
 
