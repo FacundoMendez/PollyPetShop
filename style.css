@@ -14,6 +14,52 @@ main{
 }
 
 
+/* preload */
+
+/* configuracion preload */
+.preload{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccffff;
+    position: fixed;
+    top: 0rem;
+    left: 0px;
+    z-index: 90000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* clase que crea js para que se cierra */
+
+.cerrar{
+    opacity: -0;
+    transition: all 0.5s;
+}
+
+
+
+.preload__img {
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ------------------- */
+
+
 .header {
     position: relative;
     height: 11rem;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
     <script defer src="../../main.js"></script>
-    <link rel="stylesheet" href="./perros.css">
+    <link rel="stylesheet" href="../tienda.css">
     <title>Tienda</title>
 </head>
 <body>
@@ -49,10 +49,23 @@
     </header>
 
     <main>
-        <div class="container">
-            <div id="seccion"><p></p></div>
+        <div class="selec">
+            <form action="" id="formPG">
+                <input type="checkbox" id="Perros" name="casilla" checked> &nbsp; Perros <br>
+                <input type="checkbox" id="Gatos" name="casilla"> &nbsp; Gatos <br>
+            </form>
+            <form action="" id="formAA">
+                <input type="checkbox" id="TodosProductos" name="casilla"> &nbsp; Todos los productos <br>
+                <input type="checkbox" id="Alimentos" name="casilla" > &nbsp; Alimentos <br>
+                <input type="checkbox" id="Accesorios" name="casilla"> &nbsp;  Accesorios <br>
+                <input type="checkbox" id="Juguetes" name="casilla"> &nbsp; Jueguetes <br>
+                <input type="checkbox" id="Camitas" name="casilla"> &nbsp; Camitas <br>
+            </form>
         </div>
-
+        <div class="container" >
+            <div id="prod"></div>
+        </div>
+ 
     </main>
 
     <script src="./perros.js"></script>

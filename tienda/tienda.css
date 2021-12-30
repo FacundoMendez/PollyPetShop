@@ -149,7 +149,7 @@ body{
 
 
   /* MOBILE */
-@media (max-width: 1029px) {
+@media (max-width: 1080px) {
 
     .header {
         height: 60px;
@@ -293,20 +293,22 @@ main{
 .container{
     position: relative;
     width: 100vw;
-    padding-bottom: 20rem;
+    padding-bottom: 40rem;
+    margin-left: 5rem;
 }
 
 
 #prod{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 80%;
-    gap: 3rem;
-    margin-left: 15rem;
-    margin-top: 5rem;
+    width: 70%;
+    gap: 4rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+    margin-top: -40rem;
 }
 #prod a{
     text-decoration: none;
@@ -389,11 +391,12 @@ main{
     display: flex;
     flex-direction: column;
     width: 30rem;
-    position: absolute;
+    position: relative;
     line-height: 4rem;
     z-index: 1000;
     gap: 2rem;
     padding-top: 5rem;
+    margin-left: 5rem;
 }
 
 #formPG{
@@ -442,6 +445,18 @@ input[type=checkbox]{
         font-size: 1.7rem;
     }
 
+
+    #prod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 80%;
+        gap: 3rem;
+        margin-left: 25rem;
+    }
+
 }
 
 
@@ -484,7 +499,30 @@ input[type=checkbox]{
         font-size: 1.5rem;
     }
 
+    /* productos */
+    #prod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 80%;
+        gap: 3rem;
+        margin-left: 22rem;
+    }
 
+
+    /* Forms */
+
+    .selec{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        line-height: 4rem;
+        z-index: 1000;
+        gap: 2rem;
+        margin-left: 2rem;
+    }
 }
 
 
@@ -500,7 +538,28 @@ input[type=checkbox]{
         font-size: 1.3rem;
     }
 
+    .selec{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        line-height: 4rem;
+        z-index: 1000;
+        gap: 2rem;
+    }
 
+    #prod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 70%;
+        gap: 3rem;
+        margin: 0 auto;
+        padding: 0 6rem;
+        margin-left:25rem;
+        margin-top: -40rem;
+    }
 }
 
 

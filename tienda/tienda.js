@@ -345,4 +345,139 @@ let Ali=document.getElementById("Alimentos");
     }
     
 }) */
+let Alimentos = document.getElementById("Alimentos")
+let Accesorios = document.getElementById("Accesorios")
+let Juguetes = document.getElementById("Juguetes")
+let Camitas = document.getElementById("Camitas")
+let Gatos = document.getElementById("Gatos")
+let Perros = document.getElementById("Perros")
+
+function check(){
+    Perros.addEventListener("click", function(){
+        if (Perros.checked){
+            prod.innerHTML ="";
+            crearDivsPerros()
+        }
+    });
+    Gatos.addEventListener("click", function(){
+        if (Gatos.checked){
+            prod.innerHTML ="";
+            crearDivsGatos()
+        }
+    });
+    Alimentos.addEventListener("click", function(){
+        if (Alimentos.checked){
+            prod.innerHTML ="";
+            crearDivsAlimentos()
+        }
+    });
+    Juguetes.addEventListener("click", function(){
+        if (Juguetes.checked){
+            prod.innerHTML ="";
+            crearDivsJuguetes()
+        }
+    });
+    Camitas.addEventListener("click", function(){
+        if (Camitas.checked){
+            prod.innerHTML ="";
+            crearDivsCamitas()
+        }
+    });
+    Accesorios.addEventListener("click", function(){
+        if (Accesorios.checked){
+            prod.innerHTML ="";
+            crearDivsAccesorios()
+        }
+    });
+
+    /* --------Perro todo ---- */
+
+    Perros.addEventListener("click", function(){
+        Accesorios.addEventListener("click", function(){
+            if (Perros.checked){
+                prod.innerHTML ="";
+                crearDivsAccesoriosPerro()
+            }
+        });
+    });
+
+    Perros.addEventListener("click", function(){
+        Juguetes.addEventListener("click", function(){
+            if (Perros.checked){
+                prod.innerHTML ="";
+                crearDivsJuguetesPerro()
+            }
+        });
+    });
+
+    Perros.addEventListener("click", function(){
+        Alimentos.addEventListener("click", function(){
+            if (Perros.checked){
+                prod.innerHTML ="";
+                crearDivsAlimentosPerro()
+            }
+        });
+    });
+
+    Perros.addEventListener("click", function(){
+        Camitas.addEventListener("click", function(){
+            if (Perros.checked){
+                prod.innerHTML ="";
+                crearDivsCamitasPerro()
+            }
+        });
+    });
+    
+      /* --------Gatos todo ---- */
+
+      Gatos.addEventListener("click", function(){
+        Accesorios.addEventListener("click", function(){
+            if (Gatos.checked){
+                prod.innerHTML ="";
+                crearDivsAccesoriosGato()
+            }
+        });
+    });
+
+    Gatos.addEventListener("click", function(){
+        Juguetes.addEventListener("click", function(){
+            if (Gatos.checked){
+                prod.innerHTML ="";
+                crearDivsJuguetesGato()
+            }
+        });
+    });
+
+    Gatos.addEventListener("click", function(){
+        Alimentos.addEventListener("click", function(){
+            if (Gatos.checked){
+                prod.innerHTML ="";
+                crearDivsAlimentosGato()
+            }
+        });
+    });
+
+    Gatos.addEventListener("click", function(){
+        Camitas.addEventListener("click", function(){
+            if (Gatos.checked){
+                prod.innerHTML ="";
+                crearDivsCamitasGato()
+            }
+        });
+    });
+
+
+      /* --------todo ---- */
+
+    TodosProductos.addEventListener("click", function(){
+        if (TodosProductos.checked){
+            prod.innerHTML ="";
+            crearDivsTodo();
+        }
+    });
+
+}
+
+check()
+
 
