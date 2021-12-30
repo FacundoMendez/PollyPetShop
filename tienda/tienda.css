@@ -9,9 +9,13 @@ html{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body{
+    background-color: rgb(250, 250, 250);
+}
 
 .header {
     position: relative;
+    
 }
 
 .nav{
@@ -275,6 +279,9 @@ html{
 main{
     top: 4rem;
     position: relative;
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+
 }
 
 .cuenta{
@@ -285,10 +292,142 @@ main{
 
 .container{
     position: relative;
-    border: 2px solid rgb(0, 0, 0);
-    width: 24rem;
-    height: 130vh;
+    width: 100vw;
+    padding-bottom: 20rem;
 }
+
+
+#prod{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    gap: 3rem;
+    margin-left: 15rem;
+    margin-top: 5rem;
+}
+#prod a{
+    text-decoration: none;
+}
+
+.prod__marco{
+    width: 28rem;
+    height: 42rem;
+    border-radius: 5px;
+    position: relative;
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.prod__img img{
+    width: 100%;
+}
+
+.prod__title{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: black;
+    margin-top: -1rem;
+}
+
+
+.prod__precio{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: black;
+    margin-top: 1.5rem;
+}
+
+.prod__agregar{
+    width: 70%;
+    height: 3.5rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    padding: 0.8rem;
+    transform: translate(-50%,-50%);
+    background-color: #d7f7f7 ;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 0.1px solid rgba(0, 0, 0, 0.185);
+}
+
+.prod__agregar p{
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.prod__agregar > p:hover{
+    font-size: 1.26rem;
+}
+.prod__agregar:hover{
+    border: 0.1px solid rgba(0, 0, 0, 0.418);
+}
+
+.prod__marco:hover{
+    width: 27.8rem;
+    height: 41.8rem;
+    box-shadow: rgba(0, 0, 0, 0.418) 0px 10px 20px, rgba(0, 0, 0, 0.356) 0px 6px 6px;
+}
+
+
+
+/* Forms */
+
+.selec{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    position: absolute;
+    line-height: 4rem;
+    z-index: 1000;
+    gap: 2rem;
+    padding-top: 5rem;
+}
+
+#formPG{
+    font-size: 2rem;
+    display: inline-block;
+    width: 25rem;
+    margin-left: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.144);
+}
+
+#formAA{
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 25rem;
+    height: 25rem;
+    margin-left: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem ;
+    border: 2px solid rgba(0, 0, 0, 0.144);
+}
+
+input[type=checkbox]{
+  transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari y Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+
+
+
+
+
 
 
 @media (max-width :1500px){

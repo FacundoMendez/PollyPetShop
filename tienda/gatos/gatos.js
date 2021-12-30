@@ -38,7 +38,3 @@ Productos.push(new Tienda(4004,"Juguete 4","juguetes",5,"G", 100));
 Productos.push(new Tienda(4005,"Juguete 5","juguetes",5,"G", 100));
 Productos.push(new Tienda(4006,"Juguete 6","juguetes",5,"G", 100));
 
-
-/* 
-document.getElementById("lista").onclick = function(){
-    document.getElementById("listpedidos").style.display="block"; */

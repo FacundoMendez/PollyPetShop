@@ -104,6 +104,13 @@ main{
 
     }
 
+    .carrito .fas{
+        font-size: 3rem;
+        position: relative;
+        top: 2rem;
+        color: #83c5f7;
+    }
+
     .nav-menu {
         flex-direction: column;
         align-items: center;
@@ -117,7 +124,7 @@ main{
         overflow-y: auto;
         left: 100%;
         transition: left 0.3s;
-        padding-top: 20rem;
+        padding-top: 17rem;
     }
     .nav-menu-item {
         line-height: 80px;    
