@@ -305,7 +305,7 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     width: 70%;
-    gap: 4rem;
+    gap: 5rem;
     margin: 0 auto;
     padding: 0 5rem;
     margin-top: -40rem;
@@ -315,8 +315,8 @@ main{
 }
 
 .prod__marco{
-    width: 28rem;
-    height: 42rem;
+    width: 30rem;
+    height: 48rem;
     border-radius: 5px;
     position: relative;
     background-color: rgb(250, 250, 250);
@@ -328,8 +328,10 @@ main{
 }
 
 .prod__title{
+    padding:0 1rem;
+    padding-top: 2rem;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-align: center;
@@ -340,7 +342,7 @@ main{
 
 .prod__precio{
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-align: center;
@@ -350,11 +352,11 @@ main{
 
 .prod__agregar{
     width: 70%;
-    height: 3.5rem;
+    height: 4.5rem;
     position: absolute;
     top: 90%;
     left: 50%;
-    padding: 0.8rem;
+    padding: 1rem;
     transform: translate(-50%,-50%);
     background-color: #d7f7f7 ;
     margin-top: 0.5rem;
@@ -364,22 +366,25 @@ main{
 
 .prod__agregar p{
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.45rem;
     font-weight: 900;
     letter-spacing: 1px;
     text-align: center;
 }
 
-.prod__agregar > p:hover{
-    font-size: 1.26rem;
+.prod__agregar:hover > p{
+    font-size: 1.44rem;
+    color: #a200ff;
 }
 .prod__agregar:hover{
-    border: 0.1px solid rgba(0, 0, 0, 0.418);
+    border: 0.1px solid #a200ff;
+    background-color: rgb(220, 255, 255) ;
+
 }
 
 .prod__marco:hover{
-    width: 27.8rem;
-    height: 41.8rem;
+    width: 29.8rem;
+    height: 47.8rem;
     box-shadow: rgba(0, 0, 0, 0.418) 0px 10px 20px, rgba(0, 0, 0, 0.356) 0px 6px 6px;
 }
 
@@ -426,8 +431,6 @@ input[type=checkbox]{
   -webkit-transform: scale(2); /* Safari y Chrome */
   -o-transform: scale(2); /* Opera */
 }
-
-
 
 
 
