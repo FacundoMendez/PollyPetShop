@@ -14,6 +14,19 @@ main{
 }
 
 
+
+
+.ball{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 100%;
+    background-color: #f2fdff;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+
 /* preload */
 
 /* configuracion preload */
@@ -331,6 +344,7 @@ main{
     left: 35%;
     transform: translate(-50%, -50%);
     z-index: 1000;
+
 }
 
 .container__gatoGrande img{
@@ -734,6 +748,7 @@ main{
     .container__gatoGrande{
         top: 38%;
         left: 33%;
+    
     }
 
     .container__gatoGrande img{
@@ -744,6 +759,7 @@ main{
         bottom: -2.3%;
         right:8%;
         width: 30%;
+        
     }
 
     .hueso{
