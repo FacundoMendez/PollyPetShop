@@ -26,3 +26,30 @@
   },4000)
   
 })();
+
+
+(() =>{
+  gsap                             
+
+  .timeline({                     
+      defaults:{                  
+          duration: 7,            
+          delay:1,
+      }
+  })
+  
+  
+  .to(".container__gato1",{
+      y: -147,
+      opacity: 1,
+  })
+
+  .to(".container__gato1",{
+    ease: "elastic.out(2.05,0.5)",
+    duration:0,
+    delay:0,
+    y: -149,
+    zIndex: 102,
+  })
+
+})();
