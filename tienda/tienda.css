@@ -392,6 +392,10 @@ main{
 
 /* Forms */
 
+.selec__mobile{
+    display:none;
+}
+
 .selec{
     display: flex;
     flex-direction: column;
@@ -614,6 +618,23 @@ input[type=checkbox]{
     .nav2 span{
         padding: 0 0.4rem;
     }
+
+    /* select */
+
+    .select__desktop{
+        display: none;
+    }
+    .selec__mobile{
+        display: inline-block;
+    }
+
+    .selec__button{
+        width: 80%;
+        height: 5rem;
+        border-radius: 5%;
+        border:#b871ff48; ;
+    }
+    
 
 }
 
