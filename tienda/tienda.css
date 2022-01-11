@@ -202,7 +202,7 @@ body{
     }
 
     .cuenta a{
-       font-size: 2rem;
+        font-size: 2rem;
     }
 
     .nav__logo img{
@@ -269,6 +269,7 @@ body{
     text-decoration: none;
     font-size: 1.7rem;
     color: #ad5cff;
+    letter-spacing: 1px;
     font-weight: 800;
     text-transform: uppercase;;
 }
@@ -362,23 +363,25 @@ main{
     margin-top: 0.5rem;
     border-radius: 5px;
     border: 0.1px solid rgba(0, 0, 0, 0.185);
+    cursor:pointer;
 }
 
 .prod__agregar p{
     width: 100%;
-    font-size: 1.45rem;
-    font-weight: 900;
+    font-size: 1.6rem;
+    font-weight: 700;
     letter-spacing: 1px;
+    color: #8902f7;
     text-align: center;
 }
 
 .prod__agregar:hover > p{
-    font-size: 1.44rem;
+    font-size: 1.62rem;
     color: #a200ff;
 }
 .prod__agregar:hover{
-    border: 0.1px solid #a200ff;
-    background-color: rgb(220, 255, 255) ;
+    border: 0.1px solid #a200ff69;
+    background-color: rgba(191, 255, 255, 0.808) ;
 
 }
 
