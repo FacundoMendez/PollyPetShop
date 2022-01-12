@@ -122,17 +122,17 @@ Productos.push(new Tienda(4011,"Gigwi orange mosnter rope squeaker m (26cm) ","j
 
 
 
-Productos.push(new Tienda(4000,"Giroscio wobilly -1","juguetes",5,"../juguetes/src/img/gato/ju4000-G.jpg" ,"G", 782));
-Productos.push(new Tienda(4001,"Classic Speingy worms ","juguetes",5,"../juguetes/src/img/gato/ju4001-G.jpg" ,"G", 964));
-Productos.push(new Tienda(4002,"Cobayo vibrante cat toy","juguetes",5,"../juguetes/src/img/gato/ju4002-G.jpg" ,"G", 454));
-Productos.push(new Tienda(4003,"Juguete interactivo gato Butterfly ","juguetes",5,"../juguetes/src/img/gato/ju4003-G.jpg" ,"G", 1310));
-Productos.push(new Tienda(4004,"Juguete interactivo gato Meow Planet","juguetes",5,"../juguetes/src/img/gato/ju4004-G.jpg" ,"G", 1960));
-Productos.push(new Tienda(4005,"Juguete interactivo Gato Fortune","juguetes",5,"../juguetes/src/img/gato/ju4005-G.jpg" ,"G", 1485));
-Productos.push(new Tienda(4006,"Juguete interactivo Gato Molino ","juguetes",5,"../juguetes/src/img/gato/ju4006-G.jpg" ,"G", 1310));
-Productos.push(new Tienda(4007,"Juguete interactivo Gato Track Ball","juguetes",5,"../juguetes/src/img/gato/ju4007-G.jpg" ,"G", 3222));
-Productos.push(new Tienda(4008,"Juguete gato porta alimento con cañita","juguetes",5,"../juguetes/src/img/gato/ju4008-G.jpg" ,"G", 1844));
-Productos.push(new Tienda(4009,"Juguete gato torre 3 pisos con carita","juguetes",5,"../juguetes/src/img/gato/ju4009-G.jpg" ,"G", 1690));
-Productos.push(new Tienda(4010,"Juguete gato rombo plastico ferplast x3 ","juguetes",5,"../juguetes/src/img/gato/ju4010-G.jpg" ,"G", 684));
-Productos.push(new Tienda(4011,"Rascals pelota dosificadora gato","juguetes",5,"../juguetes/src/img/gato/ju4011-G.jpg" ,"G", 734));
+Productos.push(new Tienda(4001,"Juguete interactivo gato Butterfly ","juguetes",5,"../juguetes/src/img/gato/ju4003-G.jpg" ,"G", 1310));
+Productos.push(new Tienda(4002,"Juguete interactivo gato Meow Planet","juguetes",5,"../juguetes/src/img/gato/ju4004-G.jpg" ,"G", 1960));
+Productos.push(new Tienda(4003,"Juguete interactivo Gato Fortune","juguetes",5,"../juguetes/src/img/gato/ju4005-G.jpg" ,"G", 1485));
+Productos.push(new Tienda(4004,"Juguete interactivo Gato Molino ","juguetes",5,"../juguetes/src/img/gato/ju4006-G.jpg" ,"G", 1310));
+Productos.push(new Tienda(4005,"Juguete interactivo Gato Track Ball","juguetes",5,"../juguetes/src/img/gato/ju4007-G.jpg" ,"G", 3222));
+Productos.push(new Tienda(4006,"Giroscio wobilly -1","juguetes",5,"../juguetes/src/img/gato/ju4000-G.jpg" ,"G", 782));
+Productos.push(new Tienda(4007,"Classic Speingy worms ","juguetes",5,"../juguetes/src/img/gato/ju4001-G.jpg" ,"G", 964));
+Productos.push(new Tienda(4008,"Cobayo vibrante cat toy","juguetes",5,"../juguetes/src/img/gato/ju4002-G.jpg" ,"G", 454));
+Productos.push(new Tienda(4009,"Juguete gato porta alimento con cañita","juguetes",5,"../juguetes/src/img/gato/ju4008-G.jpg" ,"G", 1844));
+Productos.push(new Tienda(4010,"Juguete gato torre 3 pisos con carita","juguetes",5,"../juguetes/src/img/gato/ju4009-G.jpg" ,"G", 1690));
+Productos.push(new Tienda(4011,"Juguete gato rombo plastico ferplast x3 ","juguetes",5,"../juguetes/src/img/gato/ju4010-G.jpg" ,"G", 684));
+Productos.push(new Tienda(4012,"Rascals pelota dosificadora gato","juguetes",5,"../juguetes/src/img/gato/ju4011-G.jpg" ,"G", 734));
 Productos.push(new Tienda(4013,"Comedero interactivo food tree catit","juguetes",5,"../juguetes/src/img/gato/ju4013-G.jpg" ,"G", 5154));
 Productos.push(new Tienda(4014,"Rascador cilindrico 28,8 cm","juguetes",5,"../juguetes/src/img/gato/ju4014-G.jpg" ,"G", 2040));
