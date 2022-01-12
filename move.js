@@ -19,9 +19,8 @@
     })
 
     gsap.to(".imgLogo",{    
-        duration:3,
+        duration:4,
         delay:0,   
-        opacity:0,
     })
 
     gsap                             

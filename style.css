@@ -42,12 +42,13 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 /* clase que crea js para que se cierra */
 
 .cerrar{
-    opacity: -0;
+    opacity: 0;
     transition: all 0.5s;
 }
 
@@ -55,6 +56,14 @@ main{
 
 .preload__img {
     animation: lds-dual-ring 1.2s linear infinite;
+    filter: drop-shadow(1.1px 0.1px 0.1px #000000);
+    margin-top: 2rem;
+}
+
+.preload__img img{
+    width:105%;
+    height: 60%;
+    
 }
 
 @keyframes lds-dual-ring {
@@ -102,6 +111,7 @@ main{
 
 .nav__logo{
     margin-top: 0.5%;   
+
 }
 
 
@@ -510,6 +520,7 @@ main{
     .container2 p{
         font-size: 4.5rem;
         padding-top: 5rem;
+        margin-top: -4.5rem;
     }
 
     .container2 .text1{
