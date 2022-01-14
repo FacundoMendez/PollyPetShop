@@ -8,6 +8,9 @@ export {
 
 
 
+import{carrito} from "../carrito.js"
+
+
 import{Productos} from "../arrayProductos.js"
 
 
@@ -33,16 +36,23 @@ function crearDivsAccesoriosPerro(){
     let filtroAccesoriosPerro = Productos.filter(elem => elem.seccion ==="accesorios" && elem.tipo === "P")
 
     for (let i = 0; i < filtroAccesoriosPerro.length; i++){
+        
         prod.innerHTML += `    
-        <div class="prod__marco">
-            <div class="prod__img"><img src="${filtroAccesoriosPerro[i].img}" alt=""></div>
-            <div class="prod__title"><p> ${filtroAccesoriosPerro[i].nombre}</p> </div>
-            <div class="prod__precio"><p>$${filtroAccesoriosPerro[i].precio}</p></div>
-            <div id="buttonCarrito" class="prod__agregar"><p>Agregar al Carrito</p></div> 
-        </div>
-    `;
+            <div class="prod__marco">
+                <div class="prod__img"><img src="${filtroAccesoriosPerro[i].img}" alt=""></div>
+                <div class="prod__title"><p> ${filtroAccesoriosPerro[i].nombre}</p> </div>
+                <div class="prod__precio"><p>$${filtroAccesoriosPerro[i].precio}</p></div>
+                <div class="prod__agregar" id="${filtroAccesoriosPerro[i].id}"><p>Agregar al Carrito</p></div> 
+            </div>
+        `;
+
+    carrito();
+
     }
+
+
 }
+
 
 
 
@@ -51,13 +61,15 @@ function crearDivsJuguetesPerro(){
 
     for (let i = 0; i < filtroJuguetesPerro.length; i++){
         prod.innerHTML += `    
-        <div class="prod__marco">
-            <div class="prod__img"><img src="${filtroJuguetesPerro[i].img}" alt=""></div>
-            <div class="prod__title"><p> ${filtroJuguetesPerro[i].nombre}</p> </div>
-            <div class="prod__precio"><p>$${filtroJuguetesPerro[i].precio}</p></div>
-            <div id="buttonCarrito" class="prod__agregar"><p>Agregar al Carrito</p></div> 
-        </div>
-    `;
+            <div class="prod__marco">
+                <div class="prod__img"><img src="${filtroJuguetesPerro[i].img}" alt=""></div>
+                <div class="prod__title"><p> ${filtroJuguetesPerro[i].nombre}</p> </div>
+                <div class="prod__precio"><p>$${filtroJuguetesPerro[i].precio}</p></div>
+                <div class="prod__agregar" id="${filtroJuguetesPerro[i].id}"><p>Agregar al Carrito</p></div> 
+            </div>
+        `;
+
+        carrito();
     }
 }
 
@@ -68,13 +80,14 @@ function crearDivsCuchasPerro(){
 
     for (let i = 0; i < filtroCuchasPerro.length; i++){
         prod.innerHTML += `    
-        <div class="prod__marco">
-            <div class="prod__img"><img src="${filtroCuchasPerro[i].img}" alt=""></div>
-            <div class="prod__title"><p> ${filtroCuchasPerro[i].nombre}</p> </div>
-            <div class="prod__precio"><p>$${filtroCuchasPerro[i].precio}</p></div>
-            <div id="buttonCarrito" class="prod__agregar"><p>Agregar al Carrito</p></div> 
-        </div>
-    `;
+            <div class="prod__marco">
+                <div class="prod__img"><img src="${filtroCuchasPerro[i].img}" alt=""></div>
+                <div class="prod__title"><p> ${filtroCuchasPerro[i].nombre}</p> </div>
+                <div class="prod__precio"><p>$${filtroCuchasPerro[i].precio}</p></div>
+                <div class="prod__agregar" id="${filtroCuchasPerro[i].id}"><p>Agregar al Carrito</p></div> 
+            </div>
+        `;
+        carrito();
     }
 }
 
@@ -84,13 +97,14 @@ function crearDivsAlimentosPerro(){
 
     for (let i = 0; i < filtroAlimentosPerro.length; i++){
         prod.innerHTML += `    
-        <div class="prod__marco">
-            <div class="prod__img"><img src="${filtroAlimentosPerro[i].img}" alt=""></div>
-            <div class="prod__title"><p> ${filtroAlimentosPerro[i].nombre}</p> </div>
-            <div class="prod__precio"><p>$${filtroAlimentosPerro[i].precio}</p></div>
-            <div id="buttonCarrito" class="prod__agregar"><p>Agregar al Carrito</p></div> 
-        </div>
-    `;
+            <div class="prod__marco">
+                <div class="prod__img"><img src="${filtroAlimentosPerro[i].img}" alt=""></div>
+                <div class="prod__title"><p> ${filtroAlimentosPerro[i].nombre}</p> </div>
+                <div class="prod__precio"><p>$${filtroAlimentosPerro[i].precio}</p></div>
+                <div class="prod__agregar" id="${filtroAlimentosPerro[i].id}"><p>Agregar al Carrito</p></div> 
+            </div>
+        `;
+        carrito();
     }
 }
 

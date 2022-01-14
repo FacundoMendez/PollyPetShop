@@ -21,11 +21,11 @@ Productos.push(new Tienda(1012,"Cucha Iglu kennel Medium 92x58x58","cuchas",5,".
 Productos.push(new Tienda(1013,"Cucha fibra orione Mediana 90x80x74","cuchas",5,"../cuchas/src/img/perro/cam1013-P.jpg" ,"P", 11566));
 Productos.push(new Tienda(1014,"Cucha fibra orione Gigante 120x104x90","cuchas",5,"../cuchas/src/img/perro/cam1014-P.jpg" ,"P", 13248));
 
-Productos.push(new Tienda(1000,"Cucha para gato con techo","cuchas",5,"../cuchas/src/img/gato/cam1000-G.jpg" ,"G", 2719));
-Productos.push(new Tienda(1001,"Cucha para gato n°1","cuchas",5,"../cuchas/src/img/gato/cam1001-G.jpg" ,"G", 3209));
-Productos.push(new Tienda(1002,"Cucha para gato n°2","cuchas",5,"../cuchas/src/img/gato/cam1002-G.jpg" ,"G", 2516));
-Productos.push(new Tienda(1003,"Cucha para gato n°3","cuchas",5,"../cuchas/src/img/gato/cam1003-G.jpg" ,"G", 4705));
-Productos.push(new Tienda(1004,"Cucha para gato n°4","cuchas",5,"../cuchas/src/img/gato/cam1004-G.jpg" ,"G", 3413));
+Productos.push(new Tienda(10000,"Cucha para gato con techo","cuchas",5,"../cuchas/src/img/gato/cam1000-G.jpg" ,"G", 2719));
+Productos.push(new Tienda(10001,"Cucha para gato n°1","cuchas",5,"../cuchas/src/img/gato/cam1001-G.jpg" ,"G", 3209));
+Productos.push(new Tienda(10002,"Cucha para gato n°2","cuchas",5,"../cuchas/src/img/gato/cam1002-G.jpg" ,"G", 2516));
+Productos.push(new Tienda(10003,"Cucha para gato n°3","cuchas",5,"../cuchas/src/img/gato/cam1003-G.jpg" ,"G", 4705));
+Productos.push(new Tienda(10004,"Cucha para gato n°4","cuchas",5,"../cuchas/src/img/gato/cam1004-G.jpg" ,"G", 3413));
 
 /* Productos seccion Accesorios */
 Productos.push(new Tienda(2000,"Correa Y Collar P/perro Pets Class Conjunto Ec","accesorios",5,"../accesorios/src/img/perro/acc2000-P.jpg" ,"P", 415));
@@ -43,26 +43,26 @@ Productos.push(new Tienda(2011,"Shampoo P/perro Pets Class Pulguicida/garrap.","
 Productos.push(new Tienda(2012,"Huesos Para Perro Vaquero Medium 150 Gr","accesorios",5,"../accesorios/src/img/perro/acc2012-P.jpg" ,"P", 215));
 
 
-Productos.push(new Tienda(2000,"Piedra Sanit Gato Absorsol 3,6k","accesorios",5,"../accesorios/src/img/gato/acc2000-G.jpg" ,"G", 448));
-Productos.push(new Tienda(2001,"Palita Sanitaria Con Ratrillo","accesorios",5,"../accesorios/src/img/gato/acc2001-G.jpg" ,"G", 104));
-Productos.push(new Tienda(2002,"Piedras Sanitarias Tidy Cats Purina","accesorios",5,"../accesorios/src/img/gato/acc2002-G.jpg" ,"G", 265));
-Productos.push(new Tienda(2003,"Rascals correa y arnes","accesorios",5,"../accesorios/src/img/gato/acc2003-G.jpg" ,"G", 888.00));
-Productos.push(new Tienda(2005,"Collar rascals para gato","accesorios",5,"../accesorios/src/img/gato/acc2005-G.jpg" ,"G", 416));
-Productos.push(new Tienda(2006,"Comedor plastico forma gato","accesorios",5,"../accesorios/src/img/gato/acc2006-G.jpg" ,"G", 156));
-Productos.push(new Tienda(2007,"Fuente bebedero gato 2lt","accesorios",5,"../accesorios/src/img/gato/acc2007-G.jpg" ,"G", 5808));
-Productos.push(new Tienda(2008,"Comedor forma de gato con soporte de pie","accesorios",5,"../accesorios/src/img/gato/acc2008-G.jpg" ,"G", 1039));
-Productos.push(new Tienda(2009,"Tunel para gatos con colchoneta","accesorios",5,"../accesorios/src/img/gato/acc2009-G.jpg" ,"G", 7390));
-Productos.push(new Tienda(2010,"Tunel triple para gato zootec","accesorios",5,"../accesorios/src/img/gato/acc2010-G.jpg" ,"G", 3442));
-Productos.push(new Tienda(2011,"Comedero interactivo Digger Catit","accesorios",5,"../accesorios/src/img/gato/acc2011-G.jpg" ,"G", 1806));
-Productos.push(new Tienda(2012,"Centro de masaje para gato","accesorios",5,"../accesorios/src/img/gato/acc2012-G.jpg" ,"G", 5562));
-Productos.push(new Tienda(2013,"Alicate cortauñas tijera gato","accesorios",5,"../accesorios/src/img/gato/acc2013-G.jpg" ,"G", 510));
-Productos.push(new Tienda(2014,"Collar pulguicida tea gato","accesorios",5,"../accesorios/src/img/gato/acc2014-G.jpg" ,"G", 866));
-Productos.push(new Tienda(2015,"Promo x10 piedritas sanicat x 4kg","accesorios",5,"../accesorios/src/img/gato/acc2015-G.jpg" ,"G", 2145));
-Productos.push(new Tienda(2016,"Promo x5 priedrias sanicat x 4kg","accesorios",5,"../accesorios/src/img/gato/acc2016-G.jpg" ,"G", 1110));
-Productos.push(new Tienda(2017,"Litera con borde grande (42x52x17)","accesorios",5,"../accesorios/src/img/gato/acc2017-G.jpg" ,"G", 2250));
-Productos.push(new Tienda(2018,"Bebedero automatico durapets","accesorios",5,"../accesorios/src/img/gato/acc2018-G.jpg" ,"G", 4271));
-Productos.push(new Tienda(2019,"Firesur piedritas sanitarias x15kg","accesorios",5,"../accesorios/src/img/gato/acc2019-G.jpg" ,"G", 650));
-Productos.push(new Tienda(2020,"Promo x5 firesur Piedritas x15kg","accesorios",5,"../accesorios/src/img/gato/acc2020-G.jpg" ,"G", 3021));
+Productos.push(new Tienda(20000,"Piedra Sanit Gato Absorsol 3,6k","accesorios",5,"../accesorios/src/img/gato/acc2000-G.jpg" ,"G", 448));
+Productos.push(new Tienda(20001,"Palita Sanitaria Con Ratrillo","accesorios",5,"../accesorios/src/img/gato/acc2001-G.jpg" ,"G", 104));
+Productos.push(new Tienda(20002,"Piedras Sanitarias Tidy Cats Purina","accesorios",5,"../accesorios/src/img/gato/acc2002-G.jpg" ,"G", 265));
+Productos.push(new Tienda(20003,"Rascals correa y arnes","accesorios",5,"../accesorios/src/img/gato/acc2003-G.jpg" ,"G", 888.00));
+Productos.push(new Tienda(20005,"Collar rascals para gato","accesorios",5,"../accesorios/src/img/gato/acc2005-G.jpg" ,"G", 416));
+Productos.push(new Tienda(20006,"Comedor plastico forma gato","accesorios",5,"../accesorios/src/img/gato/acc2006-G.jpg" ,"G", 156));
+Productos.push(new Tienda(20007,"Fuente bebedero gato 2lt","accesorios",5,"../accesorios/src/img/gato/acc2007-G.jpg" ,"G", 5808));
+Productos.push(new Tienda(20008,"Comedor forma de gato con soporte de pie","accesorios",5,"../accesorios/src/img/gato/acc2008-G.jpg" ,"G", 1039));
+Productos.push(new Tienda(20009,"Tunel para gatos con colchoneta","accesorios",5,"../accesorios/src/img/gato/acc2009-G.jpg" ,"G", 7390));
+Productos.push(new Tienda(20010,"Tunel triple para gato zootec","accesorios",5,"../accesorios/src/img/gato/acc2010-G.jpg" ,"G", 3442));
+Productos.push(new Tienda(20011,"Comedero interactivo Digger Catit","accesorios",5,"../accesorios/src/img/gato/acc2011-G.jpg" ,"G", 1806));
+Productos.push(new Tienda(20012,"Centro de masaje para gato","accesorios",5,"../accesorios/src/img/gato/acc2012-G.jpg" ,"G", 5562));
+Productos.push(new Tienda(20013,"Alicate cortauñas tijera gato","accesorios",5,"../accesorios/src/img/gato/acc2013-G.jpg" ,"G", 510));
+Productos.push(new Tienda(20014,"Collar pulguicida tea gato","accesorios",5,"../accesorios/src/img/gato/acc2014-G.jpg" ,"G", 866));
+Productos.push(new Tienda(20015,"Promo x10 piedritas sanicat x 4kg","accesorios",5,"../accesorios/src/img/gato/acc2015-G.jpg" ,"G", 2145));
+Productos.push(new Tienda(20016,"Promo x5 priedrias sanicat x 4kg","accesorios",5,"../accesorios/src/img/gato/acc2016-G.jpg" ,"G", 1110));
+Productos.push(new Tienda(20017,"Litera con borde grande (42x52x17)","accesorios",5,"../accesorios/src/img/gato/acc2017-G.jpg" ,"G", 2250));
+Productos.push(new Tienda(20018,"Bebedero automatico durapets","accesorios",5,"../accesorios/src/img/gato/acc2018-G.jpg" ,"G", 4271));
+Productos.push(new Tienda(20019,"Firesur piedritas sanitarias x15kg","accesorios",5,"../accesorios/src/img/gato/acc2019-G.jpg" ,"G", 650));
+Productos.push(new Tienda(20020,"Promo x5 firesur Piedritas x15kg","accesorios",5,"../accesorios/src/img/gato/acc2020-G.jpg" ,"G", 3021));
 
 
 /* Productos seccion Alimentos */
@@ -89,22 +89,22 @@ Productos.push(new Tienda(3019,"Alimento Para Perros Pedigree Cachorros 85 Gr","
 Productos.push(new Tienda(3020,"Alimento Para Perros Petclass Pouch Pollo 85 Gr","alimentos",5,"../alimentos/src/img/perro/ali3020.jpg" ,"P", 540));
 
 
-Productos.push(new Tienda(3000,"Alimento Whiskas Para Gatos Carne 3kg","alimentos",5,"../alimentos/src/img/gato/ali3000-G.jpg" ,"G", 1347));
-Productos.push(new Tienda(3001,"Alimento Whiskas Para Gatos Carne 500gr","alimentos",5,"../alimentos/src/img/gato/ali3001-G.jpg" ,"G", 268));
-Productos.push(new Tienda(3002,"Alimento Whiskas Para Gatos Pescado 6kg","alimentos",5,"../alimentos/src/img/gato/ali3002-G.jpg" ,"G", 2414));
-Productos.push(new Tienda(3003,"Alimento Whiskas Para Gatos Hogareños 3kg","alimentos",5,"../alimentos/src/img/gato/ali3003-G.jpg" ,"G", 1406));
-Productos.push(new Tienda(3004,"Alimento Sabrositos Gato Mix P,c,v 1k","alimentos",5,"../alimentos/src/img/gato/ali3004-G.jpg" ,"G", 301));
-Productos.push(new Tienda(3005,"Alimento Whiskas Gatos Ad Soufle Pescado X85g","alimentos",5,"../alimentos/src/img/gato/ali3005-G.jpg" ,"G", 97));
-Productos.push(new Tienda(3006,"Alimento Whiskas Para Gatos Pollo 500gr","alimentos",5,"../alimentos/src/img/gato/ali3006-G.jpg" ,"G", 280));
-Productos.push(new Tienda(3007,"Alimento Whiskas Para Gatos Hogareños 1kg","alimentos",5,"../alimentos/src/img/gato/ali3007-G.jpg" ,"G", 511));
-Productos.push(new Tienda(3008,"Alimento King Food Para Gato X 500gr","alimentos",5,"../alimentos/src/img/gato/ali3008-G.jpg" ,"G", 136));
-Productos.push(new Tienda(3009,"Alimento Whiskas Para Gatos Carne 6kg","alimentos",5,"../alimentos/src/img/gato/ali3009-G.jpg" ,"G", 2414));
-Productos.push(new Tienda(3010,"Alimento King Food Para Gatos X 1kg","alimentos",5,"../alimentos/src/img/gato/ali3010-G.jpg" ,"G", 239));
-Productos.push(new Tienda(3011,"Alimento Whiskas Para Gatos Pollo 1kg","alimentos",5,"../alimentos/src/img/gato/ali3011-G.jpg" ,"G", 509));
-Productos.push(new Tienda(3012,"Alimento Whiskas Para Gatos Hogareños 500gr","alimentos",5,"../alimentos/src/img/gato/ali3012-G.jpg" ,"G", 289));
-Productos.push(new Tienda(3013,"Alimento Para Gatos Sabrositos Mix 1 Kg","alimentos",5,"../alimentos/src/img/gato/ali3013-G.jpg" ,"G", 114));
-Productos.push(new Tienda(3014,"Alimento Para Gatos Purina Cat Chow Adulto 3 Kg","alimentos",5,"../alimentos/src/img/gato/ali3014-G.jpg" ,"G", 868));
-Productos.push(new Tienda(3015,"Alimento Para Gatos Sabrositos Pescado 500 Gr","alimentos",5,"../alimentos/src/img/gato/ali3015-G.jpg" ,"G", 64));
+Productos.push(new Tienda(30000,"Alimento Whiskas Para Gatos Carne 3kg","alimentos",5,"../alimentos/src/img/gato/ali3000-G.jpg" ,"G", 1347));
+Productos.push(new Tienda(30001,"Alimento Whiskas Para Gatos Carne 500gr","alimentos",5,"../alimentos/src/img/gato/ali3001-G.jpg" ,"G", 268));
+Productos.push(new Tienda(30002,"Alimento Whiskas Para Gatos Pescado 6kg","alimentos",5,"../alimentos/src/img/gato/ali3002-G.jpg" ,"G", 2414));
+Productos.push(new Tienda(30003,"Alimento Whiskas Para Gatos Hogareños 3kg","alimentos",5,"../alimentos/src/img/gato/ali3003-G.jpg" ,"G", 1406));
+Productos.push(new Tienda(30004,"Alimento Sabrositos Gato Mix P,c,v 1k","alimentos",5,"../alimentos/src/img/gato/ali3004-G.jpg" ,"G", 301));
+Productos.push(new Tienda(30005,"Alimento Whiskas Gatos Ad Soufle Pescado X85g","alimentos",5,"../alimentos/src/img/gato/ali3005-G.jpg" ,"G", 97));
+Productos.push(new Tienda(30006,"Alimento Whiskas Para Gatos Pollo 500gr","alimentos",5,"../alimentos/src/img/gato/ali3006-G.jpg" ,"G", 280));
+Productos.push(new Tienda(30007,"Alimento Whiskas Para Gatos Hogareños 1kg","alimentos",5,"../alimentos/src/img/gato/ali3007-G.jpg" ,"G", 511));
+Productos.push(new Tienda(30008,"Alimento King Food Para Gato X 500gr","alimentos",5,"../alimentos/src/img/gato/ali3008-G.jpg" ,"G", 136));
+Productos.push(new Tienda(30009,"Alimento Whiskas Para Gatos Carne 6kg","alimentos",5,"../alimentos/src/img/gato/ali3009-G.jpg" ,"G", 2414));
+Productos.push(new Tienda(30010,"Alimento King Food Para Gatos X 1kg","alimentos",5,"../alimentos/src/img/gato/ali3010-G.jpg" ,"G", 239));
+Productos.push(new Tienda(30011,"Alimento Whiskas Para Gatos Pollo 1kg","alimentos",5,"../alimentos/src/img/gato/ali3011-G.jpg" ,"G", 509));
+Productos.push(new Tienda(30012,"Alimento Whiskas Para Gatos Hogareños 500gr","alimentos",5,"../alimentos/src/img/gato/ali3012-G.jpg" ,"G", 289));
+Productos.push(new Tienda(30013,"Alimento Para Gatos Sabrositos Mix 1 Kg","alimentos",5,"../alimentos/src/img/gato/ali3013-G.jpg" ,"G", 114));
+Productos.push(new Tienda(30014,"Alimento Para Gatos Purina Cat Chow Adulto 3 Kg","alimentos",5,"../alimentos/src/img/gato/ali3014-G.jpg" ,"G", 868));
+Productos.push(new Tienda(30015,"Alimento Para Gatos Sabrositos Pescado 500 Gr","alimentos",5,"../alimentos/src/img/gato/ali3015-G.jpg" ,"G", 64));
 
 /* Productos seccion Juguetes */
 Productos.push(new Tienda(4000,"Juguete patalin dental grande ","juguetes",5,"../juguetes/src/img/perro/ju4000-P.jpg" ,"P", 1360));
@@ -122,17 +122,17 @@ Productos.push(new Tienda(4011,"Gigwi orange mosnter rope squeaker m (26cm) ","j
 
 
 
-Productos.push(new Tienda(4001,"Juguete interactivo gato Butterfly ","juguetes",5,"../juguetes/src/img/gato/ju4003-G.jpg" ,"G", 1310));
-Productos.push(new Tienda(4002,"Juguete interactivo gato Meow Planet","juguetes",5,"../juguetes/src/img/gato/ju4004-G.jpg" ,"G", 1960));
-Productos.push(new Tienda(4003,"Juguete interactivo Gato Fortune","juguetes",5,"../juguetes/src/img/gato/ju4005-G.jpg" ,"G", 1485));
-Productos.push(new Tienda(4004,"Juguete interactivo Gato Molino ","juguetes",5,"../juguetes/src/img/gato/ju4006-G.jpg" ,"G", 1310));
-Productos.push(new Tienda(4005,"Juguete interactivo Gato Track Ball","juguetes",5,"../juguetes/src/img/gato/ju4007-G.jpg" ,"G", 3222));
-Productos.push(new Tienda(4006,"Giroscio wobilly -1","juguetes",5,"../juguetes/src/img/gato/ju4000-G.jpg" ,"G", 782));
-Productos.push(new Tienda(4007,"Classic Speingy worms ","juguetes",5,"../juguetes/src/img/gato/ju4001-G.jpg" ,"G", 964));
-Productos.push(new Tienda(4008,"Cobayo vibrante cat toy","juguetes",5,"../juguetes/src/img/gato/ju4002-G.jpg" ,"G", 454));
-Productos.push(new Tienda(4009,"Juguete gato porta alimento con cañita","juguetes",5,"../juguetes/src/img/gato/ju4008-G.jpg" ,"G", 1844));
-Productos.push(new Tienda(4010,"Juguete gato torre 3 pisos con carita","juguetes",5,"../juguetes/src/img/gato/ju4009-G.jpg" ,"G", 1690));
-Productos.push(new Tienda(4011,"Juguete gato rombo plastico ferplast x3 ","juguetes",5,"../juguetes/src/img/gato/ju4010-G.jpg" ,"G", 684));
-Productos.push(new Tienda(4012,"Rascals pelota dosificadora gato","juguetes",5,"../juguetes/src/img/gato/ju4011-G.jpg" ,"G", 734));
-Productos.push(new Tienda(4013,"Comedero interactivo food tree catit","juguetes",5,"../juguetes/src/img/gato/ju4013-G.jpg" ,"G", 5154));
-Productos.push(new Tienda(4014,"Rascador cilindrico 28,8 cm","juguetes",5,"../juguetes/src/img/gato/ju4014-G.jpg" ,"G", 2040));
+Productos.push(new Tienda(40001,"Juguete interactivo gato Butterfly ","juguetes",5,"../juguetes/src/img/gato/ju4003-G.jpg" ,"G", 1310));
+Productos.push(new Tienda(40002,"Juguete interactivo gato Meow Planet","juguetes",5,"../juguetes/src/img/gato/ju4004-G.jpg" ,"G", 1960));
+Productos.push(new Tienda(40003,"Juguete interactivo Gato Fortune","juguetes",5,"../juguetes/src/img/gato/ju4005-G.jpg" ,"G", 1485));
+Productos.push(new Tienda(40004,"Juguete interactivo Gato Molino ","juguetes",5,"../juguetes/src/img/gato/ju4006-G.jpg" ,"G", 1310));
+Productos.push(new Tienda(40005,"Juguete interactivo Gato Track Ball","juguetes",5,"../juguetes/src/img/gato/ju4007-G.jpg" ,"G", 3222));
+Productos.push(new Tienda(40006,"Giroscio wobilly -1","juguetes",5,"../juguetes/src/img/gato/ju4000-G.jpg" ,"G", 782));
+Productos.push(new Tienda(40007,"Classic Speingy worms ","juguetes",5,"../juguetes/src/img/gato/ju4001-G.jpg" ,"G", 964));
+Productos.push(new Tienda(40008,"Cobayo vibrante cat toy","juguetes",5,"../juguetes/src/img/gato/ju4002-G.jpg" ,"G", 454));
+Productos.push(new Tienda(40009,"Juguete gato porta alimento con cañita","juguetes",5,"../juguetes/src/img/gato/ju4008-G.jpg" ,"G", 1844));
+Productos.push(new Tienda(40010,"Juguete gato torre 3 pisos con carita","juguetes",5,"../juguetes/src/img/gato/ju4009-G.jpg" ,"G", 1690));
+Productos.push(new Tienda(40011,"Juguete gato rombo plastico ferplast x3 ","juguetes",5,"../juguetes/src/img/gato/ju4010-G.jpg" ,"G", 684));
+Productos.push(new Tienda(40012,"Rascals pelota dosificadora gato","juguetes",5,"../juguetes/src/img/gato/ju4011-G.jpg" ,"G", 734));
+Productos.push(new Tienda(40013,"Comedero interactivo food tree catit","juguetes",5,"../juguetes/src/img/gato/ju4013-G.jpg" ,"G", 5154));
+Productos.push(new Tienda(40014,"Rascador cilindrico 28,8 cm","juguetes",5,"../juguetes/src/img/gato/ju4014-G.jpg" ,"G", 2040));
