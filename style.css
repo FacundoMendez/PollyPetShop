@@ -127,13 +127,6 @@ main{
     list-style: none;
 }
 
-.nav-menu-item {
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 5rem;
-    text-transform: uppercase;
-    width: max-content;
-}
 
 .nav-menu-link {
     padding: 8px 12px;
@@ -146,6 +139,8 @@ main{
     border-radius: 9%;
     transition: 0.5s;
 }
+
+
 
   /* TOGGLE */
 .nav-toggle {
@@ -160,9 +155,55 @@ main{
     z-index: 4000;
 }
 
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    width: max-content;
+}
+
 .cuenta{
     border: 2px solid #b871ff;
 }
+
+
+
+.nav-menu-link_active:hover{
+    color:#ff71e7;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav2 li a:hover{
+    color:#ff71e7;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav li a:hover{
+    color:#ff71e7;
+    transition: all 0.2s ease-in-out;
+}
+
+
+span{
+    font-size: 1.6rem;
+    color: #ad5cff;
+    font-weight: 800;
+}
+
+.cuenta:hover{
+    color: #ff71e7;
+    background-color:#ff71e72c ;
+    border: 2px groove #f889e67e;
+    transition:all 0.5s ease-in-out;
+}
+
+.nav-menu-link i{
+    font-size: 2.5rem;
+    position: absolute;
+    top: 3.8rem;
+}
+
 
 
   /* MOBILE */
@@ -253,11 +294,7 @@ main{
 }
 
 
-.nav-menu-link i{
-    font-size: 3rem;
-    position: absolute;
-    top: 3.8rem;
-}
+
 
 .barraBusqueda[type=text]{
     -webkit-border-radius: 20px;
@@ -413,6 +450,87 @@ main{
     text-align: justify;
     line-height: 4.1rem;
 }
+
+
+/* container Productos destacados */
+
+.prodDestacados{
+    height: 84vh;
+    width: 100%;
+    border: 5px solid red;
+    position: relative;
+}
+
+
+.fleIzq{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 84vh;
+    border: 5px solid blue;
+}
+
+.fleDer{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 84vh;
+    border: 5px solid blue;
+}
+
+.productosD{
+    width: 80%;
+    height: 84vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: 5px solid black;
+}
+
+.fa-arrow-left{
+    position: absolute;
+    font-size: 5rem;
+    cursor: pointer;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ad5cff;
+}
+
+
+.fa-arrow-right{
+    position: absolute;
+    font-size: 5rem;
+    cursor: pointer;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ad5cff;
+}
+
+.fa-arrow-right:hover{
+    color:#ff71e7;
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-arrow-left:hover{
+    color:#ff71e7;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width :1500px){
 

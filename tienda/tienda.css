@@ -34,7 +34,7 @@ body{
 
 .nav-link {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #ad5cff;
     font-weight: 800;
     letter-spacing: 1px;
@@ -98,6 +98,44 @@ body{
 
 
 
+.cuenta{
+    border: 2px solid #b871ff;
+}
+
+
+
+.nav-menu-link_active:hover{
+    color:#ff71e7;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav2 li a:hover{
+    color:#ff71e7;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav li a:hover{
+    color:#ff71e7;
+    transition: all 0.2s ease-in-out;
+}
+span{
+    font-size: 1.6rem;
+    color: #ad5cff;
+    font-weight: 800;
+}
+
+.cuenta:hover{
+    color: #ff71e7;
+    background-color:#ff71e72c ;
+    border: 2px groove #f889e67e;
+    transition:all 0.5s ease-in-out;
+}
+
+
+
+
+
+
 .barraBusqueda{
     background-color:#b871ff48; ;
     width: 26rem;
@@ -143,9 +181,6 @@ body{
 }
 
 
-.cuenta{
-    border: 2px solid #b871ff;
-}
 
 
   /* MOBILE */
