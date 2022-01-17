@@ -27,7 +27,7 @@ function carrito(myID){
 
             myID = element.id
 
-              alert(`id: ${element.id}`)
+            alert(`id: ${element.id}`)
 
         })
     }
