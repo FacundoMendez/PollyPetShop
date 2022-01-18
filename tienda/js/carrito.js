@@ -3,34 +3,29 @@ export{carrito}
 import{Productos} from "./arrayProductos.js"
 
 
-class carritoAgregar{
-    constructor(id,nombre, precio){
-        this.id = id;
-        this.nombre = nombre;
-        this.precio = precio;
-    }
-}
+let CarritoProductos = [];
 
 
-
-
-const CarritoProductos = [];
-
-
-
-function carrito(myID){
+function carrito(){
 
     const agregar = document.getElementsByClassName("prod__agregar");
 
     for(let element of agregar){
         element.addEventListener("click",function(){
 
-            myID = element.id
+            let myID = element.id
+
+            CarritoProductos[element] = Productos.filter(elem => elem.id == myID)
+
 
             alert(`id: ${element.id}`)
 
-        })
-    }
-}
+            console.log(CarritoProductos[element])
 
+        })
+        
+    }
+    console.log(CarritoProductos)
+
+}
 

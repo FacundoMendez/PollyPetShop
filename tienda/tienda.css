@@ -474,6 +474,16 @@ input[type=checkbox]{
   -o-transform: scale(2); /* Opera */
 }
 
+.containerCarrito{
+    position: absolute;
+    height: 30rem;
+    width: 20rem;
+    background-color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    align-items: center;
+    top: 80%;
+    right: 0%;
+}
 
 
 
@@ -507,30 +517,40 @@ input[type=checkbox]{
 
 @media (max-width :1400px){
 
- 
-.barraBusqueda{
-    background-color:#b871ff48; ;
-    width: 26rem;
-    height: 3.5rem;
-    border: none;
-    font-size: 2rem;
-    color: rgb(35, 0, 70);
-    font-weight: 700;
-    padding: 2rem;
-    margin-right: 2rem;
-    z-index: 1000;
-    border-radius: 5%;
-}
-.busq i{
-    position: absolute;
-    font-size: 3rem;
-    left: 50%;
-    top: 37%;
-    opacity: 0.5;
-    color:rgb(35, 0, 70);
-    cursor: pointer;
-    z-index: 10000;
-}
+    .nav{
+        height: 10rem;
+    }
+    .nav-link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: #ad5cff;
+        font-weight: 800;
+        letter-spacing: 1px;
+    } 
+    
+    .barraBusqueda{
+        background-color:#b871ff48; ;
+        width: 26rem;
+        height: 3.5rem;
+        border: none;
+        font-size: 2rem;
+        color: rgb(35, 0, 70);
+        font-weight: 700;
+        padding: 2rem;
+        margin-right: 2rem;
+        z-index: 1000;
+        border-radius: 5%;
+    }
+    .busq i{
+        position: absolute;
+        font-size: 3rem;
+        left: 50%;
+        top: 37%;
+        opacity: 0.5;
+        color:rgb(35, 0, 70);
+        cursor: pointer;
+        z-index: 10000;
+    }
 
 
     /*  NAV 2  */
