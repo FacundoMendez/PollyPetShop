@@ -25,7 +25,6 @@ function carrito(){
         })
         
     }
-    console.log(CarritoProductos)
 
 }
 
