@@ -34,6 +34,9 @@ function carrito(){
                 console.log(`NombreProd: ${CarritoProductos[i].nombre}`)
                 console.log(`IdProd: ${CarritoProductos[i].id}`)
                 console.log(`PrecioProd: ${CarritoProductos[i].precio}`)
+                console.log(`ImagenProd: ${CarritoProductos[i].img}`)
+                alert(`Producto Agregado`)
+                
             }
         })
         
