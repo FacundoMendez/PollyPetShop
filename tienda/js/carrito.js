@@ -3,7 +3,17 @@ export{carrito}
 import{Productos} from "./arrayProductos.js"
 
 
-let CarritoProductos = [];
+class carritoAgregar{
+    constructor(id,nombre, precio){
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+}
+
+
+let CarritoProductos=[]
+let ArrayAgregar = []
 
 
 function carrito(){
@@ -15,16 +25,21 @@ function carrito(){
 
             let myID = element.id
 
-            CarritoProductos[element] = Productos.filter(elem => elem.id == myID)
+            CarritoProductos= Productos.filter(elem => elem.id == myID)
 
 
             alert(`id: ${element.id}`)
 
-            console.log(CarritoProductos[element])
-
+            for(let i = 0; i< CarritoProductos.length; i++){
+                console.log(`NombreProd: ${CarritoProductos[i].nombre}`)
+                console.log(`IdProd: ${CarritoProductos[i].id}`)
+                console.log(`PrecioProd: ${CarritoProductos[i].precio}`)
+            }
         })
         
     }
+
+ 
 
 }
 
