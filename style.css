@@ -492,7 +492,6 @@ span{
     position: absolute;
     width: 100%;
     text-align: center;
-    filter: drop-shadow(5px 3.5px 1px #156115e7 )invert(1);
     z-index: 100;
     margin-top: 31.5rem;
 }
@@ -610,7 +609,6 @@ span{
         position: absolute;
         width: 100%;
         text-align: center;
-        filter: drop-shadow(5px 3.5px 1px #156115e7 )invert(1);
         z-index: 100;
         margin-top: 24rem;
     }
@@ -840,7 +838,6 @@ span{
         position: absolute;
         width: 100%;
         text-align: center;
-        filter: drop-shadow(5px 3.5px 1px #156115e7 )invert(1);
         z-index: 100;
         margin-top: 24rem;
     }
