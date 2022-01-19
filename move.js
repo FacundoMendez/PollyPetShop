@@ -15,7 +15,7 @@
         delay:2.5,
         opacity:3,
         rotation:360,                   
-        scale:30,                        
+        scale:30,       
     })
 
     gsap.to(".imgLogo",{    

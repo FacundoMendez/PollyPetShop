@@ -21,10 +21,9 @@ main{
     height: 100px;
     margin-bottom: 15px;
     border-radius: 100%;
-    background-color: #ddfffd ;
-
+    background-color: #ffffff ;
     margin: 0 auto;
-    opacity: 0;
+    opacity:0;
 }
 
 
@@ -35,7 +34,6 @@ main{
     width: 100vw;
     height: 100vh;
     background-color: #ddfffd ;
-
     position: fixed;
     top: 0rem;
     left: 0px;
@@ -53,7 +51,6 @@ main{
     opacity: 0;
     transition: all 0.5s;
 }
-
 
 
 .preload__img {
