@@ -500,7 +500,7 @@ input[type=checkbox]{
 }
 
   /* MOBILE */
-  @media (max-width: 1080px) {
+  @media screen and (max-width: 1080px) {
 
     .header {
         height: 60px;
@@ -590,6 +590,47 @@ input[type=checkbox]{
         padding-right: 5.5rem;
     }
 
- 
+    .nav2{
+        width: 85%;
+        text-align: center;
+    }
+    
+    .nav2 span{
+        padding: 0 1rem;
+    }
+    
+    .nav2 a{
+        font-size: 1.5rem;
+    }
+}
 
+
+@media screen and (max-width:768px){
+    .nav2{
+        width: 80%;
+        text-align: center;
+    }
+    
+    .nav2 span{
+        padding: 0 1rem;
+    }
+    
+    .nav2 a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    .nav2{
+        width: 95%;
+        text-align: center;
+    }
+    
+    .nav2 span{
+        padding: 0 1rem;
+    }
+    
+    .nav2 a{
+        font-size: 1.1rem;
+    }
 }
