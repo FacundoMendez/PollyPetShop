@@ -517,18 +517,17 @@ input[type=checkbox]{
     top:59%;
     border-radius: 20px;
     left: 50%;
-    overflow: scroll;
+    overflow: auto;
     transform: translate(-50%,-50%);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .iconExit{
     font-size: 4rem;
     font-weight: 800;
-    position: absolute;
+    position: fixed;
     right: 6%;
     color: #a200ff;;
     top: 1%;
@@ -559,8 +558,6 @@ input[type=checkbox]{
 
 .carrito__productos{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 7rem;
@@ -571,7 +568,6 @@ input[type=checkbox]{
     display: flex;
     flex-direction: row;
     gap:2rem;
-    width: 60rem;
     line-height: 2rem;
     padding: 2rem 7rem;
     font-size: 1.5rem;

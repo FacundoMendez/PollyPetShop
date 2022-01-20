@@ -6,7 +6,7 @@ import{Productos} from "./arrayProductos.js"
 
 let CarritoProductos=[]
 let pantallaCarrito = document.querySelector(".container__carrito");
-
+let containerCarrito = document.querySelector(".carrito__productos");
 
 function carrito(){
 
@@ -21,22 +21,23 @@ function carrito(){
 
             CarritoProductos= Productos.filter(elem => elem.id == myID)
 
-
-            alert(`id: ${element.id}`)
-
             for(let i = 0; i< CarritoProductos.length; i++){
                 localStorage.setItem("nombreProd", `${CarritoProductos[i].nombre}`)
-                localStorage.setItem("idProd", `${CarritoProductos[i].id}`)
                 localStorage.setItem("precioProd", `${CarritoProductos[i].precio}`)
+                localStorage.setItem("imgProd", `${CarritoProductos[i].img}`)
 
                 let nombreProd = localStorage.getItem("nombreProd")
-                let idProd = localStorage.getItem("nombreProd")
-                let precioProd = localStorage.getItem("nombreProd")
-                
+                let precioProd = localStorage.getItem("precioProd")
+                let imgProd = localStorage.getItem("imgProd")
 
+                containerCarrito.innerHTML+=`
+                <div class="prodCar">
+                    <div class="imgProd"><img src="${imgProd}" alt=""></div>
+                    <div class="textP nombreProd"><p>${nombreProd}:</p></div>
+                    <div class="textP precioProd"><p>${precioProd}</p></div>
+                </div>
+                `;
 
-                alert(`Producto Agregado`)
-                
             }
         })
     }
