@@ -3,20 +3,13 @@ export{carrito}
 import{Productos} from "./arrayProductos.js"
 
 
-class carritoAgregar{
-    constructor(id,nombre, precio){
-        this.id = id;
-        this.nombre = nombre;
-        this.precio = precio;
-    }
-}
-
 
 let CarritoProductos=[]
-let ArrayAgregar = []
 
 
 function carrito(){
+
+    carritoBottom()
 
     const agregar = document.getElementsByClassName("prod__agregar");
 
@@ -44,5 +37,24 @@ function carrito(){
 
  
 
+}
+
+
+function carritoBottom(){
+    let carrito = document.querySelector(".fa-shopping-cart");
+    
+    let pantallaCarrito = document.querySelector(".container__carrito");
+    let iconCarrito = document.querySelector(".iconExit");
+    
+
+    carrito.addEventListener("click", function(){
+
+            pantallaCarrito.style.display="inline-block";
+        
+    });
+
+    iconCarrito.addEventListener("click", function(){
+        pantallaCarrito.style.display="none";
+    });
 }
 
