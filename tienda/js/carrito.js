@@ -34,7 +34,7 @@ function carrito(){
                 <div class="prodCar">
                     <div class="imgProd"><img src="${imgProd}" alt=""></div>
                     <div class="textP nombreProd"><p>${nombreProd}:</p></div>
-                    <div class="textP precioProd"><p>${precioProd}</p></div>
+                    <div class="textP precioProd"><p>$${precioProd}</p></div>
                 </div>
                 `;
 
