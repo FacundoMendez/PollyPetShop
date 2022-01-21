@@ -16,11 +16,11 @@ export {
 }
 
 
-let Alimentos = document.getElementById("Alimentos")
-let Accesorios = document.getElementById("Accesorios")
-let Juguetes = document.getElementById("Juguetes")
-let Cuchas = document.getElementById("Cuchas")
-let Gatos = document.getElementById("Gatos")
+let Alimentos = document.querySelector(".Alimentos")
+let Accesorios = document.querySelector(".Accesorios")
+let Juguetes = document.querySelector(".Juguetes")
+let Cuchas = document.querySelector(".Cuchas")
+let Gatos = document.querySelector(".Gatos")
 
 const prod = document.getElementById("prod"); 
 

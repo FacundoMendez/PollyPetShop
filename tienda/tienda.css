@@ -92,9 +92,8 @@ body{
 }
 
 .carrito{
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-left: 1.5rem;
-    margin-top: 0.8rem;
 }
 
 .carrito i{
@@ -183,7 +182,6 @@ span{
 
 
 
-
 /*  NAV 2  */
 .nav2{
     position: relative;
@@ -242,6 +240,7 @@ main{
 .container{
     position: relative;
     width: 100vw;
+    height: 100%;
     padding-bottom: 40rem;
     margin-left: 5rem;
 }
@@ -253,11 +252,11 @@ main{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 70%;
+    width: 88%;
     gap: 5rem;
-    margin: 0 auto;
+    margin-left: 13%;
     padding: 0 5rem;
-    margin-top: -40rem;
+    margin-top: -38rem;
 }
 #prod a{
     text-decoration: none;
@@ -325,7 +324,7 @@ main{
 
 .prod__agregar:hover > p{
     font-size: 1.62rem;
-    color: #a200ff;
+    color:rgb(234, 1, 255);
 }
 .prod__agregar:hover{
     border: 0.1px solid #a200ff69;
@@ -340,8 +339,14 @@ main{
 }
 
 
-
 /* Forms */
+.exitFiltro{
+    display: none;
+}
+
+.select__button{
+    display: none;
+}
 
 .selec__mobile{
     display:none;
@@ -356,20 +361,23 @@ main{
     z-index: 1000;
     gap: 2rem;
     padding-top: 5rem;
-    margin-left: 5rem;
+    margin-left: 0rem;
 }
 
-#formPG{
+.formPG{
+    background-color: rgb(241, 255, 255) ;
     font-size: 2rem;
     display: inline-block;
     width: 25rem;
     margin-left: 2rem;
     flex-wrap: wrap;
     padding: 2rem;
-    border: 2px solid rgba(0, 0, 0, 0.144);
+    border: 2px solid rgba(255, 83, 169, 0.226);
+
 }
 
-#formAA{
+.formAA{
+    background-color: rgb(241, 255, 255) ;
     font-size: 1.8rem;
     display: inline-block;
     width: 25rem;
@@ -377,7 +385,7 @@ main{
     margin-left: 2rem;
     flex-wrap: wrap;
     padding: 2rem ;
-    border: 2px solid rgba(0, 0, 0, 0.144);
+    border: 2px solid rgba(255, 83, 169, 0.226);
 }
 
 input[type=checkbox]{
@@ -499,9 +507,9 @@ input[type=checkbox]{
     border-radius: 10px;
 }
 
-  /* MOBILE */
-  @media screen and (max-width: 1080px) {
 
+
+@media screen and (max-width: 1080px){
     .header {
         height: 60px;
     }
@@ -602,10 +610,8 @@ input[type=checkbox]{
     .nav2 a{
         font-size: 1.5rem;
     }
-}
 
-
-@media screen and (max-width:768px){
+    
     .nav2{
         width: 80%;
         text-align: center;
@@ -618,9 +624,45 @@ input[type=checkbox]{
     .nav2 a{
         font-size: 1rem;
     }
+
+    
+    
+    #prod{
+        width: 88%;
+        gap: 3rem;
+        margin-left: 18%;
+        padding: 0 5rem;
+        margin-top: -40rem;
+    }
+    .prod__marco{
+        width: 38%;
+        min-height: 50%;
+    }
+
+    .prod__agregar{
+        width: 80%;
+        height: 4.5rem;
+    }
+
+    .prod__agregar p{
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #8902f7;
+        text-align: center;
+    }
+
+    .prod__marco:hover{
+        width: 38.2%;
+        height: 50.03rem;
+    }
+    
+
 }
 
-@media screen and (max-width:480px){
+
+@media screen and (max-width: 767px){
     .nav2{
         width: 95%;
         text-align: center;
@@ -633,4 +675,151 @@ input[type=checkbox]{
     .nav2 a{
         font-size: 1.1rem;
     }
+
+    .container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 40rem;
+        margin-left: 0rem;
+    }
+ 
+    #prod{
+        width: 90%;
+        gap: 4rem;
+        padding: 0 2rem;
+        margin-left: 0;
+        margin: 0 auto;
+        margin-top: 7rem;
+
+    }
+    .prod__marco{
+        width: 26rem;
+        height: 43rem;
+
+    }
+
+    
+    .prod__agregar{
+        width: 80%;
+        height: 4.5rem;
+    }
+
+    .prod__agregar p{
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #8902f7;
+        text-align: center;
+    }
+
+    .prod__marco:hover{
+        width: 26.2rem;
+        height: 43.2rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    /* filtro movile */
+
+    .selec__desktop{
+        display:inline-block;
+        background-color: rgb(255, 255, 255);
+        width: 95%;
+        border-radius: 5px;
+        height: 50vh;
+        position: relative;
+        top: 34.7%;
+        display: none;
+    }
+
+
+    .exitFiltro{
+        font-size: 4rem;
+        position: absolute;
+        display: inline-block;
+        top: 1%;
+        right: 4%;
+    }
+
+    .exitFiltro i:hover{
+        text-align: center;
+        color:rgb(234, 1, 255);
+        font-size: 4.1rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+        
+    .selec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        line-height: 4rem;
+        z-index: 1000;
+        gap: 2rem;
+        margin-left: 0rem;
+    }
+
+    .select__button{
+        display: block;
+        width: 95%;
+        height: 4rem;
+        border-radius: 5px;
+        position: absolute;
+        border: 2px solid rgba(255, 83, 169, 0.226);
+        background-color: rgba(231, 255, 255, 0.89) ;
+        z-index: 12000210;
+        cursor: pointer;
+        top: -0%;
+    }
+
+    .select__button p{
+        color: #8902f7;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .select__button p:hover{
+        text-align: center;
+        color:rgb(234, 1, 255);
+        font-size: 1.55rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .formPG{
+        background-color: rgba(202, 255, 255, 0.5) ;
+        font-size: 2rem;
+        display: inline-block;
+        width: 100%;
+        margin-top: -1rem;
+        margin-left: 0rem;
+        flex-wrap: wrap;
+        padding: 5rem 2rem;
+        border: 2px solid rgba(255, 83, 169, 0.226);
+    }
+
+    .formAA{
+        display: none;
+        background-color: rgba(202, 255, 255, 0.5) ;
+        font-size: 2rem;
+        display: inline-block;
+        width: 100%;
+        height: 25rem;
+        margin-left: 0rem;
+        flex-wrap: wrap;
+        padding: 2rem ;
+        border: 2px solid rgba(255, 83, 169, 0.226);
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+ 
 }

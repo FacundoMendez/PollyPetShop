@@ -16,11 +16,11 @@ import{
 } from "./filters.js"
 
 
-let Alimentos = document.getElementById("Alimentos")
-let Accesorios = document.getElementById("Accesorios")
-let Juguetes = document.getElementById("Juguetes")
-let Cuchas = document.getElementById("Cuchas")
-let TodosLosProductos = document.getElementById("TodosProductos")
+let Alimentos = document.querySelector(".Alimentos")
+let Accesorios = document.querySelector(".Accesorios")
+let Juguetes = document.querySelector(".Juguetes")
+let Cuchas = document.querySelector(".Cuchas")
+let TodosLosProductos = document.querySelector(".TodosProductos")
 
 const prod = document.getElementById("prod"); 
 

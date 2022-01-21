@@ -1,4 +1,4 @@
-export{carrito}
+export{carrito, filtroMovile}
 
 import{Productos} from "./arrayProductos.js"
 
@@ -64,3 +64,23 @@ function carritoBottom(){
 }
 
 
+
+function filtroMovile(){
+    let filtroMov= document.querySelector(".selec__desktop")
+    let filtroBottom= document.querySelector(".select__button")
+    
+    let exitFiltro= document.querySelector(".exitFiltro")
+    
+    
+    filtroBottom.addEventListener("click", function(){
+        filtroMov.style.display="inline-block";
+    })
+
+    exitFiltro.addEventListener("click", function(){
+        filtroMov.style.display="none";
+    })
+
+
+}
+
+filtroMovile(); 

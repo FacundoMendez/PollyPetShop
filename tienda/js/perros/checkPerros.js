@@ -26,12 +26,12 @@ function crearDivsPerros(){
 
 
 
-let Alimentos = document.getElementById("Alimentos")
-let Accesorios = document.getElementById("Accesorios")
-let Juguetes = document.getElementById("Juguetes")
-let Cuchas = document.getElementById("Cuchas")
-let Gatos = document.getElementById("Gatos")
-let Perros = document.getElementById("Perros")
+let Alimentos = document.querySelector(".Alimentos")
+let Accesorios = document.querySelector(".Accesorios")
+let Juguetes = document.querySelector(".Juguetes")
+let Cuchas = document.querySelector(".Cuchas")
+let Gatos = document.querySelector(".Gatos")
+let Perros = document.querySelector(".Perros")
 
 const prod = document.getElementById("prod"); 
 
