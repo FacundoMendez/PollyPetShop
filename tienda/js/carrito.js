@@ -35,6 +35,8 @@ function carrito(){
                     <div class="imgProd"><img src="${imgProd}" alt=""></div>
                     <div class="textP nombreProd"><p>${nombreProd}:</p></div>
                     <div class="textP precioProd"><p>$${precioProd}</p></div>
+                    <button class="eliminar"><i class="far fa-trash-alt"></i> </button>
+
                 </div>
                 `;
 

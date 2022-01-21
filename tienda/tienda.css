@@ -7,6 +7,8 @@
 html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    user-select: none;
 }
 
 body{
@@ -417,7 +419,7 @@ input[type=checkbox]{
 
 .carrito__visual{
     height: 40rem;
-    width: 60rem;
+    width: 61rem;
     background-color: rgb(191, 255, 255) ;
     position: absolute;
     top:59%;
@@ -435,6 +437,19 @@ input[type=checkbox]{
 }
 
 
+.eliminar{
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2.3rem;
+    margin-top: 1.4rem;
+    color: rgb(255, 240, 240);
+    margin-left: 1.5rem;
+    cursor: pointer;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
+
 .titleCarrito{
     width: 100%;
     text-align: center;
@@ -442,9 +457,7 @@ input[type=checkbox]{
     border: 2px solid rgba(255, 243, 245, 0.973);
     background-color:rgba(255, 245, 246, 0.507) ;
     position: fixed;
-    top: 0%;
 }
-
 
 .titleCarrito p{
     font-size: 2.5rem;
@@ -454,13 +467,14 @@ input[type=checkbox]{
     font-style: italic;
     letter-spacing: 1px;
 }
+
 .iconExit{
     font-size: 3.5rem;
     font-weight: 800;
     position: absolute ;
     z-index: 1203021;
     color: #a200ffb6;;
-    top: 2%;
+    top: 1%;
     right: 4%;
     cursor: pointer;
 }
@@ -483,8 +497,7 @@ input[type=checkbox]{
     display: flex;
     flex-direction: row;
     gap:2rem;
-    line-height: 2rem;
-    padding: 2rem 7rem;
+    padding: 2rem 6rem;
     font-size: 1.5rem;
     flex-direction: row;
     font-weight: 700;
@@ -504,8 +517,8 @@ input[type=checkbox]{
 
 .precioProd p{
     font-weight: 700;
-    font-size: 2rem;
-    margin-left: 2rem;
+    font-size: 2.2rem;
+    margin-left: 1rem;
 }
 
 .imgProd img{
@@ -668,6 +681,9 @@ input[type=checkbox]{
         width: 38.2%;
         height: 50.03rem;
     }
+
+ 
+    
     
 
 }
@@ -821,20 +837,20 @@ input[type=checkbox]{
         padding: 2rem ;
         border: 2px solid rgba(255, 83, 169, 0.226);
     }
+
+
         /* carrito */
 
     .carrito__visual{
         height: 40rem;
-        width: 47rem;
+        width: 46rem;
         top:59%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
 
-
     .prodCar{
         gap:2rem;
-        width: 40rem;
         line-height: 2rem;
         padding: 2rem 1rem;
         font-size: 1.4rem;
@@ -854,6 +870,7 @@ input[type=checkbox]{
         font-weight: 700;
         font-size: 2rem;
         margin-left: 5rem;
+        margin-top: 1.5rem;
     }
 
     .imgProd img{
@@ -862,13 +879,24 @@ input[type=checkbox]{
         height: 6rem;
     }
 
+    .eliminar{
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2.3rem;
+        margin-top: 1rem;
+        color: rgb(255, 240, 240);
+        margin-left: 1.5rem;
+    }
+    
+
 }
 
 @media screen and (max-width: 480px){
   /* carrito */
     .carrito__visual{
+        display: flex;
         height: 38rem;
-        width: 31rem;
+        width: 31.5rem;
         top:56%;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -876,9 +904,8 @@ input[type=checkbox]{
 
     .prodCar{
         gap:2rem;
-        width: 30rem;
         line-height: 2rem;
-        padding: 2rem 1rem;
+        padding: 2rem 0.5rem;
         font-size: 1.2rem;
     }
 
@@ -895,20 +922,30 @@ input[type=checkbox]{
     .nombreProd p{
         font-weight: 700;
         margin-left: -.5rem;
-        width: 16rem;
+        width: 14rem;
         height: 7rem;
     }
 
     .precioProd p{
         font-weight: 700;
         font-size: 1.7rem;
-        margin-left: -1rem;
+        margin-left: -2rem;
+        margin-top: 1rem;
     }
 
     .imgProd img{
         width: 4rem;
         margin-left: 0rem;
         height: 4rem;
+    }
+
+    .eliminar{
+        width: 3rem;
+        height: 3rem;
+        font-size: 2.3rem;
+        margin-top: 0.7rem;
+        color: rgb(255, 240, 240);
+        margin-left: 0rem;
     }
  
 }
