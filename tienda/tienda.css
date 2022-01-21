@@ -93,6 +93,7 @@ body{
 
 .carrito{
     font-size: 3.5rem;
+    margin-top: 0.7rem;
     margin-left: 1.5rem;
 }
 
@@ -601,6 +602,8 @@ input[type=checkbox]{
         right: 10%;
         font-size: 3.2rem;
         z-index: 11000;
+        margin-top: 1rem;
+
     }
     .nav{
         padding-right: 5.5rem;
@@ -864,13 +867,12 @@ input[type=checkbox]{
 @media screen and (max-width: 480px){
   /* carrito */
     .carrito__visual{
-        height: 30rem;
-        width: 30rem;
-        top:59%;
+        height: 38rem;
+        width: 31rem;
+        top:56%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
-
 
     .prodCar{
         gap:2rem;
