@@ -435,10 +435,10 @@ input[type=checkbox]{
 
 
 .carrito__visual{
-    height: 44rem;
-    width: 61rem;
+    height: 48rem;
+    width: 65rem;
     position: relative;
-    top:54%;
+    top:58%;
     transform: translate(-50%,-50%);
     background-color: rgb(214, 255, 255) ;
     border: 2px solid rgba(255, 218, 224, 0.959);
@@ -451,7 +451,7 @@ input[type=checkbox]{
 }
 
 .carrito__nav{
-    width: 61rem;
+    width: 65rem;
     height:8rem;
     position:relative;
     bottom:-10%;
@@ -591,7 +591,9 @@ input[type=checkbox]{
     flex-direction: row;
     font-weight: 700;
     letter-spacing: 1px;
+    margin-left: 2rem;
 }
+
 
 .textP p{
     margin-top: 2rem;
@@ -951,6 +953,7 @@ input[type=checkbox]{
         line-height: 2rem;
         padding: 2rem 1rem;
         font-size: 1.4rem;
+        margin-left: 0rem;
     }
 
     .textP p{
