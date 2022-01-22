@@ -7,17 +7,15 @@
 html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    user-select: none;
 }
 
 body{
     background-color: rgb(250, 250, 250);
+    user-select: none;
 }
 
 .header {
     position: relative;
-    
 }
 
 .nav{
@@ -282,11 +280,11 @@ main{
     padding:0 1rem;
     padding-top: 2rem;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-align: center;
-    color: black;
+    color: #6101afbe;
     margin-top: -1rem;
 }
 
@@ -294,10 +292,10 @@ main{
 .prod__precio{
     width: 100%;
     font-size: 2.3rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
     text-align: center;
-    color: black;
+    color: #6101afbe;
     margin-top: 1.5rem;
 }
 
@@ -314,6 +312,8 @@ main{
     border-radius: 5px;
     border: 0.1px solid rgba(0, 0, 0, 0.185);
     cursor:pointer;
+    color: #6101afbe;
+
 }
 
 .prod__agregar p{
@@ -321,18 +321,27 @@ main{
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #8902f7;
     text-align: center;
 }
+
+.carrito i:hover{
+    color:#ff71e7;
+    transition: all 0.2s ease-in-out;
+}
+
+.carrito i:active{
+    font-size: 3rem;
+}
+
 
 .prod__agregar:hover > p{
     font-size: 1.62rem;
     color:rgb(234, 1, 255);
+    transition: all 1s ease-in-out;
 }
 .prod__agregar:hover{
     border: 0.1px solid #a200ff69;
     background-color: rgba(191, 255, 255, 0.808) ;
-
 }
 
 .prod__marco:hover{
@@ -376,6 +385,9 @@ main{
     flex-wrap: wrap;
     padding: 2rem;
     border: 2px solid rgba(255, 83, 169, 0.226);
+    color: #6101af9f;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 
 }
 
@@ -389,6 +401,10 @@ main{
     flex-wrap: wrap;
     padding: 2rem ;
     border: 2px solid rgba(255, 83, 169, 0.226);
+    color: #6101af9f;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
 }
 
 input[type=checkbox]{
@@ -407,9 +423,9 @@ input[type=checkbox]{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.596);
     z-index: 9000;
     top: 0;
+    background-color: rgba(0, 0, 0, 0.514);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -418,24 +434,33 @@ input[type=checkbox]{
 }
 
 .carrito__visual{
-    height: 40rem;
+    height: 44rem;
     width: 61rem;
-    background-color: rgb(191, 255, 255) ;
+    background-color: rgb(214, 255, 255) ;
     position: absolute;
-    top:59%;
-    border: 2px solid rgb(255, 224, 229);
+    top:54%;
+    border: 2px solid rgba(255, 218, 224, 0.959);
     border-radius: 5px;
     left: 50%;
     overflow: auto;
+    overflow-x: hidden;
     transform: translate(-50%,-50%);
     display: flex;
     flex-wrap: wrap;
-
 }
+
 .carrito__visual::-webkit-scrollbar {
-    display: none;
+    background-color: rgb(191, 255, 255) ;
+    width: 7px;
+
 }
 
+.carrito__visual::-webkit-scrollbar-thumb {
+    background-color: #ffdafc;
+    border-radius: 10px;
+    width: 10em;
+
+}
 
 .eliminar{
     width: 3.5rem;
@@ -444,18 +469,81 @@ input[type=checkbox]{
     margin-top: 1.4rem;
     color: rgb(255, 240, 240);
     margin-left: 1.5rem;
+    background-image: linear-gradient(144deg,#af40ff60, #5a42f3b0 50%,#00dbeb83);
+    border: 1px solid #f70bff50;
+    
+}
+.eliminar i:hover{
+    color:rgb(255, 70, 70);
+    font-size: 2.5rem;
+    transition: all 0.4s ease-in-out;
     cursor: pointer;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
+.eliminar:active{
+    font-size: 1.2rem;
+}
+
+
+.carrito__nav{
+    width: 61rem;
+    height: 6rem;
+    background-color: rgb(191, 255, 255) ;
+    filter: drop-shadow(-5px 5px 10px rgba(251, 203, 255, 0.603));
+    position:absolute;
+    bottom:-2%;
+    left: 50%;
+    z-index: 100012;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 218, 224, 0.959);
+    border-top: none;
+    transform: translate(-50%,-50%);
+}
+
+.vaciar{
+    width: 12rem;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    right: 4%;
+    margin-top: 1rem;
+    color: #a200ffb6;;
+    background-color: rgba(255, 234, 250, 0.925);
+    border: 2px solid #f59bf850;
+
+}
+
+.vaciar:active{
+    width: 11.8rem;
+    height: 4rem;
+    box-shadow: 0 0 0.5rem rgb(252, 2, 231);
+    color: #66005eb6;
+    border: none;
+}
+
+.total{
+    width: 100%;
+    font-size: 2.3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 1.6rem;
+    letter-spacing: 1px;
+    color: #a200ff;
+    margin-left: -0.5rem;
 }
 
 
 .titleCarrito{
+    filter: drop-shadow(5px 5px 10px rgba(251, 203, 255, 0.603));
     width: 100%;
     text-align: center;
-    height: 5rem;
-    border: 2px solid rgba(255, 243, 245, 0.973);
-    background-color:rgba(255, 245, 246, 0.507) ;
+    height: 6rem;
+    background-color: rgb(191, 255, 255) ;
     position: fixed;
 }
 
@@ -463,24 +551,27 @@ input[type=checkbox]{
     font-size: 2.5rem;
     font-weight: 900;
     color: #a200ffb6;;
-    margin-top: 0.6rem;
+    margin-top: 1.5rem;
     font-style: italic;
     letter-spacing: 1px;
 }
 
 .iconExit{
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     font-weight: 800;
     position: absolute ;
     z-index: 1203021;
     color: #a200ffb6;;
-    top: 1%;
+    top: 1.5%;
     right: 4%;
     cursor: pointer;
 }
+.iconExit:active{
+    font-size: 3.6rem;
+}
 
 
-.iconExit:hover{
+.iconExit i:hover{
     color:rgb(242, 94, 255);
     transition: all 0.4s ease-in-out;
 }
@@ -682,7 +773,9 @@ input[type=checkbox]{
         height: 50.03rem;
     }
 
- 
+    .carrito__visual::-webkit-scrollbar {
+        display: none;
+    }
     
     
 
@@ -848,7 +941,7 @@ input[type=checkbox]{
         left: 50%;
         transform: translate(-50%,-50%);
     }
-
+    
     .prodCar{
         gap:2rem;
         line-height: 2rem;
@@ -887,6 +980,15 @@ input[type=checkbox]{
         color: rgb(255, 240, 240);
         margin-left: 1.5rem;
     }
+
+        
+    .carrito__nav{
+        width: 46rem;
+  
+    }
+
+
+
     
 
 }
@@ -934,9 +1036,10 @@ input[type=checkbox]{
     }
 
     .imgProd img{
-        width: 4rem;
+        width: 4.2rem;
         margin-left: 0rem;
-        height: 4rem;
+        margin-top: 1rem;
+        height: 4.6rem;
     }
 
     .eliminar{
@@ -947,5 +1050,49 @@ input[type=checkbox]{
         color: rgb(255, 240, 240);
         margin-left: 0rem;
     }
+
+    
+.carrito__nav{
+    width: 31.59rem;
+    height: 6rem;
+}
+
+.vaciar{
+    width: 12rem;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    right: 4%;
+    margin-top: 1rem;
+    color: #a200ffb6;;
+    background-color: rgba(255, 234, 250, 0.925);
+    border: 2px solid #f59bf850;
+
+}
+
+.vaciar:active{
+    width: 11.8rem;
+    height: 4rem;
+    box-shadow: 0 0 0.5rem rgb(252, 2, 231);
+    color: #66005eb6;
+    border: none;
+}
+
+.total{
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 1.7rem;
+    letter-spacing: 1px;
+    color: #a200ff;
+    margin-left: -6.5rem;
+}
+
  
 }
