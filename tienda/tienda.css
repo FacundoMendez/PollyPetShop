@@ -491,7 +491,7 @@ input[type=checkbox]{
     background-color: rgb(191, 255, 255) ;
     filter: drop-shadow(-5px 5px 10px rgba(251, 203, 255, 0.603));
     position:absolute;
-    bottom:-2%;
+    bottom:3.6%;
     left: 50%;
     z-index: 100012;
     border-radius: 5px;
@@ -604,10 +604,15 @@ input[type=checkbox]{
     font-weight: 700;
     margin-left: 0rem;
     width: 30rem;
+    color: #a200ff;
+
 }
 
 .precioProd p{
-    font-weight: 700;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #a200ff;
+
     font-size: 2.2rem;
     margin-left: 1rem;
 }
@@ -984,6 +989,7 @@ input[type=checkbox]{
         
     .carrito__nav{
         width: 46rem;
+        bottom: 1rem;
   
     }
 
@@ -1051,48 +1057,49 @@ input[type=checkbox]{
         margin-left: 0rem;
     }
 
-    
-.carrito__nav{
-    width: 31.59rem;
-    height: 6rem;
-}
+        
+    .carrito__nav{
+        width: 31.59rem;
+        height: 6rem;
+        bottom: 3.8rem;
+    }
 
-.vaciar{
-    width: 12rem;
-    height: 4rem;
-    border-radius: 5px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-    right: 4%;
-    margin-top: 1rem;
-    color: #a200ffb6;;
-    background-color: rgba(255, 234, 250, 0.925);
-    border: 2px solid #f59bf850;
+    .vaciar{
+        width: 12rem;
+        height: 4rem;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        right: 4%;
+        margin-top: 1rem;
+        color: #a200ffb6;;
+        background-color: rgba(255, 234, 250, 0.925);
+        border: 2px solid #f59bf850;
 
-}
+    }
 
-.vaciar:active{
-    width: 11.8rem;
-    height: 4rem;
-    box-shadow: 0 0 0.5rem rgb(252, 2, 231);
-    color: #66005eb6;
-    border: none;
-}
+    .vaciar:active{
+        width: 11.8rem;
+        height: 4rem;
+        box-shadow: 0 0 0.5rem rgb(252, 2, 231);
+        color: #66005eb6;
+        border: none;
+    }
 
-.total{
-    width: 100%;
-    font-size: 1.8rem;
-    font-weight: 900;
-    text-align: center;
-    margin-top: 1.7rem;
-    letter-spacing: 1px;
-    color: #a200ff;
-    margin-left: -6.5rem;
-}
+    .total{
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 1.7rem;
+        letter-spacing: 1px;
+        color: #a200ff;
+        margin-left: -6.5rem;
+    }
 
  
 }
