@@ -430,11 +430,12 @@ input[type=checkbox]{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
     display: none;
 }
 
 .carrito__visual{
-    height: 44rem;
+    height: 40.5rem;
     width: 61rem;
     background-color: rgb(214, 255, 255) ;
     position: absolute;
@@ -447,6 +448,7 @@ input[type=checkbox]{
     transform: translate(-50%,-50%);
     display: flex;
     flex-wrap: wrap;
+    z-index: 90000;
 }
 
 .carrito__visual::-webkit-scrollbar {
@@ -491,13 +493,14 @@ input[type=checkbox]{
     background-color: rgb(191, 255, 255) ;
     filter: drop-shadow(-5px 5px 10px rgba(251, 203, 255, 0.603));
     position:absolute;
-    bottom:3.6%;
+    bottom: 0;
     left: 50%;
     z-index: 100012;
     border-radius: 5px;
     border: 2px solid rgba(255, 218, 224, 0.959);
     border-top: none;
     transform: translate(-50%,-50%);
+    z-index: 80000;
 }
 
 .vaciar{
@@ -511,7 +514,7 @@ input[type=checkbox]{
     cursor: pointer;
     position: absolute;
     right: 4%;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     color: #a200ffb6;;
     background-color: rgba(255, 234, 250, 0.925);
     border: 2px solid #f59bf850;
@@ -612,7 +615,6 @@ input[type=checkbox]{
     font-weight: bold;
     letter-spacing: 1px;
     color: #a200ff;
-
     font-size: 2.2rem;
     margin-left: 1rem;
 }
@@ -985,17 +987,10 @@ input[type=checkbox]{
         color: rgb(255, 240, 240);
         margin-left: 1.5rem;
     }
-
         
     .carrito__nav{
         width: 46rem;
-        bottom: 1rem;
-  
     }
-
-
-
-    
 
 }
 
@@ -1061,7 +1056,6 @@ input[type=checkbox]{
     .carrito__nav{
         width: 31.59rem;
         height: 6rem;
-        bottom: 3.8rem;
     }
 
     .vaciar{
