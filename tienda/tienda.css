@@ -453,7 +453,7 @@ input[type=checkbox]{
     width: 65rem;
     height:8rem;
     position:relative;
-    bottom:-34.5%;
+    bottom:-22%;
     left: 50%;
     transform: translate(-50%,0%);
     background-color: rgb(191, 255, 255) ;
@@ -462,6 +462,7 @@ input[type=checkbox]{
     border-radius: 5px;
     border: 2px solid rgba(255, 218, 224, 0.959);
     border-top: none;
+    display: none;
 }
 
 .carrito__visual::-webkit-scrollbar {
@@ -781,7 +782,7 @@ input[type=checkbox]{
     }
     
     .carrito__nav{
-        bottom:-4%;
+        bottom: -21.5%;
         left: 50%;
         transform: translate(-50%,0%);
     }
@@ -990,8 +991,9 @@ input[type=checkbox]{
         
     .carrito__nav{
         width: 50rem;
-        bottom:-2%;
+        bottom:-36%;
         left: 50%;
+        z-index: 500000;
         transform: translate(-50%,0%);
     }
 
@@ -1016,12 +1018,6 @@ input[type=checkbox]{
         font-size: 1.2rem;
     }
 
-    .nav__logo{
-        user-select: none;
-    }
-    .nav__logo img{
-        user-select: none;
-    }
 
     .carrito {
         margin-top: 0.3rem;
@@ -1071,7 +1067,7 @@ input[type=checkbox]{
     .carrito__nav{
         width: 31.59rem;
         height: 6rem;
-        bottom:-2%;
+        bottom:-37%;
         left: 50%;
         transform: translate(-50%,0%);
     }

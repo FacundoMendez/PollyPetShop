@@ -7,6 +7,7 @@ import{Productos} from "./arrayProductos.js"
 let CarritoProductos=[]
 let pantallaCarrito = document.querySelector(".container__carrito");
 let containerCarrito = document.querySelector(".carrito__productos");
+let acti = document.querySelector(".carrito__nav")
 
 function carrito(){
 
@@ -36,10 +37,10 @@ function carrito(){
                     <div class="textP nombreProd"><p>${nombreProd}:</p></div>
                     <div class="textP precioProd"><p>$${precioProd}</p></div>
                     <button class="eliminar"><i class="far fa-trash-alt"></i> </button>
-
                 </div>
                 `;
-
+                
+                acti.style.display = "inline-block"
             }
         })
     }
