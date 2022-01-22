@@ -430,25 +430,39 @@ input[type=checkbox]{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    flex-direction: column;
     display: none;
 }
 
+
 .carrito__visual{
-    height: 40.5rem;
+    height: 44rem;
     width: 61rem;
-    background-color: rgb(214, 255, 255) ;
-    position: absolute;
+    position: relative;
     top:54%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(214, 255, 255) ;
     border: 2px solid rgba(255, 218, 224, 0.959);
     border-radius: 5px;
     left: 50%;
     overflow: auto;
     overflow-x: hidden;
-    transform: translate(-50%,-50%);
     display: flex;
     flex-wrap: wrap;
-    z-index: 90000;
+}
+
+.carrito__nav{
+    width: 61rem;
+    height:8rem;
+    position:relative;
+    bottom:-10%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background-color: rgb(191, 255, 255) ;
+    filter: drop-shadow(-5px 5px 10px rgba(251, 203, 255, 0.603));
+    z-index: 100000;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 218, 224, 0.959);
+    border-top: none;
 }
 
 .carrito__visual::-webkit-scrollbar {
@@ -486,23 +500,6 @@ input[type=checkbox]{
     font-size: 1.2rem;
 }
 
-
-.carrito__nav{
-    width: 61rem;
-    height: 6rem;
-    background-color: rgb(191, 255, 255) ;
-    filter: drop-shadow(-5px 5px 10px rgba(251, 203, 255, 0.603));
-    position:absolute;
-    bottom: 0;
-    left: 50%;
-    z-index: 100012;
-    border-radius: 5px;
-    border: 2px solid rgba(255, 218, 224, 0.959);
-    border-top: none;
-    transform: translate(-50%,-50%);
-    z-index: 80000;
-}
-
 .vaciar{
     width: 12rem;
     height: 4rem;
@@ -514,11 +511,10 @@ input[type=checkbox]{
     cursor: pointer;
     position: absolute;
     right: 4%;
-    margin-top: 1.2rem;
-    color: #a200ffb6;;
+    margin-top: 2rem;
+    color: #7212aaf1;;
     background-color: rgba(255, 234, 250, 0.925);
     border: 2px solid #f59bf850;
-
 }
 
 .vaciar:active{
@@ -534,18 +530,17 @@ input[type=checkbox]{
     font-size: 2.3rem;
     font-weight: 900;
     text-align: center;
-    margin-top: 1.6rem;
+    margin-top: 2.6rem;
     letter-spacing: 1px;
     color: #a200ff;
     margin-left: -0.5rem;
 }
 
-
 .titleCarrito{
     filter: drop-shadow(5px 5px 10px rgba(251, 203, 255, 0.603));
     width: 100%;
     text-align: center;
-    height: 6rem;
+    height: 7rem;
     background-color: rgb(191, 255, 255) ;
     position: fixed;
 }
@@ -554,9 +549,9 @@ input[type=checkbox]{
     font-size: 2.5rem;
     font-weight: 900;
     color: #a200ffb6;;
-    margin-top: 1.5rem;
     font-style: italic;
     letter-spacing: 1px;
+    margin-top: 2rem;
 }
 
 .iconExit{
@@ -565,7 +560,7 @@ input[type=checkbox]{
     position: absolute ;
     z-index: 1203021;
     color: #a200ffb6;;
-    top: 1.5%;
+    top: 1.5rem;
     right: 4%;
     cursor: pointer;
 }
@@ -584,7 +579,6 @@ input[type=checkbox]{
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 7rem;
-
 }
 
 .prodCar{
@@ -592,11 +586,11 @@ input[type=checkbox]{
     flex-direction: row;
     gap:2rem;
     padding: 2rem 6rem;
+    padding-top: 2rem;
     font-size: 1.5rem;
     flex-direction: row;
     font-weight: 700;
     letter-spacing: 1px;
-
 }
 
 .textP p{
@@ -615,6 +609,7 @@ input[type=checkbox]{
     font-weight: bold;
     letter-spacing: 1px;
     color: #a200ff;
+
     font-size: 2.2rem;
     margin-left: 1rem;
 }
@@ -784,7 +779,11 @@ input[type=checkbox]{
         display: none;
     }
     
-    
+    .carrito__nav{
+        bottom:-20%;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
 
 }
 
@@ -886,16 +885,14 @@ input[type=checkbox]{
     }
 
     .select__button{
-        display: block;
         width: 95%;
         height: 4rem;
         border-radius: 5px;
-        position: absolute;
+        position: relative;
         border: 2px solid rgba(255, 83, 169, 0.226);
         background-color: rgba(231, 255, 255, 0.89) ;
         z-index: 12000210;
         cursor: pointer;
-        top: -0%;
     }
 
     .select__button p{
@@ -987,10 +984,15 @@ input[type=checkbox]{
         color: rgb(255, 240, 240);
         margin-left: 1.5rem;
     }
+
         
     .carrito__nav{
         width: 46rem;
+        bottom:-25%;
+        left: 50%;
+        transform: translate(-50%,0%);
     }
+
 
 }
 
@@ -1056,6 +1058,9 @@ input[type=checkbox]{
     .carrito__nav{
         width: 31.59rem;
         height: 6rem;
+        bottom:-26%;
+        left: 50%;
+        transform: translate(-50%,0%);
     }
 
     .vaciar{
