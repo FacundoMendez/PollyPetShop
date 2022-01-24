@@ -846,14 +846,13 @@ input[type=checkbox]{
     /* filtro movile */
 
     .selec__desktop{
-        display:inline-block;
+        display:none;
         background-color: rgb(255, 255, 255);
         width: 95%;
         border-radius: 5px;
         height: 50vh;
         position: relative;
         top: 34.7%;
-        display: none;
     }
 
 
@@ -889,12 +888,14 @@ input[type=checkbox]{
     .select__button{
         width: 95%;
         height: 4rem;
+        margin-top: -5rem;
         border-radius: 5px;
         position: relative;
         border: 2px solid rgba(255, 83, 169, 0.226);
         background-color: rgba(231, 255, 255, 0.89) ;
         z-index: 12000210;
         cursor: pointer;
+        display: inline-block;
     }
 
     .select__button p{
@@ -925,7 +926,6 @@ input[type=checkbox]{
     }
 
     .formAA{
-        display: none;
         background-color: rgba(202, 255, 255, 0.5) ;
         font-size: 2rem;
         display: inline-block;
@@ -1109,5 +1109,4 @@ input[type=checkbox]{
         margin-left: -6.5rem;
     }
 
- 
 }
