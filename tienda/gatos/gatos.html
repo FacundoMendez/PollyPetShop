@@ -13,9 +13,6 @@
     <title>Tienda</title>
 </head>
 <body>
-    <div class="carrito">
-        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-    </div>
 
     <header class="header">
         <nav class="nav">
@@ -37,7 +34,10 @@
                 <li class="nav-menu-item cuenta">
                     <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
                 </li>
-    
+                <div class="carrito">
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            
             </ul>
         </nav>
 
@@ -56,9 +56,13 @@
 
     <main>
         <div class="selec">
+            <div class="select__button">
+                <p>Filtrar</p>
+            </div>
             <div class="selec__desktop">
+                <div class="exitFiltro"><i class="fas fa-times"></i></div>
+
                 <form action="" class="formPG">
-                    <div class="exitFiltro"><i class="fas fa-times"></i></div>
                     <input type="checkbox" class="Perros" name="casilla" > &nbsp;  Perros <br>
                     <input type="checkbox" class="Gatos" name="casilla"> &nbsp; Gatos <br>
                 </form>
@@ -69,9 +73,6 @@
                     <input type="checkbox" class="Juguetes" name="casilla"> &nbsp; Jueguetes <br>
                     <input type="checkbox" class="Cuchas" name="casilla"> &nbsp; Cuchas <br>
                 </form>
-            </div>
-            <div class="select__button">
-                <p>Filtrar</p>
             </div>
         </div>
 
@@ -86,10 +87,13 @@
                 <div class="titleCarrito">
                     <p>CARRITO</p>
                 </div>
+
                 <div class="carrito__productos"></div>
+
+                <div class="carrito__nav">
+                </div>
             </div>
         </div>
-  
     </main>
     <script type=module src="../js/principal.js"></script>
     <script type=module src="../js/carrito.js"></script>

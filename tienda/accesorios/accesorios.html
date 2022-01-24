@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script defer src="../../main.js"></script>
     <link rel="stylesheet" href="../tienda.css">
     <title>Tienda</title>
 </head>
 <body>
-    <div class="carrito">
-        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-    </div>
     <header class="header">
         <nav class="nav">
             <button class="nav-toggle" aria-label="Abrir menú">
@@ -36,7 +33,9 @@
                 <li class="nav-menu-item cuenta">
                     <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
                 </li>
-        
+                <div class="carrito">
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
             </ul>
         </nav>
         
@@ -54,9 +53,13 @@
 
     <main>
         <div class="selec">
+            <div class="select__button">
+                <p>Filtrar</p>
+            </div>
             <div class="selec__desktop">
+                <div class="exitFiltro"><i class="fas fa-times"></i></div>
+
                 <form action="" class="formPG">
-                    <div class="exitFiltro"><i class="fas fa-times"></i></div>
                     <input type="checkbox" class="Perros" name="casilla" > &nbsp;  Perros <br>
                     <input type="checkbox" class="Gatos" name="casilla"> &nbsp; Gatos <br>
                 </form>
@@ -67,9 +70,6 @@
                     <input type="checkbox" class="Juguetes" name="casilla"> &nbsp; Jueguetes <br>
                     <input type="checkbox" class="Cuchas" name="casilla"> &nbsp; Cuchas <br>
                 </form>
-            </div>
-            <div class="select__button">
-                <p>Filtrar</p>
             </div>
         </div>
 
@@ -84,12 +84,14 @@
                 <div class="titleCarrito">
                     <p>CARRITO</p>
                 </div>
+
                 <div class="carrito__productos"></div>
+
+                <div class="carrito__nav">
+                </div>
             </div>
         </div>
-  
     </main>
-
 
 
     <script type=module src="../js/principal.js"></script>

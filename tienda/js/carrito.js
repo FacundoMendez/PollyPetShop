@@ -47,10 +47,11 @@ function carrito(){
                 </div>
                 `;
                 
+
                 acti.innerHTML=`
-                    <button class="vaciar">
-                        <p>Vaciar Carrito</p>
-                    </button>
+                    <a href="../carrito/carrito.html"><button class="vaciar">
+                        <p>Comprar</p>
+                    </button></a>
                     <div class="total">
                         <p>Total: $ ${result}</p>
                     </div>

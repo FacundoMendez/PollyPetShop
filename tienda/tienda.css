@@ -139,8 +139,8 @@ span{
 }
 
 .barraBusqueda{
-    background-color:#b871ff48; ;
-    width: 28rem;
+    background-color:#b871ff48;
+    width: 24rem;
     height: 3.5rem;
     border: none;
     font-size: 2rem;
@@ -149,6 +149,7 @@ span{
     padding: 2rem;
     z-index: 1000;
     border-radius: 5%;
+    margin-left: -5rem;
 }
 
 .barraBusqueda[type=text]{
@@ -180,6 +181,11 @@ span{
     font-size: 2rem;
 }
 
+.cuenta{
+    color: #ad5cff;
+    border-radius: 15%;
+    margin-left: 2rem;
+}
 
 
 /*  NAV 2  */
@@ -196,6 +202,7 @@ span{
     box-shadow: 0.1rem 0.1rem 0.7rem #87eeee ;
     border-radius: 4%;
     margin-top: 12rem;
+    text-align: center;
 }
 
 
@@ -231,11 +238,6 @@ main{
 
 }
 
-.cuenta{
-    color: #ad5cff;
-    border-radius: 15%;
-    margin-left: 2rem;
-}
 
 .container{
     position: relative;
@@ -298,23 +300,42 @@ main{
     margin-top: 1.5rem;
 }
 
-.prod__agregar{
+
+.prod__agregar {
     width: 70%;
     height: 4.5rem;
     position: absolute;
-    top: 90%;
-    left: 50%;
-    padding: 1rem;
-    transform: translate(-50%,-50%);
-    background-color: #d7f7f7 ;
-    margin-top: 0.5rem;
-    border-radius: 5px;
-    border: 0.1px solid rgba(0, 0, 0, 0.185);
-    cursor:pointer;
-    color: #6101afbe;
-
+    top: 83%;
+    left: 15%;
+    background-color: #e4ffff;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65,  111, .5) 0 -3px 0 inset;
+    color: #9734f3;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-size: 18px;
+    right: 1%;
+    margin-top: 2rem;
 }
 
+.prod__agregar:focus {
+    box-shadow: #dee1ff 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #aeb7ff 0 -3px 0 inset;
+}
+
+.prod__agregar:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #a2adff 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.prod__agregar:active {
+    transform: translateY(2px);
+}
 .prod__agregar p{
     width: 100%;
     font-size: 1.6rem;
@@ -372,7 +393,7 @@ main{
     z-index: 1000;
     gap: 2rem;
     padding-top: 5rem;
-    margin-left: 0rem;
+    margin-left: 2rem;
 }
 
 .formPG{
@@ -434,8 +455,8 @@ input[type=checkbox]{
 
 
 .carrito__visual{
-    height: 48rem;
-    width: 65rem;
+    height: 55rem;
+    width: 80rem;
     position: relative;
     top:58%;
     transform: translate(-50%,-50%);
@@ -450,10 +471,10 @@ input[type=checkbox]{
 }
 
 .carrito__nav{
-    width: 65rem;
-    height:8rem;
+    width: 80rem;
+    height:9rem;
     position:relative;
-    bottom:0%;
+    bottom:-4%;
     left: 50%;
     transform: translate(-50%,0%);
     background-color: rgb(191, 255, 255) ;
@@ -578,16 +599,17 @@ input[type=checkbox]{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 7rem;
+    margin-top: 13.5rem;
+    margin-bottom: 13.5rem;
 }
 
 .prodCar{
     display: flex;
     flex-direction: row;
     gap:2rem;
-    padding: 2rem 6rem;
+    padding: 4rem 6rem;
     padding-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     flex-direction: row;
     font-weight: 700;
     letter-spacing: 1px;
@@ -616,6 +638,13 @@ input[type=checkbox]{
     margin-left: 1rem;
 }
 
+.precioProd {
+    padding: 0 3rem;
+}
+.imgProd{
+    padding: 0 3rem;
+}
+
 .imgProd img{
     width: 8rem;
     margin-left: -4rem;
@@ -624,6 +653,72 @@ input[type=checkbox]{
     border-radius: 10px;
 }
 
+
+
+@media screen and (max-width:1400px){
+    /* carrito */
+
+    .carrito__visual{
+        height: 65rem;
+        width: 65rem;
+        top:57%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .prodCar{
+        gap:2rem;
+        line-height: 2rem;
+        padding: 2rem 1rem;
+        font-size: 1.4rem;
+        margin-left: 1.5rem;
+    }
+
+    .textP p{
+        margin-top: 0rem;
+    }
+
+    .nombreProd p{
+        font-weight: 700;
+        margin-left: 0rem;
+        width: 15rem;
+    }
+
+    .precioProd p{
+        font-weight: 700;
+        font-size: 2rem;
+        margin-left: 5rem;
+        margin-top: 1.5rem;
+    }
+
+    .imgProd img{
+        width: 6rem;
+        margin-left: 0rem;
+        height: 6rem;
+    }
+
+    .eliminar{
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2.3rem;
+        margin-top: 1rem;
+        color: rgb(255, 240, 240);
+        margin-left: 1.5rem;
+    }
+
+        
+    .carrito__nav{
+        width: 65rem;
+        bottom:0%;
+        left: 50%;
+        z-index: 500000;
+        transform: translate(-50%,0%);
+    }
+
+    .carrito{
+        margin-top: -0.5%;
+    }
+}
 
 
 @media screen and (max-width: 1080px){
@@ -710,9 +805,9 @@ input[type=checkbox]{
         right: 10%;
         font-size: 3.2rem;
         z-index: 11000;
-        margin-top: 1rem;
-
+        margin-top: -0.4rem;
     }
+    
     .nav{
         padding-right: 5.5rem;
     }
@@ -790,6 +885,9 @@ input[type=checkbox]{
 }
 
 
+
+
+
 @media screen and (max-width: 767px){
     .nav2{
         width: 95%;
@@ -811,7 +909,7 @@ input[type=checkbox]{
         padding-bottom: 40rem;
         margin-left: 0rem;
     }
- 
+
     #prod{
         width: 90%;
         gap: 4rem;
@@ -819,14 +917,13 @@ input[type=checkbox]{
         margin-left: 0;
         margin: 0 auto;
         margin-top: 7rem;
-
     }
+
     .prod__marco{
         width: 26rem;
         height: 43rem;
-
     }
-   
+
     .prod__agregar p{
         width: 100%;
         font-size: 1.6rem;
@@ -997,6 +1094,9 @@ input[type=checkbox]{
         transform: translate(-50%,0%);
     }
 
+    .carrito{
+        margin-top: -0.5%;
+    }
 
 }
 
@@ -1019,8 +1119,9 @@ input[type=checkbox]{
     }
 
 
+
     .carrito {
-        margin-top: 0.3rem;
+        margin-top: -0.3rem;
     }
 
     .textP p{
@@ -1052,6 +1153,14 @@ input[type=checkbox]{
         margin-left: 0rem;
         margin-top: 1rem;
         height: 4.6rem;
+    }
+
+    .imgProd{
+        padding: 0;
+    }
+
+    .precioProd{
+        padding: 0;
     }
 
     .eliminar{
@@ -1110,3 +1219,5 @@ input[type=checkbox]{
     }
 
 }
+
+

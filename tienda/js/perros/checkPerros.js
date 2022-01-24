@@ -30,7 +30,6 @@ let Alimentos = document.querySelector(".Alimentos")
 let Accesorios = document.querySelector(".Accesorios")
 let Juguetes = document.querySelector(".Juguetes")
 let Cuchas = document.querySelector(".Cuchas")
-let Gatos = document.querySelector(".Gatos")
 let Perros = document.querySelector(".Perros")
 
 const prod = document.getElementById("prod"); 

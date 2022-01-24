@@ -39,7 +39,7 @@ function crearDivsJuguetesGato(){
                 <div class="prod__img"><img src="${filtroJuguetesGato[i].img}" alt=""></div>
                 <div class="prod__title"><p> ${filtroJuguetesGato[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroJuguetesGato[i].precio}</p></div>
-                <div class="prod__agregar" id="${filtroJuguetesGato[i].id}"><p>Agregar al Carrito</p></div> 
+                <button class="prod__agregar"  role="button" id="${filtroJuguetesGato[i].id}">Agregar al carrito</button> 
             </div>
         `;
 
@@ -60,7 +60,7 @@ function crearDivsAccesoriosGato(){
                 <div class="prod__img"><img src="${filtroAccesoriosGato[i].img}" alt=""></div>
                 <div class="prod__title"><p> ${filtroAccesoriosGato[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroAccesoriosGato[i].precio}</p></div>
-                <div class="prod__agregar" id="${filtroAccesoriosGato[i].id}"><p>Agregar al Carrito</p></div> 
+                <button class="prod__agregar"  role="button" id="${filtroAccesoriosGato[i].id}">Agregar al carrito</button> 
             </div>
         `;
         carrito();
@@ -80,7 +80,7 @@ function crearDivsCuchasGato(){
                 <div class="prod__img"><img src="${filtroCuchasGato[i].img}" alt=""></div>
                 <div class="prod__title"><p> ${filtroCuchasGato[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroCuchasGato[i].precio}</p></div>
-                <div class="prod__agregar" id="${filtroCuchasGato[i].id}"><p>Agregar al Carrito</p></div> 
+                <button class="prod__agregar"  role="button" id="${filtroCuchasGato[i].id}">Agregar al carrito</button> 
             </div>
         `;
 
@@ -100,7 +100,7 @@ function crearDivsAlimentosGato(){
                 <div class="prod__img"><img src="${filtroAlimentosGato[i].img}" alt=""></div>
                 <div class="prod__title"><p> ${filtroAlimentosGato[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroAlimentosGato[i].precio}</p></div>
-                <div class="prod__agregar" id="${filtroAlimentosGato[i].id}"><p>Agregar al Carrito</p></div> 
+                <button class="prod__agregar" role="button" id="${filtroAlimentosGato[i].id}" >Agregar al carrito</button> 
             </div>
         `;
 
