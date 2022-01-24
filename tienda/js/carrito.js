@@ -8,9 +8,11 @@ let CarritoProductos=[]
 let pantallaCarrito = document.querySelector(".container__carrito");
 let containerCarrito = document.querySelector(".carrito__productos");
 let acti = document.querySelector(".carrito__nav");
+let carritoContador = document.querySelector(".contador")
+
 
 let result = 0;
-
+let contador = 0; 
 
 function carrito(){
 
@@ -21,6 +23,8 @@ function carrito(){
     for(let element of agregar){
         element.addEventListener("click",function(){
 
+            contador ++
+
             let myID = element.id
 
             CarritoProductos= Productos.filter(elem => elem.id == myID)
@@ -29,6 +33,7 @@ function carrito(){
                 sessionStorage.setItem("nombreProd", `${CarritoProductos[i].nombre}`)
                 sessionStorage.setItem("precioProd", `${CarritoProductos[i].precio}`)
                 sessionStorage.setItem("imgProd", `${CarritoProductos[i].img}`)
+                sessionStorage.setItem("contador", `${contador}`)
 
                 result = suma(CarritoProductos[i].precio , result) 
 
@@ -37,7 +42,9 @@ function carrito(){
                 let nombreProd = sessionStorage.getItem("nombreProd")
                 let precioProd = sessionStorage.getItem("precioProd")
                 let imgProd = sessionStorage.getItem("imgProd")
-                
+                let conta = sessionStorage.getItem("contador")
+
+
                 containerCarrito.innerHTML+=`
                 <div class="prodCar">
                     <div class="imgProd"><img src="${imgProd}" alt=""></div>
@@ -46,6 +53,13 @@ function carrito(){
                     <button class="eliminar"><i class="far fa-trash-alt"></i> </button>
                 </div>
                 `;
+
+                carritoContador.innerHTML=`
+                    <p>${conta}</p>
+
+                `;
+
+                console.log(conta)
                 
 
                 acti.innerHTML=`
@@ -56,7 +70,6 @@ function carrito(){
                         <p>Total: $ ${result}</p>
                     </div>
                 `;
-                console.log(result)
 
                 acti.style.display = "inline-block"
             }
