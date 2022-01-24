@@ -1066,7 +1066,7 @@ input[type=checkbox]{
         
     .carrito__nav{
         width: 31.59rem;
-        height: 6.1rem;
+        height: 6rem;
         bottom:0%;
         left: 50%;
         transform: translate(-50%,0%);
