@@ -679,7 +679,7 @@ input[type=checkbox]{
     /* carrito */
 
     .carrito__visual{
-        height: 65rem;
+        height: 50rem;
         width: 65rem;
         top:57%;
         left: 50%;
@@ -729,14 +729,14 @@ input[type=checkbox]{
         
     .carrito__nav{
         width: 65rem;
-        bottom:0%;
+        bottom:-2rem;
         left: 50%;
         z-index: 500000;
         transform: translate(-50%,0%);
     }
 
     .carrito{
-        margin-top: -0.5%;
+        margin-top: 0.5rem;
     }
 }
 
@@ -897,7 +897,7 @@ input[type=checkbox]{
     }
     
     .carrito__nav{
-        bottom:0%;
+        bottom:-2rem;
         left: 50%;
         transform: translate(-50%,0%);
     }
@@ -1108,7 +1108,7 @@ input[type=checkbox]{
         
     .carrito__nav{
         width: 50rem;
-        bottom:0%;
+        bottom:-6%;
         left: 50%;
         z-index: 500000;
         transform: translate(-50%,0%);
@@ -1196,7 +1196,7 @@ input[type=checkbox]{
     .carrito__nav{
         width: 31.59rem;
         height: 6rem;
-        bottom:0%;
+        bottom:-6%;
         left: 50%;
         transform: translate(-50%,0%);
     }

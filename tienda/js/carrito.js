@@ -11,12 +11,21 @@ let acti = document.querySelector(".carrito__nav");
 let carritoContador = document.querySelector(".contador")
 
 
+
+let nombreProd 
+let precioProd 
+let imgProd
+let conta 
+
+
+
 let result = 0;
 let contador = 0; 
 
 function carrito(){
 
     carritoBottom()
+    filtroMovile(); 
 
     const agregar = document.getElementsByClassName("prod__agregar");
 
@@ -30,19 +39,19 @@ function carrito(){
             CarritoProductos= Productos.filter(elem => elem.id == myID)
 
             for(let i = 0; i< CarritoProductos.length; i++){
-                sessionStorage.setItem("nombreProd", `${CarritoProductos[i].nombre}`)
-                sessionStorage.setItem("precioProd", `${CarritoProductos[i].precio}`)
-                sessionStorage.setItem("imgProd", `${CarritoProductos[i].img}`)
-                sessionStorage.setItem("contador", `${contador}`)
+                localStorage.setItem("nombreProd", `${CarritoProductos[i].nombre}`)
+                localStorage.setItem("precioProd", `${CarritoProductos[i].precio}`)
+                localStorage.setItem("imgProd", `${CarritoProductos[i].img}`)
+                localStorage.setItem("contador", `${contador}`)
 
                 result = suma(CarritoProductos[i].precio , result) 
 
-                sessionStorage.setItem("precioTotal", result)
+                localStorage.setItem("precioTotal", result)
 
-                let nombreProd = sessionStorage.getItem("nombreProd")
-                let precioProd = sessionStorage.getItem("precioProd")
-                let imgProd = sessionStorage.getItem("imgProd")
-                let conta = sessionStorage.getItem("contador")
+                nombreProd = localStorage.getItem("nombreProd")
+                precioProd = localStorage.getItem("precioProd")
+                imgProd = localStorage.getItem("imgProd")
+                conta = localStorage.getItem("contador")
 
 
                 containerCarrito.innerHTML+=`
@@ -59,8 +68,6 @@ function carrito(){
 
                 `;
 
-                console.log(conta)
-                
 
                 acti.innerHTML=`
                     <a href="../carrito/carrito.html"><button class="vaciar">
@@ -126,4 +133,3 @@ function filtroMovile(){
 
 }
 
-filtroMovile(); 
