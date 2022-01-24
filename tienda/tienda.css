@@ -453,7 +453,7 @@ input[type=checkbox]{
     width: 65rem;
     height:8rem;
     position:relative;
-    bottom:-22%;
+    bottom:0%;
     left: 50%;
     transform: translate(-50%,0%);
     background-color: rgb(191, 255, 255) ;
@@ -782,7 +782,7 @@ input[type=checkbox]{
     }
     
     .carrito__nav{
-        bottom: -21.5%;
+        bottom:0%;
         left: 50%;
         transform: translate(-50%,0%);
     }
@@ -991,7 +991,7 @@ input[type=checkbox]{
         
     .carrito__nav{
         width: 50rem;
-        bottom:-36%;
+        bottom:0%;
         left: 50%;
         z-index: 500000;
         transform: translate(-50%,0%);
@@ -1066,8 +1066,8 @@ input[type=checkbox]{
         
     .carrito__nav{
         width: 31.59rem;
-        height: 6rem;
-        bottom:-37%;
+        height: 6.1rem;
+        bottom:0%;
         left: 50%;
         transform: translate(-50%,0%);
     }

@@ -7,7 +7,10 @@ import{Productos} from "./arrayProductos.js"
 let CarritoProductos=[]
 let pantallaCarrito = document.querySelector(".container__carrito");
 let containerCarrito = document.querySelector(".carrito__productos");
-let acti = document.querySelector(".carrito__nav")
+let acti = document.querySelector(".carrito__nav");
+
+let result = 0;
+
 
 function carrito(){
 
@@ -23,14 +26,18 @@ function carrito(){
             CarritoProductos= Productos.filter(elem => elem.id == myID)
 
             for(let i = 0; i< CarritoProductos.length; i++){
-                localStorage.setItem("nombreProd", `${CarritoProductos[i].nombre}`)
-                localStorage.setItem("precioProd", `${CarritoProductos[i].precio}`)
-                localStorage.setItem("imgProd", `${CarritoProductos[i].img}`)
+                sessionStorage.setItem("nombreProd", `${CarritoProductos[i].nombre}`)
+                sessionStorage.setItem("precioProd", `${CarritoProductos[i].precio}`)
+                sessionStorage.setItem("imgProd", `${CarritoProductos[i].img}`)
 
-                let nombreProd = localStorage.getItem("nombreProd")
-                let precioProd = localStorage.getItem("precioProd")
-                let imgProd = localStorage.getItem("imgProd")
+                result = suma(CarritoProductos[i].precio , result) 
 
+                sessionStorage.setItem("precioTotal", result)
+
+                let nombreProd = sessionStorage.getItem("nombreProd")
+                let precioProd = sessionStorage.getItem("precioProd")
+                let imgProd = sessionStorage.getItem("imgProd")
+                
                 containerCarrito.innerHTML+=`
                 <div class="prodCar">
                     <div class="imgProd"><img src="${imgProd}" alt=""></div>
@@ -40,12 +47,31 @@ function carrito(){
                 </div>
                 `;
                 
+                acti.innerHTML=`
+                    <button class="vaciar">
+                        <p>Vaciar Carrito</p>
+                    </button>
+                    <div class="total">
+                        <p>Total: $ ${result}</p>
+                    </div>
+                `;
+                console.log(result)
+
                 acti.style.display = "inline-block"
             }
         })
     }
 }
 
+
+
+function suma(productoPrecio , result){
+    return result += productoPrecio;
+}
+
+function limpiar(productoPrecio , result){
+    return result += productoPrecio;
+}
 
 
 
