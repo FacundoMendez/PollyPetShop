@@ -1,21 +1,26 @@
+import{arrayProducts} from "../js/carrito.js"
 
-let carritoContador = document.querySelector(".contador")
+$(() => {
 
+    
+    console.log(arrayProducts)
 
+    function actualizar(){
+        let conta = localStorage.getItem("contador")
+    
+        $(".contador p").html(`
+            <p>${conta}</p>
+        `)
 
-function actualizar(){
-    let nombreProd = localStorage.getItem("nombreProd")
-    let precioProd = localStorage.getItem("precioProd")
-    let imgProd = localStorage.getItem("imgProd")
-    let conta = localStorage.getItem("contador")
-
-
-    carritoContador.innerHTML=`
-    <p>${conta}</p>
-
-`;
-}
+    /*   for(let i = 0 ; i < arrayProducts.lenght; i++){
 
 
+        } */
 
-actualizar();
+    }
+    
+    actualizar();
+
+    
+
+});

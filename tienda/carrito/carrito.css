@@ -355,6 +355,64 @@ span{
 }
 
 
+.produc__carrito{
+    display: none;
+}
+
+
+.prodCar{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    padding: 4rem 6rem;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    flex-direction: row;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 2rem;
+    position: absolute;
+}
+
+
+.textP p{
+    margin-top: 2rem;
+}
+
+.nombreProd p{
+    font-weight: 700;
+    margin-left: 0rem;
+    width: 30rem;
+    color: #a200ff;
+
+}
+
+.precioProd p{
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #a200ff;
+
+    font-size: 2.2rem;
+    margin-left: 1rem;
+}
+
+.precioProd {
+    padding: 0 3rem;
+}
+.imgProd{
+    padding: 0 3rem;
+}
+
+.imgProd img{
+    width: 8rem;
+    margin-left: -4rem;
+    height: 8rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 10px;
+}
+
+
+
 
 @media screen and (max-width: 1080px){
     .header {
