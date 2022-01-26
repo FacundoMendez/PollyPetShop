@@ -201,12 +201,6 @@ span{
 }
 
 
-
-  /* MOBILE */
-@media (max-width: 1029px) {
-
-}
-
 .cuenta{
     color: #ad5cff;
     border-radius: 15%;
@@ -223,7 +217,6 @@ span{
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: #ddfffd ;
-
     width: 50%;
     margin: 5rem auto;
     box-shadow: 0.1rem 0.1rem 0.7rem #87eeee ;
@@ -255,34 +248,41 @@ span{
 }
 
 
-
-
-/* Container1 /gato grande barra de busqueda */
-
-.container{
-    height: 70vh;
-    width: 100vw;
-    position: relative;
+.containerBusqueda{
+    width: 33%;
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    position: absolute;
+    right:14%;
+    top: 15%;
 }
 
-.container p{
+.containerBusqueda p{
     font-size: 4.3rem;
     color: #ad5cff;
     font-weight: 800;
-    position: absolute;
-    top: 15%;
-    right: 15%;
 }
 
+.busq{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+
 .barraBusqueda{
-    background-color: #efe0ff ;
-    width: 54rem;
-    height: 4.5rem;
-    position: absolute;
-    top: 28%;
-    right: 15%;
+    position: relative;
+    width: 80%;
+    left: 40%;
+    transform: translate(-50%);
+    height: 5rem;
     border: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: rgb(35, 0, 70);
     font-weight: 700;
     padding: 2rem;
@@ -290,21 +290,48 @@ span{
     border-radius: 5%;
 }
 
+#busq {
+    position: absolute;
+    font-size: 3rem;
+    top: 1rem;
+    right: 8.2rem;
+}
 
+.busq i{
+    font-size: 3rem;
+    opacity: 0.5;
+    color:rgb(99, 3, 196);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.busq i:hover{
+    font-size: 2.8rem;
+    color:rgb(234, 1, 255);
+}
+
+
+.barraBusqueda::placeholder{
+    color:rgba(35, 0, 70, 0.24);
+    font-size: 2rem;
+}
 
 
 .barraBusqueda[type=text]{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    border: 1px solid #ccffff;
+    border: 1px solid #6c06d13f;
     color: #ad5cff;
 }
 
-.barraBusqueda::placeholder{
-    color: #cb97ff;
-    font-size: 2.4rem;
+
+.container{
+    height: 70vh;
+    width: 100vw;
+    position: relative;
 }
+
 
 
 .container__gatoGrande{
@@ -714,10 +741,12 @@ span{
         font-size: 3.5rem;
     }
 
-    .barraBusqueda{
-        width: 47rem;
-        font-size: 2.3rem;
+
+    .containerBusqueda{
+        width: 45%;
+        right:10%;
     }
+    
 
     .barraBusqueda::placeholder{
         font-size: 2.2rem;
@@ -974,7 +1003,7 @@ span{
         outline: none;
     }
 
-    .fas{
+    .fa-bars{
         color: #ad5cff;
         font-size: 3.9rem;
         margin-top: 2rem;
@@ -995,7 +1024,7 @@ span{
     /* Container1 /gato grande barra de busqueda */
 
     .container{
-        height: 100vh;
+        height: 80vh;
     }
 
     .container p{
@@ -1004,12 +1033,7 @@ span{
         top: 22%;
     }
 
-    .barraBusqueda{
-        width: 40rem;
-        font-size: 2.3rem;
-        right: 10%;
-        top: 35%;
-    }
+
 
     .barraBusqueda::placeholder{
         font-size: 2.1rem;
@@ -1026,7 +1050,7 @@ span{
 
     .container__gato1{
         position: absolute;
-        bottom: -15%;
+        bottom: -18%;
         right:5%;
         z-index: 100;
     }
@@ -1105,7 +1129,7 @@ span{
     /* Container1 /gato grande barra de busqueda */
 
     .container{
-        height: 100vh;
+        height: 70vh;
     }
 
     .container p{
@@ -1114,13 +1138,10 @@ span{
         top: 22%;
     }
 
-    .barraBusqueda{
-        width: 31rem;
-        font-size: 2.3rem;
-        right: 10%;
-        top: 33%;
+    .busq i{
+        margin-right: -3rem;
     }
-
+  
     .barraBusqueda::placeholder{
         font-size: 1.8rem;
     }
@@ -1141,7 +1162,7 @@ span{
 
     .container__gato1{
         position: absolute;
-        bottom: -15.5%;
+        bottom: -20.5%;
         right:4%;
         z-index: 100;
     }
@@ -1228,21 +1249,22 @@ span{
     /* Container1 /gato grande barra de busqueda */
 
     .container{
-        height: 80vh;
+        height: 70vh;
     }
 
-    .container p{
+    .containerBusqueda{
+        right: 2%;
+    }
+
+    .containerBusqueda p{
         font-size: 1.9rem;
-        right: 8%;
+        width: 30rem;
         top: 22%;
     }
 
     .barraBusqueda{
-        width: 26rem;
-        height: 1.5rem;
-        font-size: 2.3rem;
-        right: 8%;
-        top: 30%;
+        right: 4rem;
+        width: 23rem;
     }
 
     .barraBusqueda::placeholder{
@@ -1265,7 +1287,7 @@ span{
 
     .container__gato1{
         position: absolute;
-        bottom: -18%;
+        bottom: -20%;
         right:2%;
         z-index: 100;
     }
@@ -1364,23 +1386,32 @@ span{
         height: 40vh;
     }
 
-    .container p{
-        position: absolute;
-        font-size: 2.2rem;
-        width: 100%;
-        text-align: center;
-        left: 0%;
-        top: 15%;
+    .containerBusqueda p{
+        margin-left: -4rem;
+        font-size: 2.3rem;
+    }
+
+    .containerBusqueda{
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        left: 58%;
+        transform: translate(-50%);
+    }
+    .busq{
+        margin-left: -5rem;
+        width: 30rem;
+    }
+
+    .busq i{
+        position: static;
+        margin-right: -6rem;
     }
 
     .barraBusqueda{
-        position: absolute;
-        width: 30rem;
-        font-size: 2.3rem;
-        top: 35%;
-        right: 0;
-        left: 0%;
-        margin: 0 auto;
+        width: 100%;
+        left: 50%;
     }
 
     .barraBusqueda::placeholder{
@@ -1399,6 +1430,7 @@ span{
 
     .container__gato1 img{
         width: 60%;
+        margin-left: 2rem;
     }
 
     .container__gato1{
