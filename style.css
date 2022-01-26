@@ -1383,7 +1383,7 @@ span{
     /* Container1 /gato grande barra de busqueda */
 
     .container{
-        height: 40vh;
+        height: 50vh;
     }
 
     .containerBusqueda p{
@@ -1435,7 +1435,7 @@ span{
 
     .container__gato1{
         position: absolute;
-        bottom: -35%;
+        bottom: -28%;
         left: 10.5rem;
         right: 0;
         z-index: 100;
