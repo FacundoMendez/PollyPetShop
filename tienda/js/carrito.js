@@ -39,13 +39,19 @@ function carrito(){
             let myID = element.id
             CarritoProductos= Productos.filter(elem => elem.id == myID)
 
-            arrayProducts= guardar(element.nombre,element.precio,element.img)
-            console.log(arrayProducts)
 
             for(let i = 0; i< CarritoProductos.length; i++){
-            
 
-                guardar(CarritoProductos[i].nombre,CarritoProductos[i].precio,CarritoProductos[i].img)
+               
+          
+
+                /* Guardar array en localStorage (no funciona -- ) 
+
+                arrayProducts[contador]=guardar(CarritoProductos[i].nombre,CarritoProductos[i].precio,CarritoProductos[i].img)
+                localStorage.setItem("productosCarrito", arrayProducts[contador])
+
+                    */
+
 
                 let conta = mostrarLocalStorage()
     
@@ -77,17 +83,14 @@ function carrito(){
 
 
             }
+            console.log(arrayProducts[contador])
 
         })
 
     }
+
 }
 
-
-/* function nuevoArray(nombre,precio,img,i, arrayProducts){
-    arrayProducts[i] = nombre, precio , img
-}
- */
 
 
 function suma(productoPrecio , result){
@@ -147,6 +150,7 @@ function guardar(nombre, precio, img){
     localStorage.setItem("products", JSON.stringify(productos))
 
     localStorage.setItem("precioTotal", result)
+
 
 }
 

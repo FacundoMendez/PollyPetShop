@@ -12,10 +12,6 @@ $(() => {
             <p>${conta}</p>
         `)
 
-    /*   for(let i = 0 ; i < arrayProducts.lenght; i++){
-
-
-        } */
 
     }
     
