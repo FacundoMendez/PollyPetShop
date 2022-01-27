@@ -1,8 +1,8 @@
 export{carrito, filtroMovile}
 
+
 import{Productos} from "./arrayProductos.js";
 
-export {arrayProducts}
 
 
 
@@ -16,79 +16,69 @@ let result = 0;
 let contador = 0; 
 
 
-let arrayProducts = []
 let CarritoProductos = []
 
 
+class contenedorCarrito {
+    constructor( nombre, precio, img){
+        this.nombre = nombre;
+        this.precio = precio;
+        this.img = img
+    }
+
+}
+
+
 function carrito(){
+    let arrayProducts = []
+
 
     carritoBottom()
     filtroMovile(); 
-
 
     const agregar = document.getElementsByClassName("prod__agregar");
 
     for(let element of agregar){
 
-
-
         element.addEventListener("click",function(){
-
 
             contador ++
             let myID = element.id
+
             CarritoProductos= Productos.filter(elem => elem.id == myID)
 
 
-            for(let i = 0; i< CarritoProductos.length; i++){
+            arrayProducts.push(new contenedorCarrito(CarritoProductos[0].nombre, CarritoProductos[0].precio, CarritoProductos[0].img) )
 
-               
-          
-
-                /* Guardar array en localStorage (no funciona -- ) 
-
-                arrayProducts[contador]=guardar(CarritoProductos[i].nombre,CarritoProductos[i].precio,CarritoProductos[i].img)
-                localStorage.setItem("productosCarrito", arrayProducts[contador])
-
-                    */
+            result = suma(CarritoProductos[0].precio , result) 
 
 
-                let conta = mostrarLocalStorage()
-    
-                result = suma(CarritoProductos[i].precio , result) 
-            /*     console.log(result) */
+            containerCarrito.innerHTML+=`
+                <div class="prodCar">
+                    <div class="imgProd"><img src="${CarritoProductos[0].img}" alt=""></div>
+                    <div class="textP nombreProd"><p>${CarritoProductos[0].nombre}:</p></div>
+                    <div class="textP precioProd"><p>$${CarritoProductos[0].precio}</p></div>
+                    <button class="eliminar"><i class="far fa-trash-alt"></i> </button>
+                </div>
+            `;
 
-                containerCarrito.innerHTML+=`
-                    <div class="prodCar">
-                        <div class="imgProd"><img src="${CarritoProductos[i].img}" alt=""></div>
-                        <div class="textP nombreProd"><p>${CarritoProductos[i].nombre}:</p></div>
-                        <div class="textP precioProd"><p>$${CarritoProductos[i].precio}</p></div>
-                        <button class="eliminar"><i class="far fa-trash-alt"></i> </button>
-                    </div>
-                `;
+            carritoContador.innerHTML=`
+                <p>${contador}</p>
+            `;
 
-                carritoContador.innerHTML=`
-                    <p>${conta}</p>
-                `;
+            acti.innerHTML=`
+                <a href="../carrito/carrito.html"><button class="vaciar"> <p> Comprar </p> </button></a>
+                <div class="total"> <p>Total: $ ${result}</p> </div>
+            `;
 
-                acti.innerHTML=`
-                    <a href="../carrito/carrito.html"><button class="vaciar"> <p> Comprar </p> </button></a>
-                    <div class="total"> <p>Total: $ ${result}</p> </div>
-                `;
-
-                acti.style.display = "inline-block"
-
+            acti.style.display = "inline-block"
                 
-
-
-
-            }
-            console.log(arrayProducts[contador])
+            localStorage.setItem("productosCarrito", JSON.stringify(arrayProducts))
+            console.log(arrayProducts)
+            guardar()
 
         })
-
     }
-
 }
 
 
@@ -124,7 +114,6 @@ function filtroMovile(){
     
     let exitFiltro= document.querySelector(".exitFiltro")
     
-    
     filtroBottom.addEventListener("click", function(){
         filtroMov.style.display="inline-block";
     })
@@ -133,42 +122,15 @@ function filtroMovile(){
         filtroMov.style.display="none";
     })
 
-
 }
 
 
-function guardar(nombre, precio, img){
-
-    let productos = {
-        nombre:  nombre,
-        precio:  precio,
-        img:  img
-    }
+function guardar(){
 
     localStorage.setItem("contador", `${contador}`)
 
-    localStorage.setItem("products", JSON.stringify(productos))
-
     localStorage.setItem("precioTotal", result)
-
-
 }
 
 
-function mostrarLocalStorage(){
 
-    if(JSON.parse(localStorage.getItem("products"))){
-
-        let list = JSON.parse(localStorage.getItem("products"))
-        let conta = localStorage.getItem("contador")
-        let precitoTotal = localStorage.getItem("precioTotal")
-
-       /*  console.log(list)
-        console.log(conta) */
-
-        return conta
-    }else{
-        console.log("no existe ")
-    }
-
-}
