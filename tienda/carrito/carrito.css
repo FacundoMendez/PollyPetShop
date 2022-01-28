@@ -97,7 +97,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-left: -2rem;
+    margin-left: 1rem;
 }
 
 
@@ -211,7 +211,7 @@ span{
 /* main */
 
 main{
-    background-color: rgb(221, 221, 221);
+    background-color: rgba(210, 240, 255, 0.411);
 }
 
 /* vacio */
@@ -221,12 +221,11 @@ main{
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 3%;
     gap:5rem;
     position: relative;
-    margin-left: 2%;
     
 }
 
@@ -252,10 +251,7 @@ main{
     width: 8px;
     height: 8px;
   }
-  ::-webkit-scrollbar-button {
-    width: 100px;
-    height: 100px;
-  }
+
   ::-webkit-scrollbar-thumb {
     background: #e7a3ff;
     border: 27px none #ffffff;
@@ -487,10 +483,37 @@ main{
     font-size: 1.2rem;
 }
 
+
+
+/* conejo */
+
+.conejo{
+    width: 22rem;
+    height: 22rem;
+    position: absolute;
+    right: 1%;
+    bottom: 7%;
+
+}
+.conejo img{
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px #00000059);
+
+}
+
+.conejo{
+    display: none;
+}
+
+
+
+
+
 @media screen and (max-width: 1400px) {
     .container{
         margin-left: 0rem;
         justify-content: center;
+        margin-top: 10rem;
     }
 
     .carrito__vacio {
@@ -511,6 +534,8 @@ main{
         right: 5rem;
     }
 }
+
+
 
 
 

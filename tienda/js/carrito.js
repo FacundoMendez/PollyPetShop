@@ -20,10 +20,11 @@ let CarritoProductos = []
 
 
 class contenedorCarrito {
-    constructor( nombre, precio, img){
+    constructor( nombre, precio, img, id){
         this.nombre = nombre;
         this.precio = precio;
-        this.img = img
+        this.img = img;
+        this.id = id;
     }
 
 }
@@ -47,8 +48,7 @@ function carrito(){
 
             CarritoProductos= Productos.filter(elem => elem.id == myID)
 
-
-            arrayProducts.push(new contenedorCarrito(CarritoProductos[0].nombre, CarritoProductos[0].precio, CarritoProductos[0].img) )
+            arrayProducts.push(new contenedorCarrito(CarritoProductos[0].nombre, CarritoProductos[0].precio, CarritoProductos[0].img, CarritoProductos[0].id) )
 
             result = suma(CarritoProductos[0].precio , result) 
 
@@ -58,7 +58,7 @@ function carrito(){
                     <div class="imgProd"><img src="${CarritoProductos[0].img}" alt=""></div>
                     <div class="textP nombreProd"><p>${CarritoProductos[0].nombre}:</p></div>
                     <div class="textP precioProd"><p>$${CarritoProductos[0].precio}</p></div>
-                    <button class="eliminar"><i class="far fa-trash-alt"></i> </button>
+                    <button class="eliminar" id="${CarritoProductos[0].id}"><i class="far fa-trash-alt"></i> </button>
                 </div>
             `;
 
