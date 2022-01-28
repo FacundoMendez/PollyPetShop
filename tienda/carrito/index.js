@@ -56,7 +56,6 @@ $(() => {
                     
                     elementProd.remove()
 
-                    localStorage.removeItem("productosCarrito",elementProd);
 
 
                 }
