@@ -11,24 +11,29 @@ $(() => {
             <p>${conta}</p>
         `)
 
+     
 
-        if($(".contador p")!= 0){
-            $(".carrito__vacio-container").hide()
-            $(".carrito__productos").show()
-            $(".container").css("margin-top", "20rem");
-            $(".container__resumen").css("margin-top", "0rem");
-            for (let i = 0; i < arrayProductos.length; i++){
-
-                $(".carrito__productos").append(`         
-                <div class="prodCar">
-                    <div class="imgProd"><img src="${arrayProductos[i].img}" alt=""></div>
-                    <div class="textP nombreProd"><p>${arrayProductos[i].nombre}:</p></div>
-                    <div class="textP precioProd"><p>$${arrayProductos[i].precio}</p></div>
-                </div>
-                `)
-
+        if (conta != null){
+            if(conta != 0){
+                $(".carrito__vacio-container").hide()
+                $(".carrito__productos").show()
+                $(".container").css("margin-top", "5rem");
+                for (let i = 0; i < arrayProductos.length; i++){
+    
+                    $(".carrito__productos").append(`         
+                    <div class="prodCar">
+                        <div class="imgProd"><img src="${arrayProductos[i].img}" alt=""></div>
+                        <div class="textP nombreProd"><p>${arrayProductos[i].nombre}:</p></div>
+                        <div class="textP precioProd"><p>$${arrayProductos[i].precio}</p></div>
+                        <button class="eliminar"><i class="far fa-trash-alt"></i> </button>
+                    </div>
+                    `)
+    
+                }
             }
         }
+
+      
 
     
 
