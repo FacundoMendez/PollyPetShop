@@ -2,67 +2,91 @@
 $(() => {
 
 
-    function actualizar(){
-        let conta = localStorage.getItem("contador")
-        let arrayProductos = JSON.parse(localStorage.getItem("productosCarrito"))
-        let precioTotal = localStorage.getItem("precioTotal")
+    function actualizar() {
+        let precioTotal = 0 
+        let arrayProductos = JSON.parse(localStorage.getItem("productosCarrito"));
+        precioTotal = localStorage.getItem("precioTotal");
+        let conta = localStorage.getItem("contador");
 
-        $(".contador p").html(`
-            <p>${conta}</p>
-        `)
+        if(arrayProductos != null){
+            if (conta != null) {
 
-     
+                if (conta != 0) {
 
-        if (conta != null){
-            if(conta != 0){
-                $(".carrito__vacio-container").hide()
-                $(".carrito__productos").show()
-                for (let i = 0; i < arrayProductos.length; i++){
-    
+                $(".contador p").html(`
+                        <p>${conta}</p>
+                    `);
+
+                $(".carrito__vacio-container").hide();
+                $(".carrito__productos").show();
+
+                for (let i = 0; i < arrayProductos.length; i++) {
+
                     $(".carrito__productos").append(`         
                         <div class="prodCar" id=${arrayProductos[i].id}>
                             <div class="imgProd"><img src="${arrayProductos[i].img}" alt=""></div>
                             <div class="textP nombreProd"><p>${arrayProductos[i].nombre}:</p></div>
-                            <div class="textP precioProd"><p>$${arrayProductos[i].precio}</p></div>
-                            <button class="eliminar" id="${arrayProductos[i].id}"><i class="far fa-trash-alt"></i> </button>
+                            <div class="textP precioProd"id="P${arrayProductos[i].id}"><p>$${arrayProductos[i].precio}</p></div>
+                            <button class="eliminar" id=${arrayProductos[i].id}><i class="far fa-trash-alt"></i> </button>
                         </div>
-                    `)
+                        
+                    `);
+                }
+                prodEliminar(conta,precioTotal);
 
                 }
-                prodEliminar()
-
             }
         }
     }
     
     actualizar();
-
     
 
-    function prodEliminar(){
+    function prodEliminar(conta,precioTotal){
+       
+        $(".precio").html(`
+            $ ${precioTotal}
+        `)
+
         const tacho = $(".eliminar")
-
         for (let element of tacho){
-
+     
             let myID = element.id
-            
             let producto = $(`#${myID}`)
 
+            let precio = $(`.precioProd #P${myID} `)
+
             element.addEventListener("click",function(){
-
-                for (let elementProd of producto){
-
-                    console.log(elementProd.id)
-                    
-                    elementProd.remove()
+                conta = conta-1
 
 
 
-                }
-               
-            })
+                   
+                $(".precio").html(`
+                    $ ${precioTotal}
+                `)
+                console.log(precioTotal)
+
+
+                $(".contador p").html(`
+                    <p>${conta}</p>
+                `)
+                
             
+                for (let elementProd of producto){
+                    elementProd.remove()
+                }
+
+
+                if(conta == 0){
+                    localStorage.removeItem("productosCarrito")
+                    $(".carrito__vacio-container").show()
+                    $(".carrito__productos").hide()
+                }
+
+            })
         }
+
     }
 
     
