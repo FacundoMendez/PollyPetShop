@@ -40,8 +40,7 @@ $(() => {
                             `);
                             prodEliminar(conta,precioTotal);
                             localStorage.setItem(`productosPRECIO${arrayProductos[i].id}`, arrayProductos[i].precio);
-                            sum(arrayProductos[i].id,arrayProductos[i].precio,precioTotal)
-                            rest(arrayProductos[i].id,arrayProductos[i].precio,precioTotal)
+                            sum(arrayProductos[i].id)
                         }  
 
                     }
@@ -53,44 +52,20 @@ $(() => {
     actualizar();
 
 
-    function sum(id,precioProducto, precioTotal){
+    function sum(id){
         
         let contador = 1;
 
         let suma = document.querySelector(`#sum${id} p`)
         let num = document.querySelector(`#num${id}`)
-        let precio = document.querySelector(".precio")
-        let total= precioTotal
+        let resta = document.querySelector(`#rest${id}`)
 
         num.innerHTML= (contador)
-        console.log(suma)
 
-        for (let element of suma){
-            suma.addEventListener("click", function(){
-                contador = contador +1
-                num.innerHTML= (contador)
-                
-                total= precioProducto + total ;
-
-                    precio.innerHTML=(`
-                        $ ${total}
-                    `)
-                
-            })
-        }
-
-    }
-
-
-
-    function rest(id,precioProducto, precioTotal){
-        
-        let contador = 1;
-
-        let resta = document.querySelector(`#rest${id}`)
-        let num = document.querySelector(`#num${id}`)
-        let precio = document.querySelector(".precio")
-        let total= precioTotal
+        suma.addEventListener("click", function(){
+            contador = contador +1
+            num.innerHTML= (contador)
+        })
 
         num.innerHTML= (contador)
 
@@ -100,17 +75,13 @@ $(() => {
             if(contador > 0){
                 contador = contador -1
                 num.innerHTML= (contador)
-                
-                total = total - precioProducto
-
-                precio.innerHTML=(`
-                 $ ${total}
-                `)
-
             }   
         })
-
     }
+
+
+
+   
 
 
 

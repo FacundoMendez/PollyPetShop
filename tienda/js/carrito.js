@@ -1,4 +1,4 @@
-export{carrito, filtroMovile}
+export{carrito}
 
 
 import{Productos} from "./arrayProductos.js";
@@ -7,8 +7,6 @@ import{Productos} from "./arrayProductos.js";
 
 
 let pantallaCarrito = document.querySelector(".container__carrito");
-let containerCarrito = document.querySelector(".carrito__productos");
-let acti = document.querySelector(".carrito__nav");
 let carritoContador = document.querySelector(".contador")
 
 
@@ -32,10 +30,8 @@ class contenedorCarrito {
 
 function carrito(){
     let arrayProducts = []
-
-
-    carritoBottom()
     filtroMovile(); 
+
 
     const agregar = document.getElementsByClassName("prod__agregar");
 
@@ -45,13 +41,11 @@ function carrito(){
         element.addEventListener("click",function(){
 
 
-
             contador ++
             let myID = element.id
 
             $(`#cora${myID}`).toggleClass("is-active");
 
-         
 
             CarritoProductos= Productos.filter(elem => elem.id == myID)
 
@@ -60,29 +54,14 @@ function carrito(){
             result = suma(CarritoProductos[0].precio , result) 
 
 
-            containerCarrito.innerHTML+=`
-                <div class="prodCar">
-                    <div class="imgProd"><img src="${CarritoProductos[0].img}" alt=""></div>
-                    <div class="textP nombreProd"><p>${CarritoProductos[0].nombre}:</p></div>
-                    <div class="textP precioProd"><p>$${CarritoProductos[0].precio}</p></div>
-                    <button class="eliminar" id="${CarritoProductos[0].id}"><i class="far fa-trash-alt"></i> </button>
-                </div>
-            `;
-
             carritoContador.innerHTML=`
                 <p>${contador}</p>
             `;
+           
 
-            acti.innerHTML=`
-                <a href="../carrito/carrito.html"><button class="vaciar"> <p> Comprar </p> </button></a>
-                <div class="total"> <p>Total: $ ${result}</p> </div>
-            `;
-
-            acti.style.display = "inline-block"
-                
             localStorage.setItem("productosCarrito", JSON.stringify(arrayProducts))
             guardar()
-
+            modifiCarrito(result,contador)
         })
     }
 }
@@ -96,23 +75,15 @@ function suma(productoPrecio , result){
 
 
 function carritoBottom(){
-    let carrito = document.querySelector(".fa-shopping-cart");
+    const carrito = document.querySelector(".fa-shopping-cart");
+    const popupCarrito = document.querySelector(".container__carrito")
+
     
-    let iconCarrito = document.querySelector(".iconExit");
-    
-
-    carrito.addEventListener("click", function(){
-
-        pantallaCarrito.style.display="inline-block";
-        
-    });
-
-    iconCarrito.addEventListener("click", function(){
-        pantallaCarrito.style.display="none";
+    carrito.addEventListener("click", () => {
+        popupCarrito.classList.toggle("carrito__active");
     });
 }
-
-
+carritoBottom()
 
 function filtroMovile(){
     let filtroMov= document.querySelector(".selec__desktop")
@@ -130,7 +101,6 @@ function filtroMovile(){
 
 }
 
-
 function guardar(){
 
     localStorage.setItem("contador", `${contador}`)
@@ -138,3 +108,11 @@ function guardar(){
     localStorage.setItem("precioTotal", result)
 }
 
+function modifiCarrito(result,contador){
+    let precio = document.querySelector(".precio__producto")
+    let contadorProducto = document.querySelector(".contador_producto")
+
+    contadorProducto.innerHTML = (contador)
+
+    precio.innerHTML = (`($ ${result})`)
+}

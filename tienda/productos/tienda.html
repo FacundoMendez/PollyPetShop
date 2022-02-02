@@ -13,9 +13,8 @@
     <title>Tienda</title>
 </head>
 <body>
-
-    <header class="header">
     
+    <header class="header">
 
         <nav class="nav">
             <button class="nav-toggle" aria-label="Abrir menú">
@@ -40,12 +39,27 @@
                     <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
                 </li>
                 <div class="carrito ">
-                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <i class="fas fa-shopping-cart"></i>
                     <div class="contador"><p>0</p></div>
+                </div>
+                <div class="container__carrito ">
+                    <div class="carrito__visual ">
+                        <div class="titleCarrito">
+                            <p>Productos</p>
+                        </div>
+
+                        <div class="carrito__pedido">
+                            <p>Cantidad de Productos: <span class="contador_producto"> ... </span> <span class="precio__producto">($ 0)</span></p>
+
+                            <div class="carrito__botton-ver">
+                                <a href="../carrito/carrito.html"><button class="boton-ver">ver</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </ul>       
         </nav>
-    
+        
         <div class="nav2">
             <ul>
                 <li><a href="../perros/perros.html">Perros  </a> </li><span>|</span>
@@ -86,19 +100,7 @@
             <div id="prod"></div>
         </div>
 
-        <div class="container__carrito">
-            <div class="carrito__visual">
-                <div class="iconExit"><i class="fas fa-times"></i></div>
-                <div class="titleCarrito">
-                    <p>CARRITO</p>
-                </div>
-
-                <div class="carrito__productos"></div>
-
-                <div class="carrito__nav">
-                </div>
-            </div>
-        </div>
+ 
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>

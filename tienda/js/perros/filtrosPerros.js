@@ -21,15 +21,12 @@ const prod = document.getElementById("prod");
 /* -------------------PERROS---------------------- */
 
 
-
 function crearDivsPerros(){
     crearDivsAlimentosPerro();
     crearDivsCuchasPerro();
     crearDivsAccesoriosPerro();
     crearDivsJuguetesPerro();
 }
-
-
 
 
 function crearDivsAccesoriosPerro(){
@@ -49,15 +46,10 @@ function crearDivsAccesoriosPerro(){
             </div>
         `;
 
-
     carrito();
 
     }
-
-
 }
-
-
 
 
 function crearDivsJuguetesPerro(){
@@ -79,7 +71,6 @@ function crearDivsJuguetesPerro(){
         carrito();
     }
 }
-
 
 
 function crearDivsCuchasPerro(){
@@ -112,8 +103,8 @@ function crearDivsAlimentosPerro(){
                 <div class="prod__title"><p> ${filtroAlimentosPerro[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroAlimentosPerro[i].precio}</p></div>
                 <button class="prod__agregar"  role="button" id="${filtroAlimentosPerro[i].id}">Agregar al carrito</button> 
-                <div class="stage >
-                    <div class="heart" id="cora${filtroAlimentosPerro[i].id}"></div>
+                <div class="stage" >
+                    <div class="heart" id="cora${filtroAlimentosPerro[i].id}" ></div>
                 </div>
             </div>
         `;
