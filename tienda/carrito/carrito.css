@@ -130,6 +130,7 @@ body{
     align-items: center;
     flex-direction: row;
     margin-left: 1rem;
+    z-index: 900000;
 }
 
 
@@ -357,7 +358,11 @@ main{
 
 .continuar{
     text-decoration: none;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
 /* CSS */
 .button-29 {
@@ -367,7 +372,6 @@ main{
     border: 0;
     border-radius: 6px;
     box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65,  111, .5) 0 -3px 0 inset;
-    box-sizing: border-box;
     color: #9734f3;
     font-weight: 700;
     cursor: pointer;
@@ -375,15 +379,18 @@ main{
     line-height: 1;
     padding-left: 16px;
     padding-right: 16px;
-    position: absolute;
     transition: box-shadow .15s,transform .15s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     font-size: 18px;
-    right: 1%;
     margin-top: 2rem;
 }
+
+.vaciar{
+    width: 12rem;
+}
+
 
 .button-29:focus {
     box-shadow: #dee1ff 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #aeb7ff 0 -3px 0 inset;
@@ -769,15 +776,12 @@ main{
 
 
 @media screen and (max-width: 740px){
-    
 
-  
     .carrito {
         position: fixed;
         top: 4.3%;
         right: 10%;
         font-size: 3.2rem;
-        z-index: 11000;
         margin-top: -0.4rem;
     }
     
@@ -786,7 +790,7 @@ main{
     }
 
     .nav__logo img{
-        width: 70%;;
+        width: 70%;
     }
 
 
@@ -851,6 +855,19 @@ main{
     .resumen {
         width: 30rem;
     }
+
+    .carrito{
+        right: 1.4rem;
+    }
+
+    .nav-toggle{
+        left: 2rem;
+    }
+
+    .nav__logo{
+        margin-left: -5rem;
+        width: 90%;
+    }
   
     /* productos */
 
@@ -905,4 +922,23 @@ main{
         margin-left: 0.5rem;
     }
 
+
+    .carrito__vacio{
+        height:45rem;
+        padding: 0 2rem;
+        margin: 0 1rem;
+    }
+    
+    .carrito-vacio-icon{
+        font-size: 7rem;
+        padding: 3rem 2rem; 
+        margin-top: 5rem;
+    }
+    
+
+    .title__text{
+        font-size: 4rem;
+    }
+
+    
 }
