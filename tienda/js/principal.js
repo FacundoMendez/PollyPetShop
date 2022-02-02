@@ -57,13 +57,3 @@ function check(){
 check()
 
 
-
-
-
-
-
-/* --------------filtros */
-
-
-
-

@@ -43,6 +43,9 @@ function crearDivsAccesoriosPerro(){
                 <div class="prod__title"><p> ${filtroAccesoriosPerro[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroAccesoriosPerro[i].precio}</p></div>
                 <button class="prod__agregar"  role="button" id="${filtroAccesoriosPerro[i].id}">Agregar al carrito</button>
+                <div class="stage" >
+                    <div class="heart"  id="cora${filtroAccesoriosPerro[i].id}"></div>
+                </div>
             </div>
         `;
 
@@ -67,6 +70,9 @@ function crearDivsJuguetesPerro(){
                 <div class="prod__title"><p> ${filtroJuguetesPerro[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroJuguetesPerro[i].precio}</p></div>
                 <button class="prod__agregar"  role="button" id="${filtroJuguetesPerro[i].id}">Agregar al carrito</button> 
+                <div class="stage">
+                    <div class="heart"  id="cora${filtroJuguetesPerro[i].id}"></div>
+                </div>
             </div>
         `;
 
@@ -86,6 +92,9 @@ function crearDivsCuchasPerro(){
                 <div class="prod__title"><p> ${filtroCuchasPerro[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroCuchasPerro[i].precio}</p></div>
                 <button class="prod__agregar"  role="button" id="${filtroCuchasPerro[i].id}">Agregar al carrito</button> 
+                <div class="stage" >
+                    <div class="heart" id="cora${filtroCuchasPerro[i].id}" ></div>
+                </div>
             </div>
         `;
         carrito();
@@ -103,6 +112,9 @@ function crearDivsAlimentosPerro(){
                 <div class="prod__title"><p> ${filtroAlimentosPerro[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroAlimentosPerro[i].precio}</p></div>
                 <button class="prod__agregar"  role="button" id="${filtroAlimentosPerro[i].id}">Agregar al carrito</button> 
+                <div class="stage >
+                    <div class="heart" id="cora${filtroAlimentosPerro[i].id}"></div>
+                </div>
             </div>
         `;
         carrito();

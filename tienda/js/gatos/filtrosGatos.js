@@ -40,6 +40,9 @@ function crearDivsJuguetesGato(){
                 <div class="prod__title"><p> ${filtroJuguetesGato[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroJuguetesGato[i].precio}</p></div>
                 <button class="prod__agregar"  role="button" id="${filtroJuguetesGato[i].id}">Agregar al carrito</button> 
+                <div class="stage" >
+                    <div class="heart" id="cora${filtroJuguetesGato[i].id}"></div>
+                </div>
             </div>
         `;
 
@@ -61,6 +64,9 @@ function crearDivsAccesoriosGato(){
                 <div class="prod__title"><p> ${filtroAccesoriosGato[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroAccesoriosGato[i].precio}</p></div>
                 <button class="prod__agregar"  role="button" id="${filtroAccesoriosGato[i].id}">Agregar al carrito</button> 
+                <div class="stage" >
+                    <div class="heart" id="cora${filtroAccesoriosGato[i].id}"></div>
+                </div>
             </div>
         `;
         carrito();
@@ -81,6 +87,9 @@ function crearDivsCuchasGato(){
                 <div class="prod__title"><p> ${filtroCuchasGato[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroCuchasGato[i].precio}</p></div>
                 <button class="prod__agregar"  role="button" id="${filtroCuchasGato[i].id}">Agregar al carrito</button> 
+                <div class="stage" >
+                    <div class="heart" id="cora${filtroCuchasGato[i].id}"></div>
+                </div>
             </div>
         `;
 
@@ -101,6 +110,9 @@ function crearDivsAlimentosGato(){
                 <div class="prod__title"><p> ${filtroAlimentosGato[i].nombre}</p> </div>
                 <div class="prod__precio"><p>$${filtroAlimentosGato[i].precio}</p></div>
                 <button class="prod__agregar" role="button" id="${filtroAlimentosGato[i].id}" >Agregar al carrito</button> 
+                <div class="stage" >
+                    <div class="heart" id="cora${filtroAlimentosGato[i].id}"></div>
+                </div>
             </div>
         `;
 

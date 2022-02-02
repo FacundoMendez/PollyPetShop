@@ -224,7 +224,7 @@ main{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:5rem;
+    gap:15rem;
     position: relative;
     
 }
@@ -239,7 +239,6 @@ main{
     padding: 0 2rem;
     box-shadow: 0 0 1rem black;
     border-radius: 50px;
-    margin-left: 5rem;
     position: relative;
 }
 
@@ -300,13 +299,11 @@ main{
 
 .container__resumen{
     color:#9a34ff;
-    width: 28%;
+    width: 30%;
     border-radius: 5px;
-    margin-left: 5rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
 }
 
 .resumen{
@@ -346,12 +343,11 @@ main{
 }
 
 .precio{
-    
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: bold;
     position: absolute;
-    right: 0;
-    padding: 0 1.2rem;
+    right: 2%;
+    padding: 0 2rem;
 }
 
 
@@ -483,21 +479,90 @@ main{
     font-size: 1.2rem;
 }
 
+.sumaRest{
+    background-color: rgba(233, 232, 232, 0.445);
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 1.9rem;
+    position: relative;
+    border: 1px solid rgba(212, 160, 255, 0.295);
+    border-radius: 5px;
+}
+
+
+.num p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sum{
+    cursor: pointer;
+    background-color: rgb(212, 160, 255);
+    height: 2.9rem;
+    width: 2.9rem;
+    position: relative;
+}
+
+.sum:active{
+    font-size: 2rem;
+}
+
+.sum p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rest{
+    cursor: pointer;
+    background-color: rgb(212, 160, 255);
+    height: 2.9rem;
+    width: 3rem;
+    position: relative;
+}
+
+.rest:active{
+    font-size: 2rem;
+}
+
+.rest p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 /* conejo */
 
-.conejo{
-    width: 22rem;
-    height: 22rem;
+.conejo .imgConejo1{
+    width: 19.5rem;
+    height: 26rem;
     position: absolute;
-    right: 1%;
-    bottom: 7%;
-
-}
-.conejo img{
-    width: 100%;
+    right: 36%;
+    bottom: 25%;
     filter: drop-shadow(10px 10px 10px #00000059);
+}
+
+
+
+.conejo .imgConejo2{
+    width: 20rem;
+    height: 28rem;
+    position: absolute;
+    left: 10.2%;
+    bottom: 25%;
+    filter: drop-shadow(-1px 0px 10px #00000073);
 
 }
 
@@ -507,27 +572,26 @@ main{
 
 
 
-
-
 @media screen and (max-width: 1400px) {
     .container{
         margin-left: 0rem;
         justify-content: center;
         margin-top: 10rem;
+        height: 110vh;
     }
 
-    .carrito__vacio {
-        margin-left: 0rem;
-    }
-    
     .resumen {
-        width: 40rem;
+        width: 46rem;
         height: 80%;
     }
 
     .container__resumen {
-        margin-left: 0rem;
         align-items: center;
+        margin-top: -10rem;
+    }
+
+    .carrito__vacio{
+        margin-left: 0;
     }
 
     .button-29 {
@@ -562,7 +626,7 @@ main{
         padding: 20px 0;
         height: 100%;
         overflow: auto;
-        left: 100%;
+        left: -100%;
         transition: left 0.3s;
         padding-top: 20rem;
     }
@@ -618,74 +682,40 @@ main{
     }
 
   
-    
-    .nav{
-        padding-right: 5.5rem;
-    }
-
-    .nav2{
-        width: 85%;
-        text-align: center;
-    }
-    
-    .nav2 span{
-        padding: 0 1rem;
-    }
-    
-    .nav2 a{
-        font-size: 1.5rem;
-    }
-
-    
-    .nav2{
-        width: 80%;
-        text-align: center;
-    }
-    
-    .nav2 span{
-        padding: 0 1rem;
-    }
-    
-    .nav2 a{
-        font-size: 1rem;
+    .carrito {
+        position: fixed;
+        top: 4.3%;
+        right: 10%;
+        font-size: 3.2rem;
+        z-index: 11000;
+        margin-top: -0.4rem;
     }
 
     .container{
         margin-left: 0rem;
         justify-content: center;
         padding: 0;
+        margin-top: 4rem;
+
     }
 
 }
 
 
 @media screen and (max-width: 767px){
-    .nav2{
-        width: 95%;
-        text-align: center;
+
+  
+    .carrito {
+        position: fixed;
+        top: 4.3%;
+        right: 10%;
+        font-size: 3.2rem;
+        z-index: 11000;
+        margin-top: -0.4rem;
     }
     
-    .nav2 span{
-        padding: 0 1rem;
-    }
-    
-    .nav2 a{
-        font-size: 1.1rem;
-    }
-    .carrito{
-        font-size: 3.5rem;
-        position: relative;
-        width: 8rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        margin-left:2rem;
-    }
-    
-    .nav__logo {
-        margin-left: 8rem;
+    .nav__logo{
+        margin-left: -2rem;
     }
 
     .nav__logo img{

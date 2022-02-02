@@ -41,10 +41,17 @@ function carrito(){
 
     for(let element of agregar){
 
+
         element.addEventListener("click",function(){
+
+
 
             contador ++
             let myID = element.id
+
+            $(`#cora${myID}`).toggleClass("is-active");
+
+         
 
             CarritoProductos= Productos.filter(elem => elem.id == myID)
 
@@ -74,7 +81,6 @@ function carrito(){
             acti.style.display = "inline-block"
                 
             localStorage.setItem("productosCarrito", JSON.stringify(arrayProducts))
-            console.log(arrayProducts)
             guardar()
 
         })
@@ -131,6 +137,4 @@ function guardar(){
 
     localStorage.setItem("precioTotal", result)
 }
-
-
 

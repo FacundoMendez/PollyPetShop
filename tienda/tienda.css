@@ -322,11 +322,11 @@ main{
 
 
 .prod__agregar {
-    width: 70%;
+    width: 60%;
     height: 4.5rem;
     position: absolute;
     top: 83%;
-    left: 15%;
+    left: 20%;
     background-color: #e4ffff;
     border: 0;
     border-radius: 6px;
@@ -379,15 +379,31 @@ main{
     color:rgb(234, 1, 255);
     transition: all 1s ease-in-out;
 }
-.prod__agregar:hover{
-    border: 0.1px solid #a200ff69;
-    background-color: rgba(191, 255, 255, 0.808) ;
-}
+
 
 .prod__marco:hover{
     width: 29.8rem;
     height: 47.8rem;
     box-shadow: rgba(0, 0, 0, 0.418) 0px 10px 20px, rgba(0, 0, 0, 0.356) 0px 6px 6px;
+}
+/* corazon */
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+}
+.heart.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+}
+
+.stage {
+    position: absolute;
+    bottom: -2%;
+    right: -6%;
 }
 
 
@@ -949,14 +965,12 @@ input[type=checkbox]{
         font-size: 1.6rem;
         font-weight: 700;
         letter-spacing: 1px;
-        color: #8902f7;
         text-align: center;
     }
 
     .prod__marco:hover{
         width: 26.2rem;
         height: 43.2rem;
-        transition: all 0.5s ease-in-out;
     }
 
 
@@ -964,7 +978,6 @@ input[type=checkbox]{
 
     .selec__desktop{
         display:none;
-        background-color: rgb(255, 255, 255);
         width: 95%;
         border-radius: 5px;
         height: 50vh;
@@ -983,10 +996,8 @@ input[type=checkbox]{
 
     .exitFiltro i:hover{
         text-align: center;
-        color:rgb(234, 1, 255);
         font-size: 4.1rem;
         cursor: pointer;
-        transition: all 0.2s ease-in-out;
     }
         
     .selec{
@@ -1008,15 +1019,12 @@ input[type=checkbox]{
         margin-top: -5rem;
         border-radius: 5px;
         position: relative;
-        border: 2px solid rgba(255, 83, 169, 0.226);
-        background-color: rgba(231, 255, 255, 0.89) ;
         z-index: 12000210;
         cursor: pointer;
         display: inline-block;
     }
 
     .select__button p{
-        color: #8902f7;
         font-size: 1.5rem;
         letter-spacing: 2px;
         font-weight: bold;
@@ -1024,14 +1032,12 @@ input[type=checkbox]{
     }
     .select__button p:hover{
         text-align: center;
-        color:rgb(234, 1, 255);
         font-size: 1.55rem;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
     }
 
     .formPG{
-        background-color: rgba(202, 255, 255, 0.5) ;
         font-size: 2rem;
         display: inline-block;
         width: 100%;
@@ -1039,11 +1045,9 @@ input[type=checkbox]{
         margin-left: 0rem;
         flex-wrap: wrap;
         padding: 5rem 2rem;
-        border: 2px solid rgba(255, 83, 169, 0.226);
     }
 
     .formAA{
-        background-color: rgba(202, 255, 255, 0.5) ;
         font-size: 2rem;
         display: inline-block;
         width: 100%;
@@ -1051,7 +1055,6 @@ input[type=checkbox]{
         margin-left: 0rem;
         flex-wrap: wrap;
         padding: 2rem ;
-        border: 2px solid rgba(255, 83, 169, 0.226);
     }
 
 
