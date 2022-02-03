@@ -638,7 +638,7 @@ input[type=checkbox]{
 
     .carrito {
         position: fixed;
-        top: 6.5%;
+        top: 5.3%;
         right: 10%;
         font-size: 3.1rem;
         z-index: 11000;
@@ -648,7 +648,7 @@ input[type=checkbox]{
     .container__carrito{
         width: 36rem;
         height: 10rem;
-        top: 19.5%;
+        top: 14.5%;
         margin-top: 0rem;
     }
     
@@ -750,7 +750,7 @@ input[type=checkbox]{
     .container__carrito{
         width: 36rem;
         height: 10rem;
-        top: 19.5%;
+        top: 15%;
         margin-top: 0rem;
     }
     #prod{
@@ -785,7 +785,7 @@ input[type=checkbox]{
     
     .carrito {
         position: fixed;
-        top: 6.7%;
+        top: 5.3%;
         right: 10%;
         font-size: 3.1rem;
         z-index: 11000;
@@ -892,8 +892,12 @@ input[type=checkbox]{
     .container__carrito{
         width: 36rem;
         height: 10rem;
-        top: 19.5%;
+        top: 15%;
         margin-top: 0rem;
+    }
+
+    .carrito{
+        top: 5.3%;
     }
 
 }
@@ -901,12 +905,11 @@ input[type=checkbox]{
 
 @media screen and (max-width: 374px){
     /* carrito */
-      .container__carrito{
-          width: 31rem;
-       
-      }
+    .container__carrito{
+        width: 31rem;
+    }
 
-      .container__carrito p{
+    .container__carrito p{
         font-size: 1.2rem;
     }
     .container__carrito span{
