@@ -430,6 +430,8 @@ main{
     font-weight: 700;
     letter-spacing: 1px;
     margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -587,7 +589,7 @@ main{
     .container{
         margin-left: 0rem;
         justify-content: center;
-        margin-top: 10rem;
+        padding-top: 8rem;
     }
 
     .resumen {
@@ -601,19 +603,79 @@ main{
 
     .carrito__vacio{
         margin-left: 0;
+        height: 45rem;
+        margin: 0 1rem;
     }
 
 
     .button-29 {
         right: 5rem;
     }
+
+       /* productos */
+
+    
+    .prodCar{
+        gap:2rem;
+        padding: 4rem;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-left: 1rem;
+    }
+    
+    
+    .textP p{
+        margin-top: 2rem;
+    }
+    
+    .nombreProd p{
+        margin-left: 0rem;
+        width: 20rem;
+    
+    }
+    
+    .precioProd p{
+        font-size: 2.2rem;
+        margin-left: 1rem;
+    }
+    
+    .precioProd {
+        padding: 0 3rem;
+    }
+    .imgProd{
+        padding: 0 2rem;
+    }
+    
+    .imgProd img{
+        width: 8rem;
+        margin-left: -4rem;
+        height: 8rem;
+    }
+    
+    .eliminar{
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2.3rem;
+        margin-top: 1.4rem;
+        margin-left: 1.5rem;
+        
+    }
+    
+    .sumaRest{
+        width: 10rem;
+        height: 3rem;
+        gap: 2rem;
+        font-size: 1.4rem;
+        margin-top: 1.9rem;
+    }
+
 }
 
-
-
-
-
 @media screen and (max-width: 1080px){
+
+
+
     .header {
         height: 60px;
     }
@@ -706,7 +768,7 @@ main{
         justify-content: center;
         padding: 0;
         margin-top: 4rem;
-
+        height: 140vh;
     }
 
     .resumen {
@@ -714,7 +776,11 @@ main{
     }
 
     /* productos */
-
+    
+    .carrito__vacio{
+        margin-top: -2rem;
+        height: 40rem;
+    }
     
     .prodCar{
         gap:2rem;
@@ -801,6 +867,9 @@ main{
         padding: 2rem 0rem;
         font-size: 1.2rem;
         margin-left: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -820,7 +889,7 @@ main{
     }
     .imgProd{
         padding: 0 1rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
         margin-top: 1rem;
     }
 
@@ -844,9 +913,24 @@ main{
         height: 3rem;
         gap: .8rem; 
         font-size: 1.4rem;
-
     }
 
+    .carrito-vacio-icon{
+        font-size: 7rem;
+        padding: 3rem 2rem; 
+        margin-top:9rem;
+    }
+    
+
+    .title__text{
+        font-size: 3.7rem;
+    }
+
+    .carrito__vacio{
+        margin-top: -2rem;
+        height: 40rem;
+        width: 55rem;
+    }
 
 }
 
@@ -913,7 +997,6 @@ main{
         margin-left: 2rem;
     }
 
-
     .sumaRest {
         width: 5rem;
         height: 3rem;
@@ -921,7 +1004,6 @@ main{
         font-size: 1.3rem;
         margin-left: 0.5rem;
     }
-
 
     .carrito__vacio{
         height:45rem;
@@ -935,10 +1017,14 @@ main{
         margin-top: 5rem;
     }
     
-
     .title__text{
         font-size: 4rem;
     }
 
+    .carrito__vacio{
+        margin-top: -2rem;
+        height: 40rem;
+        width: 45rem;
+    }
     
 }

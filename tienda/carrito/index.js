@@ -21,7 +21,6 @@ $(() => {
 
                         $(".carrito__vacio-container").hide();
                         $(".carrito__productos").show();
-
                         for (let i = 0; i < arrayProductos.length; i++) {
                             
                             $(".carrito__productos").append(`         
