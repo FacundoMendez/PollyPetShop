@@ -5,7 +5,6 @@ import{
     crearDivsJuguetesPerro,
 } from "./filtrosPerros.js";
 
-
 export{
     checkPerro,
     checkCuchasPerroT,
@@ -14,16 +13,12 @@ export{
     checkAlimentosPerrosT,
 }
 
-
-
 function crearDivsPerros(){
     crearDivsAlimentosPerro();
     crearDivsCuchasPerro();
     crearDivsAccesoriosPerro();
     crearDivsJuguetesPerro();
 }
-
-
 
 
 let Alimentos = document.querySelector(".Alimentos")

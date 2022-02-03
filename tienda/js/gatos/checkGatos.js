@@ -5,8 +5,6 @@ import{
     crearDivsJuguetesGato,
 } from "./filtrosGatos.js"
 
-
-
 export {
     checkGatoAccesoriosT,
     checkGato,
@@ -14,7 +12,6 @@ export {
     checkJueguetesGatoT,
     checkCuchasGatoT,
 }
-
 
 let Alimentos = document.querySelector(".Alimentos")
 let Accesorios = document.querySelector(".Accesorios")
@@ -31,7 +28,6 @@ function crearDivsGatos(){
     crearDivsJuguetesGato();
 }
 
-
 function checkGato(){
     if (Gatos.checked){
         prod.innerHTML ="";
@@ -45,7 +41,6 @@ function checkGato(){
         });
     }
 }
-
 
 
 function checkAlimentosGatoT(){

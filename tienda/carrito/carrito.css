@@ -244,7 +244,7 @@ span{
 /* main */
 
 main{
-    background-color: rgba(210, 240, 255, 0.411);
+    background-color: rgb(228, 252, 253);
 }
 
 /* vacio */
@@ -273,7 +273,7 @@ main{
     box-shadow: 0 0 1rem black;
     border-radius: 50px;
     position: relative;
-    filter: drop-shadow(1px 1px 20px #b973ffbb );
+    filter: drop-shadow(1px 1px 10px #ffffffbb );
 }
 
 
@@ -309,12 +309,12 @@ main{
     position: relative;
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(1px 1px 20px #b973ff7c );
+    filter: drop-shadow(1px 1px 10px #ffffffbb );
 }
 
 .resumen{
     background-color: white;
-    border: 5px solid #b871ff;
+    border: 3px solid #b871ff;
     font-weight: 800;
     letter-spacing: 1px;
     width: 100%;
