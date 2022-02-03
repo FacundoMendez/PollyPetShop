@@ -194,51 +194,6 @@ span{
     margin-left: 2rem;
 }
 
-.busq{
-    position: relative;
-}
-
-.barraBusqueda{
-    background-color:#b871ff48; ;
-    width: 20rem;
-    height: 3.5rem;
-    border: none;
-    font-size: 2rem;
-    color: rgb(35, 0, 70);
-    font-weight: 700;
-    padding: 2rem;
-    z-index: 1000;
-    border-radius: 5%;
-}
-
-.barraBusqueda[type=text]{
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    border: 1px solid #6c06d13f;
-    color: #ad5cff;
-}
-
-.busq i{
-    position: absolute;
-    font-size: 3rem;
-    right: 3%;
-    top: 15%;
-    opacity: 0.5;
-    color:rgb(35, 0, 70);
-    cursor: pointer;
-    z-index: 10000;
-}
-
-.busq i:hover{
-    font-size: 2.8rem;
-    color:rgb(234, 1, 255);
-}
-
-.barraBusqueda::placeholder{
-    color:rgba(35, 0, 70, 0.24);
-    font-size: 2rem;
-}
 
 
 /* vacio */
@@ -265,7 +220,7 @@ span{
     text-align: center;
     padding: 0 2rem;
     box-shadow: 0 0 1rem black;
-    border-radius: 50px;
+    border-radius: 20px;
     position: relative;
     filter: drop-shadow(1px 1px 10px #ffffffbb );
     background-color: rgb(245, 255, 255);
@@ -402,9 +357,6 @@ span{
     transform: translateY(2px);
 }
 
-
-
-
 .carrito__productos{
     display: flex;
     flex-wrap: wrap;
@@ -426,7 +378,7 @@ span{
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -1020,7 +972,7 @@ span{
 
     .carrito__vacio{
         margin-top: -1rem;
-        height: 44rem;
+        height: 45rem;
         width: 45rem;
     }
     .container{
@@ -1031,4 +983,17 @@ span{
         margin-top: 0rem;
     }
     
+}
+
+@media screen and (max-width:320px){
+    .carrito__vacio{
+        margin-top: -1rem;
+        height: 40rem;
+        width: 45rem;
+    }
+
+    .prodCar {
+        padding: 1rem 0rem;
+        margin-left: 0rem;
+    }
 }
