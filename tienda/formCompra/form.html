@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./carrito.css">
+    <link rel="stylesheet" href="../formCompra/form.css">
     <script defer src="../../main.js"></script>
-    <title>Carrito</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Compra</title>
 </head>
 <body>
 
@@ -49,55 +50,36 @@
     </header>
 
     <main>
-
-        <div class="container">
-            <div class="carrito__vacio">
- 
-                <div class="carrito__productos">
-                    
+        <section class="container">
+            <form method="POST" action="formulario-contacto.php">
+                <div class="input-field">
+                    <i class="material-icons prefix">perm_identity</i>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" required>
                 </div>
-                <div class="carrito__vacio-container">
-                    <i class="carrito-vacio-icon fas fa-shopping-cart"></i>
-                    <div class="title__text">
-                        <p>Aún no hay items en el carrito!</p>
-                    </div>
-                    <div class="title__text-secundario">
-                        <p>Agrega primero un producto para poder visualizar el carrito</p>
-                    </div>
-                </div>
-
-            </div> 
-
-            <div class="container__resumen">
-                <div class="resumen">
-                    <div class="resumen__title">
-                        <p>RESUMEN DE PEDIDO</p>
-                    </div>
-                    <div class="line"></div>
-                    <div class="total">
-                        <p class="tt_total"> TOTAL: <span class="precio"> $ 0,00</span> </p>
-                    </div>
-                </div>
-
-                <div class="continuar">
-                    <a href="#"><button class="vaciar button-29" role="button">Vaciar</button></a>
-                    <a href="../formCompra/form.html"><button class="comprar button-29" role="button">Continuar</button></a>
-                </div>
-            </div>
-  
-        </div>
-
-        <div class="conejo">
-            <img class="imgConejo1" src="../../src/img/conejo.png" alt="Conejo">
-            <img class="imgConejo2" src="../../src/img/conejoFeliz.png" alt="Conejo">
-        </div>
-
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-
-    <script type="module" src="./index.js"></script>
     
+                <div class="input-field">
+                    <i class="material-icons prefix">person_pin</i>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" required>
+                </div>
+    
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+    
+                <p class="center-align">
+                    <button class="enviar" type="submit"><i class="material-icons send">send</i><span> Siguente </span></button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script type="module" src="./form.js"></script>
     <script type="module" src="../js/carrito.js"></script>
 </body>
 </html>
-

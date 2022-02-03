@@ -7,6 +7,9 @@ $(() => {
         let arrayProductos = JSON.parse(localStorage.getItem("productosCarrito"));
         precioTotal = localStorage.getItem("precioTotal");
         let conta = localStorage.getItem("contador");
+        let productos = document.querySelector(".vaciar")
+
+    
 
 
         if(arrayProductos != null){
@@ -23,6 +26,11 @@ $(() => {
                         $(".carrito__productos").show();
                         for (let i = 0; i < arrayProductos.length; i++) {
                             
+                            productos.addEventListener("click", function(){
+                                localStorage.removeItem("productosCarrito")
+                                location.reload();
+                            })
+
                             $(".carrito__productos").append(`         
                                 <div class="prodCar" id=${arrayProductos[i].id}>
                                     <div class="imgProd"><img src="${arrayProductos[i].img}" alt=""></div>
@@ -93,7 +101,6 @@ $(() => {
 
         const tacho = $(".eliminar")
 
-        let productos = document.querySelector(".vaciar")
 
         for (let element of tacho){
      
@@ -125,12 +132,6 @@ $(() => {
                 $(".contador p").html(`
                     <p>${conta}</p>
                 `)
-
-
-                productos.addEventListener("click", function(){
-                    console.log("anda")
-                })
-
 
             
                 for (let elementProd of producto){
