@@ -753,7 +753,7 @@ span{
   
     .carrito {
         position: fixed;
-        top: 4.3%;
+        top: 6.5%;
         right: 10%;
         font-size: 3.2rem;
         z-index: 11000;
@@ -842,7 +842,7 @@ span{
 
     .carrito {
         position: fixed;
-        top: 4.3%;
+        top: 6.5%;
         right: 10%;
         font-size: 3.2rem;
         margin-top: -0.4rem;
@@ -939,6 +939,7 @@ span{
 
     .carrito{
         right: 1.4rem;
+        margin-top: 1rem;
     }
 
     .nav-toggle{
