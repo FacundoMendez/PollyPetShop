@@ -94,6 +94,8 @@ $(() => {
 
         const tacho = $(".eliminar")
 
+        let productos = document.querySelector(".vaciar")
+
         for (let element of tacho){
      
             let myID = element.id
@@ -124,7 +126,13 @@ $(() => {
                 $(".contador p").html(`
                     <p>${conta}</p>
                 `)
-                
+
+
+                productos.addEventListener("click", function(){
+                    console.log("anda")
+                })
+
+
             
                 for (let elementProd of producto){
                     elementProd.remove()
