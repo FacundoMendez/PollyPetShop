@@ -638,11 +638,18 @@ input[type=checkbox]{
 
     .carrito {
         position: fixed;
-        top: 4.3%;
+        top: 6.5%;
         right: 10%;
-        font-size: 3.2rem;
+        font-size: 3.1rem;
         z-index: 11000;
         margin-top: -0.4rem;
+    }
+
+    .container__carrito{
+        width: 36rem;
+        height: 10rem;
+        top: 19.5%;
+        margin-top: 0rem;
     }
     
     .nav{
@@ -691,10 +698,11 @@ input[type=checkbox]{
     }
 
     .prod__agregar{
-        width: 80%;
         height: 4.5rem;
     }
-
+    .heart {
+        margin-left: 6%;
+    }
     .prod__agregar p{
         width: 100%;
         font-size: 1.6rem;
@@ -706,7 +714,7 @@ input[type=checkbox]{
 
     .prod__marco:hover{
         width: 38.2%;
-        height: 50.03rem;
+        height: 48.5rem;
     }
 
 
@@ -739,6 +747,12 @@ input[type=checkbox]{
         margin-left: 0rem;
     }
 
+    .container__carrito{
+        width: 36rem;
+        height: 10rem;
+        top: 19.5%;
+        margin-top: 0rem;
+    }
     #prod{
         width: 90%;
         gap: 4rem;
@@ -747,7 +761,10 @@ input[type=checkbox]{
         margin: 0 auto;
         margin-top: 7rem;
     }
-
+    .heart {
+        margin-left: 6%;
+        height: 90px;
+    }
     .prod__marco{
         width: 26rem;
         height: 43rem;
@@ -765,6 +782,16 @@ input[type=checkbox]{
         width: 26.2rem;
         height: 43.2rem;
     }
+    
+    .carrito {
+        position: fixed;
+        top: 6.7%;
+        right: 10%;
+        font-size: 3.1rem;
+        z-index: 11000;
+        margin-top: -0.4rem;
+    }
+
 
 
     /* filtro movile */
@@ -785,6 +812,10 @@ input[type=checkbox]{
         display: inline-block;
         top: 1%;
         right: 4%;
+    }
+
+    .select__button p{
+        color:#9a34ff;
     }
 
     .exitFiltro i:hover{
@@ -861,8 +892,8 @@ input[type=checkbox]{
     .container__carrito{
         width: 36rem;
         height: 10rem;
-        top: 25%;
-        margin-top: -3rem;
+        top: 19.5%;
+        margin-top: 0rem;
     }
 
 }
@@ -872,9 +903,7 @@ input[type=checkbox]{
     /* carrito */
       .container__carrito{
           width: 31rem;
-          height: 10rem;
-          top: 25%;
-          margin-top: -3rem;
+       
       }
 
       .container__carrito p{
