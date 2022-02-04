@@ -21,6 +21,8 @@ let provincias = [{id: 0 , nombre: "Selecciona una Provincia"}]
 $.get(urlProvincias,function(response,status){
     if (status === "success"){
         provincias.push(...response.provincias)
-        $("body").append(crearLista(provincias,"select-provincias"))
+        $(".provincias").append(crearLista(provincias,"select-provincias"))
     }
-}) */
+})
+
+ */

@@ -51,7 +51,7 @@
 
     <main>
         <section class="container">
-            <form method="POST" action="formulario-contacto.php">
+            <form name="datos" action="./form_siguiente.html" >
                 <div class="input-field">
                     <i class="material-icons prefix">perm_identity</i>
                     <label for="nombre">Nombre</label>
@@ -70,16 +70,18 @@
                     <input type="email" name="email" required>
                 </div>
     
-                <p class="center-align">
-                    <button class="enviar" type="submit"><i class="material-icons send">send</i><span> Siguente </span></button>
-                </p>
+                <div class="center-align">
+                    <button class="enviar" >
+                        <i class="material-icons send">send</i>
+                        <span> Siguente </span>
+                    </button>
+                </div>
             </form>
         </section>
     </main>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-    <script type="module" src="./form.js"></script>
+    
     <script type="module" src="../js/carrito.js"></script>
 </body>
 </html>

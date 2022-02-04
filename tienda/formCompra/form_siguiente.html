@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../formCompra/form_siguiente.css">
+    <script defer src="../../main.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Compra</title>
+</head>
+<body>
+
+    <header class="header">
+        
+        <nav class="nav">
+            
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav__logo nav-link"><img src="../../src/img/Logo.png" alt="PollyPetShop LOGO"></div>
+            <ul class="navVisible nav-menu">
+                <li class="nav-menu-item">
+                    <a href="../../index.html" class="nav-menu-link nav-link">Inicio</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">Contacto</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="../productos/tienda.html" class="nav-menu-link nav-link ">Tienda</a>
+                </li>
+                <li class="nav-menu-item cuenta">
+                    <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
+                </li>
+                <div class="carrito">
+                    <div><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+                    <div class="contador"><p>0</p></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main >
+
+        <section class="container">
+            <form name="datos"  >
+
+                <div class="container1">
+                    <div class="input-field provincia">
+                        <i class="material-icons prefix">person_pin</i>
+                        <label for="Provincia">Provincia<span class="complete">*</span> </label>
+                        <input type="text" name="Provincia" required>
+                    </div>
+                    <div class="input-field localidad">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <label for="Localidad">Localidad<span class="complete">*</span> </label>
+                        <input type="text" name="Localidad" required>
+                    </div>
+                
+                </div>
+         
+
+                <!-- <div class="provincias"></div> -->
+                <div class="container2">
+                    <div class="input-field calle">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <label for="Calle">Calle <span class="complete">*</span> </label>
+                        <input type="text" name="Calle" required>
+                    </div>
+                    <div class="input-field numero">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <label for="Numero">Numero<span class="complete">*</span> </label>
+                        <input type="text" name="Numero" required>
+                    </div>
+                </div>
+
+                <div class="container3">
+                    <div class="input-field piso">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <label for="Piso">Piso</label>
+                        <input type="text" name="Piso" >
+                    </div>
+
+                    <div class="input-field depto">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <label for="Depto">Depto</label>
+                        <input type="text" name="Depto" >
+                    </div>
+                </div>
+
+                <div class="container4">
+                    <div class="input-field cp">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <label for="cp">Codigo Postal<span class="complete">*</span> </label>
+                        <input type="number" name="cp" required>
+                    </div>
+                    <div class="input-field tel">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <label for="telefono">Numero Telefonico<span class="complete">*</span> </label>
+                        <input type="number" name="telefono" required>
+                    </div>
+              
+                </div>
+
+                <div class="container5">
+                    <div class="input-field observacion">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <label for="observacion">Observacion (Opcional)</label>
+                        <input type="text" name="observacion" >
+                    </div>
+                </div>
+    
+                <div class="center-align">
+                    <button class="enviar" >
+                        <i class="material-icons send">send</i>
+                        <span> Siguente </span>
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script type="module" src="./form.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
+</body>
+</html>
