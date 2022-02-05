@@ -35,12 +35,13 @@ $.get(urlProvincias,function(response,status){
 
 function getlocalidades(id){
     let municip = document.querySelector(".localidadCheck select")
-    $.get(`http://apis.datos.gob.ar/georef/api/localidades?provincia=${id}`, function(response, status){
+    $.get(`http://apis.datos.gob.ar/georef/api/localidades?provincia=${id}&max=3000`, function(response, status){
         if (status === "success"){
             let localidades = response.localidades;
+            localidades.sort()
+            municip.innerHTML = " "
             console.log(...localidades)
 
-            municip.innerHTML = ""
             for (let localidad of localidades){
                 municip.innerHTML += `<select> <option>${localidad.nombre}</option> </select>`
             }
