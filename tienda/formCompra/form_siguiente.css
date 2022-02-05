@@ -259,6 +259,7 @@ body{
     border-radius: 30px;
     background-color: white;
     filter: drop-shadow(1px 1px 10px rgb(239, 249, 253));
+    margin: 1rem;
 }
 
 .input-field{
@@ -362,7 +363,7 @@ body{
 }
 
 
-.provinciaCheck select{
+.provinciaCheck select, .localidadCheck select{
     width: 30rem;
     height: 2.5rem;
     margin-top: 1rem;
@@ -372,8 +373,6 @@ body{
     outline: none;
     font-weight: bold;
 }
-
-
 
 
 

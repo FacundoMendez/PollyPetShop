@@ -1,4 +1,4 @@
-const urlProvincias = "http://apis.datos.gob.ar/georef/api/provincias"
+const urlProvincias = "https://apis.datos.gob.ar/georef/api/provincias"
 
 
 
@@ -23,22 +23,24 @@ $.get(urlProvincias,function(response,status){
         provincias.push(...response.provincias)
         $(".provinciaCheck").html(crearLista(provincias,"select-provincias"))
 
-   /*      $("#select-provincias").change(function(e){
+        $("#select-provincias").change(function(e){
             getMunicipios(e.target.value)
-        }) */
+        })
     }
 })
 
-/* 
+
 function getMunicipios(id){
-    let municip = document.querySelector("localidadCheck")
-    $.get(`http://apis.datos.gob.ar/georef/api/municipios?provincia=${id}`, function(response, status){
+    let municip = document.querySelector(".localidadCheck select")
+    $.get(`http://apis.datos.gob.ar/georef/api/localidades?provincia=${id}`, function(response, status){
         if (status === "success"){
-            let municipios = response.municipios;
-            console.log(municipios)
+            let municipios = response.localidades;
+            console.log(...municipios)
+
+            municip.innerHTML = ""
             for (let municipio of municipios){
-                municip.innerHTML += `<option>${municipio.nombre}</option>`
+                municip.innerHTML += `<select> <option>${municipio.nombre}</option> </select>`
             }
         }
     });
-} */
+}
