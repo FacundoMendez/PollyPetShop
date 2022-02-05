@@ -24,23 +24,27 @@ $.get(urlProvincias,function(response,status){
         $(".provinciaCheck").html(crearLista(provincias,"select-provincias"))
 
         $("#select-provincias").change(function(e){
-            getMunicipios(e.target.value)
+            getlocalidades(e.target.value)
         })
     }
 })
 
 
-function getMunicipios(id){
+
+
+
+function getlocalidades(id){
     let municip = document.querySelector(".localidadCheck select")
     $.get(`http://apis.datos.gob.ar/georef/api/localidades?provincia=${id}`, function(response, status){
         if (status === "success"){
-            let municipios = response.localidades;
-            console.log(...municipios)
+            let localidades = response.localidades;
+            console.log(...localidades)
 
             municip.innerHTML = ""
-            for (let municipio of municipios){
-                municip.innerHTML += `<select> <option>${municipio.nombre}</option> </select>`
+            for (let localidad of localidades){
+                municip.innerHTML += `<select> <option>${localidad.nombre}</option> </select>`
             }
         }
     });
 }
+
