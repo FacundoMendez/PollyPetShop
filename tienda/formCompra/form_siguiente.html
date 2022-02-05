@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../formCompra/form_siguiente.css">
     <script defer src="../../main.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Compra</title>
 </head>
 <body>
@@ -52,14 +51,16 @@
 
                 <div class="container1">
                     <div class="input-field provincia">
-                        <i class="material-icons prefix">person_pin</i>
+                        <i class="fas fa-map-marked-alt material-icons prefix "></i>
                         <label for="Provincia">Provincia<span class="complete">*</span> </label>
-                        <input type="text" name="Provincia" required>
+                        <!-- <input type="text" name="Provincia" required> -->
+                        <div class="provinciaCheck"></div>
                     </div>
-                    <div class="input-field localidad">
-                        <i class="material-icons prefix">perm_identity</i>
+                    <div class="input-field localidad ">
+                        <i class="fas fa-search-location material-icons prefix "></i>
                         <label for="Localidad">Localidad<span class="complete">*</span> </label>
                         <input type="text" name="Localidad" required>
+                       <!--  <div class="localidadCheck"></div> -->
                     </div>
                 
                 </div>
@@ -68,12 +69,12 @@
                 <!-- <div class="provincias"></div> -->
                 <div class="container2">
                     <div class="input-field calle">
-                        <i class="material-icons prefix">perm_identity</i>
+                        <i class="fas fa-home material-icons prefix" ></i>
                         <label for="Calle">Calle <span class="complete">*</span> </label>
                         <input type="text" name="Calle" required>
                     </div>
                     <div class="input-field numero">
-                        <i class="material-icons prefix">perm_identity</i>
+                        <i class="fas fa-map-marker-alt material-icons prefix"></i>
                         <label for="Numero">Numero<span class="complete">*</span> </label>
                         <input type="text" name="Numero" required>
                     </div>
@@ -81,13 +82,13 @@
 
                 <div class="container3">
                     <div class="input-field piso">
-                        <i class="material-icons prefix">perm_identity</i>
+                        <i class="fas fa-map-marker material-icons prefix"></i>
                         <label for="Piso">Piso</label>
                         <input type="text" name="Piso" >
                     </div>
 
                     <div class="input-field depto">
-                        <i class="material-icons prefix">perm_identity</i>
+                        <i class="fas fa-map-marker material-icons prefix"></i>
                         <label for="Depto">Depto</label>
                         <input type="text" name="Depto" >
                     </div>
@@ -95,12 +96,12 @@
 
                 <div class="container4">
                     <div class="input-field cp">
-                        <i class="material-icons prefix">perm_identity</i>
+                        <i class="fas fa-location-arrow material-icons prefix"></i>
                         <label for="cp">Codigo Postal<span class="complete">*</span> </label>
                         <input type="number" name="cp" required>
                     </div>
                     <div class="input-field tel">
-                        <i class="material-icons prefix">perm_identity</i>
+                        <i class="fas fa-phone-alt material-icons prefix"></i>
                         <label for="telefono">Numero Telefonico<span class="complete">*</span> </label>
                         <input type="number" name="telefono" required>
                     </div>
@@ -109,7 +110,7 @@
 
                 <div class="container5">
                     <div class="input-field observacion">
-                        <i class="material-icons prefix">perm_identity</i>
+                        <i class="fas fa-comment-alt material-icons prefix"></i>
                         <label for="observacion">Observacion (Opcional)</label>
                         <input type="text" name="observacion" >
                     </div>
@@ -117,7 +118,7 @@
     
                 <div class="center-align">
                     <button class="enviar" >
-                        <i class="material-icons send">send</i>
+                        <i class="fas fa-play material-icons send"></i>
                         <span> Siguente </span>
                     </button>
                 </div>

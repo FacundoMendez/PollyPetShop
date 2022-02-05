@@ -295,6 +295,7 @@ body{
     font-size: 1.5rem;
     background: none;
     width: 30rem;
+    font-weight: bold;
 }
 
 .input-field input:hover{
@@ -318,7 +319,6 @@ body{
     cursor: pointer;
     height: 42px;
     width: 15rem;
-    line-height: 1;
     padding-left: 16px;
     padding-right: 16px;
     transition: box-shadow .15s,transform .15s;
@@ -351,14 +351,29 @@ body{
 }
 .enviar i{
     margin-left: -1.5rem;
+    color: #8400ff;
 }
+
 .enviar span{
     font-size: 1.7rem;
     position: relative;
-    top: -0.6rem;
     color: #8400ff;
     font-weight: 700;
 }
+
+
+.provinciaCheck select{
+    width: 30rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-weight: bold;
+}
+
+
 
 
 
