@@ -12,8 +12,8 @@
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".container2__sol", {
         duration:2,
-        scale:"+=.5",
-        y:"-=200",
+        scale:"+=.7",
+        y:"-=270",
         x:"-=120",
         scrollTrigger:{
             trigger: ".box__container2",
@@ -21,6 +21,8 @@
             scrub: 1,
         }
     })
+
+
 })();
 
 (() =>{

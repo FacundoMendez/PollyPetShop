@@ -33,7 +33,7 @@ main{
 .preload{
     width: 100vw;
     height: 100vh;
-    background-color: #ddfffd ;
+    background-color: #e0edff ;
     position: fixed;
     top: 0rem;
     left: 0px;
@@ -80,68 +80,58 @@ main{
 /* ------------------- */
 
 
-.header {
-    position: relative;
-    height: 11rem;
-
-}
-
 .nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #ccffff;
-    flex-direction: row;
+
     position: fixed;
     z-index: 10000;
     width: 100%;
     top: 0;
-} 
+}
+
+.nav__img{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.nav__img img{
+    width: 85%;
+    height: 7.7rem;
+}
 
 .nav-link {
     text-decoration: none;
     font-size: 1.6rem;
-    color: #ad5cff;
+    color:rgb(250, 238, 215);
     font-weight: 800;
     letter-spacing: 1px;
 } 
-
-.nav__logo{
-    margin-top: 0.5%;   
-
-}
-
-
-.nav__logo img{
-    width: 55%;
-    margin-left: 7rem;
-}
-
 
 .nav-menu {
     display: flex;
     margin-right: 40px;
     list-style: none;
+    position: absolute;
+    top: .4rem;
+    left: 50%;
+    transform: translate(-50%);
 }
 
-
 .nav-menu-link {
-    padding: 8px 12px;
+    padding: 0px 12px;
     border-radius: 3px;
 }
 
-
 .nav-menu-link_active {
-    color: #ad5cff;
     border-radius: 9%;
     transition: 0.5s;
 }
 
-
-
   /* TOGGLE */
 .nav-toggle {
+    position: absolute;
+    top: 0rem;
+    right: 12%;
     color: white;
     background: none;
     border: none;
@@ -162,10 +152,10 @@ main{
 }
 
 .cuenta{
-    border: 2px solid #b871ff;
+    border: 2px solid rgb(250, 238, 215);
+    border-radius: 15%;
+    margin-left: 2rem;
 }
-
-
 
 .nav-menu-link_active:hover{
     color:#ff71e7;
@@ -203,57 +193,8 @@ span{
 }
 
 
-.cuenta{
-    color: #ad5cff;
-    border-radius: 15%;
-    margin-left: 2rem;
-}
-
-
-/*  NAV 2  */
-
-
-.nav2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: #ddfffd ;
-    width: 50%;
-    margin: 5rem auto;
-    box-shadow: 0.1rem 0.1rem 0.7rem #87eeee ;
-    border-radius: 4%;
-    margin-top: 12rem;
-    
-}
-
-
-.nav2 ul{
-    list-style: none;
-}
-
-.nav2 span{
-    padding: 0 3rem;
-}
-
-.nav2 li{
-    display: inline-block;
-    padding: 1.5rem 0;
-}
-
-.nav2 a{
-    text-decoration: none;
-    font-size: 1.7rem;
-    color: #ad5cff;
-    letter-spacing: 1px;
-    font-weight: 800;
-    text-transform: uppercase;;
-}
-
-
 .containerBusqueda{
-    width: 33%;
+    width: 35%;
     height: 18rem;
     display: flex;
     align-items: center;
@@ -263,11 +204,11 @@ span{
     gap: 2rem;
     position: absolute;
     right:14%;
-    top: 15%;
+    top: 23%;
 }
 
 .containerBusqueda p{
-    font-size: 4.3rem;
+    font-size: 3.6rem;
     color: #ad5cff;
     font-weight: 800;
 }
@@ -331,14 +272,13 @@ span{
 
 
 .container{
-    height: 90vh;
+    height: 95vh;
     width: 100vw;
     position: relative;
     background-image: url("./src/img/cloud.png");
     background-size: cover;
     background-attachment: fixed;
 }
-
 
 
 .container__gatoGrande{
@@ -367,9 +307,9 @@ span{
 
 .hueso{
     position: absolute;
-    top: 7rem;
+    top: 0rem;
     z-index: 9000;
-    left: 3%;
+    left: 6.5%;
     margin-top: -1%;
     animation: anima1 2s linear infinite;
     filter: drop-shadow(5px 10px 3px #464646cc);
@@ -433,7 +373,7 @@ span{
     width: 100%;
     height: 100px;
     bottom: -10rem;
-    background:linear-gradient(to bottom,#240a1a42,transparent);
+    background-color: #290c1e;
     z-index: 1000;
 }
 
@@ -446,9 +386,12 @@ span{
     height: 30rem;
     left: 50%;
     transform: translate(-50%);
+
 }
 
 /* cartel perro */
+
+
 .container2-cartel1 img{
     width: 220px;
     height: 300px;
@@ -518,7 +461,7 @@ span{
     height: 140px;
     position: absolute;
     top: 27rem;
-    left: 68rem;
+    left: 70rem;
     filter:drop-shadow(-1px 5px 8px #272727fa);
 }
 
@@ -548,7 +491,7 @@ span{
 
 .box__container3{
     position: relative;
-    width: 100vw;
+    width: 101vw;
     height: 130vh;
     background-color: #240a1afa;
     display: flex;
@@ -600,6 +543,28 @@ span{
     width: 100vw;
     height: 70vh;
 }
+
+.text__container4 a{
+    position: absolute;
+    font-size: 7rem;
+    z-index: 2000;
+    top: 50%;
+    text-decoration: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #8a16ff;
+    opacity: 0.9;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    filter:drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.76));
+}
+
+.text__container4 a:hover{
+    font-size: 6.4rem;
+    transition: all .6s ease-in-out;
+}
+
+
 
 .img__container4{
     position: relative;
@@ -658,14 +623,6 @@ span{
 
 @media screen and (min-width: 1401px) and (max-width: 1700px){
     
-    .nav2{
-        width: 64%;
-    }
-
-
-    .nav2 a{
-        font-size: 1.7rem;
-    }
 
     .container__gato1{
         position: absolute;
@@ -715,11 +672,7 @@ span{
 
 @media (max-width :1400px){
 
-    .nav{
-        flex-wrap: nowrap;
-        height: 10rem;
-        padding: 1rem;
-    }
+ 
 
     .nav-link {
         font-size: 1.3rem;
@@ -732,18 +685,6 @@ span{
     }
 
     
-
-    /*  NAV 2  */
-
-    .nav2{
-        width: 80%;
-    }
-
-
-    .nav2 a{
-        font-size: 1.5rem;
-    }
-
 
     /* Container1 /gato grande barra de busqueda */
 
@@ -882,10 +823,6 @@ span{
 
 @media (max-width: 1082px){
 
-    .header {
-        height: 10rem;
-
-    }
 
     .carrito .fas{
         font-size: 3rem;
@@ -901,11 +838,11 @@ span{
         background-color: #2c3e50;
         position: fixed;
         top: 0px;
-        width: 100%;
+        width: 101%;
         padding: 20px 0;
         height: 100%;
         overflow-y: auto;
-        left: 100%;
+        right:  100%;
         transition: left 0.3s;
         padding-top: 17rem;
     }
@@ -925,7 +862,7 @@ span{
     .cuenta{
         margin-top: 2rem;
         line-height: 60px;
-        border: 2px solid #b871ff;
+        border: 2px solid rgb(250, 238, 215);
     }
 
     .cuenta a{
@@ -948,7 +885,7 @@ span{
     }
 
     .nav-menu_visible {
-        left: 0;
+        left: -100%;
     }
 
     .nav-toggle:focus:not(:focus-visible) {
@@ -956,21 +893,10 @@ span{
     }
 
     .fa-bars{
-        color: #ad5cff;
+        color: rgb(250, 238, 215);
         font-size: 3.9rem;
-        margin-top: 2rem;
     }
 
-
-    /*  NAV 2  */
-
-    .nav2{
-        width: 87%;
-    }
-
-    .nav2 a{
-        font-size: 1.3rem;
-    }
 
 
     /* Container1 /gato grande barra de busqueda */
@@ -984,7 +910,6 @@ span{
         right: 10%;
         top: 22%;
     }
-
 
 
     .barraBusqueda::placeholder{
@@ -1015,68 +940,12 @@ span{
     }
 
 
-    /*    Quienes somos /container2    */
-
-
-    .container2 p{
-        font-size: 4rem;
-        padding-top: 10rem;
-    }
-
-    .container2 .text1{
-        font-size: 2.3rem;
-        width: 70%;
-        line-height: 3.3rem;
-    }
-
-
-    /* Container3 / que hacemos */
-
-    .container3{
-        background-size: cover;
-        height: 80vh;
-        width: 100%;
-        position: relative;
-    }
-
-    .container3 p{
-        font-size: 4rem;
-        padding-top: 10rem;
-    }
-
-    .container3 .text2{
-        font-size: 2.3rem;
-        width: 70%;
-        line-height: 3.3rem;
-    }
-
-    .container2__gato2{
-        margin-left: -0.3%;
-    }
 }
 
 
 @media (max-width :868px){
 
-    .nav{
-        height: 10rem;
-    }
-
-    /*  NAV 2  */
-
-
-    .nav2{
-        width: 80%;
-    }
-
-    .nav2 a{
-        font-size: 1.3rem;
-    }
-
-    .nav2 span{
-        padding: 0 0.7rem;
-    }
-
+ 
     /* Container1 /gato grande barra de busqueda */
 
     .container{
@@ -1127,48 +996,7 @@ span{
     }
 
 
-    /*    Quienes somos /container2    */
-
-
-    .container2 p{
-        font-size: 3.5rem;
-        padding-top: 10rem;
-    }
-
-    .container2 .text1{
-        font-size: 2.1rem;
-        width: 70%;
-        line-height: 3.3rem;
-    }
-
-
-    /* Container3 / que hacemos */
-
-    .container3{
-        background-size: cover;
-        height: 80vh;
-        width: 100%;
-        position: relative;
-    }
-
-    .container3 p{
-        font-size: 3.5rem;
-        padding-top: 10rem;
-    }
-
-    .container3 .text2{
-        font-size: 2.1rem;
-        width: 70%;
-        line-height: 3.3rem;
-    }
-
-    .container2__gato2{
-        margin-left: -0.3%;
-    }
-    
-    .container2__gato2 img{
-        width: 50%;
-    }
+  
 }
 
 
@@ -1179,21 +1007,6 @@ span{
     }
     .nav__logo{
         width: 50%;
-    }
-
-    /*  NAV 2  */
-
-
-    .nav2{
-        width: 90%;
-    }
-
-    .nav2 a{
-        font-size: 1.1rem;
-    }
-
-    .nav2 span{
-        padding: 0 0.4rem;
     }
 
     /* Container1 /gato grande barra de busqueda */
@@ -1251,86 +1064,14 @@ span{
         width: 67%;
     }
 
-
-    /*    Quienes somos /container2    */
-
-
-    .container2 p{
-        font-size: 3rem;
-        padding-top: 10rem;
-    }
-
-    .container2 .text1{
-        font-size: 1.9rem;
-        width: 83%;
-        line-height: 3.3rem;
-        text-align:justify;
-    }
-
-
-    /* Container3 / que hacemos */
-
-    .container3{
-        background-size: cover;
-        height: 80vh;
-        width: 100%;
-        position: relative;
-    }
-
-    .container3 p{
-        font-size: 3rem;
-        padding-top: 10rem;
-    }
-
-    .container3 .text2{
-        font-size: 1.9rem;
-        width: 83%;
-        line-height: 3.3rem;
-        text-align:justify;
-    }
-
-    .container2__gato2{
-        margin-left: -0.7%;
-    }
-    
-    .container2__gato2 img{
-        width: 50%;
-    }
+  
 }
 
 
 @media (max-width: 482px){
 
     
-    .nav{
-        height: 10rem;
-    }
-
-    .nav__logo{
-        width: 60%;
-    }
-
-    /*  NAV 2  */
-
-
-    .nav2{
-        width: 95%;
-        margin-top: 12rem;
-    }
-
-    .nav2 a{
-        font-size: 1rem;
-    }
-
-    .nav2 span{
-        padding: 0 0.2rem;
-    }
-    .camas a{
-        display: none;
-    }
-
-    /* Container1 /gato grande barra de busqueda */
-
+    
     .container{
         height: 50vh;
     }
@@ -1399,53 +1140,6 @@ span{
         width: 67%;
     }
 
-
-    /*    Quienes somos /container2    */
-
-
-    .container2 p{
-        font-size: 3rem;
-        padding-top: 10rem;
-    }
-
-    .container2 .text1{
-        font-size: 1.5rem;
-        width: 83%;
-        line-height: 3.1rem;
-        text-align:justify;
-        letter-spacing: 0;
-    }
-
-
-    /* Container3 / que hacemos */
-
-    .container3{
-        background-size: cover;
-        height: 80vh;
-        width: 100%;
-        position: relative;
-    }
-
-    .container3 p{
-        font-size: 3rem;
-        padding-top: 10rem;
-    }
-
-    .container3 .text2{
-        font-size: 1.5rem;
-        width: 83%;
-        line-height: 3.1rem;
-        text-align:justify;
-        letter-spacing: 0;
-    }
-
-    .container2__gato2{
-        margin-left: -1.1%;
-    }
-    
-    .container2__gato2 img{
-        width: 50%;
-    }
 
 }
 
