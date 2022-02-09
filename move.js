@@ -10,8 +10,6 @@
 (() =>{
 
     gsap.registerPlugin(ScrollTrigger);
-
-
     gsap.to(".container2__sol", {
         duration:2,
         scale:"+=.5",
@@ -23,11 +21,6 @@
             scrub: 1,
         }
     })
-
-
-
-
-
 })();
 
 (() =>{
