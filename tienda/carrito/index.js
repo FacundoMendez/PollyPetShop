@@ -1,55 +1,55 @@
 
 $(() => {
 
-
     function actualizar() {
         let precioTotal = 0 
         let arrayProductos = JSON.parse(localStorage.getItem("productosCarrito"));
         precioTotal = localStorage.getItem("precioTotal");
         let conta = localStorage.getItem("contador");
-        let productos = document.querySelector(".vaciar")
+        let vaciar = document.querySelector(".vaciar")
 
-    
-
-
+        
         if(arrayProductos != null){
             if (conta != null) {
                 if (conta != 0) {
                     if(precioTotal >= 0){
 
-                                        
                         $(".contador p").html(`
                                 <p>${0}</p>
                             `);
 
                         $(".carrito__vacio-container").hide();
                         $(".carrito__productos").show();
+
                         for (let i = 0; i < arrayProductos.length; i++) {
-                            
-                            productos.addEventListener("click", function(){
+
+                            vaciar.addEventListener("click", function(){
                                 localStorage.removeItem("productosCarrito")
                                 location.reload();
                             })
 
+
                             $(".carrito__productos").append(`         
-                                <div class="prodCar" id=${arrayProductos[i].id}>
-                                    <div class="imgProd"><img src="${arrayProductos[i].img}" alt=""></div>
-                                    <div class="textP nombreProd"><p>${arrayProductos[i].nombre}:</p></div>
-                                    <div class="textP precioProd" > <div class="precioProducto${arrayProductos[i].id}"><p>$ ${arrayProductos[i].precio}</p></div> </div>
-                                    <div class="sumaRest" > 
-                                        <div class="rest" id="rest${arrayProductos[i].id}"><p>-</p></div> 
-                                        <div class="num" id="num${arrayProductos[i].id}" ><p></p></div>  
-                                        <div class="sum" id="sum${arrayProductos[i].id}"><p>+</p></div> 
-                                    </div>
-                                    <button class="eliminar" id="${arrayProductos[i].id}"><i class="far fa-trash-alt"></i> </button>                                                       
+                            <div class="prodCar" id=${arrayProductos[i].id}>
+                                <div class="imgProd"><img src="${arrayProductos[i].img}" alt=""></div>
+                                <div class="textP nombreProd"><p>${arrayProductos[i].nombre}:</p></div>
+                                <div class="textP precioProd" > <div class="precioProducto${arrayProductos[i].id}"><p>$ ${arrayProductos[i].precio}</p></div> </div>
+                                <div class="sumaRest" > 
+                                    <div class="rest" id="rest${arrayProductos[i].id}"><p>-</p></div> 
+                                    <div class="num" id="num${arrayProductos[i].id}" ><p></p></div>  
+                                    <div class="sum" id="sum${arrayProductos[i].id}"><p>+</p></div> 
                                 </div>
+                                <button class="eliminar" id="${arrayProductos[i].id}"><i class="far fa-trash-alt"></i> </button>                                                       
+                            </div>
                                 
-                            `);
+                            `); 
+
+                               
+                  
                             prodEliminar(conta,precioTotal);
                             localStorage.setItem(`productosPRECIO${arrayProductos[i].id}`, arrayProductos[i].precio);
                             sum(arrayProductos[i].id)
-                        }  
-
+                        }
                     }
                 }
             }
@@ -85,13 +85,6 @@ $(() => {
             }   
         })
     }
-
-
-
-   
-
-
-
 
     function prodEliminar(conta,precioTotal){
        
@@ -149,8 +142,6 @@ $(() => {
         }
 
     }
-
-
 
     
 });

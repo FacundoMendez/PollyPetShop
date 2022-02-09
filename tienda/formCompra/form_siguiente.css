@@ -10,8 +10,6 @@ html{
 }
 
 
-
-
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -268,7 +266,6 @@ body{
     align-items: center;
     flex-direction: row;
     margin: 4rem 0;
-    margin-left: -2rem;
     padding: 0 4rem;
 }
 
@@ -486,6 +483,7 @@ body{
         width: 70%;
     }
 
+
 }
 
 
@@ -504,9 +502,95 @@ body{
         width: 90%;
     }
 
+    .container form{
+        border: 4px solid rgb(134, 9, 252);
+        padding: 6rem 0 ;
+        border-radius: 30px;
+        background-color: white;
+        filter: drop-shadow(1px 1px 10px rgb(239, 249, 253));
+        margin: 0 1rem;
+    }
+    
+    .input-field{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 4rem 0;
+        padding: 0 0rem;
+    }
+
     
 }
 
 @media screen and (max-width:320px){
+
+    .container{
+        margin: 8rem 0;
+    }
+    
+    .container form{
+        border: 4px solid rgb(134, 9, 252);
+        padding: 6rem 0 ;
+        border-radius: 30px;
+        background-color: white;
+        filter: drop-shadow(1px 1px 10px rgb(239, 249, 253));
+        margin: 0 1rem;
+    }
+    
+    .input-field{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 4rem 0;
+        padding: 0 1rem;
+    }
+
+
+    .input-field i{
+        font-size: 3rem;
+    }
+
+    .input-field input{
+        width: 20rem;
+    }
+
+    .provinciaCheck select, .localidadCheck select{
+        width: 20rem;
+    }
    
+
+    
+    .tel label{
+        padding-left: 19rem;
+    }
+    
+    .calle label, .numero label{
+        padding-left: 10rem;
+    }
+    
+    .localidad label{
+        padding-left: 12rem;
+    }
+    
+    .provincia label{
+        padding-left: 12rem;
+    }
+    
+    .depto label{
+        padding-left: 10rem;
+    }
+    
+    .piso label{
+        padding-left: 10rem;
+    }
+    
+    .cp label{
+        padding-left: 15rem;
+    }
+    
+    .observacion label{
+        padding-left: 20rem;
+    }
 }

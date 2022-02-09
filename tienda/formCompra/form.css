@@ -243,6 +243,8 @@ span{
     font-size: 1.5rem;
     background: none;
     width: 30rem;
+    font-weight: bold;
+    padding-left: 0.2rem;
 }
 
 .input-field input:hover{
@@ -441,8 +443,45 @@ span{
     }
 
     
+    .input-field{
+        margin-left: -2.1rem;
+        padding: 0 1rem;
+    }
+    
 }
 
 @media screen and (max-width:320px){
-   
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .container form{
+        border: 4px solid rgba(134, 4, 255, 0.973);
+        padding: 6rem 0 ;
+        border-radius: 30px;
+        filter: drop-shadow(1px 1px 10px rgb(239, 249, 253));
+        margin: 1rem;
+    }
+    
+    .input-field{
+        margin-left: -2.1rem;
+        padding: 0 1rem;
+    }
+    
+    .input-field input{
+        width: 24rem;
+    }
+
+    .input-field i{
+        font-size: 3rem;
+    }
+
+    .input-field label{
+        margin-left: -12rem;
+    }
 }

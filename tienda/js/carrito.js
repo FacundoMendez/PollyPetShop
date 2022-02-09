@@ -1,16 +1,12 @@
 export{carrito}
 import{Productos} from "./arrayProductos.js";
 
-let pantallaCarrito = document.querySelector(".container__carrito");
 let carritoContador = document.querySelector(".contador")
-
 
 let result = 0;
 let contador = 0; 
 
-
 let CarritoProductos = []
-
 
 class contenedorCarrito {
     constructor( nombre, precio, img, id){
@@ -19,29 +15,33 @@ class contenedorCarrito {
         this.img = img;
         this.id = id;
     }
-
 }
-
 
 function carrito(){
     let arrayProducts = []
     filtroMovile(); 
 
-
     const agregar = document.getElementsByClassName("prod__agregar");
 
     for(let element of agregar){
 
-        element.addEventListener("click",function(){
+        element.addEventListener("click",function(e){
 
             contador ++
-            let myID = element.id
+            let myID = e.target.id
 
             $(`#cora${myID}`).toggleClass("is-active");
 
             CarritoProductos= Productos.filter(elem => elem.id == myID)
 
+            if(CarritoProductos.myID != arrayProducts.myID){
+                console.log(CarritoProductos.myID)
+                console.log(arrayProducts.myID)
+            }
+
             arrayProducts.push(new contenedorCarrito(CarritoProductos[0].nombre, CarritoProductos[0].precio, CarritoProductos[0].img, CarritoProductos[0].id) )
+            
+
 
             result = suma(CarritoProductos[0].precio , result) 
 
@@ -54,6 +54,10 @@ function carrito(){
             modifiCarrito(result,contador)
         })
     }
+
+
+console.log(...arrayProducts);
+
 }
 
 
@@ -61,7 +65,6 @@ function carrito(){
 function suma(productoPrecio , result){
     return result += productoPrecio;
 }
-
 
 
 function carritoBottom(){
@@ -97,3 +100,5 @@ function modifiCarrito(result,contador){
     contadorProducto.innerHTML = (contador)
     precio.innerHTML = (`($ ${result})`)
 }
+
+

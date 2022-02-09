@@ -7,7 +7,28 @@
     
 })();
 
+(() =>{
 
+    gsap.registerPlugin(ScrollTrigger);
+
+
+    gsap.to(".container2__sol", {
+        duration:2,
+        scale:"+=.5",
+        y:"-=200",
+        x:"-=120",
+        scrollTrigger:{
+            trigger: ".box__container2",
+            pin: true,
+            scrub: 1,
+        }
+    })
+
+
+
+
+
+})();
 
 (() =>{
     gsap.to(".ball",{        
@@ -33,18 +54,5 @@
     })
 
 
-    .to(".container__gato1",{
-        y: -147,
-        opacity: 1,
-    })
-
-    .to(".container__gato1",{
-        ease: "elastic.out(2.05,0.5)",
-        duration:0,
-        delay:0,
-        y: -149,
-        zIndex: 102,
-    })
-
-
 })();
+

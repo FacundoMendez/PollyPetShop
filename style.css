@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -211,6 +212,7 @@ span{
 
 /*  NAV 2  */
 
+
 .nav2{
     display: flex;
     justify-content: space-around;
@@ -223,6 +225,7 @@ span{
     box-shadow: 0.1rem 0.1rem 0.7rem #87eeee ;
     border-radius: 4%;
     margin-top: 12rem;
+    
 }
 
 
@@ -328,9 +331,12 @@ span{
 
 
 .container{
-    height: 70vh;
+    height: 90vh;
     width: 100vw;
     position: relative;
+    background-image: url("./src/img/cloud.png");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -361,7 +367,8 @@ span{
 
 .hueso{
     position: absolute;
-    top: -5rem;
+    top: 7rem;
+    z-index: 9000;
     left: 3%;
     margin-top: -1%;
     animation: anima1 2s linear infinite;
@@ -397,199 +404,255 @@ span{
 }
 
 
-/*    Quienes somos /container2    */
 
-.container2{
-    background-color: #ddfffd ;
+/* Container2 */
 
-    background-size: cover;
-    height: 80vh;
-    width: 100%;
+
+.box__container2{
     position: relative;
-    z-index: 101;
+    width: 100vw;
+    height: 110vh;
+    background-image: url("./src/img/fondoPara3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
-.container2 p{
-    font-size: 5rem;
+.container2__sol img{
+    position: absolute;
+    left: 56%;
+    top: 24rem;
+    width: 250px;
+    height: 250px;
+    mix-blend-mode:overlay;
+}
+
+.box__container2::before{
+    content: "";
+    position: absolute;
     width: 100%;
-    text-align: center;
-    color: #ad5cff;
-    font-weight: 800;
-    padding-top: 20rem;
-
-}
-
-.container2 .text1{
-    font-size: 3rem;
-    font-weight: 700;
-    width: 60%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: justify;
-    line-height: 4.1rem;
-}
-
-.container2__gato2 {
-    position: absolute;
-    bottom: -10%;
-    left: -0.9%;
+    height: 100px;
+    bottom: -10rem;
+    background:linear-gradient(to bottom,#240a1a42,transparent);
     z-index: 1000;
-    filter: drop-shadow(10px -3px 12px #2c2c2cf5);
-
 }
 
-.container2__gato2 img{
-    width: 70%;
-    height: 70%;
-    z-index: 100;
-}
-
-
-/* Container3 / que hacemos */
-
-.container3{
-    background-image: url("./src/img/Fondo\ Tricolor.png");
-    background-size: cover;
-    height: 80vh;
-    width: 100%;
-    position: relative;
-}
-
-.container3 p{
-    font-size: 5rem;
-    width: 100%;
-    text-align: center;
-    color: #ad5cff;
-    font-weight: 800;
-    padding-top: 15rem;
-}
-
-.container3 .text2{
-    font-size: 3rem;
-    font-weight: 700;
+.container2__cloud{
+    background-image: url("./src/img/cloud2.png");
+    background-size: contain;
     position: absolute;
-    width: 60%;
-    top: 40%;
+    top: -10rem;
+    width: 100%;
+    height: 30rem;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: justify;
-    line-height: 4.1rem;
+    transform: translate(-50%);
 }
 
-/* -----container 4 ------- */
-.container4{
-    width: 100%;
-    height: 40vh;
+/* cartel perro */
+.container2-cartel1 img{
+    width: 220px;
+    height: 300px;
+    position: absolute;
+    bottom: 10rem;
+    right: 10rem;
+    filter:drop-shadow(10px 10px 8px #240a1afa);
+}
+
+.container2-cartel1 img:hover{
+    filter:drop-shadow(10px -15px 18px #fffaf0b7);
+    transition: all .3s ease-in-out;
+}
+
+/* cartel cuchas */
+
+.container2-cartel2 img{
+    width:160px;
+    height: 64px;
+    position: absolute;
+    top: 40rem;
+    left: -1.8rem;
+    filter:drop-shadow(5px 5px 5px #272727fa);
+}
+
+.container2-cartel2 img:hover{
+    filter:drop-shadow(10px 10px 15px #fffcf7b7);
+    transition: all .3s ease-in-out;
+}
+
+/* cartel gatos */
+
+.container3-cartel3 img{
+    width: 230px;
+    height: 320px;
+    position: absolute;
+    bottom: 20rem;
+    left: 58rem;
+    filter:drop-shadow(-1px 5px 8px #272727fa);
+}
+
+.container3-cartel3 img:hover{
+    filter:drop-shadow(-10px 10px 15px #fffcf7b7);
+    transition: all .3s ease-in-out;
+}
+
+/* cartel accesorios */
+
+.container4-cartel4 img{
+    width: 140px;
+    height: 170px;
+    position: absolute;
+    top: 44rem;
+    left: 25rem;
+    filter:drop-shadow(-1px 5px 8px #272727fa);
+}
+
+.container4-cartel4 img:hover{
+    filter:drop-shadow(2px 5px 10px #fffcf7b7);
+    transition: all .3s ease-in-out;
+}
+
+/* cartel alimentos */
+
+.container5-cartel5 img{
+    width: 120px;
+    height: 140px;
+    position: absolute;
+    top: 27rem;
+    left: 68rem;
+    filter:drop-shadow(-1px 5px 8px #272727fa);
+}
+
+.container5-cartel5 img:hover{
+    filter:drop-shadow(2px 5px 10px #fffcf7b7);
+    transition: all .3s ease-in-out;
+}
+
+/* cartel juguetes */
+
+.container7-cartel7 img{
+    width:160px;
+    height: 60px;
+    position: absolute;
+    top: 47rem;
+    left: -1.8rem;
+    filter:drop-shadow(5px 5px 5px #272727fa);
+}
+
+.container7-cartel7 img:hover{
+    filter:drop-shadow(10px 10px 15px #fffcf7b7);
+    transition: all .3s ease-in-out;
+}
+
+/* Container3 */
+
+
+.box__container3{
     position: relative;
-    background-color: #d2edfffb ;
-}
-
-.container4__tienda{
-    position: absolute;
-    width: 100%;
-    height: 40vh;
-}
-
-.container4__tienda p{
-    filter: drop-shadow(2px 1px 1px #030303af);
-    position: absolute;
-    font-size: 7rem;
-    font-weight: 900;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffb8f0;
-    z-index: 100;
-}
-
-.container4__tienda a{
-    text-decoration: none;
-    z-index: 100;
-
-}
-
-.container4__tienda p:hover{
-    color: #ffa3eb;
-    font-size: 7.2rem;
-    transition: all 0.5s ease-in-out;
-}
-
-.container4__img-subrallado{
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    z-index: 100;
-    margin-top: 31.5rem;
-}
-
-.container4__img-subrallado img{
-    width: 27%;
-}
-
-.container4__imgs{
-    position: relative;
-    width: 100%;
-    height:26rem;
+    width: 100vw;
+    height: 130vh;
+    background-color: #240a1afa;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    color: wheat;
 }
 
-.container4__img-patitas{
+.container3__quienesSomos,.container3__queHacemos{
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2.7rem;
+}
+.container3__quienesSomos{
     position: absolute;
-    top: 1.3%;
-    left: 0.3%;
-    width: 15%;
-    height: 25rem;
-}
-.container4__img-patitas img{
-    width: 80%;
+    top: 20%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
 }
 
-.container4__img-patitas2{
+
+
+.container3__queHacemos{
     position: absolute;
-    top: 1.3%;
-    right: -3rem;
-    width: 15%;
-    height: 25rem;
+    top: 50%;
+    right:  15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
 }
-.container4__img-patitas2 img{
-    width: 80%;
-}
 
+/* container4 */
 
-
-/* -------Container 5 ----------- */
-.container5{
-    width: 100%;
-    height: 80vh;
-    background-color: #ddfffd ;
+.box__container4{
     position: relative;
+    width: 100vw;
+    height: 70vh;
 }
 
-.container5__img{
+.img__container4{
+    position: relative;
     width: 100%;
-    text-align: center;
-    padding-top: 11rem;
-    filter: drop-shadow(10px -13px 5px #0000003f);
+    background-image: url("./src/img/dia5.png");
+    height: 59rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1000;
 }
 
-.container5__img img{
-    width: 22%;
-}
-
-.container5__text p{
-    font-size: 7rem;
-    font-weight: 900;
+.imgTienda__container4{
+    height: 70vh;
     width: 100%;
-    text-align: center;
-    margin-top: 7rem;
-    filter: drop-shadow(1px -5px 3px #0000008e);
+    position: relative;
+    background-image: url("./src/img/tienda.png");
+    background-size: contain;
+    object-fit: cover;
+    z-index: 1;
 }
+
+.container4__cloud{
+    height: 36vh;
+    width: 100%;
+    position: absolute;
+    background-image: url("./src/img/cloud.png");
+    background-size: cover;
+    object-fit: cover;
+    bottom: -6rem;
+    z-index: 2000;
+    left: -1rem;
+}
+
+
+
+/* container5 */
+
+.box__container5{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./src/img/cloud.png");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+
+
+
+
+
 
 
 
@@ -613,8 +676,6 @@ span{
 
 
         
-  
-
 
     /* -------Container 5 ----------- */
     .container5{
@@ -762,7 +823,6 @@ span{
     /* Container3 / que hacemos */
 
     .container3{
-        background-image: url("./src/img/Fondo\ Tricolor.png");
         background-size: cover;
         height: 80vh;
         width: 100%;
@@ -973,7 +1033,6 @@ span{
     /* Container3 / que hacemos */
 
     .container3{
-        background-image: url("./src/img/Fondo\ Tricolor.png");
         background-size: cover;
         height: 80vh;
         width: 100%;
@@ -1086,7 +1145,6 @@ span{
     /* Container3 / que hacemos */
 
     .container3{
-        background-image: url("./src/img/Fondo\ Tricolor.png");
         background-size: cover;
         height: 80vh;
         width: 100%;
@@ -1213,7 +1271,6 @@ span{
     /* Container3 / que hacemos */
 
     .container3{
-        background-image: url("./src/img/Fondo\ Tricolor.png");
         background-size: cover;
         height: 80vh;
         width: 100%;
@@ -1363,7 +1420,6 @@ span{
     /* Container3 / que hacemos */
 
     .container3{
-        background-image: url("./src/img/Fondo\ Tricolor.png");
         background-size: cover;
         height: 80vh;
         width: 100%;
