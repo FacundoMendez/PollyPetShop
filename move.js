@@ -22,6 +22,20 @@
         }
     })
 
+    gsap.to(".box__container3", {
+        opacity:1,
+        duration:2,
+        ease: "power4.out",
+        x:"+=70",
+        scrollTrigger:{
+            trigger:".container3",
+            scrub: .5,
+            pin: true,
+            end: "+=100%"
+        },  
+    })
+
+
 
 })();
 
