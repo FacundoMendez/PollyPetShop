@@ -678,7 +678,7 @@ span{
     position: relative;
     width: 100%;
     background-image: url("./src/img/dia5.png");
-    height: 90rem;
+    height: 80rem;
     filter:contrast(108%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -692,7 +692,6 @@ span{
     position: relative;
     background-image: url("./src/img/tienda2.png");
     filter:contrast(110%);
-
     background-size: contain;
     background-position: top;
     object-fit: cover;
@@ -731,37 +730,34 @@ span{
 }
 
 
-    /* -------Container 5 ----------- */
-    .container5{
-        width: 100%;
-        height: 80vh;
-        background-color: #ddfffd ;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+.container5{
+    width: 100%;
+    height: 80vh;
+    background-color: #ddfffd ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container5__img{
+    width: 100%;
+    text-align: center;
+    padding-top: 11rem;
+    filter: drop-shadow(10px -13px 5px #0000003f);
+}
+.container5__img img{
+    width: 16%;
+}
 
-    .container5__img{
-        width: 100%;
-        text-align: center;
-        padding-top: 11rem;
-        filter: drop-shadow(10px -13px 5px #0000003f);
-    }
-
-    .container5__img img{
-        width: 16%;
-    }
-
-    .container5__text p{
-        font-size: 6rem;
-        font-weight: 900;
-        width: 100%;
-        text-align: center;
-        margin-top: 7rem;
-        filter: drop-shadow(1px -5px 3px #0000008e);
-    }
+.container5__text p{
+    font-size: 6rem;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    margin-top: 7rem;
+    filter: drop-shadow(1px -5px 3px #0000008e);
+}
 
 
 @media screen and (min-width: 1401px) and (max-width: 1700px){
@@ -1325,37 +1321,38 @@ span{
         font-size: 1.8rem;
     }
 
-    .container__gatoGrande{
-        top: 38%;
-        left: 33%;
-    
+    .container p {
+        font-size: 2rem;
+        right: 10%;
+        top: 22%;
     }
 
-    .container__gatoGrande img{
-        width: 60%;
+    .containerBusqueda {
+        width: 30rem;
+    }
+  
+    .box__container3{
+        font-size: 1.9rem;
+        top: 5rem;
     }
 
-    .container__gato1 img{
-        width: 80%;
+    .container3__queHacemos{
+        top: -4%;
     }
-
-    .container__gato1{
-        position: absolute;
-        bottom: -20.5%;
-        right:4%;
-        z-index: 100;
-    }
-
-    .hueso{
-        left: 0.5%;
-    }
-
-    .hueso img{
-        width: 67%;
-    }
-
 
   
+    .text__container4 a{
+        font-size: 5.5rem;
+        color:rgb(250, 238, 215);
+        filter: drop-shadow( 4px 4px 1px rgb(0, 0, 0));
+    }
+
+    .text__container4 a:hover{
+        font-size: 6rem;
+        filter: drop-shadow( 4px 4px 1px rgb(0, 0, 0));
+
+    }
+    
 }
 
 
@@ -1370,6 +1367,12 @@ span{
 
     /* Container1 /gato grande barra de busqueda */
 
+ 
+    .container p{
+        right: 4%;
+        top: 22%;
+    }
+
     .container{
         height: 70vh;
     }
@@ -1380,7 +1383,6 @@ span{
 
     .containerBusqueda p{
         font-size: 1.9rem;
-        width: 30rem;
         top: 22%;
     }
 
@@ -1393,116 +1395,37 @@ span{
         font-size: 2rem;
     }
 
+    .hueso{
+        top:-1rem;
+        left: 1rem;
+    }
+
     .container__gatoGrande{
-        top: 36%;
-        left: 32%;
+        top: 55%;
+        left: 30%;
     }
 
     .container__gatoGrande img{
-        width: 65%;
-    }
-
-
-    .container__gato1 img{
-        width: 70%;
+        width: 75%;
     }
 
     .container__gato1{
         position: absolute;
-        bottom: -20%;
-        right:2%;
+        bottom: -18%;
+        right:5%;
         z-index: 100;
     }
 
-    .hueso{
-        display: none;
-        left: 0.5%;
-    }
-
-    .hueso img{
-        width: 67%;
-    }
-
-  
-}
 
 
-@media (max-width: 482px){
+      /* Container1 /gato grande barra de busqueda */
 
-    
-    
-    .container{
-        height: 50vh;
-    }
 
-    .containerBusqueda p{
-        margin-left: -4rem;
-        font-size: 2.3rem;
-    }
-
-    .containerBusqueda{
-        top: 0;
-        right: 0;
-        margin: 0;
-        padding: 0;
-        left: 58%;
-        transform: translate(-50%);
-    }
-    .busq{
-        margin-left: -5rem;
-        width: 30rem;
-    }
-
-    .busq i{
-        position: static;
-        margin-right: -6rem;
-    }
-
-    .barraBusqueda{
-        width: 100%;
-        left: 50%;
-    }
-
-    .barraBusqueda::placeholder{
-        font-size: 1.7rem;
-    }
-
-    .container__gatoGrande{
-        top: 66%;
-        left: 32%;
-        display: none;
-    }
-
-    .container__gatoGrande img{
-        width: 65%;
-    }
-
-    .container__gato1 img{
-        width: 60%;
-        margin-left: 2rem;
-    }
-
-    .container__gato1{
-        position: absolute;
-        bottom: -28%;
-        left: 10.5rem;
-        right: 0;
-        z-index: 100;
-    }
-
-    .hueso{
-        display: none;
-        left: 0.5%;
-    }
-
-    .hueso img{
-        width: 67%;
-    }
 
     .logo{
         position: absolute;
         top: -1.4rem;
-        left: -5%;
+        left: 12%;
         color: white;
         background: none;
         border: none;
@@ -1513,10 +1436,183 @@ span{
     }
 
     .logo a{
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    
+    /* container 3 */
+
+    .box__container3{
+        width: 100vw;
+        height: 100vh;
+        gap: 20rem;
+        font-size: 1.8rem;
+        top: 12rem;
+        opacity: 0;
+    }
+
+    .container3__quienesSomos,.container3__queHacemos{
+        width: 70%;
+        line-height: 2.9rem;
+        margin-left: -10rem;
+    }
+
+    .container3__quienesSomos{
+        top: 10%;
+        left: 0%;
+        gap: 3rem;
+    }
+
+    .container3__queHacemos{
+        top: -10%;
+    }
+
+    /* container 5 */
+    .box__container4{
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .text__container4 a{
+        font-size: 4rem;
+    }
+
+    .text__container4 a:hover{
+        font-size: 4.5rem;
+    }
+
+
+    .imgTienda__container4 {
+        height: 80vh;
+    }
+
+    .img__container4 {
+        height: 70rem;
+    }
+
+  
+}
+
+
+@media (max-width: 482px){
+
+    .container{
+        height: 50vh;
+    }
+
+    .containerBusqueda p{
+        margin-left: -4.5rem;
+        font-size: 2rem;
+    }
+
+    .containerBusqueda{
+        top: 10rem;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        left: 58%;
+        transform: translate(-50%);
+    }
+    .busq{
+        margin-left: -5rem;
+        width: 26rem;
+    }
+
+    .busq i{
+        position: static;
+        margin-right: -6rem;
+    }
+
+    .barraBusqueda{
+        width: 100%;
+        left: 50%;
+        height: 1rem;
+    }
+
+    .barraBusqueda::placeholder{
+        font-size: 1.6rem;
+    }
+
+    .container__gatoGrande{
+        top: 87%;
+        left: 49%;
+    }
+
+    .container__gatoGrande img{
+        width: 100%;
+    }
+
+    .container__gato1 img{
+        width: 60%;
+        margin-left: 2rem;
+    }
+
+    .container__gato1{
+        position: absolute;
+        left: 10.5rem;
+        right: 0;
+        z-index: 100;
+    }
+
+    .hueso{
+        left: 4%;
+        top: -2rem;
+    }
+
+    .hueso img{
+        width: 55%;
+    }
+
+    .logo{
+        left: 3%;
+    }
+
+    .logo a{
         font-size: 1.4rem;
         letter-spacing: 1px;
     }
 
+    /* container 3 */
+
+    .box__container3{
+        gap: 23rem;
+        font-size: 1.7rem;
+    }
+
+    .container3__quienesSomos,.container3__queHacemos{
+        width: 85%;
+    }
+
+
+    /* container 5 */
+    .box__container4{
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .text__container4 a{
+        font-size: 3rem;
+    }
+
+    .text__container4 a:hover{
+        font-size: 4.5rem;
+    }
+
+
+    .imgTienda__container4 {
+        height: 70vh;
+    }
+
+    .img__container4 {
+        height: 60rem;
+    }    
+
+    .container4__cloud {
+        width: 103%;
+        background-position: left;
+        bottom: -10rem;
+    }
 
 }
 
