@@ -14,7 +14,7 @@
         duration:2,
         scale:"+=.7",
         y:"-=270",
-        x:"-=120",
+        x:"-=190",
         scrollTrigger:{
             trigger: ".box__container2",
             pin: true,
@@ -26,14 +26,15 @@
         opacity:1,
         duration:2,
         ease: "power4.out",
-        x:"+=70",
+        x:"+=60",
         scrollTrigger:{
             trigger:".container3",
-            scrub: .5,
+            scrub: .2,
             pin: true,
-            end: "+=100%"
+            end: "+=50%"
         },  
     })
+
 
 
 
