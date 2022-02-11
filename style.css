@@ -12,7 +12,7 @@ html{
 main{
     overflow: hidden;
     scroll-behavior:smooth;
-
+    background-color: #240a1a;
 }
 
 ::-webkit-scrollbar {
@@ -311,7 +311,9 @@ span{
     border: 2px solid #6c06d13f;
     color: #ad5cff;
 }
-
+.container1{
+    background-color: white;
+}
 
 .container{
     height: 95vh;
@@ -405,14 +407,17 @@ span{
     background-size: cover;
     background-repeat: no-repeat;
     filter:contrast(105%);
-
     z-index: 1;
 }
 
-.container2__sol img{
+
+.container2__sol{
     position: absolute;
-    left: 56%;
-    top: 24rem;
+    left: 115rem;
+    top: 30rem;
+}
+
+.container2__sol img{
     width: 250px;
     height: 250px;
     mix-blend-mode:overlay;
@@ -440,6 +445,42 @@ span{
 
 }
 
+
+.cartel{
+    animation-iteration-count: infinite;
+    animation-duration: 8000ms;
+    animation-name: slidein;
+}
+
+
+  
+@keyframes slidein {
+    0% {
+        filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.678));
+    }
+  
+    20% {
+        filter: none;
+    }
+
+    40% {
+        filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.678));
+    }
+  
+    60% {
+        filter: none;
+    }
+    80% {
+        filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.678));
+    }
+  
+    100% {
+        filter: none;
+    }
+  }
+
+
+
 /* cartel perro */
 
 
@@ -453,7 +494,7 @@ span{
 }
 
 .container2-cartel1 img:hover{
-    filter:drop-shadow(10px -15px 18px #fffaf0b7);
+    filter:drop-shadow(10px -15px 18px white) !important;
     transition: all .3s ease-in-out;
 }
 
@@ -470,7 +511,8 @@ span{
 }
 
 .container2-cartel2 img:hover{
-    filter:drop-shadow(10px 10px 15px #fffcf7b7);
+    filter:drop-shadow(10px -15px 18px white) !important;
+
     transition: all .3s ease-in-out;
 }
 
@@ -486,7 +528,7 @@ span{
 }
 
 .container3-cartel3 img:hover{
-    filter:drop-shadow(-10px 10px 15px #fffcf7b7);
+    filter:drop-shadow(-10px 10px 15px white)!important;
     transition: all .3s ease-in-out;
 }
 
@@ -502,7 +544,7 @@ span{
 }
 
 .container4-cartel4 img:hover{
-    filter:drop-shadow(2px 5px 10px #fffcf7b7);
+    filter:drop-shadow(2px 5px 10px white)!important;
     transition: all .3s ease-in-out;
 }
 
@@ -518,7 +560,7 @@ span{
 }
 
 .container5-cartel5 img:hover{
-    filter:drop-shadow(2px 5px 10px #fffcf7b7);
+    filter:drop-shadow(2px 5px 10px white)!important;
     transition: all .3s ease-in-out;
 }
 
@@ -534,23 +576,25 @@ span{
 }
 
 .container7-cartel7 img:hover{
-    filter:drop-shadow(10px 10px 15px #fffcf7b7);
+    filter:drop-shadow(10px -10px 15px white)!important;
     transition: all .3s ease-in-out;
 }
 
-
+.container__space{
+    width: 100vw;
+    height: 15vh;
+    background-color: #240a1a;
+}
 
 /* Container3 */
 .container3{
-    background-image: url(./src/img/mader..jpg);
+    background-image: url(./src/img/mader2.jpg);
     background-position: top;
     background-size: contain;
     position: relative;
     height: 100vh;
     width: 100vw;
     z-index: 1000;
-    filter:contrast(110%);
-
 }
 
 .box__container3{
@@ -563,11 +607,10 @@ span{
     flex-wrap: wrap;
     font-size: 2.5rem;
     color: wheat;
-    opacity: 0;
     position: absolute;
     top: 3rem;
     filter: drop-shadow(-2px 2px 2px black);
-
+    opacity: 0;
 }
 
 .container3__quienesSomos,.container3__queHacemos{
@@ -581,7 +624,6 @@ span{
 }
 
 .container3__quienesSomos{
-    
     position: absolute;
     top: 20%;
     left: 10%;
@@ -600,9 +642,7 @@ span{
     justify-content: center;
     align-items: center;
     gap: 3rem;
-
 }
-
 
 
 /* container4 */
@@ -633,7 +673,6 @@ span{
     filter: drop-shadow(1px 1px 20px rgb(255, 255, 255));
     transition: all .6s ease-in-out;
 }
-
 
 .img__container4{
     position: relative;
@@ -667,13 +706,11 @@ span{
     background-image: url("./src/img/cloud.png");
     background-size: cover;
     filter:contrast(105%);
-
     object-fit: cover;
     bottom: -10rem;
     z-index: 2000;
     left: -1rem;
 }
-
 
 
 /* container5 */
@@ -689,23 +726,10 @@ span{
 
 }
 
+.container5{
+    background-color: white;
+}
 
-
-
-
-
-@media screen and (min-width: 1401px) and (max-width: 1700px){
-    
-
-    .container__gato1{
-        position: absolute;
-        bottom: -29.5%;
-        right:5%;
-        z-index: 100;
-    }
-
-
-        
 
     /* -------Container 5 ----------- */
     .container5{
@@ -740,6 +764,108 @@ span{
     }
 
 
+@media screen and (min-width: 1401px) and (max-width: 1700px){
+    
+
+    .container__gato1{
+        position: absolute;
+        bottom: -29.5%;
+        right:5%;
+        z-index: 100;
+    }
+
+
+    /* container2 */
+
+    .container2__sol{
+        left: 108rem;
+        top: 28rem;
+    }
+   
+    .container2__sol img{
+        width: 220px;
+        height: 220px;
+    }
+
+ 
+    /* cartel perro */
+
+    .container2-cartel1 img{
+        width: 220px;
+        height: 300px;
+        bottom: 10rem;
+        right: 3rem;
+    }
+
+
+    /* cartel gatos */
+
+    .container3-cartel3 img{
+        width: 210px;
+        height: 300px;
+        bottom: 17rem;
+        left: 52rem;
+    }
+
+    /* cartel accesorios */
+
+    .container4-cartel4 img{
+        width: 140px;
+        height: 170px;
+        top: 44rem;
+        left: 23rem;
+    }
+
+
+    /* cartel alimentos */
+
+    .container5-cartel5 img{
+        width: 120px;
+        height: 140px;
+        top: 27rem;
+        left: 64rem;
+    }
+
+
+    .container__space{
+        width: 100vw;
+        height: 15vh;
+    }
+
+    /* Container3 */
+    .container3{
+        background-size: cover;
+        height: 110vh;
+        width: 100vw;
+    }
+
+    .box__container3{
+        width: 100vw;
+        height: 100vh;
+        font-size: 2.2rem;
+    }
+
+    
+    /* container4 */
+
+    
+
+    .imgTienda__container4{
+        background-size: cover;
+    }
+
+    .container4__cloud{
+        width: 102%;
+        bottom: -8rem;
+    }
+
+    /* container5 */
+
+    
+    .container5{
+        background-color: white;
+    }
+    
 }
 
 
@@ -762,7 +888,7 @@ span{
     /* Container1 /gato grande barra de busqueda */
 
     .container{
-        height: 100vh;
+        height: 95vh;
         width: 100vw;
         position: relative;
     }
@@ -773,8 +899,8 @@ span{
 
 
     .containerBusqueda{
-        width: 40%;
-        right:10%;
+        width: 45%;
+        right:5%;
     }
     
 
@@ -783,23 +909,23 @@ span{
     }
 
     .container__gatoGrande{
-        top: 40%;
-        left: 37%;
+        top: 45%;
+        left: 38%;
     }
 
     .container__gatoGrande img{
-        width: 55%;
+        width: 65%;
     }
 
     .container__gato1{
         position: absolute;
         bottom: -25%;
-        right:5%;
         z-index: 100;
     }
 
     .hueso{
-        left: 1%;
+        left: 5%;
+        top: -3rem;
     }
 
     .hueso img{
@@ -807,87 +933,150 @@ span{
     }
 
 
-    /*    Quienes somos /container2    */
-
-
-    .container2 p{
-        font-size: 4.5rem;
-        padding-top: 5rem;
-        margin-top: -4.5rem;
-    }
-
-    .container2 .text1{
-        font-size: 2.5rem;
-        line-height: 3.5rem;
-        margin-top: 3rem;
-    }
-
-    .container__gato1 img{
-        width: 80%;
-    }
-
+    
     .container__gato1{
         position: absolute;
-        right:4%;
+        bottom: -29.5%;
+        right:5%;
         z-index: 100;
-        bottom: -12.5rem;
     }
 
 
-    /* Container3 / que hacemos */
+    /* container2 */
 
+
+
+    .container2__cloud {
+        background-size: cover;
+    }
+
+    .container2__sol{
+        left: 108rem;
+        top: 28rem;
+    }
+   
+    .container2__sol img{
+        width: 220px;
+        height: 220px;
+    }
+
+ 
+    /* cartel perro */
+
+    .container2-cartel1 img{
+        width: 220px;
+        height: 300px;
+        bottom: 10rem;
+        right: 3rem;
+    }
+
+
+    /* cartel gatos */
+
+    .container3-cartel3 img{
+        width: 210px;
+        height: 300px;
+        bottom: 17rem;
+        left: 52rem;
+    }
+
+    /* cartel accesorios */
+
+    .container4-cartel4 img{
+        width: 140px;
+        height: 170px;
+        top: 44rem;
+        left: 23rem;
+    }
+
+
+    /* cartel alimentos */
+
+    .container5-cartel5 img{
+        width: 120px;
+        height: 140px;
+        top: 27rem;
+        left: 64rem;
+    }
+
+
+    .container__space{
+        width: 100vw;
+        height: 15vh;
+    }
+
+    /* Container3 */
     .container3{
         background-size: cover;
-        height: 80vh;
-        width: 100%;
-        position: relative;
+        height: 110vh;
+        width: 100vw;
     }
 
-    .container3 p{
-        font-size: 4.5rem;
-        padding-top: 5rem;
-    }
-
-    .container3 .text2{
-        font-size: 2.5rem;
-        margin-top: 3rem;
-        line-height: 3.5rem;
-    }
-
-
-
-
-
-    /* -------Container 5 ----------- */
-    .container5{
-        width: 100%;
+    .box__container3{
+        width: 100vw;
         height: 100vh;
-        background-color: #ddfffd ;
-        position: relative;
+        font-size: 2.2rem;
+    }
+    
+    .container3__quienesSomos,.container3__queHacemos{
+        width: 40%;
+    }
+
+    
+    .container3__quienesSomos{
+        position: absolute;
+        top: 21%;
+        left: 1%;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+        text-align:center;
+
     }
 
-    .container5__img{
+    .container3__queHacemos{
+        position: absolute;
+        top: 55%;
+        right:  15%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-align:center;
+        gap: 3rem;
+    }
+
+    
+    /* container4 */
+
+    
+
+    .imgTienda__container4{
+        background-size: cover;
+    }
+
+    .container4__cloud{
+        width: 102%;
+        bottom: -8rem;
+    }
+
+
+
+    .text__container4 a{
+        font-size: 7rem;
+        z-index: 2000;
         width: 100%;
         text-align: center;
-        padding-top: 11rem;
-        filter: drop-shadow(10px -13px 5px #0000003f);
     }
 
-    .container5__img img{
-        width: 16%;
-    }
 
-    .container5__text p{
-        font-size: 6rem;
-        font-weight: 900;
-        width: 100%;
-        text-align: center;
-        margin-top: 7rem;
-        filter: drop-shadow(1px -5px 3px #0000008e);
+
+    /* container5 */
+
+    
+    .container5{
+        background-color: white;
     }
 
 
@@ -896,7 +1085,11 @@ span{
 
 @media (max-width: 1082px){
 
-
+    .nav__img img {
+        width: 85%;
+        height: 7rem;
+    }
+    
     .carrito .fas{
         font-size: 3rem;
         position: relative;
@@ -987,12 +1180,12 @@ span{
     }
 
     .container__gatoGrande{
-        top: 40%;
+        top: 55%;
         left: 37%;
     }
 
     .container__gatoGrande img{
-        width: 65%;
+        width: 75%;
     }
 
     .container__gato1{
@@ -1002,7 +1195,8 @@ span{
         z-index: 100;
     }
     .hueso{
-        left: 0.5%;
+        left: 6%;
+        top: 2rem;
     }
 
     .hueso img{
@@ -1014,9 +1208,7 @@ span{
         display: none;
     }
 
-    .container2__movil{
-        display: inline-block;
-    }
+ 
 
     .logo{
         position: absolute;
@@ -1036,12 +1228,83 @@ span{
         letter-spacing: 1px;
     }
 
+    .container2__movil{
+        height: 90vh;
+        width: 100vw;
+        display: inline-block;
+        position: relative;
+    }
+
+    .container2__cloud-movil{
+        background-image: url("./src/img/cloud2.png");
+        background-size: cover;
+        position: absolute;
+        top: -4rem;
+        width: 100%;
+        height: 20rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    /* container 3 */
+
+    .box__container3{
+        width: 100vw;
+        height: 100vh;
+        gap: 5rem;
+        font-size: 2rem;
+        top: 10rem;
+        filter: drop-shadow(-2px 2px 2px black);
+        opacity: 0;
+    }
+
+    .container3__quienesSomos,.container3__queHacemos{
+        width: 70%;
+        text-align: center;
+        line-height: 2.9rem;
+        margin-left: -10rem;
+    }
+
+    .container3__quienesSomos{
+        position: relative;
+        top: 10%;
+        left: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .container3__queHacemos{
+        position: relative;
+        top: -2%;
+        right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    /* container 5 */
+    .box__container4{
+        position: relative;
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .text__container4 a{
+        font-size: 6.5rem;
+    }
+
+    
+    
 }
 
 
 @media (max-width :868px){
 
- 
+
     /* Container1 /gato grande barra de busqueda */
 
     .container{

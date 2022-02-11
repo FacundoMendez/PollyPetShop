@@ -13,8 +13,8 @@
     gsap.to(".container2__sol", {
         duration:2,
         scale:"+=.7",
-        y:"-=270",
-        x:"-=190",
+        y:"-=60",
+        x:"-=50",
         scrollTrigger:{
             trigger: ".box__container2",
             pin: true,
@@ -34,7 +34,6 @@
             end: "+=50%"
         },  
     })
-
 
 
 
