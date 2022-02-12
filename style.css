@@ -126,6 +126,10 @@ main{
     filter: contrast(105%);
 }
 
+.navVar-movile{
+    display: none;
+}
+
 .nav__img img{
     width: 85%;
     height: 7.7rem;
@@ -480,6 +484,41 @@ span{
   }
 
 
+.cartel-movil{
+    animation-iteration-count: infinite;
+    animation-duration: 8000ms;
+    animation-name: slidein;
+}
+
+
+  
+@keyframes slidein {
+    0% {
+        filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.322));
+    }
+  
+    20% {
+        filter: none;
+    }
+
+    40% {
+        filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.322));
+    }
+  
+    60% {
+        filter: none;
+    }
+    80% {
+        filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.322));
+    }
+  
+    100% {
+        filter: none;
+    }
+  }
+
+
+
 
 /* cartel perro */
 
@@ -614,7 +653,7 @@ span{
 }
 
 .container3__quienesSomos,.container3__queHacemos{
-    width: 32%;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -626,7 +665,7 @@ span{
 .container3__quienesSomos{
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: 13%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -636,8 +675,8 @@ span{
 
 .container3__queHacemos{
     position: absolute;
-    top: 50%;
-    right:  20%;
+    top: 58%;
+    right:  24%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -661,16 +700,16 @@ span{
     text-decoration: none;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #8a16ff;
     opacity: 0.9;
     font-weight: bold;
     letter-spacing: 1.5px;
-    filter:drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.76));
+    color: rgb(255, 251, 240);
+    filter: drop-shadow(3px 4px 1.8px rgb(0, 0, 0));
 }
 
 .text__container4 a:hover{
     font-size: 7.2rem;
-    filter: drop-shadow(1px 1px 20px rgb(255, 255, 255));
+    filter: drop-shadow(1px 1px 10px rgb(110, 77, 133));
     transition: all .6s ease-in-out;
 }
 
@@ -1204,6 +1243,7 @@ span{
         display: none;
     }
 
+
  
 
     .logo{
@@ -1225,11 +1265,24 @@ span{
     }
 
     .container2__movil{
-        height: 90vh;
+        height: 100vh;
         width: 100vw;
         display: inline-block;
         position: relative;
     }
+
+    .cartel-movil{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 20rem;
+        padding: 1.8rem 0;
+    }
+    .cartel-movil img{
+        width: 42%;
+        filter: drop-shadow(1px 1px 10px rgba(146, 84, 2, 0.795));
+    }
+
 
     .container2__cloud-movil{
         background-image: url("./src/img/cloud2.png");
@@ -1291,6 +1344,7 @@ span{
 
     .text__container4 a{
         font-size: 6.5rem;
+      
     }
 
     
@@ -1299,6 +1353,28 @@ span{
 
 
 @media (max-width :868px){
+
+    .navVar-desktop{
+        display: none;
+    }
+
+    .navVar-movile{
+        display: inline-block;
+    }
+
+    .nav__img{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        filter: contrast(105%);
+    }
+    
+
+
+    .nav__img img{
+        width: 96%;
+        height: 5.5rem;
+    }
 
 
     /* Container1 /gato grande barra de busqueda */
@@ -1315,6 +1391,10 @@ span{
 
     .busq i{
         margin-right: -3rem;
+    }
+
+    .hueso{
+        top: -1rem;
     }
   
     .barraBusqueda::placeholder{
@@ -1343,14 +1423,41 @@ span{
   
     .text__container4 a{
         font-size: 5.5rem;
-        color:rgb(250, 238, 215);
-        filter: drop-shadow( 4px 4px 1px rgb(0, 0, 0));
     }
 
     .text__container4 a:hover{
         font-size: 6rem;
         filter: drop-shadow( 4px 4px 1px rgb(0, 0, 0));
 
+    }
+    .logo {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        margin-top: -.2rem;
+    }
+
+    .nav-toggle {
+        top: -.3rem;
+    }
+
+
+    .container2__movil{
+        height: 100vh;
+        width: 100vw;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cartel-movil{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 20rem;
+        padding: 1.7rem 0;
+    }
+    .cartel-movil img{
+        width: 55%;
+        filter: drop-shadow(1px 1px 10px rgba(146, 84, 2, 0.795));
     }
     
 }
@@ -1491,11 +1598,38 @@ span{
         height: 70rem;
     }
 
+    .container2__movil{
+        height: 100vh;
+        width: 100vw;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cartel-movil{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 20rem;
+        padding: 1.7rem 0;
+    }
+    .cartel-movil img{
+        width: 70%;
+        filter: drop-shadow(1px 1px 10px rgba(146, 84, 2, 0.795));
+    }
+
   
 }
 
 
 @media (max-width: 482px){
+
+    .nav__img{
+        width: 100%;
+    }
+
+    .nav__img img{
+        width: 100%;
+    }
 
     .container{
         height: 50vh;
@@ -1582,6 +1716,7 @@ span{
 
     .container3__quienesSomos,.container3__queHacemos{
         width: 85%;
+        margin-left: -11rem;
     }
 
 
@@ -1596,7 +1731,7 @@ span{
     }
 
     .text__container4 a:hover{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 
 
@@ -1613,6 +1748,26 @@ span{
         background-position: left;
         bottom: -10rem;
     }
+
+    .container2__movil{
+        height: 75vh;
+        width: 100vw;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cartel-movil{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 17rem;
+        padding: 1.7rem 0;
+    }
+    .cartel-movil img{
+        width: 80%;
+        filter: drop-shadow(1px 1px 10px rgba(146, 84, 2, 0.795));
+    }
+
 
 }
 

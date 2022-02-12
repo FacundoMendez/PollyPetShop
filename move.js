@@ -25,7 +25,7 @@
     gsap.to(".box__container3", {
         opacity:1,
         duration:2,
-        ease: "power4.out",
+        ease: "lineal",
         x:"+=60",
         scrollTrigger:{
             trigger:".container3",
