@@ -112,7 +112,6 @@ main{
 
 
 .nav{
-
     position: fixed;
     z-index: 10000;
     width: 100%;
@@ -138,10 +137,10 @@ main{
 .nav-link {
     text-decoration: none;
     font-size: 1.6rem;
-    color:rgb(250, 238, 215);
     font-weight: 800;
     letter-spacing: 1px;
     filter: drop-shadow(1px 1px 1px black);
+    color:rgb(250, 238, 215);
 
 } 
 
@@ -1125,11 +1124,6 @@ span{
         height: 7rem;
     }
     
-    .carrito .fas{
-        font-size: 3rem;
-        position: relative;
-        top: 2rem;
-    }
 
     .nav-menu {
         flex-direction: column;
@@ -1163,10 +1157,6 @@ span{
         font-size: 2.1rem;
     }
 
-    .nav__logo{
-        z-index: 4000;
-        width: 25%;
-    }
  
     .cuenta{
         margin-top: 2rem;
@@ -1198,7 +1188,23 @@ span{
         font-size: 3.9rem;
     }
 
+    .logo{
+        position: absolute;
+        top: -1.4rem;
+        left: 12%;
+        color: white;
+        background: none;
+        border: none;
+        padding: 0 20px;
+        cursor: pointer;
+        z-index: 4000;
+        display: block;
+    }
 
+    .logo a{
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
 
     /* Container1 /gato grande barra de busqueda */
 
@@ -1243,26 +1249,6 @@ span{
         display: none;
     }
 
-
- 
-
-    .logo{
-        position: absolute;
-        top: -1.4rem;
-        left: 12%;
-        color: white;
-        background: none;
-        border: none;
-        padding: 0 20px;
-        cursor: pointer;
-        z-index: 4000;
-        display: block;
-    }
-
-    .logo a{
-        font-size: 1.6rem;
-        letter-spacing: 1px;
-    }
 
     .container2__movil{
         height: 100vh;
@@ -1631,6 +1617,15 @@ span{
         width: 100%;
     }
 
+    .logo{
+        left: 3%;
+    }
+
+    .logo a{
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
     .container{
         height: 50vh;
     }
@@ -1698,15 +1693,7 @@ span{
         width: 55%;
     }
 
-    .logo{
-        left: 3%;
-    }
-
-    .logo a{
-        font-size: 1.4rem;
-        letter-spacing: 1px;
-    }
-
+  
     /* container 3 */
 
     .box__container3{

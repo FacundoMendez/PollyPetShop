@@ -15,62 +15,70 @@
 <body>
 
     <header class="header">
+
         <nav class="nav">
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
-            <a href="#" class="nav__logo nav-link"><img src="../../src/img/Logo.png" alt="PollyPetShop LOGO"></a></a>
-
-            <div class="busq">
-                <input type="text" class="barraBusqueda" placeholder="Buscar"><i id="busq" class="fas fa-search"></i>
-            </div>
-            <ul class="navVisible nav-menu">
-                <li class="nav-menu-item">
-                    <a href="../../index.html" class="nav-menu-link nav-link">Inicio</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link">Contacto</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="../productos/tienda.html" class="nav-menu-link nav-link ">Tienda</a>
-                </li>
-                <li class="nav-menu-item cuenta">
-                    <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
-                </li>
-                <div class="carrito ">
-                    <div><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
-                    <div class="contador"><p>0</p></div>
+            <div class="nav__img">
+                <img src="../../src/img/navbar.png" alt="NavBar" class="navVar-desktop">
+                <img src="../../src/img/navbar-movile.png" alt="Barra de navegacion movile" class="navVar-movile">
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-menu-item logo">
+                    <a href="#" class="nav-menu-link nav-link">Polly Pet Shop</a>
                 </div>
-                <div class="container__carrito ">
-                    <div class="carrito__visual ">
-                        <div class="titleCarrito">
-                            <p>Productos</p>
+                <ul class="navVisible nav-menu">
+                    <li class="nav-menu-item">
+                        <a href="../../index.html" class="nav-menu-link nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-link nav-link">Contacto</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="../productos/tienda.html" class="nav-menu-link nav-link ">Tienda</a>
+                    </li>
+                    <li class="nav-menu-item cuenta">
+                        <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
+                    </li>
+                    <div class="carrito ">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="contador">
+                            <p>0</p>
                         </div>
-
-                        <div class="carrito__pedido">
-                            <p>Cantidad de Productos: <span class="contador_producto"> ... </span> <span class="precio__producto">($ 0)</span></p>
-
-                            <div class="carrito__botton-ver">
-                                <a href="../carrito/carrito.html"><button class="boton-ver">ver</button></a>
+                    </div>
+                    <div class="container__carrito ">
+                        <div class="carrito__visual ">
+                            <div class="titleCarrito">
+                                <p>Productos</p>
+                            </div>
+        
+                            <div class="carrito__pedido">
+                                <p>Cantidad de Productos: <span class="contador_producto"> ... </span> <span
+                                        class="precio__producto">($ 0)</span></p>
+        
+                                <div class="carrito__botton-ver">
+                                    <a href="../carrito/carrito.html"><button class="boton-ver">ver</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </ul>
+                </ul>
+            </div>
         </nav>
-
-
-        <nav class="nav2">
-            <ul>
-                <li><a href="../perros/perros.html">Perros <span>|</span> </a> </li>
-                <li><a href="../gatos/gatos.html">Gatos <span>|</span></a> </li>
-                <li><a href="../accesorios/accesorios.html">accesorios<span>|</span></a> </li>
-                <li><a href="../alimentos/alimentos.html">Alimentos<span>|</span></a> </li>
-                <li><a href="../juguetes/juguetes.html">Juguetes</a> </li>
-            </ul>
-        </nav>
+        
+        <div class="nav2">
+            <div class="nav2__img"><img src="../../src/img/nav2-2.png" alt="nav2">
+                <ul>
+                    <li><a href="../perros/perros.html">Perros </a> </li><span>|</span>
+                    <li><a href="../gatos/gatos.html">Gatos </a> </li><span>|</span>
+                    <li><a href="../accesorios/accesorios.html">accesorios</a> </li><span>|</span>
+                    <li><a href="../alimentos/alimentos.html">Alimentos</a> </li><span>|</span>
+                    <li><a href="../juguetes/juguetes.html">Juguetes</a> </li>
+                </ul>
+            </div>
+        </div>
 
     </header>
+    
 
     <main>
         <div class="selec">
