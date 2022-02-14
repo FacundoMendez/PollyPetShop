@@ -1656,8 +1656,11 @@ span{
 
     /* container 1 */
     .container1{
-        height: 85vh;
+        height: 75vh;
+        width: 100%;
         flex-direction: column-reverse;
+        background-size: contain;
+        background-attachment: fixed;
     }
 
     .container__gatoGrande{
@@ -1709,7 +1712,7 @@ span{
     }
 
 
-    /* container 5 */
+    /* container 4*/
     .box__container4{
         width: 100vw;
         height: 60vh;
@@ -1733,16 +1736,18 @@ span{
     }    
 
     .container4__cloud {
-        width: 103%;
+        width: 183%;
         background-position: left;
         bottom: -10rem;
     }
 
+    /* container 2 */
     .container2__movil{
-        height: 75vh;
+        height: 85vh;
         width: 100vw;
         display: inline-block;
         position: relative;
+
     }
 
     .cartel-movil{
@@ -1751,6 +1756,7 @@ span{
         position: relative;
         top: 17rem;
         padding: 1.7rem 0;
+
     }
     .cartel-movil img{
         width: 80%;
