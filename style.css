@@ -238,18 +238,41 @@ span{
 }
 
 /* TITLE  */
-.container__title {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container{
+    background-color: white;
 }
-.shadows{
-    position: absolute;
-    top: 42%;
-    left: 67%;
-    transform: translate(-50%, -50%);
+
+.container1{
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    background-image: url("./src/img/cloud.png");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.container__gatoGrande{
+    width: 35%;
+    position: relative;
+    margin-top: 25rem;
+    z-index: 1000;
+
+}
+.container__gatoGrande img{
+    width: 100%;
+    margin-left: -5rem;
+}
+
+.container__title {
+    padding: 0 4rem;
+    margin-top: -26rem;
+    padding-left: 10rem;
 }
 
 .shadows span{
@@ -260,7 +283,7 @@ span{
     letter-spacing: -0.05em;
     font-family: 'Anton', Arial, sans-serif;
     user-select: none;
-    font-size: 6rem;
+    font-size: 8rem;
     transition: all 0.25s ease-out;
     filter: drop-shadow(-3px 3px 1px rgb(56, 56, 56));
 }
@@ -269,42 +292,6 @@ span{
     padding: 0 1rem;
 }
 
-.container1{
-    background-color: white;
-}
-
-.container{
-    height: 95vh;
-    width: 100vw;
-    position: relative;
-    background-image: url("./src/img/cloud.png");
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.container__gatoGrande{
-    position: absolute;
-    top: 59%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    filter: drop-shadow(5px 10px 3px #464646cc);
-    filter:contrast(125%);
-}
-
-.container__gatoGrande img{
-    width: 65%;
-
-}
-
-.container__gato1 {
-    position: absolute;
-    bottom: -26%;
-    right: 10%;
-    z-index: 100;
-    filter: drop-shadow(4px 7px 6px #4e5c5c);
-    opacity: 0;
-}
 
 .hueso{
     position: absolute;
@@ -754,15 +741,39 @@ span{
 
 
 @media screen and (min-width: 1401px) and (max-width: 1700px){
-    /* container 1 */
 
-    .container__gato1{
-        position: absolute;
-        bottom: -29.5%;
-        right:5%;
-        z-index: 100;
+      /* container 1 */
+
+      .container1{
+        height: 98vh;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
+    .shadows span{
+        font-size: 6.5rem;
+    }
+    
+    
+    .container__gatoGrande{
+        width: 40%;
+        position: relative;
+        margin-top: 20rem;
+        z-index: 1000;
+    
+    }
+    .container__gatoGrande img{
+        width: 100%;
+        margin-left: -5rem;
+    }
+    
+    .container__title {
+        padding: 0 0rem;
+        margin-top: -15rem;
+        padding-left: 0rem;
+    }
+    
+   
 
     /* container2 */
     .container2__sol{
@@ -920,46 +931,37 @@ span{
         margin-left: 2rem;
     }
 
-    
+    /* container 1 */
 
-    /* Container1 /gato grande barra de busqueda */
-
-    .container{
-        height: 95vh;
-        width: 100vw;
-        position: relative;
+    .container1{
+        height: 92vh;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    .container p{
-        font-size: 3.5rem;
-    }
-
-
-    .containerBusqueda{
-        width: 45%;
-        right:5%;
+    .shadows span{
+        font-size: 5.5rem;
     }
     
-
-    .barraBusqueda::placeholder{
-        font-size: 2.2rem;
-    }
-
+    
     .container__gatoGrande{
-        top: 45%;
-        left: 38%;
+        width: 42%;
+        position: relative;
+        margin-top: 20rem;
+        z-index: 1000;
+    
     }
-
     .container__gatoGrande img{
-        width: 65%;
+        width: 100%;
+        margin-left: -5rem;
     }
-
-    .container__gato1{
-        position: absolute;
-        bottom: -25%;
-        z-index: 100;
+    
+    .container__title {
+        padding: 0 0rem;
+        margin-top: -15rem;
+        padding-left: 0rem;
     }
-
+    
     .hueso{
         left: 5%;
         top: -3rem;
@@ -968,8 +970,6 @@ span{
     .hueso img{
         width: 75%;
     }
-
-
     
     .container__gato1{
         position: absolute;
@@ -1063,7 +1063,6 @@ span{
         height: 11rem;
     }
 
-
     /* Cartel 6 - Juguetes */
 
     .container2-cartel6{
@@ -1076,8 +1075,6 @@ span{
         width: 12rem;
         height: 4.4rem;
     }
-
-
 
 
     .container__space{
@@ -1113,7 +1110,6 @@ span{
         gap: 3rem;
         text-align: center;
         text-align:center;
-
     }
 
     .container3__queHacemos{
@@ -1127,10 +1123,8 @@ span{
         gap: 3rem;
     }
 
-    
     /* container4 */
 
-    
 
     .imgTienda__container4{
         background-size: cover;
@@ -1141,8 +1135,6 @@ span{
         margin-left: -2rem;
         bottom: -10rem;
     }
-
-
 
     .text__container4 a{
         font-size: 7rem;
@@ -1245,33 +1237,38 @@ span{
         letter-spacing: 1px;
     }
 
-    /* Container1 /gato grande barra de busqueda */
+    /* container 1 */
 
-    .container p{
-        font-size: 3rem;
-        right: 10%;
-        top: 22%;
+    .container1{
+        height: 90vh;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
     }
 
-    .barraBusqueda::placeholder{
-        font-size: 2.1rem;
+    .shadows span{
+        font-size: 6.5rem;
     }
 
     .container__gatoGrande{
-        top: 55%;
-        left: 37%;
-    }
+        width: 40%;
+        position: relative;
+        margin-top: 0rem;
+        padding-top:5rem;
+        z-index: 1000;
 
+    }
     .container__gatoGrande img{
-        width: 75%;
+        width: 100%;
+        margin-left: 0rem;
     }
 
-    .container__gato1{
-        position: absolute;
-        bottom: -18%;
-        right:5%;
-        z-index: 100;
+    .container__title {
+        padding: 0 0rem;
+        margin-top: 10rem;
+        padding-left: 0rem;
     }
+    
+
     .hueso{
         left: 6%;
         top: 2rem;
@@ -1280,6 +1277,10 @@ span{
     .hueso img{
         width: 67%;
     }
+
+
+
+    /* container 2 */
 
 
     .container2{
@@ -1309,9 +1310,9 @@ span{
         background-image: url("./src/img/cloud2.png");
         background-size: cover;
         position: absolute;
-        top: -4rem;
-        width: 100%;
-        height: 20rem;
+        top: -4.5rem;
+        width: 105%;
+        height: 21rem;
         left: 50%;
         transform: translate(-50%);
     }
