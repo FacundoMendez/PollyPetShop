@@ -237,83 +237,38 @@ span{
     top: 3.8rem;
 }
 
-
-.containerBusqueda{
-    width: 35%;
-    height: 18rem;
+/* TITLE  */
+.container__title {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 2rem;
+}
+.shadows{
     position: absolute;
-    right:14%;
-    top: 23%;
+    top: 42%;
+    left: 67%;
+    transform: translate(-50%, -50%);
 }
 
-.containerBusqueda p{
-    font-size: 3.6rem;
-    color: #ad5cff;
-    font-weight: 800;
-}
-
-.busq{
+.shadows span{
     position: relative;
-    width: 100%;
-    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -1px 2px 15px #9c9c9c;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.05em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    font-size: 6rem;
+    transition: all 0.25s ease-out;
+    filter: drop-shadow(-3px 3px 1px rgb(56, 56, 56));
 }
 
-
-.barraBusqueda{
-    position: relative;
-    width: 80%;
-    left: 40%;
-    transform: translate(-50%);
-    height: 5rem;
-    border: none;
-    font-size: 2rem;
-    color: rgb(35, 0, 70);
-    font-weight: 700;
-    padding: 2rem;
-    z-index: 1000;
-    border-radius: 5%;
+.space {
+    padding: 0 1rem;
 }
 
-#busq {
-    position: absolute;
-    font-size: 3rem;
-    top: 1rem;
-    right: 8.2rem;
-}
-
-.busq i{
-    font-size: 3rem;
-    opacity: 0.5;
-    color:rgb(99, 3, 196);
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.busq i:hover{
-    font-size: 2.8rem;
-    color:rgb(234, 1, 255);
-}
-
-
-.barraBusqueda::placeholder{
-    color:rgba(35, 0, 70, 0.24);
-    font-size: 2rem;
-}
-
-
-.barraBusqueda[type=text]{
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    border: 2px solid #6c06d13f;
-    color: #ad5cff;
-}
 .container1{
     background-color: white;
 }
@@ -336,8 +291,6 @@ span{
     z-index: 1000;
     filter: drop-shadow(5px 10px 3px #464646cc);
     filter:contrast(125%);
-
-
 }
 
 .container__gatoGrande img{
@@ -493,7 +446,7 @@ span{
   
 @keyframes slidein {
     0% {
-        filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.322));
+        filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.685));
     }
   
     20% {
@@ -501,14 +454,14 @@ span{
     }
 
     40% {
-        filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.322));
+        filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.747));
     }
   
     60% {
         filter: none;
     }
     80% {
-        filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.322));
+        filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.767));
     }
   
     100% {
@@ -771,7 +724,6 @@ span{
 .container5{
     width: 100%;
     height: 80vh;
-    background-color: #ddfffd ;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1104,15 +1056,11 @@ span{
         text-align: center;
     }
 
-
-
     /* container5 */
 
-    
     .container5{
         background-color: white;
     }
-
 
 }
 
@@ -1131,7 +1079,6 @@ span{
         margin: 0;
         background-image: url(./src/img/mader.png);
         background-size: cover;
-        background-position:top ;
         position: fixed;
         top: 0px;
         width: 100%;
@@ -1148,7 +1095,6 @@ span{
         left: 0%;
     }
 
-
     .nav-menu-item {
         line-height: 80px;    
         
@@ -1157,7 +1103,6 @@ span{
         font-size: 2.1rem;
     }
 
- 
     .cuenta{
         margin-top: 2rem;
         line-height: 60px;
@@ -1168,7 +1113,6 @@ span{
     .cuenta a{
        font-size: 2rem;
     }
-
 
     .nav-menu-link:hover,
     .nav-menu-link_active {
@@ -1208,13 +1152,11 @@ span{
 
     /* Container1 /gato grande barra de busqueda */
 
- 
     .container p{
         font-size: 3rem;
         right: 10%;
         top: 22%;
     }
-
 
     .barraBusqueda::placeholder{
         font-size: 2.1rem;
@@ -1249,7 +1191,6 @@ span{
         display: none;
     }
 
-
     .container2__movil{
         height: 100vh;
         width: 100vw;
@@ -1268,7 +1209,6 @@ span{
         width: 42%;
         filter: drop-shadow(1px 1px 10px rgba(146, 84, 2, 0.795));
     }
-
 
     .container2__cloud-movil{
         background-image: url("./src/img/cloud2.png");
@@ -1334,7 +1274,6 @@ span{
     }
 
     
-    
 }
 
 
@@ -1355,8 +1294,6 @@ span{
         filter: contrast(105%);
     }
     
-
-
     .nav__img img{
         width: 96%;
         height: 5.5rem;
@@ -1459,7 +1396,6 @@ span{
     }
 
     /* Container1 /gato grande barra de busqueda */
-
  
     .container p{
         right: 4%;
@@ -1510,11 +1446,6 @@ span{
     }
 
 
-
-      /* Container1 /gato grande barra de busqueda */
-
-
-
     .logo{
         position: absolute;
         top: -1.4rem;
@@ -1532,7 +1463,6 @@ span{
         font-size: 1.6rem;
         letter-spacing: 1px;
     }
-
     
     /* container 3 */
 

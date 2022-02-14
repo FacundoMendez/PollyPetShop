@@ -24,10 +24,10 @@ main{
 
 ::-webkit-scrollbar {
     width: 20px;
-    border: 3px solid rgba(0, 0, 0, 0.479);
+    border: 2px solid rgba(0, 0, 0, 0.479);
     height: 20px;
     background-image: url(../../src/img/pantallaNavMovil.png);
-    background-position: top;
+    background-position: bottom;
 }
 ::-webkit-scrollbar-button {
     width: 0px;
@@ -211,8 +211,6 @@ span{
 }
 
 
-
-
 /*  NAV 2  */
 
 .nav2{
@@ -237,7 +235,6 @@ span{
     height: 14rem;
     border-radius: 3rem;
     object-fit: cover;
-    
 }
 
 .nav2__img ul{
@@ -677,6 +674,14 @@ input[type=checkbox]{
         display: none;
     }
 
+    .navVar-desktop{
+        display: none;
+    }
+
+    .navVar-movile{
+        display: inline-block;
+    }
+
     .nav-menu {
         flex-direction: column;
         align-items: center;
@@ -709,7 +714,6 @@ input[type=checkbox]{
         font-size: 2.1rem;
     }
 
- 
     .cuenta{
         margin-top: 2rem;
         line-height: 60px;
@@ -819,8 +823,6 @@ input[type=checkbox]{
         margin-top: -0.4rem;
     }
 
-
-
     /* filtro movile */
 
     .selec__desktop{
@@ -867,12 +869,10 @@ input[type=checkbox]{
         left: 50%;
         transform: translate(-50%);
         top: 5rem;
-
     }
 
- 
     .select__button{
-        width: 80%;
+        width: 90%;
         height: 4rem;
         margin-top: 1rem;
         margin-bottom: 3rem;
@@ -881,9 +881,10 @@ input[type=checkbox]{
         z-index: 12000210;
         cursor: pointer;
         display: inline-block;
+        background-position: left;
         background-image: url(../src/img/pantallaNavMovil.png);
         background-size: cover;
-        filter: contrast(93%);
+        filter: drop-shadow(4px 6px 6px black);
     }
 
     .select__button p{
@@ -930,10 +931,6 @@ input[type=checkbox]{
 }
 
 
-
-
-
-
 @media screen and (max-width: 480px){
   /* carrito */
 
@@ -965,6 +962,10 @@ input[type=checkbox]{
         top: 5.3%;
     }
 
+    .select__button{
+        width: 105%;
+    }
+
 }
 
 
@@ -988,5 +989,8 @@ input[type=checkbox]{
     .titleCarrito p{
         font-size: 1.5rem;
     }
+
+     
+
   
   }
