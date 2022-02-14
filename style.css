@@ -247,7 +247,7 @@ span{
     width: 100vw;
     height: 95vh;
     background-image: url("./src/img/cloud.png");
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -256,23 +256,27 @@ span{
     flex-wrap: wrap;
 }
 
-
 .container__gatoGrande{
-    width: 35%;
-    position: relative;
-    margin-top: 25rem;
+    position:relative;
+    width: 36%;
     z-index: 1000;
-
+    left:18%;
+    top: 50%;
+    transform:translate(-50%, -50%);
 }
+
 .container__gatoGrande img{
     width: 100%;
-    margin-left: -5rem;
 }
 
 .container__title {
-    padding: 0 4rem;
-    margin-top: -26rem;
-    padding-left: 10rem;
+    position:relative;
+    top: -5%;
+    left:25%;
+    transform: translate(-50%, -50%);    
+    padding: 0 2rem;
+    width: 50%;
+    text-align: center;
 }
 
 .shadows span{
@@ -744,34 +748,42 @@ span{
 
       /* container 1 */
 
-      .container1{
+  
+    .container1{
+        position: relative;
+        width: 100vw;
         height: 98vh;
         flex-direction: row;
-        flex-wrap: wrap;
+    }
+
+
+    .container__gatoGrande{
+        position:absolute;
+        width: 44%;
+        bottom: 4%;
+        z-index: 1000;
+        left:25%;
+        transform:translate(-50%, -50%);
+    }
+
+    .container__gatoGrande img{
+        width: 90%;
+        margin-left: 0rem;
+    }
+
+    .container__title {
+        position:absolute;
+        top: 40%;
+        left:68%;
+        transform: translate(-50%, -50%);    
+        padding: 0 4rem;
+        width: 55%;
     }
 
     .shadows span{
-        font-size: 6.5rem;
+        font-size: 7rem;
     }
-    
-    
-    .container__gatoGrande{
-        width: 40%;
-        position: relative;
-        margin-top: 20rem;
-        z-index: 1000;
-    
-    }
-    .container__gatoGrande img{
-        width: 100%;
-        margin-left: -5rem;
-    }
-    
-    .container__title {
-        padding: 0 0rem;
-        margin-top: -15rem;
-        padding-left: 0rem;
-    }
+
     
    
 
@@ -919,8 +931,6 @@ span{
 
 @media (max-width :1400px){
 
- 
-
     .nav-link {
         font-size: 1.3rem;
     } 
@@ -931,36 +941,6 @@ span{
         margin-left: 2rem;
     }
 
-    /* container 1 */
-
-    .container1{
-        height: 92vh;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .shadows span{
-        font-size: 5.5rem;
-    }
-    
-    
-    .container__gatoGrande{
-        width: 42%;
-        position: relative;
-        margin-top: 20rem;
-        z-index: 1000;
-    
-    }
-    .container__gatoGrande img{
-        width: 100%;
-        margin-left: -5rem;
-    }
-    
-    .container__title {
-        padding: 0 0rem;
-        margin-top: -15rem;
-        padding-left: 0rem;
-    }
     
     .hueso{
         left: 5%;
@@ -971,12 +951,39 @@ span{
         width: 75%;
     }
     
-    .container__gato1{
-        position: absolute;
-        bottom: -29.5%;
-        right:5%;
-        z-index: 100;
+    /* container 1 */
+    .container1{
+        height: 93vh;
+        flex-direction: row;
     }
+    
+    .container__gatoGrande{
+        position:relative;
+        width: 44%;
+        z-index: 1000;
+        left:20%;
+        top: 40%;
+        transform:translate(-50%, -50%);
+    }
+    
+    .container__gatoGrande img{
+        width: 100%;
+    }
+    
+    .container__title {
+        position:relative;
+        top: -5%;
+        left:25%;
+        transform: translate(-50%, -50%);    
+        padding: 0 2rem;
+        width: 55%;
+        text-align: center;
+    }
+    
+    .shadows span{
+        font-size: 5.5rem;
+    }
+    
 
     /* container2 */
     .container2__cloud {
@@ -1158,7 +1165,6 @@ span{
         width: 85%;
         height: 7rem;
     }
-    
 
     .nav-menu {
         flex-direction: column;
@@ -1238,36 +1244,37 @@ span{
     }
 
     /* container 1 */
-
     .container1{
         height: 90vh;
         flex-direction: column-reverse;
-        flex-wrap: wrap;
+    }
+    
+    .container__gatoGrande{
+        position:relative;
+        width: 50%;
+        z-index: 1000;
+        left:24%;
+        top: 42%;
+        transform:translate(-50%, -50%);
+    }
+    
+    .container__gatoGrande img{
+        width: 100%;
     }
 
     .shadows span{
-        font-size: 6.5rem;
-    }
-
-    .container__gatoGrande{
-        width: 40%;
-        position: relative;
-        margin-top: 0rem;
-        padding-top:5rem;
-        z-index: 1000;
-
-    }
-    .container__gatoGrande img{
-        width: 100%;
-        margin-left: 0rem;
-    }
-
-    .container__title {
-        padding: 0 0rem;
-        margin-top: 10rem;
-        padding-left: 0rem;
+        font-size: 6rem;
     }
     
+    .container__title {
+        position:relative;
+        top: 15%;
+        left:35%;
+        transform: translate(-50%, -50%);    
+        padding: 0 2rem;
+        width: 70%;
+        text-align: center;
+    }
 
     .hueso{
         left: 6%;
@@ -1395,18 +1402,39 @@ span{
         height: 5.5rem;
     }
 
-
-    /* Container1 /gato grande barra de busqueda */
-
-    .container{
-        height: 70vh;
+    /* container 1 */
+    .container1{
+        height: 90vh;
+        flex-direction: column-reverse;
+    }
+    
+    .container__gatoGrande{
+        position:relative;
+        width: 60%;
+        z-index: 1000;
+        left:30%;
+        top: 44%;
+        transform:translate(-50%, -50%);
+    }
+    
+    .container__gatoGrande img{
+        width: 100%;
     }
 
-    .container p{
-        font-size: 2.3rem;
-        right: 10%;
-        top: 22%;
+    .shadows span{
+        font-size: 4.4rem;
     }
+    
+    .container__title {
+        position:relative;
+        top: 15%;
+        left:38%;
+        transform: translate(-50%, -50%);    
+        padding: 0 2rem;
+        width: 75%;
+        text-align: center;
+    }
+  
 
     .busq i{
         margin-right: -3rem;
@@ -1416,19 +1444,6 @@ span{
         top: -1rem;
     }
   
-    .barraBusqueda::placeholder{
-        font-size: 1.8rem;
-    }
-
-    .container p {
-        font-size: 2rem;
-        right: 10%;
-        top: 22%;
-    }
-
-    .containerBusqueda {
-        width: 30rem;
-    }
   
     .box__container3{
         font-size: 1.9rem;
@@ -1491,56 +1506,43 @@ span{
         width: 50%;
     }
 
-    /* Container1 /gato grande barra de busqueda */
- 
-    .container p{
-        right: 4%;
-        top: 22%;
+    /* container 1 */
+    .container1{
+        height: 85vh;
+        flex-direction: column-reverse;
+    }
+    
+    .container__gatoGrande{
+        position:relative;
+        width: 75%;
+        z-index: 1000;
+        left:35%;
+        top: 40%;
+        transform:translate(-50%, -50%);
+    }
+    
+    .container__gatoGrande img{
+        width: 100%;
     }
 
-    .container{
-        height: 70vh;
+    .shadows span{
+        font-size: 3.6rem;
     }
-
-    .containerBusqueda{
-        right: 2%;
-    }
-
-    .containerBusqueda p{
-        font-size: 1.9rem;
-        top: 22%;
-    }
-
-    .barraBusqueda{
-        right: 4rem;
-        width: 23rem;
-    }
-
-    .barraBusqueda::placeholder{
-        font-size: 2rem;
+    
+    .container__title {
+        position:relative;
+        top: 12%;
+        left:50%;
+        transform: translate(-50%, -50%);    
+        padding: 0 2rem;
+        width: 100%;
+        text-align: center;
     }
 
     .hueso{
         top:-1rem;
         left: 1rem;
     }
-
-    .container__gatoGrande{
-        top: 55%;
-        left: 30%;
-    }
-
-    .container__gatoGrande img{
-        width: 75%;
-    }
-
-    .container__gato1{
-        position: absolute;
-        bottom: -18%;
-        right:5%;
-        z-index: 100;
-    }
-
 
     .logo{
         position: absolute;
@@ -1652,62 +1654,37 @@ span{
         letter-spacing: 1px;
     }
 
-    .container{
-        height: 50vh;
-    }
-
-    .containerBusqueda p{
-        margin-left: -4.5rem;
-        font-size: 2rem;
-    }
-
-    .containerBusqueda{
-        top: 10rem;
-        right: 0;
-        margin: 0;
-        padding: 0;
-        left: 58%;
-        transform: translate(-50%);
-    }
-    .busq{
-        margin-left: -5rem;
-        width: 26rem;
-    }
-
-    .busq i{
-        position: static;
-        margin-right: -6rem;
-    }
-
-    .barraBusqueda{
-        width: 100%;
-        left: 50%;
-        height: 1rem;
-    }
-
-    .barraBusqueda::placeholder{
-        font-size: 1.6rem;
+    /* container 1 */
+    .container1{
+        height: 85vh;
+        flex-direction: column-reverse;
     }
 
     .container__gatoGrande{
-        top: 87%;
-        left: 49%;
+        position:relative;
+        width: 85%;
+        z-index: 1000;
+        left:40%;
+        top: 40%;
+        transform:translate(-50%, -50%);
     }
 
     .container__gatoGrande img{
         width: 100%;
     }
 
-    .container__gato1 img{
-        width: 60%;
-        margin-left: 2rem;
+    .shadows span{
+        font-size: 3rem;
     }
 
-    .container__gato1{
-        position: absolute;
-        left: 10.5rem;
-        right: 0;
-        z-index: 100;
+    .container__title {
+        position:relative;
+        top: 10%;
+        left:48%;
+        transform: translate(-50%, -50%);    
+        padding: 0 2rem;
+        width: 95%;
+        text-align: center;
     }
 
     .hueso{
@@ -1718,7 +1695,6 @@ span{
     .hueso img{
         width: 55%;
     }
-
   
     /* container 3 */
 
@@ -1785,3 +1761,30 @@ span{
 }
 
 
+
+@media (max-width: 387px){
+
+    .container__gatoGrande{
+        position:relative;
+        width: 100%;
+        z-index: 1000;
+        left:48%;
+        top: 35%;
+        transform:translate(-50%, -50%);
+    }
+
+    .container__gatoGrande img{
+        width: 100%;
+    }
+
+    .shadows span{
+        font-size: 2.5rem;
+    }
+
+    .container__title {
+        top: 10%;
+        left:49.5%;
+        width: 100%;
+    }
+
+}
