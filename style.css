@@ -282,7 +282,6 @@ span{
     background-attachment: fixed;
 }
 
-
 .container__gatoGrande{
     position: absolute;
     top: 59%;
@@ -354,39 +353,151 @@ span{
     display: none;
 }
 
-
-.box__container2{
-    position: relative;
+.container2{
     width: 100vw;
-    height: 110vh;
-    background-image: url("./src/img/fondoPara3.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
     filter:contrast(105%);
-    z-index: 1;
 }
 
+.container2::before{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    
+}
 
+.container2__img{
+    width: 100vw;
+    height: 100vh;
+}
+
+.cartel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10rem;
+}
 .container2__sol{
     position: absolute;
-    left: 115rem;
-    top: 30rem;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%,-50%);
 }
-
 .container2__sol img{
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     mix-blend-mode:overlay;
+} 
+
+/* Cartel 1 - perro */
+
+.container2-cartel1{
+    position: absolute;
+    bottom: 24%;
+    right: 20%;
+    filter:drop-shadow(10px 10px 8px #240a1afa);
+
 }
 
-.box__container2::before{
-    content: "";
+.container2-cartel1 img{
+    width: 24rem;
+    height: 34rem;
+}
+.container2-cartel1 img:hover{
+    filter:drop-shadow(10px -15px 18px white) !important;
+    transition: all .3s ease-in-out;
+}
+/* Cartel 2 - cuchas */
+
+.container2-cartel2{
     position: absolute;
-    width: 100%;
-    height: 100px;
-    bottom: -10rem;
-    background-color: #290c1e;
-    z-index: 1000;
+    filter:drop-shadow(10px 10px 8px #240a1afa);
+    bottom: 54%;
+    left: 3%;
+}
+
+.container2-cartel2 img{
+    width: 15rem;
+    height: 6.5rem;
+}
+.container2-cartel2 img:hover{
+    filter:drop-shadow(4px -4px 10px white)!important;
+    transition: all .3s ease-in-out;
+}
+
+/* Cartel 3 - Gatos */
+
+.container2-cartel3{
+    position: absolute;
+    bottom: 37%;
+    filter:drop-shadow(10px 10px 8px #240a1afa);
+    left: 33%;
+}
+
+.container2-cartel3 img{
+    width: 22rem;
+    height: 32rem;
+}
+.container2-cartel3 img:hover{
+    filter:drop-shadow(-10px 10px 15px white)!important;
+    transition: all .3s ease-in-out;
+} 
+/* Cartel 4 - accesorios */
+
+.container2-cartel4{
+    position: absolute;
+    bottom: 67%;
+    left: 42.3%;
+    filter:drop-shadow(10px 10px 8px #240a1afa);
+}
+
+.container2-cartel4 img{
+    width: 14rem;
+    height: 14rem;
+}
+.container2-cartel4 img:hover{
+    filter:drop-shadow(2px 5px 10px white)!important;
+    transition: all .3s ease-in-out;
+}
+
+/* Cartel 5 - alimentos */
+
+
+.container2-cartel5{
+    position: absolute;
+    bottom: 64%;
+    left: 15%;
+    filter:drop-shadow(10px 10px 8px #240a1afa);
+}
+
+.container2-cartel5 img{
+    width: 14rem;
+    height: 14rem;
+}
+.container2-cartel5 img:hover{
+    filter:drop-shadow(2px 5px 10px white)!important;
+    transition: all .3s ease-in-out;
+}
+
+/* Cartel 6 - Juguetes */
+
+.container2-cartel6{
+    position: absolute;
+    bottom: 47%;
+    left: 3%;
+    filter:drop-shadow(10px 10px 8px #240a1afa);
+}
+
+.container2-cartel6 img{
+    width: 14.5rem;
+    height: 6rem;
+}
+.container2-cartel6 img:hover{
+    filter:drop-shadow(4px -4px 10px white)!important;
+    transition: all .3s ease-in-out;
 }
 
 .container2__cloud{
@@ -398,7 +509,6 @@ span{
     height: 30rem;
     left: 50%;
     transform: translate(-50%);
-
 }
 
 
@@ -407,7 +517,6 @@ span{
     animation-duration: 8000ms;
     animation-name: slidein;
 }
-
 
   
 @keyframes slidein {
@@ -433,8 +542,7 @@ span{
     100% {
         filter: none;
     }
-  }
-
+}
 
 .cartel-movil{
     animation-iteration-count: infinite;
@@ -442,8 +550,6 @@ span{
     animation-name: slidein;
 }
 
-
-  
 @keyframes slidein {
     0% {
         filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.685));
@@ -469,107 +575,6 @@ span{
     }
   }
 
-
-
-
-/* cartel perro */
-
-
-.container2-cartel1 img{
-    width: 220px;
-    height: 300px;
-    position: absolute;
-    bottom: 10rem;
-    right: 10rem;
-    filter:drop-shadow(10px 10px 8px #240a1afa);
-}
-
-.container2-cartel1 img:hover{
-    filter:drop-shadow(10px -15px 18px white) !important;
-    transition: all .3s ease-in-out;
-}
-
-/* cartel cuchas */
-
-.container2-cartel2 img{
-    width:160px;
-    height: 64px;
-    position: absolute;
-    top: 40rem;
-    left: -1.8rem;
-    filter:drop-shadow(5px 5px 5px #272727fa);
-    
-}
-
-.container2-cartel2 img:hover{
-    filter:drop-shadow(10px -15px 18px white) !important;
-
-    transition: all .3s ease-in-out;
-}
-
-/* cartel gatos */
-
-.container3-cartel3 img{
-    width: 230px;
-    height: 320px;
-    position: absolute;
-    bottom: 20rem;
-    left: 58rem;
-    filter:drop-shadow(-1px 5px 8px #272727fa);
-}
-
-.container3-cartel3 img:hover{
-    filter:drop-shadow(-10px 10px 15px white)!important;
-    transition: all .3s ease-in-out;
-}
-
-/* cartel accesorios */
-
-.container4-cartel4 img{
-    width: 140px;
-    height: 170px;
-    position: absolute;
-    top: 44rem;
-    left: 25rem;
-    filter:drop-shadow(-1px 5px 8px #272727fa);
-}
-
-.container4-cartel4 img:hover{
-    filter:drop-shadow(2px 5px 10px white)!important;
-    transition: all .3s ease-in-out;
-}
-
-/* cartel alimentos */
-
-.container5-cartel5 img{
-    width: 120px;
-    height: 140px;
-    position: absolute;
-    top: 27rem;
-    left: 70rem;
-    filter:drop-shadow(-1px 5px 8px #272727fa);
-}
-
-.container5-cartel5 img:hover{
-    filter:drop-shadow(2px 5px 10px white)!important;
-    transition: all .3s ease-in-out;
-}
-
-/* cartel juguetes */
-
-.container7-cartel7 img{
-    width:160px;
-    height: 60px;
-    position: absolute;
-    top: 47rem;
-    left: -1.8rem;
-    filter:drop-shadow(5px 5px 5px #272727fa);
-}
-
-.container7-cartel7 img:hover{
-    filter:drop-shadow(10px -10px 15px white)!important;
-    transition: all .3s ease-in-out;
-}
 
 .container__space{
     width: 100vw;
@@ -669,7 +674,7 @@ span{
     position: relative;
     width: 100%;
     background-image: url("./src/img/dia5.png");
-    height: 80rem;
+    height: 90rem;
     filter:contrast(108%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -713,13 +718,11 @@ span{
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;
-
 }
 
 .container5{
     background-color: white;
 }
-
 
 .container5{
     width: 100%;
@@ -751,7 +754,7 @@ span{
 
 
 @media screen and (min-width: 1401px) and (max-width: 1700px){
-    
+    /* container 1 */
 
     .container__gato1{
         position: absolute;
@@ -762,61 +765,108 @@ span{
 
 
     /* container2 */
-
     .container2__sol{
-        left: 108rem;
-        top: 28rem;
+        position: absolute;
+        top: 40%;
+        left: 62%;
+        transform: translate(-50%,-50%);
     }
-   
     .container2__sol img{
-        width: 220px;
-        height: 220px;
-    }
+        width: 200px;
+        height: 200px;
+        mix-blend-mode:overlay;
+    } 
 
- 
-    /* cartel perro */
+ /* Cartel 1 - perro */
+
+    .container2-cartel1{
+        position: absolute;
+        bottom: 24%;
+        right: 20%;
+
+    }
 
     .container2-cartel1 img{
-        width: 220px;
-        height: 300px;
-        bottom: 10rem;
-        right: 3rem;
+        width: 20rem;
+        height: 28rem;
+    }
+ 
+    /* Cartel 2 - cuchas */
+
+    .container2-cartel2{
+        position: absolute;
+        bottom: 54%;
+        left: 3%;
     }
 
+    .container2-cartel2 img{
+        width: 14rem;
+        height: 5rem;
+    }
+  
 
-    /* cartel gatos */
+    /* Cartel 3 - Gatos */
 
-    .container3-cartel3 img{
-        width: 210px;
-        height: 300px;
-        bottom: 17rem;
-        left: 52rem;
+    .container2-cartel3{
+        position: absolute;
+        bottom: 37%;
+        left: 33%;
     }
 
-    /* cartel accesorios */
+    .container2-cartel3 img{
+        width: 19rem;
+        height: 28rem;
+    }
+    
+    /* Cartel 4 - accesorios */
 
-    .container4-cartel4 img{
-        width: 140px;
-        height: 170px;
-        top: 44rem;
-        left: 23rem;
+    .container2-cartel4{
+        position: absolute;
+        bottom: 67%;
+        left: 42.3%;
     }
 
+    .container2-cartel4 img{
+        width: 12rem;
+        height: 12rem;
+    }
+  
 
-    /* cartel alimentos */
+    /* Cartel 5 - alimentos */
 
-    .container5-cartel5 img{
-        width: 120px;
-        height: 140px;
-        top: 27rem;
-        left: 64rem;
+
+    .container2-cartel5{
+        position: absolute;
+        bottom: 64%;
+        left: 15%;
     }
 
+    .container2-cartel5 img{
+        width: 12rem;
+        height: 13rem;
+    }
+  
+
+    /* Cartel 6 - Juguetes */
+
+    .container2-cartel6{
+        position: absolute;
+        bottom: 47%;
+        left: 3%;
+    }
+
+    .container2-cartel6 img{
+        width: 13rem;
+        height: 4.7rem;
+    }
+ 
 
     .container__space{
         width: 100vw;
         height: 15vh;
     }
+
+
 
     /* Container3 */
     .container3{
@@ -841,8 +891,9 @@ span{
     }
 
     .container4__cloud{
-        width: 102%;
-        bottom: -8rem;
+        width: 104%;
+        margin-left: -2rem;
+        bottom: -10rem;
     }
 
     /* container5 */
@@ -927,63 +978,106 @@ span{
         z-index: 100;
     }
 
-
     /* container2 */
-
-
-
     .container2__cloud {
         background-size: cover;
     }
 
     .container2__sol{
-        left: 108rem;
-        top: 28rem;
+        position: absolute;
+        top: 42%;
+        left: 62%;
+        transform: translate(-50%,-50%);
     }
-   
     .container2__sol img{
-        width: 220px;
-        height: 220px;
-    }
+        width: 150px;
+        height: 150px;
+        mix-blend-mode:overlay;
+    } 
 
- 
-    /* cartel perro */
+    /* Cartel 1 - perro */
+
+    .container2-cartel1{
+        position: absolute;
+        bottom: 24%;
+        right: 20%;
+    }
 
     .container2-cartel1 img{
-        width: 220px;
-        height: 300px;
-        bottom: 10rem;
-        right: 3rem;
+        width: 17rem;
+        height: 25rem;
+    }
+
+    /* Cartel 2 - cuchas */
+
+    .container2-cartel2{
+        position: absolute;
+        bottom: 54%;
+        left: 3.5%;
+    }
+
+    .container2-cartel2 img{
+        width: 12rem;
+        height: 5rem;
     }
 
 
-    /* cartel gatos */
+    /* Cartel 3 - Gatos */
 
-    .container3-cartel3 img{
-        width: 210px;
-        height: 300px;
-        bottom: 17rem;
-        left: 52rem;
+    .container2-cartel3{
+        position: absolute;
+        bottom: 37%;
+        left: 33%;
     }
 
-    /* cartel accesorios */
+    .container2-cartel3 img{
+        width: 15.5rem;
+        height: 24rem;
+    }
 
-    .container4-cartel4 img{
-        width: 140px;
-        height: 170px;
-        top: 44rem;
-        left: 23rem;
+    /* Cartel 4 - accesorios */
+
+    .container2-cartel4{
+        position: absolute;
+        bottom: 67%;
+        left: 42.3%;
+    }
+
+    .container2-cartel4 img{
+        width: 10rem;
+        height: 10rem;
     }
 
 
-    /* cartel alimentos */
+    /* Cartel 5 - alimentos */
 
-    .container5-cartel5 img{
-        width: 120px;
-        height: 140px;
-        top: 27rem;
-        left: 64rem;
+
+    .container2-cartel5{
+        position: absolute;
+        bottom: 64%;
+        left: 15%;
     }
+
+    .container2-cartel5 img{
+        width: 10rem;
+        height: 11rem;
+    }
+
+
+    /* Cartel 6 - Juguetes */
+
+    .container2-cartel6{
+        position: absolute;
+        bottom: 47%;
+        left: 3.5%;
+    }
+
+    .container2-cartel6 img{
+        width: 12rem;
+        height: 4.4rem;
+    }
+
+
 
 
     .container__space{
@@ -1043,8 +1137,9 @@ span{
     }
 
     .container4__cloud{
-        width: 102%;
-        bottom: -8rem;
+        width: 104%;
+        margin-left: -2rem;
+        bottom: -10rem;
     }
 
 

@@ -16,7 +16,7 @@
         y:"-=60",
         x:"-=50",
         scrollTrigger:{
-            trigger: ".box__container2",
+            trigger: ".container2",
             pin: true,
             scrub: 1,
         }
