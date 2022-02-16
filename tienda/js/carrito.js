@@ -1,6 +1,9 @@
 export{carrito}
 import{Productos} from "./arrayProductos.js";
 
+
+
+
 let contador = 0; 
 
 let carritoContador = document.querySelector(".contador")
@@ -29,7 +32,7 @@ function carrito(){
             $(`#cora${e.target.id}`).toggleClass("is-active");
            
             /* capturar ID del boton seleccionado */
-            agregarProducto(e.target.id, totalCompra);
+            agregarProducto(e.target.id);
             
             /* mostrar cantidad de productos*/
             contadorProducto.innerHTML = (contador)
@@ -37,16 +40,18 @@ function carrito(){
             /* mostrar precio total */
             let producto =Productos.find( elem => elem.id == e.target.id);
             totalCompra += producto.precio ;
-            precioTotal.innerHTML = (`$ ${totalCompra}`)
+            precioTotal.innerHTML = (`$ ${totalCompra}`);
+
+            localStorage.setItem("precioTotal", totalCompra);
+            localStorage.setItem("contador", contador);
+            
         });
 
     };
 
 };
 
-function suma(productoPrecio , result){
-    return result += productoPrecio;
-}
+
 
 function setStorage(array) {
   localStorage.setItem("carrito", JSON.stringify(array));
@@ -57,13 +62,14 @@ function getStorage() {
 }
   
 
-function agregarProducto(id,totalCompra ) {
+function agregarProducto(id ) {
   //cuando invocas la funcion dentro del evento le pasas el id que te llego
   const arrayCarrito = getStorage(); // asignacion condicional, se asigna el localStorage si existe o sino un array vacio
   const prodSelec = Productos.find((e) => e.id == id); //busco el objeto cuya propiedad coincida con el id capturado por el evento y le agrego un propiedad cantidad
   const prodCart = {
     id: prodSelec.id,
     nombre: prodSelec.nombre,
+    img:prodSelec.img,
     precio: prodSelec.precio,
     cantidad: 1,
   };
