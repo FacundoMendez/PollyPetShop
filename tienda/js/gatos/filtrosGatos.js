@@ -26,10 +26,6 @@ function crearDivsGatos(){
     crearDivsJuguetesGato();
 }
 
-
-
-
-
 function crearDivsJuguetesGato(){
     let filtroJuguetesGato = Productos.filter(elem => elem.seccion ==="juguetes" && elem.tipo === "G")
 
@@ -50,8 +46,6 @@ function crearDivsJuguetesGato(){
     }
 
 }
-
-
 
 
 function crearDivsAccesoriosGato(){
@@ -76,7 +70,6 @@ function crearDivsAccesoriosGato(){
 }
 
 
-
 function crearDivsCuchasGato(){
     let filtroCuchasGato = Productos.filter(elem => elem.seccion ==="cuchas" && elem.tipo === "G")
 
@@ -96,8 +89,6 @@ function crearDivsCuchasGato(){
         carrito();
     }
 }
-
-
 
 
 function crearDivsAlimentosGato(){

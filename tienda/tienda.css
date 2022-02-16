@@ -2,16 +2,19 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+
 }
 
 html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+
 }
 
 
 body{
     background-color: #f1f1f1e8;
+
 }
 
 main{
@@ -58,6 +61,7 @@ main{
     z-index: 10000;
     width: 100%;
     top: 0;
+
 }
 
 .nav__img{
@@ -209,6 +213,8 @@ span{
     text-align: center;
     margin-top: 0.3rem;
 }
+
+
 
 
 /*  NAV 2  */
@@ -522,7 +528,7 @@ input[type=checkbox]{
 
 /* carrito */
 
-.container__carrito{
+/* .container__carrito{
     width: 45rem;
     height: 10rem;
     position: fixed;
@@ -541,28 +547,97 @@ input[type=checkbox]{
     flex-wrap: wrap;
     filter: drop-shadow(1px 1px 2px rgba(138, 36, 255, 0.637));
 }
+ */
 
-.carrito__active{
-    right: 2%;
-    transition: all 0.2s ease-in-out;
+
+ .banderin-carrito{
+    position: fixed;
+    top: -15%;
+    transition: all 0.5s ease-in-out;
+    right: 11%;
+    opacity: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.titleCarrito{
-    font-size: 2rem;
+.banderin-carrito img{
+    width: 26rem;
+    height: 22rem;
+}
+
+
+.carrito__active{
+    position: fixed;
+    top: 4.8%;
+    right: 11%;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    opacity: 1;
+}
+
+
+.title__carrito{
+    position: absolute;
+    top: 5rem;
+    font-size: 2.2rem;
     width: 100%;
     text-align: center;
     padding: .5rem;
     font-weight: bold;
-    letter-spacing: 1px;
-    color: rgb(138, 36, 255);
+    letter-spacing: 1.3px;
+    color: rgba(245, 220, 253, 0.918);
+    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+
+}
+.carrito__pedido{
+    margin-top: -2rem;
+    left: 7.7rem;
+    font-size: 1.7rem;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    color: rgba(245, 220, 253, 0.918);
+    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
 }
 
-.carrito__pedido{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    padding: 1rem 1rem;
+.precio__producto span{
+    width: 100%;
+    left: 10.4rem;
+    margin-top: -9.5rem;
+    font-size: 1.7rem;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: rgba(245, 220, 253, 0.918);
+    filter: drop-shadow(1px 0px 1px rgba(0, 0, 0, 0.678));
 }
+
+.carrito__botton-ver button{
+    position: absolute;
+    width: 5rem;
+    bottom:3.6rem;
+    left: 10.6rem;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+}
+
+.boton-ver{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(245, 220, 253, 0.918);
+    text-transform: uppercase;
+    filter: drop-shadow(1px 0px 1px rgba(0, 0, 0, 0.678));
+}
+
+/* 
+
+
 
 .contador_producto{
     color: rgb(138, 36, 255);
@@ -582,7 +657,7 @@ input[type=checkbox]{
     font-weight: bold;
 }
 
-.boton-ver{
+.carrito__botton-ver{
     font-size: 1.6rem;
     width: 4rem;
     border-radius: 5px;
@@ -593,7 +668,7 @@ input[type=checkbox]{
     background-color: #f4d4fcc7;
     cursor: pointer;
 }
-
+ */
 
 .boton-ver:hover{
     color: rgb(249, 73, 255);
@@ -873,21 +948,22 @@ input[type=checkbox]{
 
     .select__button{
         width: 90%;
-        height: 4rem;
-        margin-top: 1rem;
+        height: 5rem;
+        margin-top: 0rem;
         margin-bottom: 3rem;
         border-radius: 10px;
         position: relative;
         z-index: 12000210;
         cursor: pointer;
         display: inline-block;
-        background-position: left;
-        background-image: url(../src/img/pantallaNavMovil.png);
-        background-size: cover;
+        background-position: top;
+        background-image: url(../src/img/nav-2-movile-tienda.png);
+        background-size: contain;
         filter: drop-shadow(4px 6px 6px black);
     }
 
     .select__button p{
+        margin-top: .5rem;
         font-size: 1.5rem;
         letter-spacing: 2px;
         font-weight: bold;

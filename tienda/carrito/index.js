@@ -3,7 +3,7 @@ $(() => {
 
     function actualizar() {
         let precioTotal = 0 
-        let arrayProductos = JSON.parse(localStorage.getItem("productosCarrito"));
+        let arrayProductos = JSON.parse(localStorage.getItem("carrito"));
         precioTotal = localStorage.getItem("precioTotal");
         let conta = localStorage.getItem("contador");
         let vaciar = document.querySelector(".vaciar")

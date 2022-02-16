@@ -258,15 +258,17 @@ span{
 
 .container__gatoGrande{
     position:relative;
-    width: 36%;
+    width: 35%;
     z-index: 1000;
-    left:18%;
+    left:17%;
     top: 50%;
     transform:translate(-50%, -50%);
 }
 
 .container__gatoGrande img{
     width: 100%;
+    filter: drop-shadow(-5px 15px 10px rgba(0, 0, 0, 0.534));
+    object-fit: c;
 }
 
 .container__title {
@@ -632,12 +634,35 @@ span{
 }
 
 
+
 /* container4 */
 
-.box__container4{
-    position: relative;
+/* ------Heith x heith ------ */
+.container4{
     width: 100vw;
-    height: 70vh;
+    height: 90vh;
+    position: relative;
+    background-image: url(./src/img/dia5.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    filter:contrast(108%);
+
+}
+
+.box__container4-img-marco{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    filter:contrast(108%);
+    top: 0;
+}
+/* ------------ */
+
+.box__container4-img-marco img{
+    width: 100%;
+    height: 100%;
+
 }
 
 .text__container4 a{
@@ -661,86 +686,32 @@ span{
     transition: all .6s ease-in-out;
 }
 
-.img__container4{
-    position: relative;
-    width: 100%;
-    background-image: url("./src/img/dia5.png");
-    height: 90rem;
-    filter:contrast(108%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: 1000;
-}
-
-.imgTienda__container4{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background-image: url("./src/img/tienda2.png");
-    filter:contrast(110%);
-    background-size: contain;
-    background-position: top;
-    object-fit: cover;
-    z-index: 1;
-}
-
-.container4__cloud{
-    height: 36vh;
-    width: 100%;
-    position: absolute;
-    background-image: url("./src/img/cloud.png");
-    background-size: cover;
-    filter:contrast(105%);
-    object-fit: cover;
-    bottom: -10rem;
-    z-index: 2000;
-    left: -1rem;
-}
+/* container 5 */
 
 
-/* container5 */
-
-.box__container5{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("./src/img/cloud.png");
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: 1;
-}
-
-.container5{
-    background-color: white;
-}
-
-.container5{
+    /* fondo */
+.container5{  
+    background: white;
     width: 100%;
     height: 80vh;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.container5__img{
-    width: 100%;
-    text-align: center;
-    padding-top: 11rem;
-    filter: drop-shadow(10px -13px 5px #0000003f);
-}
-.container5__img img{
-    width: 16%;
+    background-image: url(./src/img/cloud.png);
+    background-size: contain;
+    background-attachment: fixed;
+    filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
+
 }
 
-.container5__text p{
-    font-size: 6rem;
-    font-weight: 900;
-    width: 100%;
-    text-align: center;
-    margin-top: 7rem;
-    filter: drop-shadow(1px -5px 3px #0000008e);
+    /*nuvo marco  */
+.box__container5{
+    position: absolute;
+    background-image: url(./src/img/cloud.png);
+    background-size: cover;
+    top: -27rem;
+    width: 105%;
+    height: 40rem;
+    z-index: 8000;
+    left: -5rem;
 }
 
 
@@ -748,14 +719,12 @@ span{
 
       /* container 1 */
 
-  
     .container1{
         position: relative;
         width: 100vw;
         height: 98vh;
         flex-direction: row;
     }
-
 
     .container__gatoGrande{
         position:absolute;
@@ -783,9 +752,6 @@ span{
     .shadows span{
         font-size: 7rem;
     }
-
-    
-   
 
     /* container2 */
     .container2__sol{
@@ -904,28 +870,6 @@ span{
         font-size: 2.2rem;
     }
 
-    
-    /* container4 */
-
-    
-
-    .imgTienda__container4{
-        background-size: cover;
-    }
-
-    .container4__cloud{
-        width: 104%;
-        margin-left: -2rem;
-        bottom: -10rem;
-    }
-
-    /* container5 */
-
-    
-    .container5{
-        background-color: white;
-    }
-    
 }
 
 
@@ -959,10 +903,10 @@ span{
     
     .container__gatoGrande{
         position:relative;
-        width: 44%;
+        width: 40%;
         z-index: 1000;
         left:20%;
-        top: 40%;
+        top: 48%;
         transform:translate(-50%, -50%);
     }
     
@@ -1132,30 +1076,10 @@ span{
 
     /* container4 */
 
-
-    .imgTienda__container4{
-        background-size: cover;
-    }
-
-    .container4__cloud{
-        width: 104%;
-        margin-left: -2rem;
-        bottom: -10rem;
-    }
-
     .text__container4 a{
-        font-size: 7rem;
-        z-index: 2000;
-        width: 100%;
+        width: 80%;
         text-align: center;
     }
-
-    /* container5 */
-
-    .container5{
-        background-color: white;
-    }
-
 }
 
 
@@ -1245,16 +1169,16 @@ span{
 
     /* container 1 */
     .container1{
-        height: 90vh;
+        height: 92vh;
         flex-direction: column-reverse;
     }
     
     .container__gatoGrande{
         position:relative;
-        width: 50%;
+        width: 47%;
         z-index: 1000;
-        left:24%;
-        top: 42%;
+        left:23%;
+        top: 45%;
         transform:translate(-50%, -50%);
     }
     
@@ -1364,19 +1288,53 @@ span{
         gap: 3rem;
     }
 
-    /* container 5 */
-    .box__container4{
-        position: relative;
+
+        /* container4 */
+
+    /* ------Heith x heith ------ */
+    .container4{
         width: 100vw;
-        height: 60vh;
+        height: 77vh;
+        position: relative;
+    }
+
+    .box__container4-img-marco{
+        width: 100%;
+        height: 77vh;
+        top: 0;
+    }
+    /* ------------ */
+ 
+
+    .box__container4-img-marco img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .text__container4 a{
-        font-size: 6.5rem;
-      
+        font-size: 6rem;
     }
 
-    
+
+    /* container 5 */
+
+        /* fondo */
+    .container5{  
+        width: 100%;
+        height: 50vh;
+        background-size: contain;
+    }
+
+        /*nube marco  */
+    .box__container5{
+        top: -22rem;
+        width: 105%;
+        height: 35rem;
+        z-index: 8000;
+        left: -5rem;
+    }
+
 }
 
 
@@ -1403,6 +1361,16 @@ span{
     }
 
     /* container 1 */
+    .logo {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        margin-top: -.2rem;
+    }
+
+    .nav-toggle {
+        top: -.3rem;
+    }
+
     .container1{
         height: 90vh;
         flex-direction: column-reverse;
@@ -1410,10 +1378,10 @@ span{
     
     .container__gatoGrande{
         position:relative;
-        width: 60%;
+        width: 55%;
         z-index: 1000;
-        left:30%;
-        top: 44%;
+        left:26%;
+        top: 46%;
         transform:translate(-50%, -50%);
     }
     
@@ -1444,6 +1412,7 @@ span{
         top: -1rem;
     }
   
+    /* container 3 */
   
     .box__container3{
         font-size: 1.9rem;
@@ -1454,27 +1423,9 @@ span{
         top: -4%;
     }
 
-  
-    .text__container4 a{
-        font-size: 5.5rem;
-    }
-
-    .text__container4 a:hover{
-        font-size: 6rem;
-        filter: drop-shadow( 4px 4px 1px rgb(0, 0, 0));
-
-    }
-    .logo {
-        font-size: 1.6rem;
-        letter-spacing: 1px;
-        margin-top: -.2rem;
-    }
-
-    .nav-toggle {
-        top: -.3rem;
-    }
 
 
+    /* container 2 */
     .container2__movil{
         height: 100vh;
         width: 100vw;
@@ -1494,6 +1445,55 @@ span{
         filter: drop-shadow(1px 1px 10px rgba(146, 84, 2, 0.795));
     }
     
+
+           /* container4 */
+
+    /* ------Heith x heith ------ */
+    .container4{
+        width: 100vw;
+        height: 85vh;
+        position: relative;
+    }
+
+    .box__container4-img-marco{
+        width: 100%;
+        height: 85vh;
+        top: 0;
+    }
+    /* ------------ */
+
+
+    .box__container4-img-marco img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .text__container4 a{
+        font-size: 4.5rem;
+    }
+
+    .text__container4 a {
+        width: 90%;
+    }
+
+    /* container 5 */
+
+        /* fondo */
+    .container5{  
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+    }
+
+        /*nube marco  */
+    .box__container5{
+        top: -21rem;
+        width: 105%;
+        height: 35rem;
+        z-index: 8000;
+        left: -3rem;
+    }
+
 }
 
 
@@ -1514,10 +1514,10 @@ span{
     
     .container__gatoGrande{
         position:relative;
-        width: 75%;
+        width: 73%;
         z-index: 1000;
         left:35%;
-        top: 40%;
+        top: 43%;
         transform:translate(-50%, -50%);
     }
     
@@ -1561,6 +1561,27 @@ span{
         font-size: 1.6rem;
         letter-spacing: 1px;
     }
+
+    /* container 2 */
+
+    .container2__movil{
+        height: 100vh;
+        width: 100vw;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cartel-movil{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 20rem;
+        padding: 1.7rem 0;
+    }
+    .cartel-movil img{
+        width: 70%;
+        filter: drop-shadow(1px 1px 10px rgba(146, 84, 2, 0.795));
+    }
     
     /* container 3 */
 
@@ -1589,47 +1610,57 @@ span{
         top: -10%;
     }
 
-    /* container 5 */
-    .box__container4{
+ 
+        /* container4 */
+
+    /* ------Heith x heith ------ */
+    .container4{
         width: 100vw;
-        height: 60vh;
+        height: 80vh;
+        position: relative;
+    }
+
+    .box__container4-img-marco{
+        width: 100%;
+        height: 80vh;
+        top: 0;
+    }
+    /* ------------ */
+    
+  
+
+    .box__container4-img-marco img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .text__container4 a{
         font-size: 4rem;
     }
 
-    .text__container4 a:hover{
-        font-size: 4.5rem;
-    }
-
-
-    .imgTienda__container4 {
-        height: 80vh;
-    }
-
-    .img__container4 {
-        height: 70rem;
-    }
-
-    .container2__movil{
-        height: 100vh;
-        width: 100vw;
-        display: inline-block;
-        position: relative;
-    }
-
-    .cartel-movil{
+    .text__container4 a {
         width: 100%;
-        text-align: center;
-        position: relative;
-        top: 20rem;
-        padding: 1.7rem 0;
     }
-    .cartel-movil img{
-        width: 70%;
-        filter: drop-shadow(1px 1px 10px rgba(146, 84, 2, 0.795));
+
+    /* container 5 */
+
+        /* fondo */
+    .container5{  
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
     }
+
+        /*nube marco  */
+    .box__container5{
+        top: -21rem;
+        width: 108%;
+        height: 35rem;
+        z-index: 8000;
+        left: -3rem;
+    }
+ 
 
   
 }
@@ -1668,7 +1699,7 @@ span{
         width: 85%;
         z-index: 1000;
         left:40%;
-        top: 40%;
+        top: 45%;
         transform:translate(-50%, -50%);
     }
 
@@ -1712,35 +1743,6 @@ span{
     }
 
 
-    /* container 4*/
-    .box__container4{
-        width: 100vw;
-        height: 60vh;
-    }
-
-    .text__container4 a{
-        font-size: 3rem;
-    }
-
-    .text__container4 a:hover{
-        font-size: 3.5rem;
-    }
-
-
-    .imgTienda__container4 {
-        height: 70vh;
-    }
-
-    .img__container4 {
-        height: 60rem;
-    }    
-
-    .container4__cloud {
-        width: 183%;
-        background-position: left;
-        bottom: -10rem;
-    }
-
     /* container 2 */
     .container2__movil{
         height: 85vh;
@@ -1763,6 +1765,57 @@ span{
         filter: drop-shadow(1px 1px 10px rgba(146, 84, 2, 0.795));
     }
 
+          /* container4 */
+
+    /* ------Heith x heith ------ */
+    .container4{
+        width: 100vw;
+        height: 75vh;
+        position: relative;
+    }
+
+    .box__container4-img-marco{
+        width: 100%;
+        height: 75vh;
+        top: 0;
+    }
+    /* ------------ */
+  
+
+    .box__container4-img-marco img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text__container4 a{
+        font-size: 3.3rem;
+    }
+
+    .text__container4 a {
+        width: 100%;
+    }
+
+    /* container 5 */
+
+        /* fondo */
+    .container5{  
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+    }
+
+        /*nube marco  */
+    .box__container5{
+        top: -21rem;
+        width: 108%;
+        height: 35rem;
+        z-index: 8000;
+        left: -3rem;
+    }
+ 
+
+
 
 }
 
@@ -1770,12 +1823,14 @@ span{
 
 @media (max-width: 387px){
 
+  
+
     .container__gatoGrande{
         position:relative;
         width: 100%;
         z-index: 1000;
         left:48%;
-        top: 30%;
+        top: 40%;
         transform:translate(-50%, -50%);
     }
 
@@ -1788,9 +1843,63 @@ span{
     }
 
     .container__title {
-        top: 5%;
+        top: 8%;
         left:49.5%;
         width: 100%;
+    }
+
+
+    .box__container3{
+        font-size: 1.5rem;
+    }
+
+        /* container4 */
+
+    /* ------Heith x heith ------ */
+    .container4{
+        width: 100vw;
+        height: 75vh;
+        position: relative;
+    }
+
+    .box__container4-img-marco{
+        width: 100%;
+        height: 75vh;
+        top: 0;
+    }
+    /* ------------ */
+  
+
+    .box__container4-img-marco img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text__container4 a{
+        font-size:2.8rem;
+    }
+
+    .text__container4 a {
+        width: 100%;
+    }
+
+    /* container 5 */
+
+        /* fondo */
+    .container5{  
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+    }
+
+        /*nube marco  */
+    .box__container5{
+        top: -21rem;
+        width: 108%;
+        height: 35rem;
+        z-index: 8000;
+        left: -3rem;
     }
 
 }
