@@ -2,9 +2,8 @@
 $(() => {
 
     function actualizar() {
-        let precioTotal = 0 
+        let precioTotal = localStorage.getItem("precioTotal");
         let arrayProductos = JSON.parse(localStorage.getItem("carrito"));
-        precioTotal = localStorage.getItem("precioTotal");
         let conta = localStorage.getItem("contador");
         let vaciar = document.querySelector(".vaciar");
 
@@ -51,10 +50,8 @@ $(() => {
                                 
                             `); 
 
-                  
-                            prodEliminar(conta,precioTotal);
-                            localStorage.setItem(`productosPRECIO${arrayProductos[i].id}`, arrayProductos[i].precio);
-                            sum(arrayProductos[i].id,precioTotal);
+                            sum(arrayProductos[i].id);
+                            prodEliminar(conta);
                         };
                     };
                 };
@@ -68,79 +65,78 @@ $(() => {
 
 
 
-function sum(id, total){
+function sum(id){
         
 
     let suma = document.querySelector(`#sum${id} p`)
     let num = document.querySelector(`#num${id}`)
-    let resta = document.querySelector(`#rest${id}`)
+    let resta = document.querySelector(`#rest${id} p`)
     
+    /* traigo el array donde guardo los productos */
     let arrayContador = JSON.parse(localStorage.getItem("carrito"));
-
+    /* filtro los productos por id y me devuelve un nuevo array */
     let arrayID = arrayContador.find(e => e.id === id)
+    /* traigo el precio total del localStorage */
 
-    let precioTotal = localStorage.getItem("precioTotal")
-
-
+    /* declaro el contador que va a modificar el indicador de productos */
     let contador = arrayID.cantidad;
-
     num.innerHTML=contador
 
+
     suma.addEventListener("click", function(){
+        
+        
+        /* modifica el contador de productos +-    */
         contador = contador +1
+
+        arrayID.cantidad = contador
+
         num.innerHTML= (contador)
-/* 
-        localStorage.setItem("precioTotal", precioTotal) */
+        
+
+        let precioTotal = localStorage.getItem("precioTotal")
+        precioTotal = parseInt(precioTotal) + parseInt(arrayID.precio)
+
+        localStorage.setItem("precioTotal", precioTotal)
+
+        localStorage.setItem("carrito", JSON.stringify(arrayID))
+
+
 
         $(".precio").html(`
-            $ ${precioTotal + arrayID.precio}
+            $ ${precioTotal}
         `);
+
+
     })
 
 
     resta.addEventListener("click", function(){
-
         if(contador > 1){
             contador = contador -1
             num.innerHTML= (contador)
-        }   
+            
+    
+            let precioTotal = localStorage.getItem("precioTotal")
+            precioTotal = parseInt(precioTotal) - parseInt(arrayID.precio)
+    
+            localStorage.setItem("precioTotal", precioTotal)
+    
+            $(".precio").html(`
+                $ ${precioTotal}
+            `);
+    
+        }
+       
     })
 }
 
 
-
-
-
-
-
-
-/*     function sum(id){
-
-      
-
-        let suma = document.querySelector(`#sum${id} p`);
-        let num = document.querySelector(`#num${id}`);
-        let resta = document.querySelector(`#rest${id}`);
-
-        num.innerHTML= (arrayID.cantidad);
-
-        /*suma al hacer click en el boton +  */
-    /*     suma.addEventListener("click", function(){
-            if(arrayID > 0){}
-            num.innerHTML= (arrayID.cantidad ++);
-        }); */
-
-        /*resta al hacer click en el boton -  */
-    /*     resta.addEventListener("click", function(){
-
-            if(arrayID.cantidad > 0){
-                num.innerHTML= (arrayID.cantidad -- );
-            }; 
-        });
-    }; */
-    function prodEliminar(conta,precioTotal){
+    function prodEliminar(conta){
        
      let precio = document.querySelector(".precio")
+     let precioTotal = localStorage.getItem("precioTotal");
+
      let total = precioTotal;
      
         precio.innerHTML =(`
@@ -155,26 +151,34 @@ function sum(id, total){
             let myID = element.id;
             let producto = $(`#${myID}`);
 
-
+            
             element.addEventListener("click",function(){
                 conta = conta-1;
 
+               let arrayContador = JSON.parse(localStorage.getItem("carrito"));
+               
+               let arrayID = arrayContador.find(e => e.id == element.id)
 
-                let precio = localStorage.getItem(`productosPRECIO${myID}`);
 
-                precioTotal = precioTotal - precio;
+               let precitouu = parseInt(arrayID.precio) * parseInt(arrayID.cantidad)
+
+               console.log(precitouu)
                 
-/* 
-                $(".conejo").fadeIn().show()
+               
+               let resut = precioTotal - precitouu
+       
+
+               $(".precio").html(`
+                   $ ${resut}
+               `);
+       
+               
+   /*              $(".conejo").fadeIn().show()
 
                 if ($(".conejo").show()){
                     $(".conejo").fadeIn().hide()
                 }
  */
-
-                $(".precio").html(`
-                    $ ${precioTotal}
-                `);
 
 
                 $(".contador p").html(`
