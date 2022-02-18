@@ -947,6 +947,7 @@ input[type=checkbox]{
         left: 50%;
         transform: translate(-50%);
         top: 5rem;
+
     }
 
     .select__button{
@@ -963,6 +964,7 @@ input[type=checkbox]{
         background-image: url(../src/img/nav-2-movile-tienda.png);
         background-size: contain;
         filter: drop-shadow(4px 6px 6px black);
+        
     }
 
     .select__button p{
@@ -1006,6 +1008,8 @@ input[type=checkbox]{
     .select__button:active{
         filter: drop-shadow(2px 2px 2px black);
     }
+
+
 
 }
 

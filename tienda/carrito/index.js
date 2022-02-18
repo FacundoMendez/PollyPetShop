@@ -6,6 +6,14 @@ function actualizar() {
     let arrayProductos = JSON.parse(localStorage.getItem("carrito"));
     let conta = localStorage.getItem("contador");
     let vaciar = document.querySelector(".vaciar");
+    let comprar = document.querySelector(".comprar")
+    
+
+    comprar.addEventListener("click", function(){
+      localStorage.removeItem("carrito");
+      localStorage.removeItem("contador");
+      localStorage.removeItem("precioTotal");
+    })
 
     if (arrayProductos != null) {
       if (conta != null) {
@@ -168,29 +176,6 @@ function actualizar() {
       });
     }
   }
-
-  function recorrerArray(id){
-
-    let idProd = id.substring(5)
-    
-    let arrayProductos = JSON.parse(localStorage.getItem("carrito"))
-
-    let array = arrayProductos.find((e) => e.id == idProd);
-
-    for(let i = 0; i < arrayProductos.length; i++){
-
-      if (array = arrayProductos[i]){
-        console.log(arrayProductos.indexOf(array))
-      }
-    }
-
-
-   /*  console.log(array)
-    console.log(idProd) */
-    
-  }
-
-
 
 
 
