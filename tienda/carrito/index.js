@@ -55,7 +55,7 @@ function actualizar() {
 
   actualizar();
 
-  function incrementoDecremento(id,conta) {
+  function incrementoDecremento(id, conta) {
     let suma = document.querySelector(`#sum${id} p`);
     let num = document.querySelector(`#num${id}`);
     let resta = document.querySelector(`#rest${id} p`);
@@ -73,16 +73,41 @@ function actualizar() {
     num.innerHTML = contador;
 
 
-
-
     /* modifica el contador de productos +    */
     suma.addEventListener("click", function () {
-     
-        contador = contador + 1;
+
+      contador = contador + 1;
+      num.innerHTML = contador;
+
+      let precioTotal = localStorage.getItem("precioTotal");
+      precioTotal = parseInt(precioTotal) + parseInt(arrayID.precio);
+
+      localStorage.setItem("precioTotal", precioTotal);
+
+      $(".precio").html(`
+          $ ${precioTotal}
+      `);
+
+      conta++
+
+      localStorage.setItem("contador", conta)
+
+
+      $(".contador p").html(`
+          <p>${conta}</p>
+      `);
+    });
+
+
+
+    /* modifica el contador de productos -    */
+    resta.addEventListener("click", function () {
+      if (contador > 1) {
+        contador = contador - 1;
         num.innerHTML = contador;
 
         let precioTotal = localStorage.getItem("precioTotal");
-        precioTotal = parseInt(precioTotal) + parseInt(arrayID.precio);
+        precioTotal = parseInt(precioTotal) - parseInt(arrayID.precio);
 
         localStorage.setItem("precioTotal", precioTotal);
 
@@ -90,47 +115,15 @@ function actualizar() {
             $ ${precioTotal}
         `);
 
+        conta--
 
-
-        conta ++
-        
         localStorage.setItem("contador", conta)
 
-        
         $(".contador p").html(`
             <p>${conta}</p>
         `);
 
-    });
-
-    
-
-        /* modifica el contador de productos -    */
-    resta.addEventListener("click", function () {
-        if (contador > 1) {
-            contador = contador - 1;
-            num.innerHTML = contador;
-  
-            let precioTotal = localStorage.getItem("precioTotal");
-            precioTotal = parseInt(precioTotal) - parseInt(arrayID.precio);
-  
-            localStorage.setItem("precioTotal", precioTotal);
-  
-            $(".precio").html(`
-                $ ${precioTotal}
-            `);
-
-           
-            conta --
-            
-            localStorage.setItem("contador", conta)
-
-            
-            $(".contador p").html(`
-                <p>${conta}</p>
-            `);
-
-        }
+      }
     });
 
 
@@ -140,7 +133,7 @@ function actualizar() {
     let producto = $(`#${id}`);
 
     for (let element of tacho) {
-        element.addEventListener("click", function () {
+      element.addEventListener("click", function () {
         let precioTotal = localStorage.getItem("precioTotal");
 
         let PrecioXcantidad = parseInt(arrayID.precio) * contador;
@@ -150,31 +143,52 @@ function actualizar() {
         localStorage.setItem("precioTotal", resut);
 
         $(".precio").html(`
-                $ ${resut}
-            `);
+            $ ${resut}
+        `);
 
         producto.remove();
 
         conta = conta - contador
-            
+
         localStorage.setItem("contador", conta)
 
-        
         $(".contador p").html(`
             <p>${conta}</p>
         `);
-        
 
-        if (resut == 0 ){
-            localStorage.removeItem("carrito");
-            localStorage.removeItem("contador");
-            location.reload();
+
+        recorrerArray(element.id)
+
+        if (resut == 0) {
+          localStorage.removeItem("carrito");
+          localStorage.removeItem("contador");
+          location.reload();
         }
 
       });
     }
   }
 
+  function recorrerArray(id){
+
+    let idProd = id.substring(5)
+    
+    let arrayProductos = JSON.parse(localStorage.getItem("carrito"))
+
+    let array = arrayProductos.find((e) => e.id == idProd);
+
+    for(let i = 0; i < arrayProductos.length; i++){
+
+      if (array = arrayProductos[i]){
+        console.log(arrayProductos.indexOf(array))
+      }
+    }
+
+
+   /*  console.log(array)
+    console.log(idProd) */
+    
+  }
 
 
 
@@ -184,22 +198,15 @@ function actualizar() {
     let precio = document.querySelector(".precio");
     let precioTotal = localStorage.getItem("precioTotal");
 
+    /* muestra el precio total */
     let total = precioTotal;
-
     precio.innerHTML = `
-            $ ${total}
-        `;
-
-    /*              $(".conejo").fadeIn().show()
-
-                if ($(".conejo").show()){
-                    $(".conejo").fadeIn().hide()
-                }
- */
-
+        $ ${total}
+    `;
     let conta = localStorage.getItem("contador")
 
 
+  /* capta si hay productos muestra una pantalla sino muestra pantalla productos vacios */
     if (conta == 0) {
       localStorage.removeItem("carrito");
       localStorage.setItem("contador", conta - 1);
@@ -207,6 +214,14 @@ function actualizar() {
       $(".carrito__vacio-container").show();
       $(".carrito__productos").hide();
     }
+
+    
+    /*              $(".conejo").fadeIn().show()
+
+                if ($(".conejo").show()){
+                    $(".conejo").fadeIn().hide()
+                }
+ */
 
   }
 });

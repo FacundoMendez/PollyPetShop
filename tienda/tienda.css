@@ -745,10 +745,7 @@ input[type=checkbox]{
         height: 7rem;
     }
     
-    .nav2{
-        display: none;
-    }
-
+ 
     .navVar-desktop{
         display: none;
     }
@@ -897,6 +894,12 @@ input[type=checkbox]{
         z-index: 11000;
         margin-top: -0.4rem;
     }
+
+
+    .nav2{
+        display: none;
+    }
+
 
     /* filtro movile */
 
