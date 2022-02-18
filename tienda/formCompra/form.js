@@ -1,4 +1,4 @@
-const urlProvincias = "https://apis.datos.gob.ar/georef/api/provincias"
+ const urlProvincias = "https://apis.datos.gob.ar/georef/api/provincias"
 
 
 
@@ -20,11 +20,11 @@ let provincias = [{id: 0 , nombre: "Selecciona una Provincia"}]
 
 $.get(urlProvincias,function(response,status){
     if (status === "success"){
-        console.log(response.provincias)
         provincias.push(...response.provincias)
         $(".provinciaCheck").html(crearLista(provincias,"select-provincias"))
     }
 })
+
 
 
 

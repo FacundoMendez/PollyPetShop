@@ -145,8 +145,6 @@ function actualizar() {
 
         let PrecioXcantidad = parseInt(arrayID.precio) * contador;
 
-        console.log(PrecioXcantidad);
-
         let resut = precioTotal - PrecioXcantidad;
 
         localStorage.setItem("precioTotal", resut);
@@ -200,9 +198,6 @@ function actualizar() {
  */
 
     let conta = localStorage.getItem("contador")
-
-   
-
 
 
     if (conta == 0) {
