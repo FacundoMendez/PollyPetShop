@@ -18,9 +18,8 @@ main{
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.479);
-    height: 20px;
+    width: 10px;
+    height: 10px;
     background-image: url(../../src/img/pantallaNavMovil.png);
     background-position: bottom;
 }
@@ -29,7 +28,7 @@ main{
     height: 0px;
 }
 ::-webkit-scrollbar-thumb {
-    background:rgb(250, 238, 215);
+    background:rgb(249, 178, 255);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -428,7 +427,7 @@ span{
         flex-direction: column;
         align-items: center;
         margin: 0;
-        background-image: url(../../src/img/mader.png);
+        background-image: url(../../src/img/mader2.jpg);
         background-size: cover;
         background-position:top ;
         position: fixed;
@@ -440,7 +439,7 @@ span{
         overflow-y: auto;
         padding-top: 0rem;
         transition: left 0.3s;
-        filter:contrast(105%);
+        filter:contrast(102%);
     }
     
     .nav-menu_visible {
