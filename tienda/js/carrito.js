@@ -92,11 +92,10 @@ function agregarProducto(id ) {
 function carritoBottom(){
     const carrito = document.querySelector(".fa-shopping-cart");
     const carrito__movil = document.querySelector(".carrito__movil");
-    const filterMovil = document.querySelector(".select__button");
+    const filterMovil = document.querySelector(".selec");
+    
     const popupCarrito = document.querySelector(".banderin-carrito")
 
-
-    const carritoMoviltoggle = document.querySelector(".select__button")
 
     carrito.addEventListener("click", () => {
         popupCarrito.classList.toggle("carrito__active");
@@ -104,7 +103,7 @@ function carritoBottom(){
     });
     carrito__movil.addEventListener("click", () => {
         popupCarrito.classList.toggle("carrito__active");
-        filterMovil.classList.toggle(".select__button-active");
+        filterMovil.classList.toggle("select__button-active");
     });
 }
 carritoBottom()

@@ -648,7 +648,9 @@ span{
 
 @media screen and (max-width: 1080px){
 
-
+    .carrito{
+        display: none;
+    }
     .nav__img img {
         width: 85%;
         height: 7rem;

@@ -193,6 +193,10 @@ span{
     cursor: pointer;
 }
 
+.carrito__movil{
+    display: none;
+}
+
 .carrito i{
     color: rgb(253, 244, 227);
 }
@@ -683,6 +687,11 @@ input[type=checkbox]{
 
 @media screen and (max-width: 1080px){
     
+    .carrito__movil{
+        display: block;
+    }
+    
+
     .nav__img img {
         width: 85%;
         height: 7rem;
@@ -917,8 +926,25 @@ input[type=checkbox]{
         left: 50%;
         transform: translate(-50%);
         top: 5rem;
-
     }
+
+    .select__button-active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        position: relative;
+        line-height: 4rem;
+        z-index: 1000;
+        margin-left: 0;
+        gap: 2rem;
+        left: 50%;
+        transform: translate(-50%);
+        top: 5rem;
+        opacity: 0;
+    }
+
 
     .select__button{
         width: 90%;
@@ -936,22 +962,7 @@ input[type=checkbox]{
         filter: drop-shadow(4px 6px 6px black);
     }
 
-    .select__button-active{
-        width: 90%;
-        height: 5rem;
-        margin-top: 0rem;
-        margin-bottom: 3rem;
-        border-radius: 10px;
-        position: relative;
-        z-index: 12000210;
-        cursor: pointer;
-        display: inline-block;
-        background-position: top;
-        background-image: url(../src/img/nav-2-movile-tienda.png);
-        background-size: contain;
-        filter: drop-shadow(4px 6px 6px black);
-        opacity: 0;
-    }
+
 
 
     .select__button p{
