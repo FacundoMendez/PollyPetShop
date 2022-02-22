@@ -9,20 +9,18 @@
 
 (() =>{
 
-
-    var tl = gsap.timeline()
-
-
-    tl.to(".imgLogo",{    
-        duration:1.8,
+    gsap.to(".imgLogo",{    
+        duration: 3.5,            
     })
 
 
-    tl.to(".ball",{        
-        duration: 1.6,            
+    gsap.to(".ball",{        
+        duration: 2,            
+        delay: 2.7,
         opacity:3,
         rotation:360,                   
         scale:30,       
+        'webkitFilter': 'blur(2rem)',
     })
 
   
