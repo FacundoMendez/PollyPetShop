@@ -1,6 +1,6 @@
 
-(() =>{
-  const nav = document.querySelector(".nav__list")
+(() => {
+  const nav = document.querySelector(".nav__list");
   const navToggle = document.querySelector(".nav-toggle");
   const navMenu = document.querySelector(".nav-menu");
 
@@ -13,7 +13,6 @@
       navToggle.setAttribute("aria-label", "Abrir menú");
     }
   });
- 
 })();
 
 

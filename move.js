@@ -3,13 +3,59 @@
     setTimeout(function(){
         preload.classList.add("cerrar");
         preload.style.zIndex=0;
-    },4000)
+    },3500)
     
 })();
 
 (() =>{
 
+
+    var tl = gsap.timeline()
+
+
+    tl.to(".imgLogo",{    
+        duration:1.8,
+    })
+
+
+    tl.to(".ball",{        
+        duration: 1.6,            
+        opacity:3,
+        rotation:360,                   
+        scale:30,       
+    })
+
+  
+
+    let hacemos = document.getElementById("hacemos")
+
+    hacemos.addEventListener("click", function(){
+        gsap.to(hacemos,{    
+            opacity:1,
+            duration:2,
+            ease: "lineal",
+            x:"+=60",
+            paused:true,
+            scrollTrigger:{
+                trigger:".container3",
+                scrub: .2,
+                pin: true,
+                end: "+=0%",
+                paused: true
+            },  
+        })
+    
+    })
+
+
+})();
+
+
+
+(() =>{
+
     gsap.registerPlugin(ScrollTrigger);
+
     gsap.to(".container2__sol", {
         duration:2,
         scale:"+=.7",
@@ -39,29 +85,6 @@
 
 })();
 
-(() =>{
-    gsap.to(".ball",{        
-        duration: 3,            
-        delay:2.5,
-        opacity:3,
-        rotation:360,                   
-        scale:30,       
-    })
-
-    gsap.to(".imgLogo",{    
-        duration:4,
-        delay:0,   
-    })
-
-    gsap                             
-
-    .timeline({                     
-        defaults:{                  
-            duration: 7,            
-            delay:1.5,
-        }
-    })
 
 
-})();
 

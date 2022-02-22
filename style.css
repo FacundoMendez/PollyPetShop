@@ -686,20 +686,20 @@ span{
     transition: all .6s ease-in-out;
 }
 
-/* container 5 */
 
+
+/* container 5 */
 
     /* fondo */
 .container5{  
     background: white;
-    width: 100%;
-    height: 80vh;
+    width: 100vw;
+    height: 50vh;
     position: relative;
     background-image: url(./src/img/cloud.png);
     background-size: contain;
     background-attachment: fixed;
     filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
-
 }
 
     /*nuvo marco  */
@@ -707,11 +707,63 @@ span{
     position: absolute;
     background-image: url(./src/img/cloud.png);
     background-size: cover;
-    top: -27rem;
+    top: -25rem;
     width: 105%;
-    height: 40rem;
+    height: 30rem;
     z-index: 8000;
     left: -5rem;
+}
+
+
+.container5__title1 {
+    position:absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -50%);    
+    padding: 0 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.shadows2 span{
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: -1px 2px 15px #9c9c9c;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.05em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    font-size: 8rem;
+    transition: all 0.25s ease-out;
+    filter: drop-shadow(-3px 3px 1px rgb(56, 56, 56));
+}
+
+
+.container5__title2 {
+    position:absolute;
+    top: 58%;
+    left:49%;
+    transform: translate(-50%, -50%);    
+    padding: 0 2rem;
+    width: 80%;
+    text-align: center;
+}
+
+.shadows3 span{
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: -1px 2px 15px #9c9c9c;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.05em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    font-size: 2rem;
+    transition: all 0.25s ease-out;
+    filter: drop-shadow(-2px 2px 1px rgba(10, 10, 10, 0.89));
+}
+
+.space2 {
+    padding: 0 .7rem;
 }
 
 
@@ -1494,6 +1546,34 @@ span{
         left: -3rem;
     }
 
+    .container5__title1 {
+        top: 40%;
+        left:50%;
+        transform: translate(-50%, -50%);    
+        width: 100%;
+    }
+    
+    .shadows2 span{
+        font-size: 6rem;
+    }
+    
+    
+    .container5__title2 {
+        top: 53%;
+        left:49%;
+        transform: translate(-50%, -50%);    
+        padding: 0 2rem;
+        width: 100%;
+    }
+    
+    .shadows3 span{
+        font-size: 1.6rem;
+    }
+    
+    .space2 {
+        padding: 0 .7rem;
+    }
+
 }
 
 
@@ -1660,7 +1740,33 @@ span{
         z-index: 8000;
         left: -3rem;
     }
- 
+    .container5__title1 {
+        top: 40%;
+        left:50%;
+        transform: translate(-50%, -50%);    
+        width: 100%;
+    }
+    
+    .shadows2 span{
+        font-size: 4rem;
+    }
+    
+    
+    .container5__title2 {
+        top: 53%;
+        left:49%;
+        transform: translate(-50%, -50%);    
+        padding: 0 2rem;
+        width: 100%;
+    }
+    
+    .shadows3 span{
+        font-size: 1.2rem;
+    }
+    
+    .space2 {
+        padding: 0 .7rem;
+    }
 
   
 }
@@ -1801,7 +1907,7 @@ span{
         /* fondo */
     .container5{  
         width: 100%;
-        height: 60vh;
+        height: 40vh;
         background-size: cover;
     }
 
@@ -1814,6 +1920,36 @@ span{
         left: -3rem;
     }
  
+    .container5__title1 {
+        top: 45%;
+        left:50%;
+        transform: translate(-50%, -50%);    
+        width: 100%;
+        filter: drop-shadow(1px 1px 1px rgba(58, 58, 58, 0.404));
+
+    }
+    
+    .shadows2 span{
+        font-size: 3.5rem;
+    }
+    
+    
+    .container5__title2 {
+        top: 58%;
+        left:49%;
+        transform: translate(-50%, -50%);    
+        padding: 0 2rem;
+        width: 100%;
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.486));
+    }
+    
+    .shadows3 span{
+        font-size: 1.05rem;
+    }
+    
+    .space2 {
+        padding: 0 .5rem;
+    }
 
 
 
@@ -1889,17 +2025,48 @@ span{
         /* fondo */
     .container5{  
         width: 100%;
-        height: 60vh;
+        height: 30vh;
         background-size: cover;
     }
 
         /*nube marco  */
     .box__container5{
         top: -21rem;
-        width: 108%;
+        width: 109%;
         height: 35rem;
         z-index: 8000;
         left: -3rem;
+    }
+
+
+    .container5__title1 {
+        top: 60%;
+        left:50%;
+        transform: translate(-50%, -50%);    
+        width: 100%;
+        filter: drop-shadow(1px 1px 1px rgba(58, 58, 58, 0.404));
+    }
+    
+    .shadows2 span{
+        font-size: 2.5rem;
+    }
+    
+    
+    .container5__title2 {
+        top: 39%;
+        left:49%;
+        transform: translate(-50%, -50%);    
+        padding: 0 2rem;
+        width: 100%;
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.486));
+    }
+    
+    .shadows3 span{
+        display: none;
+    }
+    
+    .space2 {
+        padding: 0 .5rem;
     }
 
 }
