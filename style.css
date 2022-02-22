@@ -717,7 +717,7 @@ span{
 
 .container5__title1 {
     position:absolute;
-    top: 45%;
+    top: 50%;
     left:50%;
     transform: translate(-50%, -50%);    
     padding: 0 2rem;
@@ -741,7 +741,7 @@ span{
 
 .container5__title2 {
     position:absolute;
-    top: 60%;
+    top: 65%;
     left:49%;
     transform: translate(-50%, -50%);    
     padding: 0 2rem;
@@ -765,6 +765,16 @@ span{
 .space2 {
     padding: 0 .7rem;
 }
+
+.container5__img{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 36rem;
+    opacity: 0.06;
+}
+
 
 
 @media screen and (min-width: 1401px) and (max-width: 1700px){
@@ -1387,6 +1397,14 @@ span{
         left: -5rem;
     }
 
+    .container5__img{
+        top: 54%;
+        left:50%;
+        width: 30rem;
+        opacity: 0.06;
+    }
+    
+
 }
 
 
@@ -1398,6 +1416,7 @@ span{
 
     .navVar-movile{
         display: inline-block;
+    
     }
 
     .nav__img{
@@ -1410,6 +1429,7 @@ span{
     .nav__img img{
         width: 96%;
         height: 5.5rem;
+
     }
 
     /* container 1 */
@@ -1417,6 +1437,7 @@ span{
         font-size: 1.6rem;
         letter-spacing: 1px;
         margin-top: -.2rem;
+        
     }
 
     .nav-toggle {
@@ -1573,6 +1594,15 @@ span{
     .space2 {
         padding: 0 .7rem;
     }
+
+    
+    .container5__img{
+        top: 50%;
+        left:50%;
+        width: 25rem;
+        opacity: 0.06;
+    }
+    
 
 }
 
@@ -1921,7 +1951,7 @@ span{
     }
  
     .container5__title1 {
-        top: 45%;
+        top: 48%;
         left:50%;
         transform: translate(-50%, -50%);    
         width: 100%;
@@ -1935,7 +1965,7 @@ span{
     
     
     .container5__title2 {
-        top: 58%;
+        top: 60%;
         left:49%;
         transform: translate(-50%, -50%);    
         padding: 0 2rem;
@@ -1951,7 +1981,13 @@ span{
         padding: 0 .5rem;
     }
 
-
+    .container5__img{
+        top: 53%;
+        left:50%;
+        width: 18rem;
+        opacity: 0.06;
+    }
+    
 
 }
 
@@ -2068,5 +2104,10 @@ span{
     .space2 {
         padding: 0 .5rem;
     }
+
+    .container5__img{
+        display: none;
+    }
+    
 
 }
