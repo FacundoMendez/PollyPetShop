@@ -10,13 +10,13 @@
 (() =>{
 
     gsap.to(".imgLogo",{    
-        duration: 3.5,            
+        duration: 3,            
     })
 
 
     gsap.to(".ball",{        
-        duration: 2,            
-        delay: 2.7,
+        duration: 3,            
+        delay: 2.3,
         opacity:3,
         rotation:360,                   
         scale:30,       
@@ -24,28 +24,6 @@
     })
 
   
-
-    let hacemos = document.getElementById("hacemos")
-
-    hacemos.addEventListener("click", function(){
-        gsap.to(hacemos,{    
-            opacity:1,
-            duration:2,
-            ease: "lineal",
-            x:"+=60",
-            paused:true,
-            scrollTrigger:{
-                trigger:".container3",
-                scrub: .2,
-                pin: true,
-                end: "+=0%",
-                paused: true
-            },  
-        })
-    
-    })
-
-
 })();
 
 

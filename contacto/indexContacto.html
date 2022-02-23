@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styleContacto.css">
+    <script src="../main.js"></script>
+    <title>Mi cuenta</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__img">
+                <img src="../src/img/navbar.png" alt="NavBar" class="navVar-desktop">
+                <img src="../src/img/navbar-movile.png" alt="Barra de navegacion movile" class="navVar-movile">
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-menu-item logo">
+                    <a href="#" class="nav-menu-link nav-link">Polly Pet Shop</a>
+                </div>
+                <ul class="navVisible nav-menu">
+    
+                    <li class="nav-menu-item">
+                        <a href="../index.html" class="nav-menu-link nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-link nav-link">Contacto</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="../tienda/productos/tienda.html" class="nav-menu-link nav-link">Tienda</a>
+                    </li>
+                    <li class="nav-menu-item cuenta">
+                        <a href="../login/indexLogin.html" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+    <main>
+        <div class="container-flex">
+            <div class="form-container">
+                <div class="nit desktop"></div>
+                <div class="nit2 mobile"></div>
+                <h3 class="title">Formulario de contacto</h3>
+                <form action="">
+                    <div class="input-container row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="Nombre">Nombre: </label>
+                            <input type="text" id="Nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="Apellido">Apellido: </label>
+                            <input type="text" id="Apellido" placeholder="Apellido" required>
+                        
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="Correo">Correo electrónico: </label>
+                            <input type="text" id="Correo" placeholder="correo@correo.com" required>
+                     
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="Teléfono">Teléfono: </label>
+                            <input type="text" id="Teléfono" placeholder="*** *** ***" >
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Mensaje">Mensaje: </label>
+                            <textarea name="" id="Mensaje" class="block" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="capcha">
+                        <p>Selecciona la siguiente figura: <strong id="figura"></strong></p>
+                        <div class="figures-container">
+                            <div class="figura tr" nombre="rectangulo"></div>
+                            <div class="figura tr" nombre="cuadrado"></div>
+                            <div class="figura tr" nombre="circulo"></div>
+                            <div class="figura tr" nombre="rombo"></div>
+                        </div>
+                    </div>
+                    <p class="mensaje red center-text"></p>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="cmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirmación</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>¿Está seguro que los datos capturados son correctos? <br> <br>Datos:</p>
+                        <ul id="datos"></ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sec" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-prim">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <a href="https://api.whatsapp.com/send?phone=2213181887&text=Hola!%20Somos%20Polly%20Pet%20Shop!%20" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="./indexContacto.js"></script>
+    <script src="../main.js"></script>    
+
+</body>
+</html>
