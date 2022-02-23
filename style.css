@@ -64,7 +64,7 @@ main{
 .preload{
     width: 100vw;
     height: 100vh;
-    background-image: url(./src/img/clouds.png);
+    background-image: url("./src/img/clouds.png");
     background-size: cover;
     background-attachment: fixed;
     position: fixed;

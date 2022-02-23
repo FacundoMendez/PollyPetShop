@@ -3,7 +3,7 @@
     setTimeout(function(){
         preload.classList.add("cerrar");
         preload.style.zIndex=0;
-    },3000)
+    },3600)
     
 })();
 
@@ -18,17 +18,16 @@
         delay:2.5,  
         duration: 2,
         opacity: 0,
-        'webkitFilter': 'blur(4rem)',
+        'webkitFilter': 'blur(4zrem)',
 
     })
 
     gsap.to(".ball",{        
-        delay: 2.1,
-        duration: 1.8,            
+        delay: 1.7,
+        duration: 2,            
         opacity:1,
-        rotation:360,                   
-        scale:30,       
-        'webkitFilter': 'blur(1rem)',
+        scale:10,       
+        'webkitFilter': 'blur(.5rem)',
     })
 
     gsap.to(".ball",{        
@@ -38,6 +37,14 @@
         rotation:360,                   
         scale:30,       
         'webkitFilter': 'blur(2rem)',
+    })
+
+    gsap.to(".preload",{        
+        delay: 2.1,
+        duration:1,
+        display:"none",
+        opacity:0,
+        'webkitFilter': 'blur(1rem)',
     })
 
     let viewport = document.querySelector(".viewport");
