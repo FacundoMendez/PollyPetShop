@@ -9,22 +9,52 @@
 
 (() =>{
 
+
     gsap.to(".imgLogo",{    
-        duration: 3,            
+        duration:3,
     })
 
+    gsap.to(".imgLogo",{  
+        delay:2.5,  
+        opacity: 0,
+        'webkitFilter': 'blur(2rem)',
+
+    })
 
     gsap.to(".ball",{        
-        duration: 4,            
-        delay: 2.4,
-        opacity:3,
+        delay: 2,
+        duration: 1.5,            
+        opacity:1,
+        rotation:360,                   
+        scale:30,       
+        'webkitFilter': 'blur(1rem)',
+    })
+
+    gsap.to(".ball",{        
+        delay: 3.5,
+        duration: 1.5,            
+        opacity:0,
         rotation:360,                   
         scale:30,       
         'webkitFilter': 'blur(2rem)',
     })
 
-  
+    let viewport = document.querySelector(".viewport");
+
+    viewport.style.opacity = "0";
+
+    gsap.to(viewport,{        
+        delay: 3.6,
+        duration: 2,            
+        opacity:1,
+    })
+
+
+
+
 })();
+
+
 
 
 

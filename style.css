@@ -1897,6 +1897,10 @@ span{
         width: 100%;
     }
 
+    .text__container4 a:hover {
+        font-size: 4.5rem;
+    }
+
     /* container 5 */
 
         /* fondo */
@@ -2070,7 +2074,7 @@ span{
 
           /* container4 */
 
-    /* ------Heith x heith ------ */
+    /* ------height x height ------ */
     .container4{
         width: 100vw;
         height: 75vh;
@@ -2093,12 +2097,14 @@ span{
 
     .text__container4 a{
         font-size: 3.3rem;
-    }
-
-    .text__container4 a {
         width: 100%;
     }
 
+    .text__container4 a:hover {
+        font-size: 3.5rem;
+    }
+
+    
     /* container 5 */
 
         /* fondo */
@@ -2252,6 +2258,10 @@ span{
     .text__container4 a {
         width: 100%;
     }
+    .text__container4 a:hover {
+        font-size: 3rem;
+    }
+
 
     /* container 5 */
 
