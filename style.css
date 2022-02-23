@@ -2077,6 +2077,8 @@ span{
     .container4{
         width: 100vw;
         height: 75vh;
+        background-image: url("./src/img/fondoTiendaHome.png");
+        background-size: cover;
     }
 
     .box__container4-img-marco{
@@ -2122,21 +2124,16 @@ span{
     }
  
     .container5__title1 {
-        top: 48%;
+        top: 54%;
         left:50%;
         transform: translate(-50%, -50%);    
         width: 100%;
         filter: drop-shadow(1px 1px 1px rgba(58, 58, 58, 0.404));
 
     }
-    
-    .shadows2 span{
-        font-size: 3.5rem;
-    }
-    
-    
+
     .container5__title2 {
-        top: 60%;
+        top: 66%;
         left:49%;
         transform: translate(-50%, -50%);    
         padding: 0 2rem;
@@ -2145,15 +2142,20 @@ span{
     }
     
     .shadows3 span{
-        font-size: 1.05rem;
+        font-size: .85rem;
     }
+    
+    .shadows2 span{
+        font-size: 3.5rem;
+    }
+    
     
     .space2 {
         padding: 0 .5rem;
     }
 
     .container5__img{
-        top: 53%;
+        top: 58%;
         left:50%;
         width: 18rem;
         opacity: 0.06;
@@ -2266,7 +2268,7 @@ span{
         /* fondo */
     .container5{  
         width: 100%;
-        height: 30vh;
+        height: 40vh;
         background-size: cover;
     }
 
@@ -2281,7 +2283,7 @@ span{
 
 
     .container5__title1 {
-        top: 60%;
+        top: 65%;
         left:50%;
         transform: translate(-50%, -50%);    
         width: 100%;
@@ -2290,6 +2292,7 @@ span{
     
     .shadows2 span{
         font-size: 2.5rem;
+        
     }
     
     
@@ -2304,6 +2307,7 @@ span{
     
     .shadows3 span{
         display: none;
+
     }
     
     .space2 {
@@ -2311,7 +2315,7 @@ span{
     }
 
     .container5__img{
-        display: none;
+        top: 65%;
     }
     
 
