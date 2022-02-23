@@ -11,7 +11,7 @@
 
 
     gsap.to(".imgLogo",{    
-        duration:3,
+        duration:2.8,
     })
 
     gsap.to(".imgLogo",{  
@@ -32,7 +32,7 @@
 
     gsap.to(".ball",{        
         delay: 3.5,
-        duration: 1.5,            
+        duration: 1,            
         opacity:0,
         rotation:360,                   
         scale:30,       

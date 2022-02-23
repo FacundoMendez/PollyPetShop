@@ -669,16 +669,15 @@ span{
 
 /* container4 */
 
-/* ------Heith x heith ------ */
 .container4{
     width: 100vw;
     height: 90vh;
     position: relative;
-    background-image: url(./src/img/dia5.png);
+    background-image: url("./src/img/fondoTiendaHome.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
-    filter:contrast(108%);
+    filter:contrast(105%);
 
 }
 
@@ -2078,7 +2077,6 @@ span{
     .container4{
         width: 100vw;
         height: 75vh;
-        position: relative;
     }
 
     .box__container4-img-marco{
@@ -2092,7 +2090,6 @@ span{
     .box__container4-img-marco img{
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
 
     .text__container4 a{
