@@ -15,8 +15,8 @@
 
 
     gsap.to(".ball",{        
-        duration: 3,            
-        delay: 2.3,
+        duration: 4,            
+        delay: 2.4,
         opacity:3,
         rotation:360,                   
         scale:30,       

@@ -215,9 +215,8 @@ span{
   padding: 6rem 0 ;
   border-radius: 30px;
   filter: drop-shadow(.5px .5px 2px rgb(145, 144, 144) );
-  background-color: rgb(255, 252, 244);
-  color:#7319e7;
-  border: 10px solid #331808;
+  background-color: rgb(255, 250, 239);
+  color:black;
   padding:20px;
   margin: 0 auto;
   border-radius:15px;
@@ -227,21 +226,35 @@ span{
   font-size: 1.6rem;
   font-weight: bold;
 }
+
+
+
 .form-container label{
   display:block;
   margin:15px 0 4px 0;
   font-weight:bold;
-  color:#7319e7;
+  color: black;
+  font-size: 1.8rem;
 
 }
 .form-container input[type="text"], .form-container textarea{
   display:block;
   width:100%;
-  border:2px solid #403f41;
+  border:2px solid #05000a;
   background-color:transparent;
   color: black;
   padding-left:5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: none;
 }
+
+.form-container input[type="text"]:active{
+  
+}
+
 .form-container input[type="submit"]{
   margin: 10px auto;
   display: block;
@@ -258,7 +271,10 @@ span{
   left:10%;
   border-radius:15px;
   box-shadow: -1px 1px 4px #000000;
+  
 }
+
+
 .figures-container{
   text-align:center;
 }
@@ -332,7 +348,8 @@ span{
 
 strong {
   font-weight: bolder;
-  color:#7319e7;
+  color: black;
+
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -368,7 +385,7 @@ strong {
 }
 .modal-header h5{
   text-align:center;
-  color:#7319e7;
+  color: black;
   font-size: 2rem;
 }
 
@@ -376,7 +393,7 @@ strong {
   font-size: 1.5rem;
   width: 100%;
   font-weight: bold;
-  color:#7319e7;
+  color: black;
 }
 
 
