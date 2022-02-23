@@ -3,7 +3,7 @@
     setTimeout(function(){
         preload.classList.add("cerrar");
         preload.style.zIndex=0;
-    },3500)
+    },3000)
     
 })();
 
@@ -11,19 +11,20 @@
 
 
     gsap.to(".imgLogo",{    
-        duration:2.8,
+        duration:3,
     })
 
     gsap.to(".imgLogo",{  
         delay:2.5,  
+        duration: 2,
         opacity: 0,
-        'webkitFilter': 'blur(2rem)',
+        'webkitFilter': 'blur(4rem)',
 
     })
 
     gsap.to(".ball",{        
-        delay: 2,
-        duration: 1.5,            
+        delay: 2.1,
+        duration: 1.8,            
         opacity:1,
         rotation:360,                   
         scale:30,       
@@ -32,7 +33,7 @@
 
     gsap.to(".ball",{        
         delay: 3.5,
-        duration: 1,            
+        duration: 1.5,            
         opacity:0,
         rotation:360,                   
         scale:30,       
@@ -44,7 +45,7 @@
     viewport.style.opacity = "0";
 
     gsap.to(viewport,{        
-        delay: 3.6,
+        delay: 2.5,
         duration: 2,            
         opacity:1,
     })
