@@ -26,7 +26,7 @@
         delay: 1.7,
         duration: 2,            
         opacity:1,
-        scale:10,       
+        scale:30,       
         'webkitFilter': 'blur(.5rem)',
     })
 
