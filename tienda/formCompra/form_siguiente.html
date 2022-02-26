@@ -14,6 +14,10 @@
 </head>
 <body>
 
+    <div class="preload">
+        <div class="lds-dual-ring"></div>
+    </div>
+
     <header class="header">
         <nav class="nav">
             <div class="nav__img">
@@ -52,7 +56,7 @@
     <main >
 
         <section class="container">
-            <form name="datos"  >
+            <form name="datos"  action="./form__finish.html">
 
                 <div class="container1">
                     <div class="input-field provincia">
@@ -102,7 +106,7 @@
                     <div class="input-field cp">
                         <i class="fas fa-location-arrow material-icons prefix"></i>
                         <label for="cp">Codigo Postal<span class="complete">*</span> </label>
-                        <input type="number" name="cp" required>
+                        <input type="text" name="cp" required>
                     </div>
                     <div class="input-field tel">
                         <i class="fas fa-phone-alt material-icons prefix"></i>
@@ -123,7 +127,7 @@
                 <div class="center-align">
                     <button class="enviar" >
                         <i class="fas fa-play material-icons send"></i>
-                        <span> Siguente </span>
+                        <a href="./form__finish.html"><span> Siguente </span></a>
                     </button>
                 </div>
             </form>
@@ -134,5 +138,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
     <script type="module" src="./form.js"></script>
+    <script  src= "preload2.js"></script>
+
 </body>
 </html>

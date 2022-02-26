@@ -28,5 +28,3 @@ $.get(urlProvincias,function(response,status){
 
 
 
-
-

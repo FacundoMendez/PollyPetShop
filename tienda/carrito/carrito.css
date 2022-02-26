@@ -530,33 +530,46 @@ span{
     user-select: none;
 }
 
-/* conejo */
 
-.conejo .imgConejo1{
-    width: 19.5rem;
-    height: 26rem;
+.popup__vacio{
     position: absolute;
-    right: 36%;
-    bottom: 25%;
-    filter: drop-shadow(10px 10px 10px #00000059);
+    z-index: 9000;
+    top: 0rem;
+    right: 10%;
+    width: 32rem;
+    height: 5rem;
+    background-color: rgb(252, 243, 228);
+    border: 4px solid #41260f;
+    filter: drop-shadow(.5px .5px 2px rgb(255, 255, 255) );
+    padding:  1rem;
+    border-radius:15px;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+
 }
 
-
-
-.conejo .imgConejo2{
-    width: 20rem;
-    height: 28rem;
+.popup__vacio-active{
     position: absolute;
-    left: 10.2%;
-    bottom: 25%;
-    filter: drop-shadow(-1px 0px 10px #00000073);
-
+    top: 6.5rem;
+    z-index: 9000;
+    right: 10%;
+    width: 32rem;
+    height: 5rem;
+    background-color: rgb(252, 243, 228);
+    border: 6px solid #41260f;
+    filter: drop-shadow(.5px .5px 2px rgb(255, 255, 255) );
+    border: 2px solid ;
+    padding: 1.2rem 1rem;
+    border-radius:15px;
+    transition: all .5s ease-in-out;
+    opacity: 1;
 }
 
-.conejo{
-    display: none;
+.popup__vacio p{
+    font-size: 1.8rem;
+    color: #41260f;
+    font-weight: bold;
 }
-
 
 
 @media screen and (max-width: 1400px) {

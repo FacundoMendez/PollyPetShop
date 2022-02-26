@@ -11,24 +11,15 @@ html{
 
 }
 
-
-body{
-    background-color: #f1f1f1e8;
-
-}
-
 main{
     position: relative;
     overflow: hidden;  
     scroll-behavior:smooth;
-
 }
 
-
 ::-webkit-scrollbar {
-    width: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.479);
-    height: 20px;
+    width: 10px;
+    height: 10px;
     background-image: url(../../src/img/pantallaNavMovil.png);
     background-position: bottom;
 }
@@ -37,7 +28,7 @@ main{
     height: 0px;
 }
 ::-webkit-scrollbar-thumb {
-    background:rgb(250, 238, 215);
+    background:rgb(249, 178, 255);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -55,68 +46,11 @@ main{
     background: transparent;
 }
 
-
-
-/* configuracion preload */
-.preload{
-    width: 100vw;
-    height: 100vh;
-  /*   background: radial-gradient(circle, rgba(0,1,31,1) 0%, rgba(0,0,0,1) 100%); */
-    background-color: black;
-    position: fixed;
-    top: 0rem;
-    left: 0px;
-    z-index: 9000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-/* clase que crea js para que se cierra */
-
-.cerrar{
-    opacity: -0;
-    transition: all 0.5s;
-}
-
-
-.lds-dual-ring {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-}
-.lds-dual-ring:after {
-    content: " ";
-    display: block;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border-radius: 50%;
-    border: 6px solid #fff;
-    border-color: rgb(78, 240, 164) transparent rgb(78, 240, 164) transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
-}
-@keyframes lds-dual-ring {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-
-
 .nav{
     position: fixed;
     z-index: 10000;
     width: 100%;
     top: 0;
-
 }
 
 .nav__img{
@@ -223,12 +157,6 @@ main{
 }
 
 
-span{
-    font-size: 1.6rem;
-    color: #ad5cff;
-    font-weight: 800;
-}
-
 .cuenta:hover{
     filter: drop-shadow(1px 1px 1px rgb(102, 102, 102));
     transition:all 0.5s ease-in-out;
@@ -287,135 +215,68 @@ span{
     margin-left: 2rem;
 }
 
-.container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+
+/* configuracion preload */
+.preload{
+    width: 100vw;
     height: 100vh;
-    background-image: url(../../src/img/mader.png);
-    background-size: cover;
-    object-fit: cover;
-}
-
-.container form{
-    padding: 6rem 0 ;
-    border-radius: 30px;
-    border: 6px solid #41260f;
-    filter: drop-shadow(.5px .5px 2px rgb(255, 255, 255) );
-    margin: 1rem;
-    background-color: rgb(255, 250, 239);
-}
-
-.input-field{
+  /*   background: radial-gradient(circle, rgba(0,1,31,1) 0%, rgba(0,0,0,1) 100%); */
+    background-color: black;
+    position: fixed;
+    top: 0rem;
+    left: 0px;
+    z-index: 9000;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    margin: 4rem 0;
-    margin-left: -2rem;
-    padding: 0 4rem;
 }
 
-.input-field label{
-    font-size: 1.2rem;
-    position: absolute;
-    margin-top: -4.5rem;
-    margin-left: -18rem;
-    letter-spacing: 1px;
-    font-style: italic;
+
+
+/* clase que crea js para que se cierra */
+
+.cerrar{
+    opacity: -0;
+    transition: all 0.5s;
 }
 
-.input-field i{
-    font-size: 3.4rem;
-    margin-top: -1rem;
-}
 
-.input-field input{
-    margin-top: 1rem;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    outline: none;
-    height: 3rem;
-    font-size: 1.5rem;
-    background: none;
-    width: 30rem;
-    font-weight: bold;
-    padding-left: 0.2rem;
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
 }
-
-.input-field input:hover{
-    border-color:#6b02e2;
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: rgb(78, 240, 164) transparent rgb(78, 240, 164) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
 }
-
-.material-icons{
-    color:#6b02e2;
-    padding: 0 1.5rem;
-}
-
-.enviar{
-    align-items: center;
-    appearance: none;
-    background-color: #e4ffff;
-    border: 0;
-    border-radius: 6px;
-    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65,  111, .5) 0 -3px 0 inset;
-    color:#6b02e2;
-    font-weight: 700;
-    cursor: pointer;
-    height: 42px;
-    width: 15rem;
-    line-height: 1;
-    padding-left: 16px;
-    padding-right: 16px;
-    transition: box-shadow .15s,transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    font-size: 18px;
-    margin-top: 2rem;
-    margin-left: 2rem;
-}
-
-.center-align{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    position: relative;
-}
-
-.enviar:focus {
-    box-shadow: #dee1ff 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #aeb7ff 0 -3px 0 inset;
-}
-
-.enviar:hover {
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #a2adff 0 -3px 0 inset;
-    transform: translateY(-2px);
-}
-
-.enviar:active {
-    transform: translateY(2px);
-}
-.enviar i{
-    margin-left: -1.5rem;
-}
-.enviar span{
-    font-size: 1.7rem;
-    position: relative;
-    top: -0.6rem;
-    color:#6b02e2;
-    font-weight: 700;
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
 
 
+@media screen and (max-width: 1400px) {
+
+
+}
 
 @media screen and (max-width: 1080px){
-
-
     .carrito{
         display: none;
     }
@@ -521,6 +382,7 @@ span{
         z-index: 11000;
         margin-top: -0.4rem;
     }
+
 }
 
 
@@ -542,11 +404,14 @@ span{
         width: 70%;
     }
 
+
+
+
 }
 
 
 @media screen and (max-width:480px){
- 
+
     .nav__img{
         width: 100%;
     }
@@ -575,49 +440,5 @@ span{
         top: 5.3%;
     }
 
-    .select__button{
-        width: 105%;
-    }
-    
-    .input-field{
-        margin-left: -2.1rem;
-        padding: 0 1rem;
-    }
-    
 }
 
-@media screen and (max-width:320px){
-    .container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-    }
-    
-    .container form{
-        border: 4px solid rgba(134, 4, 255, 0.973);
-        padding: 6rem 0 ;
-        border-radius: 30px;
-        filter: drop-shadow(1px 1px 10px rgb(239, 249, 253));
-        margin: 1rem;
-    }
-    
-    .input-field{
-        margin-left: -2.1rem;
-        padding: 0 1rem;
-    }
-    
-    .input-field input{
-        width: 24rem;
-    }
-
-    .input-field i{
-        font-size: 3rem;
-    }
-
-    .input-field label{
-        margin-left: -12rem;
-    }
-}

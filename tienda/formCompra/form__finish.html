@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./carrito.css">
+    <link rel="stylesheet" href="../formCompra/form__finish.css">
     <script defer src="../../main.js"></script>
-    <title>Carrito</title>
+    <title>Compra</title>
 </head>
-
 <body>
 
     <header class="header">
@@ -32,10 +30,10 @@
                         <a href="../../index.html" class="nav-menu-link nav-link">Inicio</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a href="../../contacto/indexContacto.html"" class="nav-menu-link nav-link">Contacto</a>
+                        <a href="#" class="nav-menu-link nav-link">Contacto</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a href="../productos/tienda.html" class="nav-menu-link nav-link ">Tienda</a>
+                        <a href="../../login/indexLogin.html" class="nav-menu-link nav-link ">Tienda</a>
                     </li>
                     <li class="nav-menu-item cuenta">
                         <a href="../../login/indexLogin.html" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
@@ -50,50 +48,16 @@
             </div>
         </nav>
     </header>
-
-    <main>
-        <div class="popup__vacio">
-            <p>Agregue un producto para continuar</p>
+    
+    <main >
+        <div class="preload">
+            <div class="lds-dual-ring"></div>
         </div>
-        <div class="container">
-            <div class="carrito__vacio">
-                <div class="carrito__productos">
-                </div>
-                <div class="carrito__vacio-container">
-                    <i class="carrito-vacio-icon fas fa-shopping-cart"></i>
-                    <div class="title__text">
-                        <p>Aún no hay items en el carrito!</p>
-                    </div>
-                    <div class="title__text-secundario">
-                        <p>Agrega primero un producto para poder visualizar el carrito</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container__resumen">
-                <div class="resumen">
-                    <div class="resumen__title">
-                        <p>RESUMEN DE PEDIDO</p>
-                    </div>
-                    <div class="line"></div>
-                    <div class="total">
-                        <p class="tt_total"> TOTAL: <span class="precio"> $ 0,00</span> </p>
-                    </div>
-                </div>
-
-                <div class="continuar">
-                    <button class="vaciar button-29" role="button">Vaciar</button>
-                    <button class="comprar button-29" role="button">Continuar</button>
-                </div>
-            </div>
-        </div>
-
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script type="module" src="./index.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script type="module" src="./form.js"></script>
+    <script  src= "preload.js"></script>
 </body>
-
 </html>
-

@@ -7,6 +7,7 @@ function actualizar() {
     let conta = localStorage.getItem("contador");
     let vaciar = document.querySelector(".vaciar");
     let comprar = document.querySelector(".comprar")
+    let button = document.querySelector(".comprar")
     
 
     comprar.addEventListener("click", function(){
@@ -14,11 +15,25 @@ function actualizar() {
       localStorage.removeItem("contador");
       localStorage.removeItem("precioTotal");
     })
+     
+    if (arrayProductos == null ){
+      let popup__vacio = document.querySelector(".popup__vacio")
+      button.addEventListener("click", function(){
+        popup__vacio.classList.toggle("popup__vacio-active");
+      })
+    }
 
     if (arrayProductos != null) {
       if (conta != null) {
         if (conta != 0) {
           if (precioTotal >= 0) {
+
+            button.addEventListener("click",function(){
+              location.href='../formCompra/form.html'
+            })
+
+       
+
             /* modifico el contador de la barra de navegacion */
             $(".contador p").html(`
                 <p>${conta}</p>
@@ -200,13 +215,6 @@ function actualizar() {
       $(".carrito__productos").hide();
     }
 
-    
-    /*              $(".conejo").fadeIn().show()
-
-                if ($(".conejo").show()){
-                    $(".conejo").fadeIn().hide()
-                }
- */
 
   }
 });

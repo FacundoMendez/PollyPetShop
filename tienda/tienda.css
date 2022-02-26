@@ -29,7 +29,7 @@ main{
     width: 20px;
     border: 2px solid rgba(0, 0, 0, 0.479);
     height: 20px;
-    background-image: url(../../src/img/pantallaNavMovil.png);
+    background-image: url("../src/img/pantallaNavMovil.png");
     background-position: bottom;
 }
 ::-webkit-scrollbar-button {
@@ -55,6 +55,9 @@ main{
     background: transparent;
 }
 
+.viewport{
+    opacity: 0;
+}
 
 .nav{
     position: fixed;

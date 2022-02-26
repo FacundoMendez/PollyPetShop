@@ -10,6 +10,9 @@
 (() =>{
 
 
+    
+
+
     gsap.to(".imgLogo",{    
         duration:3,
     })
@@ -47,6 +50,10 @@
         'webkitFilter': 'blur(1rem)',
     })
 
+    gsap.to(".viewport",{
+        opacity:1
+    })
+
     let viewport = document.querySelector(".viewport");
 
     viewport.style.opacity = "0";
@@ -56,19 +63,11 @@
         duration: 2,            
         opacity:1,
     })
-
-
-
-
 })();
-
-
-
 
 
 (() =>{
 
-    gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(".container2__sol", {
         duration:2,
@@ -82,17 +81,20 @@
         }
     })
 
-    gsap.to(".box__container3", {
-        opacity:1,
-        duration:2,
-        ease: "lineal",
-        x:"+=60",
+    gsap.registerPlugin(ScrollTrigger);
+ 
+    gsap.timeline({
         scrollTrigger:{
             trigger:".container3",
-            scrub: .2,
+            scrub: 2,
             pin: true,
-            end: "+=50%"
-        },  
+            end: "+=40%"
+        }
+    })
+    .to(".container3__quienesSomos", {
+        duration:3,
+        opacity:1,
+        x:1000,
     })
 
 

@@ -17,6 +17,9 @@ main{
     scroll-behavior:smooth;
 }
 
+
+
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -45,6 +48,63 @@ main{
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
+
+
+
+
+
+/* configuracion preload */
+.preload{
+    width: 100vw;
+    height: 100vh;
+  /*   background: radial-gradient(circle, rgba(0,1,31,1) 0%, rgba(0,0,0,1) 100%); */
+    background-color: black;
+    position: fixed;
+    top: 0rem;
+    left: 0px;
+    z-index: 9000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* clase que crea js para que se cierra */
+
+.cerrar{
+    opacity: -0;
+    transition: all 0.5s;
+}
+
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: rgb(78, 240, 164) transparent rgb(78, 240, 164) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 
 .nav{
     position: fixed;
