@@ -68,6 +68,7 @@
 
 (() =>{
 
+    gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(".container2__sol", {
         duration:2,
@@ -81,20 +82,17 @@
         }
     })
 
-    gsap.registerPlugin(ScrollTrigger);
- 
-    gsap.timeline({
+    gsap.to(".box__container3", {
+        opacity:1,
+        duration:2,
+        ease: "lineal",
+        x:"+=60",
         scrollTrigger:{
             trigger:".container3",
             scrub: 2,
             pin: true,
-            end: "+=40%"
-        }
-    })
-    .to(".container3__quienesSomos", {
-        duration:3,
-        opacity:1,
-        x:1000,
+            end: "+=50%"
+        },  
     })
 
 
