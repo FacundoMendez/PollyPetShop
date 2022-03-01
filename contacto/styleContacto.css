@@ -614,10 +614,12 @@ strong {
     letter-spacing: 1px;
   }
 
+  .container-flex {
+    padding-top: 15rem;
+   
+  }
 
-  .form-container {
-    margin: 240px auto 100px;
-}
+  
 }
 
 
