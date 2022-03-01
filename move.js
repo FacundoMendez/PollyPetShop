@@ -10,9 +10,6 @@
 (() =>{
 
 
-    
-
-
     gsap.to(".imgLogo",{    
         duration:3,
     })
@@ -22,7 +19,6 @@
         duration: 2,
         opacity: 0,
         'webkitFilter': 'blur(4zrem)',
-
     })
 
     gsap.to(".ball",{        
@@ -50,9 +46,6 @@
         'webkitFilter': 'blur(1rem)',
     })
 
-    gsap.to(".viewport",{
-        opacity:1
-    })
 
     let viewport = document.querySelector(".viewport");
 
@@ -63,6 +56,7 @@
         duration: 2,            
         opacity:1,
     })
+
 })();
 
 

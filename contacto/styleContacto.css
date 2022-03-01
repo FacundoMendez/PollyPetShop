@@ -25,7 +25,7 @@ body{
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
   border: 3px solid rgba(0, 0, 0, 0.479);
   height: 20px;
   background-image: url("../src/img/pantallaNavMovil.png");
@@ -464,7 +464,28 @@ strong {
 
 
 @media screen and (max-width: 1400px) {
+  .form-container {
+    width: 60%;
+    max-width: 800px;
+    min-width: 350px;
+    padding: 6rem 0;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 45px;
+    min-height: 620px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
 
+.container-flex {
+  padding-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 140vh;
+}
 
 }
 
