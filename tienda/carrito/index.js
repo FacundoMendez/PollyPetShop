@@ -180,7 +180,6 @@ function actualizar() {
         `);
 
 
-        recorrerArray(element.id)
 
         if (resut == 0) {
           localStorage.removeItem("carrito");
