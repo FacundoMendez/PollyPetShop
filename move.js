@@ -3,7 +3,7 @@
     setTimeout(function(){
         preload.classList.add("cerrar");
         preload.style.zIndex=0;
-    },3600)
+    },3700)
     
 })();
 
