@@ -43,7 +43,6 @@
         duration:1,
         display:"none",
         opacity:0,
-        'webkitFilter': 'blur(1rem)',
     })
 
 
@@ -80,10 +79,10 @@
         opacity:1,
         duration:2,
         ease: "lineal",
-        x:"+=60",
+        x:"+=50",
         scrollTrigger:{
             trigger:".container3",
-            scrub: 2,
+            scrub: 1.8,
             pin: true,
             end: "+=50%"
         },  
