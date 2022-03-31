@@ -75,18 +75,6 @@
         }
     })
 
-    gsap.to(".box__container3", {
-        opacity:1,
-        duration:2,
-        ease: "lineal",
-        x:"+=50",
-        scrollTrigger:{
-            trigger:".container3",
-            scrub: 1.8,
-            pin: true,
-            end: "+=50%"
-        },  
-    })
 
 
 

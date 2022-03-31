@@ -629,43 +629,36 @@ span{
     flex-wrap: wrap;
     font-size: 2.5rem;
     color: wheat;
-    position: absolute;
+    position: relative;
     top: 3rem;
     filter: drop-shadow(-2px 2px 2px black);
-    opacity: 0;
 }
 
 .container3__quienesSomos,.container3__queHacemos{
-    width: 35%;
+    position: relative;
+    width: 40%;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    line-height: 2.9rem;
+    gap: 3rem;
 }
-
 .container3__quienesSomos{
-    position: absolute;
-    top: 20%;
-    left: 13%;
+    top: -15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
     text-align: center;
 }
 
 .container3__queHacemos{
-    position: absolute;
-    top: 58%;
-    right:  24%;
+    top: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    text-align: center;
 }
-
 
 
 /* container4 */
@@ -1425,20 +1418,20 @@ span{
     /* container 3 */
 
     .box__container3{
-        width: 100vw;
-        height: 100vh;
-        gap: 5rem;
         font-size: 2rem;
         top: 10rem;
         filter: drop-shadow(-2px 2px 2px black);
-        opacity: 0;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        
     }
 
     .container3__quienesSomos,.container3__queHacemos{
         width: 70%;
+        margin-top: 10rem;
         text-align: center;
         line-height: 2.9rem;
-        margin-left: -10rem;
     }
 
     .container3__quienesSomos{
@@ -1621,9 +1614,13 @@ span{
   
     /* container 3 */
   
+
+    
+
     .box__container3{
         font-size: 1.9rem;
         top: 5rem;
+        position: relative;
     }
 
     .container3__queHacemos{
@@ -1658,13 +1655,13 @@ span{
     /* ------Heith x heith ------ */
     .container4{
         width: 100vw;
-        height: 85vh;
+        height: 100vh;
         position: relative;
     }
 
     .box__container4-img-marco{
         width: 100%;
-        height: 85vh;
+        height: 100vh;
         top: 0;
     }
     /* ------------ */
@@ -1854,22 +1851,16 @@ span{
     .box__container3{
         width: 100vw;
         height: 100vh;
-        gap: 20rem;
         font-size: 1.8rem;
-        top: 12rem;
-        opacity: 0;
     }
 
     .container3__quienesSomos,.container3__queHacemos{
         width: 70%;
         line-height: 2.9rem;
-        margin-left: -10rem;
     }
 
     .container3__quienesSomos{
-        top: 10%;
         left: 0%;
-        gap: 3rem;
     }
 
     .container3__queHacemos{
@@ -1888,8 +1879,8 @@ span{
 
     .box__container4-img-marco{
         width: 100%;
+        position:relative;
         height: 80vh;
-        top: 0;
     }
     /* ------------ */
     
@@ -2052,13 +2043,22 @@ span{
     /* container 3 */
 
     .box__container3{
-        gap: 23rem;
-        font-size: 1.7rem;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        color: wheat;
+        position: relative;
+        top:2rem;
+        filter: drop-shadow(-2px 2px 2px black);
     }
+
 
     .container3__quienesSomos,.container3__queHacemos{
         width: 85%;
-        margin-left: -11rem;
     }
 
 
@@ -2236,8 +2236,10 @@ span{
     }
 
 
+
     .box__container3{
         font-size: 1.5rem;
+        height: 100vh;
     }
 
         /* container4 */
