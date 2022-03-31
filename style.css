@@ -648,6 +648,8 @@ span{
 .container3__quienesSomos{
     top: -15%;
     display: flex;
+    left:5%;
+
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -655,6 +657,7 @@ span{
 
 .container3__queHacemos{
     top: 15%;
+    right: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1187,7 +1190,7 @@ span{
     .container3__quienesSomos{
         position: absolute;
         top: 21%;
-        left: 1%;
+        left: 0%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1199,7 +1202,7 @@ span{
     .container3__queHacemos{
         position: absolute;
         top: 55%;
-        right:  15%;
+        right:  0%;
         display: flex;
         justify-content: center;
         align-items:center;
