@@ -631,6 +631,7 @@ span{
     color: wheat;
     position: relative;
     top: 3rem;
+    font-weight: 500;
     filter: drop-shadow(-2px 2px 2px black);
 }
 
